@@ -136,11 +136,11 @@ liveboard:
     viz_guid: 9a4bad88-7329-4f7b-a74b-70f6a2efd6bf
   layout:
     tiles:
-    - visualization_id: Viz_3
-      size: MEDIUM
     - visualization_id: Viz_2
       size: MEDIUM
-    - visualization_id: Viz_1
-      size: MEDIUM
     - visualization_id: Viz_4
+      size: MEDIUM
+    - visualization_id: Viz_3
+      size: MEDIUM
+    - visualization_id: Viz_1
       size: MEDIUM

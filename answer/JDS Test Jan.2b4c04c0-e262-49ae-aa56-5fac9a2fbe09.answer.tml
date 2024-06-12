@@ -1,0 +1,37 @@
+guid: 2b4c04c0-e262-49ae-aa56-5fac9a2fbe09
+answer:
+  name: JDS Test Jan
+  tables:
+  - id: Retail Sales - Classic
+    name: Retail Sales - Classic
+    fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+  search_query: "[Sales] [Cost] [Sale Date].quarterly"
+  answer_columns:
+  - name: Quarter(Sale Date)
+  - name: Total Cost
+  - name: Total Sales
+  table:
+    table_columns:
+    - column_id: Quarter(Sale Date)
+      show_headline: false
+    - column_id: Total Cost
+      show_headline: false
+    - column_id: Total Sales
+      show_headline: false
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"orderedColumnIds\": [\"Quarter(Sale Date)\",\"Total Sales\",\"Total Cost\"]}"
+  chart:
+    type: LINE
+    chart_columns:
+    - column_id: Quarter(Sale Date)
+    - column_id: Total Cost
+    - column_id: Total Sales
+    axis_configs:
+    - x:
+      - Quarter(Sale Date)
+      "y":
+      - Total Sales
+      - Total Cost
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Total Cost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"cb934d1f-27d4-4d42-8666-c43067ac270d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"51084440-c1e0-4240-bbe0-e86a035a505c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Cost\"],\"isOpposite\": true}},{\"id\": \"3a05116a-00a8-4589-8b4a-0136bf1f5767\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Cost\",\"color\": \"#48D1E0\"},{\"serieName\": \"44c454ab-b11c-4b60-acce-667f13e79312\",\"color\": \"#FCC838\"}]}"
+  display_mode: TABLE_MODE

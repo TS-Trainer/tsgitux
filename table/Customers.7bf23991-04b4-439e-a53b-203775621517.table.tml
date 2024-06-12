@@ -1,0 +1,162 @@
+guid: 7bf23991-04b4-439e-a53b-203775621517
+table:
+  name: Customers
+  db: RETAIL_CLASSIC
+  schema: PUBLIC
+  db_table: CUSTOMER_DIMENSION
+  connection:
+    name: RetailClassic
+    fqn: 17077c88-fe74-4a67-b7f5-c6340106c225
+  columns:
+  - name: Customer Key
+    db_column_name: CUSTOMER_KEY
+    properties:
+      column_type: ATTRIBUTE
+      is_hidden: true
+    db_column_properties:
+      data_type: INT64
+  - name: Customer Type
+    db_column_name: CUSTOMER_TYPE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Customer Name
+    db_column_name: CUSTOMER_NAME
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Customer Gender
+    db_column_name: CUSTOMER_GENDER
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Title
+    db_column_name: TITLE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Household ID
+    db_column_name: HOUSEHOLD_ID
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Customer Address
+    db_column_name: CUSTOMER_ADDRESS
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Customer City
+    db_column_name: CUSTOMER_CITY
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Customer State
+    db_column_name: CUSTOMER_STATE
+    properties:
+      column_type: ATTRIBUTE
+      geo_config:
+        region_name:
+          country: UNITED STATES
+          region_name: state
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Customer Region
+    db_column_name: CUSTOMER_REGION
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Marital Status
+    db_column_name: MARITAL_STATUS
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Customer Age
+    db_column_name: CUSTOMER_AGE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Number Of Children
+    db_column_name: NUMBER_OF_CHILDREN
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Annual Income
+    db_column_name: ANNUAL_INCOME
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+    db_column_properties:
+      data_type: INT64
+  - name: Occupation
+    db_column_name: OCCUPATION
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Largest Bill Amount
+    db_column_name: LARGEST_BILL_AMOUNT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+    db_column_properties:
+      data_type: INT64
+  - name: Store Membership Card
+    db_column_name: STORE_MEMBERSHIP_CARD
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Customer Since
+    db_column_name: CUSTOMER_SINCE
+    properties:
+      column_type: ATTRIBUTE
+      is_hidden: true
+    db_column_properties:
+      data_type: DATE
+  - name: Deal Stage
+    db_column_name: DEAL_STAGE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Deal Size
+    db_column_name: DEAL_SIZE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+    db_column_properties:
+      data_type: INT64
+  - name: Last Deal Update
+    db_column_name: LAST_DEAL_UPDATE
+    properties:
+      column_type: ATTRIBUTE
+      is_hidden: true
+    db_column_properties:
+      data_type: DATE
+  - name: Customer Zip Code
+    db_column_name: CUSTOMER_ZIP_CODE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Customer County
+    db_column_name: CUSTOMER_COUNTY
+    properties:
+      column_type: ATTRIBUTE
+      geo_config:
+        region_name:
+          country: UNITED STATES
+          region_name: county
+    db_column_properties:
+      data_type: VARCHAR

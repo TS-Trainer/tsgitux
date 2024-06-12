@@ -1,0 +1,62 @@
+guid: 72289404-f62f-4ace-bb19-8953d20c0321
+table:
+  name: Vendors
+  db: RETAIL_CLASSIC
+  schema: PUBLIC
+  db_table: VENDOR_DIMENSION
+  connection:
+    name: RetailClassic
+    fqn: 17077c88-fe74-4a67-b7f5-c6340106c225
+  columns:
+  - name: Vendor Key
+    db_column_name: VENDOR_KEY
+    properties:
+      column_type: ATTRIBUTE
+      is_hidden: true
+    db_column_properties:
+      data_type: INT64
+  - name: Vendor Name
+    db_column_name: VENDOR_NAME
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Vendor Address
+    db_column_name: VENDOR_ADDRESS
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Vendor City
+    db_column_name: VENDOR_CITY
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Vendor State
+    db_column_name: VENDOR_STATE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Vendor Region
+    db_column_name: VENDOR_REGION
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Deal Size
+    db_column_name: DEAL_SIZE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: Last Deal Update
+    db_column_name: LAST_DEAL_UPDATE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE

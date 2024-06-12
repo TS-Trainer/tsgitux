@@ -1,0 +1,142 @@
+guid: 9f025d8e-310c-41ad-ac02-0b9edcc61e5e
+table:
+  name: Sales
+  db: RETAIL_CLASSIC
+  schema: PUBLIC
+  db_table: RETAIL_SALES_FACT
+  connection:
+    name: RetailClassic
+    fqn: 17077c88-fe74-4a67-b7f5-c6340106c225
+  columns:
+  - name: Date Key
+    db_column_name: DATE_KEY
+    properties:
+      column_type: ATTRIBUTE
+      is_hidden: true
+    db_column_properties:
+      data_type: INT64
+  - name: Product Key
+    db_column_name: PRODUCT_KEY
+    properties:
+      column_type: ATTRIBUTE
+      is_hidden: true
+    db_column_properties:
+      data_type: INT64
+  - name: Store Key
+    db_column_name: STORE_KEY
+    properties:
+      column_type: ATTRIBUTE
+      is_hidden: true
+    db_column_properties:
+      data_type: INT64
+  - name: Promotion Key
+    db_column_name: PROMOTION_KEY
+    properties:
+      column_type: ATTRIBUTE
+      is_hidden: true
+    db_column_properties:
+      data_type: INT64
+  - name: Customer Key
+    db_column_name: CUSTOMER_KEY
+    properties:
+      column_type: ATTRIBUTE
+      is_hidden: true
+    db_column_properties:
+      data_type: INT64
+  - name: Employee Key
+    db_column_name: EMPLOYEE_KEY
+    properties:
+      column_type: ATTRIBUTE
+      is_hidden: true
+    db_column_properties:
+      data_type: INT64
+  - name: POS Transaction Number
+    db_column_name: POS_TRANSACTION_NUMBER
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Sales Quantity
+    db_column_name: SALES_QUANTITY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+    db_column_properties:
+      data_type: INT64
+  - name: Sales Dollar Amount
+    db_column_name: SALES_DOLLAR_AMOUNT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+    db_column_properties:
+      data_type: INT64
+  - name: Cost Dollar Amount
+    db_column_name: COST_DOLLAR_AMOUNT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+    db_column_properties:
+      data_type: INT64
+  - name: Gross Profit Dollar Amount
+    db_column_name: GROSS_PROFIT_DOLLAR_AMOUNT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: Transaction Type
+    db_column_name: TRANSACTION_TYPE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Transaction Time
+    db_column_name: TRANSACTION_TIME
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Tender Type
+    db_column_name: TENDER_TYPE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  joins_with:
+  - name: Customer_Key
+    destination:
+      name: Customers
+      fqn: 7bf23991-04b4-439e-a53b-203775621517
+    "on": "([Sales::Customer Key] = [Customers::Customer Key])"
+    type: INNER
+  - name: Date_Key
+    destination:
+      name: Dates
+      fqn: 4f0af717-2d6f-45ec-ae69-b0f758a85156
+    "on": "([Sales::Date Key] = [Dates::Date Key])"
+    type: INNER
+  - name: Employee_Key
+    destination:
+      name: Employees
+      fqn: cc7c0348-f364-4fca-b377-d0bd7d1c0307
+    "on": "([Sales::Employee Key] = [Employees::Employee Key])"
+    type: INNER
+  - name: Product_Key
+    destination:
+      name: Products
+      fqn: f4169c93-4a09-4895-b87b-a6a4f85c1506
+    "on": "([Sales::Product Key] = [Products::Product Key])"
+    type: INNER
+  - name: Sales_to_Promotions
+    destination:
+      name: Promotions
+      fqn: cfdc325f-20ec-4cd7-a6ec-6c7f5148b599
+    "on": "([Sales::Promotion Key] = [Promotions::Promotion Key])"
+    type: INNER
+  - name: Store_Key
+    destination:
+      name: Stores
+      fqn: ff693a24-fa0e-48ef-8d50-e3749615774d
+    "on": "([Sales::Store Key] = [Stores::Store Key])"
+    type: INNER

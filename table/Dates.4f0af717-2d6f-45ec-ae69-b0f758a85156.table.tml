@@ -1,0 +1,138 @@
+guid: 4f0af717-2d6f-45ec-ae69-b0f758a85156
+table:
+  name: Dates
+  db: RETAIL_CLASSIC
+  schema: PUBLIC
+  db_table: DATE_DIMENSION
+  connection:
+    name: RetailClassic
+    fqn: 17077c88-fe74-4a67-b7f5-c6340106c225
+  columns:
+  - name: Date Key
+    db_column_name: DATE_KEY
+    properties:
+      column_type: ATTRIBUTE
+      is_hidden: true
+    db_column_properties:
+      data_type: INT64
+  - name: Old Date
+    db_column_name: DATE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: DATE
+  - name: Full Date Description
+    db_column_name: FULL_DATE_DESCRIPTION
+    properties:
+      column_type: ATTRIBUTE
+      is_hidden: true
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Day of Week
+    db_column_name: DAY_OF_WEEK
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Day Number In Calendar Month
+    db_column_name: DAY_NUMBER_IN_CALENDAR_MONTH
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Day Number In Calendar Year
+    db_column_name: DAY_NUMBER_IN_CALENDAR_YEAR
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Day Number In Fiscal Month
+    db_column_name: DAY_NUMBER_IN_FISCAL_MONTH
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Day Number In Fiscal Year
+    db_column_name: DAY_NUMBER_IN_FISCAL_YEAR
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Last Day In Week Indicator
+    db_column_name: LAST_DAY_IN_WEEK_INDICATOR
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Last Day In Month Indicator
+    db_column_name: LAST_DAY_IN_MONTH_INDICATOR
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Calendar Week Number In Year
+    db_column_name: CALENDAR_WEEK_NUMBER_IN_YEAR
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Calendar Month Name
+    db_column_name: CALENDAR_MONTH_NAME
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Calendar Month Number In Year
+    db_column_name: CALENDAR_MONTH_NUMBER_IN_YEAR
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Calendar Year Month
+    db_column_name: CALENDAR_YEAR_MONTH
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Calendar Quarter
+    db_column_name: CALENDAR_QUARTER
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Calendar Year Quarter
+    db_column_name: CALENDAR_YEAR_QUARTER
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Calendar Half Year
+    db_column_name: CALENDAR_HALF_YEAR
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Calendar Year
+    db_column_name: CALENDAR_YEAR
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Holiday Indicator
+    db_column_name: HOLIDAY_INDICATOR
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Weekday Indicator
+    db_column_name: WEEKDAY_INDICATOR
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Selling Season
+    db_column_name: SELLING_SEASON
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR

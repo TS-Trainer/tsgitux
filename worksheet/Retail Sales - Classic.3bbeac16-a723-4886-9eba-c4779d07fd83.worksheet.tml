@@ -1,0 +1,431 @@
+guid: 3bbeac16-a723-4886-9eba-c4779d07fd83
+worksheet:
+  name: Retail Sales - Classic
+  tables:
+  - name: Customers
+    fqn: 7bf23991-04b4-439e-a53b-203775621517
+  - name: Dates
+    fqn: 4f0af717-2d6f-45ec-ae69-b0f758a85156
+  - name: Products
+    fqn: f4169c93-4a09-4895-b87b-a6a4f85c1506
+  - name: Sales
+    fqn: 9f025d8e-310c-41ad-ac02-0b9edcc61e5e
+  - name: Stores
+    fqn: ff693a24-fa0e-48ef-8d50-e3749615774d
+  joins:
+  - name: Store_Key
+    source: Sales
+    destination: Stores
+    type: INNER
+    is_one_to_one: false
+  - name: Product_Key
+    source: Sales
+    destination: Products
+    type: INNER
+    is_one_to_one: false
+  - name: Customer_Key
+    source: Sales
+    destination: Customers
+    type: INNER
+    is_one_to_one: false
+  - name: Date_Key
+    source: Sales
+    destination: Dates
+    type: INNER
+    is_one_to_one: false
+  table_paths:
+  - id: Customers_1
+    table: Customers
+    join_path:
+    - join:
+      - Customer_Key
+  - id: Dates_1
+    table: Dates
+    join_path:
+    - join:
+      - Date_Key
+  - id: Products_1
+    table: Products
+    join_path:
+    - join:
+      - Product_Key
+  - id: Sales_1
+    table: Sales
+    join_path:
+    - {}
+  - id: Stores_1
+    table: Stores
+    join_path:
+    - join:
+      - Store_Key
+  formulas:
+  - name: '% Gross Margin'
+    expr: "sum ( [Sales_1::Gross Profit Dollar Amount] ) / sum ( [Sales_1::Sales Dollar Amount] ) * 100"
+    was_auto_generated: false
+  - name: Age Group
+    expr: "if ( [Customers_1::Customer Age] >= 18 and [Customers_1::Customer Age] < 30 ) then 'a) 18-29' else if ( [Customers_1::Customer Age] >= 30 and [Customers_1::Customer Age] < 50 ) then 'b) 30-49' else if ( [Customers_1::Customer Age] >= 50 and [Customers_1::Customer Age] < 65 ) then 'c) 50-64' else 'd) 65+'"
+    was_auto_generated: false
+  - name: Basket Size
+    expr: "sum ( [Sales_1::Sales Dollar Amount] ) / sum ( [Sales_1::Sales Quantity] )"
+    was_auto_generated: false
+  - name: Day of Month
+    expr: "to_string ( [Date] , \"%m/%d\" )"
+    was_auto_generated: false
+  - name: Gender
+    expr: "if ( [Customers_1::Customer Gender] = \"male\" ) then \"male\" else \"female\""
+    was_auto_generated: false
+  - name: Household Income
+    expr: "if ( [Customers_1::Annual Income] < 15000 ) then \"a) <$15,000\" else if ( [Customers_1::Annual Income] < [Sales_1::Cost Dollar Amount] ) then \"b) $15,000-$50,000\" else if ( [Customers_1::Annual Income] < 75000 ) then \"c) $50,000-$75,000\" else if ( [Customers_1::Annual Income] < 100000 ) then \"d) $75,000-$100,000\" else if ( [Customers_1::Annual Income] < 150000 ) then \"e) $100,000-$150,000\" else if ( [Customers_1::Annual Income] < 300000 ) then \"f) $150,000-$300,000\" else \"g) $300,000+\""
+    was_auto_generated: false
+  - name: IsGrocery
+    expr: "if ( contains ( [Products_1::Department] , \"produce\" ) ) then 'grocery' else 'not grocery'"
+    was_auto_generated: false
+  - name: IsWine
+    expr: "if ( contains ( [Products_1::Product Description] , \"wine\" ) ) then 'wine' else 'not wine'"
+    was_auto_generated: false
+  - name: Month-Over-Month
+    expr: "month_number ( [Date] )"
+    was_auto_generated: false
+  - name: POS Transaction Number
+    expr: "[Sales_1::POS Transaction Number] + 100000"
+    was_auto_generated: false
+  - name: Sales per square foot
+    expr: "sum ( [Sales_1::Sales Dollar Amount] ) / min ( [Stores_1::Total Square Footage] )"
+    was_auto_generated: false
+  - name: Year-Over-Year
+    expr: "year ( [Date] )"
+    was_auto_generated: false
+  - name: Date
+    expr: "add_days ( [Dates_1::Old Date] , diff_days ( today ( ) , 12/31/2007 ) )"
+    was_auto_generated: false
+  worksheet_columns:
+  - name: Quantity
+    description: Transaction quantity
+    column_id: Sales_1::Sales Quantity
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_priority: 2.0
+      synonym_type: USER_DEFINED
+  - name: Transaction Type
+    column_id: Sales_1::Transaction Type
+    properties:
+      column_type: ATTRIBUTE
+      index_priority: 2.0
+      synonym_type: USER_DEFINED
+  - name: Gross Margin ($)
+    description: Transaction gross margin
+    column_id: Sales_1::Gross Profit Dollar Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      synonyms:
+      - Profit
+  - name: Cost
+    description: Amount paid by company to purchase the item from the manufacturer
+    column_id: Sales_1::Cost Dollar Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_priority: 2.0
+      synonyms:
+      - Price
+  - name: Sales
+    description: "Transaction amount of products sold, in US Dollars"
+    column_id: Sales_1::Sales Dollar Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_priority: 5.0
+      synonyms:
+      - Revenue
+  - name: Store City
+    description: Store US city
+    column_id: Stores_1::Store City
+    properties:
+      column_type: ATTRIBUTE
+      index_priority: 2.0
+      synonym_type: USER_DEFINED
+  - name: Store Name
+    description: Retail store name
+    column_id: Stores_1::Store Name
+    properties:
+      column_type: ATTRIBUTE
+      index_priority: 3.0
+      synonym_type: USER_DEFINED
+  - name: Store State
+    column_id: Stores_1::Store State
+    properties:
+      column_type: ATTRIBUTE
+      geo_config:
+        region_name:
+          country: UNITED STATES
+          region_name: state
+      synonym_type: USER_DEFINED
+  - name: Store Region
+    description: Store US region
+    column_id: Stores_1::Store Region
+    properties:
+      column_type: ATTRIBUTE
+      index_priority: 2.0
+      geo_config:
+        custom_file_guid: 666f2831-d5c2-4cb3-ba24-03c4f5c39f8f
+        geometryType: POLYGON
+      synonym_type: USER_DEFINED
+  - name: Department
+    description: Product department description
+    column_id: Products_1::Department
+    properties:
+      column_type: ATTRIBUTE
+      index_priority: 2.0
+      synonym_type: USER_DEFINED
+      custom_order:
+      - Bakery
+      - Canned Goods
+      - Dairy
+      - Frozen Goods
+      - Meat
+      - Produce
+      - Seafood
+      - Cleaning Supplies
+      - Liquor
+      - Gifts
+      - Photography
+      - Medical
+      - Pharmacy
+  - name: Diet Type
+    description: Customer diet type
+    column_id: Products_1::Diet Type
+    properties:
+      column_type: ATTRIBUTE
+      synonym_type: USER_DEFINED
+  - name: Product Name
+    description: Item name
+    column_id: Products_1::Product Description
+    properties:
+      column_type: ATTRIBUTE
+      index_priority: 2.0
+      synonyms:
+      - Item Name
+  - name: Occupation
+    description: Customer occupation
+    column_id: Customers_1::Occupation
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Shopper Occupation
+  - name: Marital Status
+    description: Customer marital status
+    column_id: Customers_1::Marital Status
+    properties:
+      column_type: ATTRIBUTE
+      synonym_type: USER_DEFINED
+  - name: Number Of Children
+    description: Customer number of chldren
+    column_id: Customers_1::Number Of Children
+    properties:
+      column_type: ATTRIBUTE
+      aggregation: SUM
+      synonym_type: USER_DEFINED
+  - name: Largest Bill Amount
+    description: Largest household bill amount
+    column_id: Customers_1::Largest Bill Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      synonym_type: USER_DEFINED
+  - name: Age Group
+    formula_id: Age Group
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      synonyms:
+      - Shopper Age Group
+  - name: Sales per square foot
+    formula_id: Sales per square foot
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonym_type: USER_DEFINED
+  - name: Gender
+    formula_id: Gender
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      synonyms:
+      - Shopper Gender
+  - name: IsWine
+    formula_id: IsWine
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      synonym_type: USER_DEFINED
+  - name: Household Income
+    formula_id: Household Income
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      synonym_type: USER_DEFINED
+  - name: Weekday Indicator
+    column_id: Dates_1::Weekday Indicator
+    properties:
+      column_type: ATTRIBUTE
+      synonym_type: USER_DEFINED
+  - name: Customer Region
+    description: Customer US region
+    column_id: Customers_1::Customer Region
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Shopper Region
+  - name: Category
+    description: Product category
+    column_id: Products_1::Category Description
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Category
+  - name: Customer City
+    description: Customer city of residence
+    column_id: Customers_1::Customer City
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Shopper City
+  - name: Customer Name
+    description: Customer full name
+    column_id: Customers_1::Customer Name
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Shopper Name
+  - name: Customer State
+    description: Customer sale state
+    column_id: Customers_1::Customer State
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Shopper State
+      geo_config:
+        region_name:
+          country: UNITED STATES
+          region_name: state
+  - name: Annual Income
+    description: Customer annual income
+    column_id: Customers_1::Annual Income
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      synonym_type: USER_DEFINED
+  - name: '% Gross Margin'
+    formula_id: '% Gross Margin'
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonym_type: USER_DEFINED
+  - name: Sale Date
+    formula_id: Date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      format_pattern: MM/dd/yyyy
+      synonym_type: USER_DEFINED
+  - name: IsGrocery
+    formula_id: IsGrocery
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      synonym_type: USER_DEFINED
+  - name: Customer County
+    column_id: Customers_1::Customer County
+    properties:
+      column_type: ATTRIBUTE
+      geo_config:
+        region_name:
+          country: UNITED STATES
+          region_name: county
+      synonym_type: USER_DEFINED
+  - name: Customer Zip Code
+    column_id: Customers_1::Customer Zip Code
+    properties:
+      column_type: ATTRIBUTE
+      geo_config:
+        region_name:
+          country: UNITED STATES
+          region_name: zip code
+      synonym_type: USER_DEFINED
+  - name: Store County
+    column_id: Stores_1::Store County
+    properties:
+      column_type: ATTRIBUTE
+      geo_config:
+        region_name:
+          country: UNITED STATES
+          region_name: county
+      synonym_type: USER_DEFINED
+  - name: Store Zip Code
+    column_id: Stores_1::Store Zip Code
+    properties:
+      column_type: ATTRIBUTE
+      geo_config:
+        region_name:
+          country: UNITED STATES
+          region_name: zip code
+      synonym_type: USER_DEFINED
+  - name: Month-Over-Month
+    formula_id: Month-Over-Month
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      synonyms:
+      - M-o-M
+      - mom
+  - name: Year-Over-Year
+    formula_id: Year-Over-Year
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      synonyms:
+      - Y-o-Y
+      - yoy
+  - name: POS Transaction Number
+    formula_id: POS Transaction Number
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      synonym_type: USER_DEFINED
+  - name: Day of Month
+    formula_id: Day of Month
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      synonym_type: USER_DEFINED
+  - name: Latitude
+    column_id: Stores_1::Latitude
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      geo_config:
+        latitude: true
+      synonym_type: USER_DEFINED
+  - name: Longitude
+    column_id: Stores_1::Longitude
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      geo_config:
+        longitude: true
+      synonym_type: USER_DEFINED
+  - name: Average Basket Size
+    formula_id: Basket Size
+    properties:
+      column_type: MEASURE
+      aggregation: AVERAGE
+      index_type: DONT_INDEX
+      index_priority: 4.0
+      synonym_type: USER_DEFINED
+  properties:
+    is_bypass_rls: false
+    join_progressive: true

@@ -1,0 +1,51 @@
+guid: 13169500-db07-4d68-980b-1d81ec2c45bd
+worksheet:
+  name: Vendor Reporting
+  tables:
+  - name: Vendors
+    fqn: 72289404-f62f-4ace-bb19-8953d20c0321
+  table_paths:
+  - id: Vendors_1
+    table: Vendors
+    join_path:
+    - {}
+  worksheet_columns:
+  - name: Vendor Name
+    column_id: Vendors_1::Vendor Name
+    properties:
+      column_type: ATTRIBUTE
+  - name: Vendor Address
+    column_id: Vendors_1::Vendor Address
+    properties:
+      column_type: ATTRIBUTE
+  - name: Vendor City
+    column_id: Vendors_1::Vendor City
+    properties:
+      column_type: ATTRIBUTE
+  - name: Vendor State
+    column_id: Vendors_1::Vendor State
+    properties:
+      column_type: ATTRIBUTE
+      geo_config:
+        region_name:
+          country: UNITED STATES
+          region_name: state
+  - name: Vendor Region
+    column_id: Vendors_1::Vendor Region
+    properties:
+      column_type: ATTRIBUTE
+  - name: Deal Size
+    column_id: Vendors_1::Deal Size
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Last Deal Update
+    column_id: Vendors_1::Last Deal Update
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      calendar: calendar
+  properties:
+    is_bypass_rls: false
+    join_progressive: true

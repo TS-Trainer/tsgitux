@@ -1,0 +1,138 @@
+guid: f4169c93-4a09-4895-b87b-a6a4f85c1506
+table:
+  name: Products
+  db: RETAIL_CLASSIC
+  schema: PUBLIC
+  db_table: PRODUCT_DIMENSION
+  connection:
+    name: RetailClassic
+    fqn: 17077c88-fe74-4a67-b7f5-c6340106c225
+  columns:
+  - name: Product Key
+    db_column_name: PRODUCT_KEY
+    properties:
+      column_type: ATTRIBUTE
+      is_hidden: true
+    db_column_properties:
+      data_type: INT64
+  - name: Product Description
+    db_column_name: PRODUCT_DESCRIPTION
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: SKU Number
+    db_column_name: SKU_NUMBER
+    properties:
+      column_type: ATTRIBUTE
+      is_hidden: true
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Category Description
+    db_column_name: CATEGORY_DESCRIPTION
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Department
+    db_column_name: DEPARTMENT_DESCRIPTION
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Package Type Description
+    db_column_name: PACKAGE_TYPE_DESCRIPTION
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Package Size
+    db_column_name: PACKAGE_SIZE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Fat Content
+    db_column_name: FAT_CONTENT
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Diet Type
+    db_column_name: DIET_TYPE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Weight
+    db_column_name: WEIGHT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+    db_column_properties:
+      data_type: INT64
+  - name: Weight Units Of Measure
+    db_column_name: WEIGHT_UNITS_OF_MEASURE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Shelf Width
+    db_column_name: SHELF_WIDTH
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Shelf Height
+    db_column_name: SHELF_HEIGHT
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Shelf Depth
+    db_column_name: SHELF_DEPTH
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64
+  - name: Product Price
+    db_column_name: PRODUCT_PRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+    db_column_properties:
+      data_type: INT64
+  - name: Product Cost
+    db_column_name: PRODUCT_COST
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+    db_column_properties:
+      data_type: INT64
+  - name: Lowest Competitor Price
+    db_column_name: LOWEST_COMPETITOR_PRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+    db_column_properties:
+      data_type: INT64
+  - name: Highest Competitor Price
+    db_column_name: HIGHEST_COMPETITOR_PRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+    db_column_properties:
+      data_type: INT64
+  - name: Average Competitor Price
+    db_column_name: AVERAGE_COMPETITOR_PRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+    db_column_properties:
+      data_type: INT64
+  - name: Discontinued Flag
+    db_column_name: DISCONTINUED_FLAG
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: INT64

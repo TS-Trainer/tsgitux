@@ -70,39 +70,6 @@ liveboard:
     viz_guid: ac236fda-f3df-4551-b5e1-fd750291ed1c
   - id: Viz_3
     answer:
-      name: Total Sales by Department
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Department]"
-      answer_columns:
-      - name: Department
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Department
-          headline_aggregation: COUNT_DISTINCT
-        - column_id: Total Sales
-          headline_aggregation: SUM
-        client_state: "{\"widthState\":{},\"wrapTableHeader\":true}"
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
-      chart:
-        type: PIE
-        chart_columns:
-        - column_id: Department
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Department
-          "y":
-          - Total Sales
-        client_state: "{\"chartProperties\":{\"gridLines\":{},\"showRoundedNumbers\":true,\"chartSpecific\":{},\"responsiveLayoutPreference\":3.0},\"axisProperties\":{\"5dfcbd7d-fdee-49d2-93a7-0c675eb70a36\":{\"linkedColumns\":[\"Total Sales\"],\"axisType\":\"Y\",\"isOpposite\":false},\"95b61e81-1806-4a09-8e7c-769286bf9d71\":{\"linkedColumns\":[\"Department\"],\"axisType\":\"X\"}},\"systemSeriesColors\":{\"Total Sales\":\"#8C62F5\"},\"version\":\"V3\",\"columnProperties\":{\"Department\":{},\"Total Sales\":{}}}"
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"5dfcbd7d-fdee-49d2-93a7-0c675eb70a36\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"95b61e81-1806-4a09-8e7c-769286bf9d71\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"},{\"serieName\": \"bakery\",\"color\": \"#B094F8\"},{\"serieName\": \"canned goods\",\"color\": \"#8C62F5\"},{\"serieName\": \"cleaning supplies\",\"color\": \"#56D3A8\"},{\"serieName\": \"dairy\",\"color\": \"#06BF7F\"},{\"serieName\": \"frozen goods\",\"color\": \"#BF982A\"},{\"serieName\": \"gifts\",\"color\": \"#FCD977\"},{\"serieName\": \"liquor\",\"color\": \"#FCC838\"},{\"serieName\": \"meat\",\"color\": \"#369FAA\"},{\"serieName\": \"medical\",\"color\": \"#82DFE9\"},{\"serieName\": \"pharmacy\",\"color\": \"#48D1E0\"},{\"serieName\": \"photography\",\"color\": \"#2359B6\"},{\"serieName\": \"produce\",\"color\": \"#71A1F4\"},{\"serieName\": \"seafood\",\"color\": \"#2E75F0\"}]}"
-      display_mode: CHART_MODE
-    viz_guid: 5e71ad39-188b-4269-8ddf-973853d42dfe
-  - id: Viz_4
-    answer:
       name: Total Deal Size by Vendor State
       tables:
       - id: Vendor Reporting
@@ -137,8 +104,6 @@ liveboard:
   layout:
     tiles:
     - visualization_id: Viz_2
-      size: MEDIUM
-    - visualization_id: Viz_4
       size: MEDIUM
     - visualization_id: Viz_3
       size: MEDIUM

@@ -224,12 +224,12 @@ liveboard:
       tiles:
       - visualization_id: Viz_1
         x: 0
-        "y": 8
+        "y": 4
         height: 8
         width: 6
       - visualization_id: Viz_4
         x: 6
-        "y": 8
+        "y": 4
         height: 8
         width: 6
       - visualization_id: Viz_5
@@ -238,13 +238,13 @@ liveboard:
         height: 4
         width: 3
       - visualization_id: Viz_6
-        x: 3
+        x: 9
         "y": 0
         height: 4
         width: 3
       - visualization_id: Viz_7
         x: 3
-        "y": 4
+        "y": 0
         height: 4
         width: 6
       id: 3c61f42f-830d-4714-8ef2-2f4c6146e5de

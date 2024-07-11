@@ -1,0 +1,17 @@
+guid: 17077c88-fe74-4a67-b7f5-c6340106c225
+connection:
+  name: RetailClassic
+  type: RDBMS_SNOWFLAKE
+  authentication_type: SERVICE_ACCOUNT
+  properties:
+  - key: accountName
+    value: thoughtspot_partner
+  - key: user
+    value: training_user
+  - key: password
+    value: ""
+  - key: role
+    value: bi_users
+  - key: warehouse
+    value: training_wh
+  description: ""

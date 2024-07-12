@@ -149,18 +149,14 @@ liveboard:
         "y": 16
         height: 8
         width: 6
-      id: e24b0d3f-5bc1-45d2-9f05-cfecc466154b
-    - name: Dept
-      description: ""
-      tiles:
       - visualization_id: Viz_2
-        x: 0
+        x: 6
         "y": 0
         height: 8
         width: 6
       - visualization_id: Viz_3
         x: 0
-        "y": 8
+        "y": 24
         height: 8
         width: 12
-      id: fa33a9c1-a600-4975-bb5e-3560757d9c3f
+      id: e24b0d3f-5bc1-45d2-9f05-cfecc466154b

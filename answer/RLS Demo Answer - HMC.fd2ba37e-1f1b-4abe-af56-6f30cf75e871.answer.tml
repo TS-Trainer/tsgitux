@@ -5,28 +5,33 @@ answer:
   - id: My First Worksheet - HC
     name: My First Worksheet - HC
     fqn: 814b061f-6d7a-46db-a9aa-613f1f57c4d5
-  search_query: "[Store State] [Sales ($)]"
+  search_query: "[Store State] [Sales ($)] [Quantity]"
   answer_columns:
   - name: Store State
+  - name: Total Quantity
   - name: Total Sales ($)
   table:
     table_columns:
     - column_id: Store State
+      show_headline: false
+    - column_id: Total Quantity
       show_headline: false
     - column_id: Total Sales ($)
       show_headline: false
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: GEO_AREA
+    type: STACKED_COLUMN
     chart_columns:
     - column_id: Store State
+    - column_id: Total Quantity
     - column_id: Total Sales ($)
     axis_configs:
     - x:
       - Store State
       "y":
       - Total Sales ($)
+      - Total Quantity
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.056955344031283E7,4431776.129095841],\"zoomLevel\": 4.806744936118495,\"extent\": [-1.4750460719821742E7,2418228.810536366,-6388646.16080392,6445323.447655316]},\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales ($)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"216977d6-2d7e-4c7c-b5d0-d23f127af4da\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales ($)\"],\"isOpposite\": false}},{\"id\": \"99430394-c14b-446b-b745-68e3375241ad\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales ($)\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales ($)\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b35ee5af-a896-4358-a844-7dc7511aaf4e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales ($)\",\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"e5ae8095-48d0-4d87-b2eb-6ae3f19a6c05\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales ($)\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Quantity\",\"color\": \"#2E75F0\"}]}"
   display_mode: CHART_MODE

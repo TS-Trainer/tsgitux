@@ -134,3 +134,33 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"5dfcbd7d-fdee-49d2-93a7-0c675eb70a36\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"95b61e81-1806-4a09-8e7c-769286bf9d71\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"}]}"
       display_mode: TABLE_MODE
     viz_guid: 141dde7c-a9f9-4ac9-8ae9-be6ed79288fd
+  layout:
+    tabs:
+    - name: Regional Sales
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_3
+        x: 6
+        "y": 0
+        height: 8
+        width: 6
+      id: 38b89ccc-71ee-4fc2-ab66-8b3d78e23415
+    - name: Departmental Sales
+      description: ""
+      tiles:
+      - visualization_id: Viz_2
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_4
+        x: 0
+        "y": 8
+        height: 8
+        width: 12
+      id: 25bb65c2-6120-49ed-a1ab-6ea784423888

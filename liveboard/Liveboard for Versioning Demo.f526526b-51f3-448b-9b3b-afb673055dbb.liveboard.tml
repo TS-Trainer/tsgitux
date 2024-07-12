@@ -112,13 +112,13 @@ liveboard:
         height: 8
         width: 6
       - visualization_id: Viz_3
-        x: 6
-        "y": 0
+        x: 0
+        "y": 16
         height: 8
         width: 6
       - visualization_id: Viz_2
         x: 0
-        "y": 8
+        "y": 24
         height: 8
         width: 12
       id: e24b0d3f-5bc1-45d2-9f05-cfecc466154b

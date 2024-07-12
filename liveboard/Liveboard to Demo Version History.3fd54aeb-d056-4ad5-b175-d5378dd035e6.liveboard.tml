@@ -135,12 +135,32 @@ liveboard:
       display_mode: CHART_MODE
     viz_guid: 9a4bad88-7329-4f7b-a74b-70f6a2efd6bf
   layout:
-    tiles:
-    - visualization_id: Viz_3
-      size: MEDIUM
-    - visualization_id: Viz_2
-      size: MEDIUM
-    - visualization_id: Viz_1
-      size: MEDIUM
-    - visualization_id: Viz_4
-      size: MEDIUM
+    tabs:
+    - name: Regional Sales
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 8
+        height: 8
+        width: 6
+      - visualization_id: Viz_4
+        x: 6
+        "y": 8
+        height: 8
+        width: 6
+      id: aa85d409-c860-41a3-8917-32121b6c6efa
+    - name: Departmental Sales
+      description: ""
+      tiles:
+      - visualization_id: Viz_3
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_2
+        x: 6
+        "y": 0
+        height: 8
+        width: 6
+      id: 6a07294f-ebe7-467b-a315-cdbc229f8a3b

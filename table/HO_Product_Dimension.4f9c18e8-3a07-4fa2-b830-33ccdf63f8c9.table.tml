@@ -1,0 +1,271 @@
+guid: 4f9c18e8-3a07-4fa2-b830-33ccdf63f8c9
+table:
+  name: HO_Product_Dimension
+  db: HO_retail
+  schema: PUBLIC
+  db_table: HO_Product_Dimension
+  connection:
+    name: HO_Retail
+    fqn: 5d6c7ba7-863d-455f-935d-44e288e0cf1c
+  columns:
+  - name: Product_Key
+    db_column_name: Product_Key
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Product_Description
+    db_column_name: Product_Description
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: VARCHAR
+  - name: SKU_Number
+    db_column_name: SKU_Number
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Category_Description
+    db_column_name: Category_Description
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Department_Description
+    db_column_name: Department_Description
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Package_Type_Description
+    db_column_name: Package_Type_Description
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Package_Size
+    db_column_name: Package_Size
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Fat_Content
+    db_column_name: Fat_Content
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Diet_Type
+    db_column_name: Diet_Type
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Weight
+    db_column_name: Weight
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Weight_Units_Of_Measure
+    db_column_name: Weight_Units_Of_Measure
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Shelf_Width
+    db_column_name: Shelf_Width
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Shelf_Height
+    db_column_name: Shelf_Height
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Shelf_Depth
+    db_column_name: Shelf_Depth
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Product_Price
+    db_column_name: Product_Price
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Product_Cost
+    db_column_name: Product_Cost
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Lowest_Competitor_Price
+    db_column_name: Lowest_Competitor_Price
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Highest_Competitor_Price
+    db_column_name: Highest_Competitor_Price
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Average_Competitor_Price
+    db_column_name: Average_Competitor_Price
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Discontinued_Flag
+    db_column_name: Discontinued_Flag
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  joins_with:
+  - name: HO_Product_Dimension_to_Top 3 Department Search Based View - AL
+    destination:
+      name: Top 3 Department Search Based View - AL
+      fqn: 36fd331d-183d-47cd-81ed-b9e93a74d0a4
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Department Search Based View - AL::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Top 3 Departments
+    destination:
+      name: Top 3 Departments
+      fqn: b6a76cc5-e4ff-454f-a298-c17e33b1a2fb
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Top 3 Departments
+    destination:
+      name: Top 3 Departments
+      fqn: 8f702edc-a4dd-472b-ab1f-9fe67546aff3
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Top 3 Departments By Sales
+    destination:
+      name: Top 3 Departments By Sales
+      fqn: 93f5ba25-b26c-4d11-9910-39123363534d
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments By Sales::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Top 3 Departments View JF
+    destination:
+      name: Top 3 Departments View JF
+      fqn: a7ee88d4-c020-4963-9cdc-e88ef099e680
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments View JF::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Top 3 Departments View MG
+    destination:
+      name: Top 3 Departments View MG
+      fqn: b3b0feb1-5c51-43cb-b0a1-065c73420498
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments View MG::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Top 3 Departments View MS
+    destination:
+      name: Top 3 Departments View MS
+      fqn: 02850918-306f-4274-8f46-72aa61e30669
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments View MS::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Total Sales by Department SB
+    destination:
+      name: Total Sales by Department SB
+      fqn: 32e5b8ce-a06c-4651-b337-0d201a3ef511
+    "on": "[HO_Product_Dimension::Department_Description] = [Total Sales by Department SB::Department]"
+    type: INNER
+  - name: Prod Dimension to TOP 3 Dept
+    destination:
+      name: Top 3 Dept Search based view - HS
+      fqn: 70fa7a56-b62e-4a6f-a687-60bc1bbf4ad3
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Dept Search based view - HS::Department]"
+    type: INNER
+  - name: Prod Dimension to Top 3 Dept
+    destination:
+      name: Top 3 Department Search Based View - HSD
+      fqn: 403f6c6a-f380-45c2-9100-4c6a9d1fa5b0
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Department Search Based View - HSD::Department]"
+    type: INNER
+  - name: 'Prod Dimension to Top 3 Dept '
+    destination:
+      name: Top 3 Dept Search Based View - HMC
+      fqn: 85c9793b-2641-409f-b7f0-52c216ee58bd
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Dept Search Based View - HMC::Department]"
+    type: INNER
+  - name: Prod dimension to top 3 Dept
+    destination:
+      name: Top 3 Dept search based view - AY
+      fqn: 71dba017-7944-436e-9079-aa68171653ed
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Dept search based view - AY::Department]"
+    type: INNER
+  - name: Product Dimension to Top Three Departments
+    destination:
+      name: Top Three Department Search-based View
+      fqn: 38b461e2-c2de-47d3-8223-c24ca325a1cc
+    "on": "[HO_Product_Dimension::Department_Description] = [Top Three Department Search-based View::Department]"
+    type: INNER
+  - name: dimProduct to Top3Departments
+    destination:
+      name: Top 3 Departments 'Search based view'
+      fqn: 010b99e2-60b7-43b5-a2fb-eb3298f9f3a0
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments 'Search based view'::Department]"
+    type: INNER
+  - name: prod dim to top 3 dept
+    destination:
+      name: top 3 deps search based view - nadam
+      fqn: 65714a36-c034-4cc2-ab72-0de139b455c1
+    "on": "[HO_Product_Dimension::Department_Description] = [top 3 deps search based view - nadam::Department]"
+    type: INNER
+  - name: prod dimension to top 3 dept
+    destination:
+      name: Top 3 department search based view - cu
+      fqn: 961fa053-0a7a-4447-a7b1-2d2a2a53fe5a
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 department search based view - cu::Department]"
+    type: INNER

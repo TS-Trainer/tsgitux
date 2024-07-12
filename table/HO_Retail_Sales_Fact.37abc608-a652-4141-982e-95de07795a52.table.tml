@@ -1,0 +1,167 @@
+guid: 37abc608-a652-4141-982e-95de07795a52
+table:
+  name: HO_Retail_Sales_Fact
+  db: HO_retail
+  schema: PUBLIC
+  db_table: HO_Retail_Sales_Fact
+  connection:
+    name: HO_Retail
+    fqn: 5d6c7ba7-863d-455f-935d-44e288e0cf1c
+  columns:
+  - name: Date_Key
+    db_column_name: Date_Key
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Product_Key
+    db_column_name: Product_Key
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Store_Key
+    db_column_name: Store_Key
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Promotion_Key
+    db_column_name: Promotion_Key
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Customer_Key
+    db_column_name: Customer_Key
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Employee_Key
+    db_column_name: Employee_Key
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: POS_Transaction_Number
+    db_column_name: POS_Transaction_Number
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Sales_Quantity
+    db_column_name: Sales_Quantity
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Sales_Dollar_Amount
+    db_column_name: Sales_Dollar_Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Cost_Dollar_Amount
+    db_column_name: Cost_Dollar_Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Gross_Profit_Dollar_Amount
+    db_column_name: Gross_Profit_Dollar_Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Transaction_Type
+    db_column_name: Transaction_Type
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Transaction_Time
+    db_column_name: Transaction_Time
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Tender_Type
+    db_column_name: Tender_Type
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: VARCHAR
+  joins_with:
+  - name: Customer_Key - Customer_Key
+    destination:
+      name: HO_Customer_Dimension
+      fqn: ee1c3870-0c5c-41fd-a947-0d7f7ccf5fb8
+    "on": "([HO_Retail_Sales_Fact::Customer_Key] = [HO_Customer_Dimension::Customer_Key])"
+    type: INNER
+  - name: Date_Key - Date_Key
+    destination:
+      name: HO_Date_Dimension
+      fqn: 28829728-961d-4dd6-8e74-fd82579023e1
+    "on": "([HO_Retail_Sales_Fact::Date_Key] = [HO_Date_Dimension::Date_Key])"
+    type: INNER
+  - name: Employee_Key - Employee_Key
+    destination:
+      name: HO_Employee_Dimension
+      fqn: cc097c8b-2499-485a-9663-35a600c78cdc
+    "on": "([HO_Retail_Sales_Fact::Employee_Key] = [HO_Employee_Dimension::Employee_Key])"
+    type: INNER
+  - name: Product_Key - Product_Key
+    destination:
+      name: HO_Product_Dimension
+      fqn: 4f9c18e8-3a07-4fa2-b830-33ccdf63f8c9
+    "on": "([HO_Retail_Sales_Fact::Product_Key] = [HO_Product_Dimension::Product_Key])"
+    type: INNER
+  - name: Promotion_Key - Promotion_Key
+    destination:
+      name: HO_Promotion_Dimension
+      fqn: a8679abe-4fad-49ae-bcf2-c33862567b35
+    "on": "([HO_Retail_Sales_Fact::Promotion_Key] = [HO_Promotion_Dimension::Promotion_Key])"
+    type: INNER
+  - name: Store_Key - Store_Key
+    destination:
+      name: HO_Store_Dimension
+      fqn: dd6c04e6-e439-4c0c-8011-c9d822c9101c
+    "on": "([HO_Retail_Sales_Fact::Store_Key] = [HO_Store_Dimension::Store_Key])"
+    type: INNER

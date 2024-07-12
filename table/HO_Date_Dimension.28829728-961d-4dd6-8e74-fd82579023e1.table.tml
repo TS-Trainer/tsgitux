@@ -1,0 +1,42 @@
+guid: 28829728-961d-4dd6-8e74-fd82579023e1
+table:
+  name: HO_Date_Dimension
+  db: HO_retail
+  schema: PUBLIC
+  db_table: HO_Date_Dimension
+  connection:
+    name: HO_Retail
+    fqn: 5d6c7ba7-863d-455f-935d-44e288e0cf1c
+  columns:
+  - name: Date_Key
+    db_column_name: Date_Key
+    properties:
+      column_type: MEASURE
+      aggregation: COUNT
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: Date
+    db_column_name: Date
+    properties:
+      column_type: ATTRIBUTE
+      aggregation: COUNT
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: DATE
+  - name: Holiday_Indicator
+    db_column_name: Holiday_Indicator
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Selling_Season_1
+    db_column_name: Selling_Season
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: VARCHAR

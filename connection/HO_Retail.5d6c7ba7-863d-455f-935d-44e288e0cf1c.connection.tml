@@ -1,0 +1,17 @@
+guid: 5d6c7ba7-863d-455f-935d-44e288e0cf1c
+connection:
+  name: HO_Retail
+  type: RDBMS_SNOWFLAKE
+  authentication_type: SERVICE_ACCOUNT
+  properties:
+  - key: accountName
+    value: thoughtspot_partner
+  - key: user
+    value: training_user
+  - key: password
+    value: ""
+  - key: role
+    value: bi_users
+  - key: warehouse
+    value: training_wh
+  description: ""

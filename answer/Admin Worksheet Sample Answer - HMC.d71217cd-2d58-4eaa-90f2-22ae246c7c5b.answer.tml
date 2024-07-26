@@ -5,7 +5,7 @@ answer:
   - id: Admin Class Demo Worksheet HMC
     name: Admin Class Demo Worksheet HMC
     fqn: 8b32bac3-dcce-4d83-83fc-4748cbb52e0f
-  search_query: "[Productname] [Sales] [Productname].'Active boxer briefs' [Productname].'Active boy shorts' [Productname].'Active briefs' [Productname].'Active classic boxers' [Productname].'Active mesh bra' [Productname].'Active sport boxer briefs' [Productname].'Active sport briefs'"
+  search_query: "[Productname] [Sales] [Productname].'active boxer briefs' [Productname].'active boy shorts' [Productname].'active briefs' [Productname].'active classic boxers' [Productname].'active mesh bra' [Productname].'active sport boxer briefs' [Productname].'active sport briefs'"
   answer_columns:
   - name: Productname
   - name: Total Sales
@@ -18,7 +18,7 @@ answer:
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: PIE
+    type: BAR
     chart_columns:
     - column_id: Productname
     - column_id: Total Sales

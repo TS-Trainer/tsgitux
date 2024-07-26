@@ -5,7 +5,7 @@ answer:
   - id: Admin Class Demo Worksheet HMC
     name: Admin Class Demo Worksheet HMC
     fqn: 8b32bac3-dcce-4d83-83fc-4748cbb52e0f
-  search_query: "[Productname] [Sales]"
+  search_query: "[Productname] [Sales] [Productname].'Active boxer briefs' [Productname].'Active boy shorts' [Productname].'Active briefs' [Productname].'Active classic boxers' [Productname].'Active mesh bra' [Productname].'Active sport boxer briefs' [Productname].'Active sport briefs'"
   answer_columns:
   - name: Productname
   - name: Total Sales
@@ -18,7 +18,7 @@ answer:
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: COLUMN
+    type: BAR
     chart_columns:
     - column_id: Productname
     - column_id: Total Sales
@@ -28,5 +28,5 @@ answer:
       "y":
       - Total Sales
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Productname\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"48850660-4db0-47ad-8c59-bcb4280a3136\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"e049a0b5-c669-4dcf-a9ca-876e383ded77\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Productname\"]}}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Productname\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"48850660-4db0-47ad-8c59-bcb4280a3136\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"e049a0b5-c669-4dcf-a9ca-876e383ded77\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Productname\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#FCC838\"}]}"
   display_mode: CHART_MODE

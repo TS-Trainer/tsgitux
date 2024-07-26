@@ -1,0 +1,78 @@
+guid: c9349a58-87d9-4642-9748-886a2af76f63
+table:
+  name: FACT_RETAPP_SALES
+  db: RETAILAPPAREL
+  schema: PUBLIC
+  db_table: FACT_RETAPP_SALES
+  connection:
+    name: My Snowflake Connection MG
+    fqn: 565edb1e-ec47-425e-80dc-16a67f63ed62
+  columns:
+  - name: SALESID
+    db_column_name: SALESID
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: PRODUCTID
+    db_column_name: PRODUCTID
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: STOREID
+    db_column_name: STOREID
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: QUANTITYPURCHASED
+    db_column_name: QUANTITYPURCHASED
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: ITEMPRICE
+    db_column_name: ITEMPRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: SALES
+    db_column_name: SALES
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: RECORDDATE
+    db_column_name: RECORDDATE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE
+  joins_with:
+  - name: C_DIM_RETAPP_PRODUCTS
+    destination:
+      name: DIM_RETAPP_PRODUCTS
+      fqn: 9761541e-8e94-4f28-a7da-e1e19615d64f
+    "on": "[FACT_RETAPP_SALES::PRODUCTID] = [DIM_RETAPP_PRODUCTS::PRODUCTID]"
+    type: INNER
+  - name: C_DIM_RETAPP_STORES
+    destination:
+      name: DIM_RETAPP_STORES
+      fqn: cbfd377a-6f2f-4f6a-95a1-e62b17bd55fa
+    "on": "[FACT_RETAPP_SALES::STOREID] = [DIM_RETAPP_STORES::STOREID]"
+    type: INNER

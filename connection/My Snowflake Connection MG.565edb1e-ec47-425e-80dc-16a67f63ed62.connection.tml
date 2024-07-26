@@ -1,0 +1,17 @@
+guid: 565edb1e-ec47-425e-80dc-16a67f63ed62
+connection:
+  name: My Snowflake Connection MG
+  type: RDBMS_SNOWFLAKE
+  authentication_type: SERVICE_ACCOUNT
+  properties:
+  - key: accountName
+    value: thoughtspot_partner
+  - key: user
+    value: training_user
+  - key: password
+    value: ""
+  - key: role
+    value: bi_users
+  - key: warehouse
+    value: training_wh
+  description: ""

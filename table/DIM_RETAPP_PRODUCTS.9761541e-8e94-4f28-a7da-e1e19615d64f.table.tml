@@ -1,0 +1,30 @@
+guid: 9761541e-8e94-4f28-a7da-e1e19615d64f
+table:
+  name: DIM_RETAPP_PRODUCTS
+  db: RETAILAPPAREL
+  schema: PUBLIC
+  db_table: DIM_RETAPP_PRODUCTS
+  connection:
+    name: My Snowflake Connection MG
+    fqn: 565edb1e-ec47-425e-80dc-16a67f63ed62
+  columns:
+  - name: PRODUCTID
+    db_column_name: PRODUCTID
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: PRODUCTNAME
+    db_column_name: PRODUCTNAME
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCTTYPE
+    db_column_name: PRODUCTTYPE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR

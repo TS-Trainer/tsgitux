@@ -1,0 +1,32 @@
+guid: d71217cd-2d58-4eaa-90f2-22ae246c7c5b
+answer:
+  name: Admin Worksheet Sample Answer - HMC
+  tables:
+  - id: Admin Class Demo Worksheet HMC
+    name: Admin Class Demo Worksheet HMC
+    fqn: 8b32bac3-dcce-4d83-83fc-4748cbb52e0f
+  search_query: "[Productname] [Sales]"
+  answer_columns:
+  - name: Productname
+  - name: Total Sales
+  table:
+    table_columns:
+    - column_id: Productname
+      show_headline: false
+    - column_id: Total Sales
+      show_headline: false
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Productname
+    - column_id: Total Sales
+    axis_configs:
+    - x:
+      - Productname
+      "y":
+      - Total Sales
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Productname\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"48850660-4db0-47ad-8c59-bcb4280a3136\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"e049a0b5-c669-4dcf-a9ca-876e383ded77\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Productname\"]}}]}"
+  display_mode: CHART_MODE

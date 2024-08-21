@@ -112,46 +112,6 @@ liveboard:
     viz_guid: 91600fc3-bf56-425e-b350-c07469b188e9
   - id: Viz_4
     answer:
-      name: Total Deal Size by Vendor State
-      tables:
-      - id: Vendor Reporting
-        name: Vendor Reporting
-        fqn: 13169500-db07-4d68-980b-1d81ec2c45bd
-      search_query: "[Vendor State] [Deal Size]"
-      answer_columns:
-      - name: Total Deal Size
-      - name: Vendor State
-      table:
-        table_columns:
-        - column_id: Total Deal Size
-          headline_aggregation: SUM
-        - column_id: Vendor State
-          headline_aggregation: COUNT_DISTINCT
-        ordered_column_ids:
-        - Vendor State
-        - Total Deal Size
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: GEO_AREA
-        chart_columns:
-        - column_id: Total Deal Size
-        - column_id: Vendor State
-        axis_configs:
-        - x:
-          - Vendor State
-          "y":
-          - Total Deal Size
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.0834306933546007E7,4583214.150187498],\"zoomLevel\": 4.0},\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"a80a390e-68a9-4854-9cba-82ffd9494bf7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"84c4a78e-53d4-45f7-abe2-869ad884ca7a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"colorMap\": [{\"serieName\": \"Vendor State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
-      display_mode: CHART_MODE
-    viz_guid: 11d06029-a106-4767-8f83-21a1e4048de8
-  - id: Viz_5
-    viz_guid: 0459659e-6d6d-4864-af11-cbb8de46496d
-    note_tile:
-      html_parsed_string: "<h1 dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Note:  The region filter does not apply to this tab.</span></h1><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
-  - id: Viz_6
-    answer:
       name: KPI
       tables:
       - id: Retail Sales - Classic
@@ -188,8 +148,7 @@ liveboard:
     viz_guid: 401a5c2a-1e1b-45b2-b297-8b482484bb57
   filters:
   - column:
-    - Retail Sales - Classic::Store Region
-    - Vendor Reporting::Vendor Region
+    - Store Region
     oper: in
     values:
     - East
@@ -210,11 +169,10 @@ liveboard:
         height: 8
         width: 6
       - visualization_id: Viz_4
-        x: 6
-        "y": 8
-        height: 8
-        width: 6
-      - visualization_id: Viz_6
+        x: 0
+        "y": 16
+        height: 4
+        width: 3
       id: f6415347-dd86-45bf-b163-a37f2e181d21
     - name: Departmental Sales
       description: ""
@@ -229,9 +187,4 @@ liveboard:
         "y": 2
         height: 8
         width: 6
-      - visualization_id: Viz_5
-        x: 0
-        "y": 0
-        height: 2
-        width: 12
       id: 9ff5d9ff-1e29-4998-97f2-f3dcdd1198ea

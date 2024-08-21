@@ -40,78 +40,6 @@ liveboard:
     viz_guid: c77b14b6-3232-469a-b702-de2792f350e1
   - id: Viz_2
     answer:
-      name: Total Sales by Department Graph View
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Department]"
-      answer_columns:
-      - name: Department
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Department
-          headline_aggregation: COUNT_DISTINCT
-        - column_id: Total Sales
-          headline_aggregation: SUM
-        ordered_column_ids:
-        - Department
-        - Total Sales
-        client_state: "{\"widthState\":{},\"wrapTableHeader\":true}"
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
-      chart:
-        type: COLUMN
-        chart_columns:
-        - column_id: Department
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Department
-          "y":
-          - Total Sales
-        client_state: "{\"chartProperties\":{\"gridLines\":{},\"showRoundedNumbers\":true,\"chartSpecific\":{},\"responsiveLayoutPreference\":3.0},\"axisProperties\":{\"5dfcbd7d-fdee-49d2-93a7-0c675eb70a36\":{\"linkedColumns\":[\"Total Sales\"],\"axisType\":\"Y\",\"isOpposite\":false},\"95b61e81-1806-4a09-8e7c-769286bf9d71\":{\"linkedColumns\":[\"Department\"],\"axisType\":\"X\"}},\"systemSeriesColors\":{\"Total Sales\":\"#8C62F5\"},\"version\":\"V3\",\"columnProperties\":{\"Department\":{},\"Total Sales\":{}}}"
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"5dfcbd7d-fdee-49d2-93a7-0c675eb70a36\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"95b61e81-1806-4a09-8e7c-769286bf9d71\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"}]}"
-      display_mode: CHART_MODE
-    viz_guid: be56ae0d-cbd9-46d3-820f-1a2b2d1292af
-  - id: Viz_3
-    answer:
-      name: Total Sales by Department Grid View
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Department]"
-      answer_columns:
-      - name: Department
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Department
-          headline_aggregation: COUNT_DISTINCT
-        - column_id: Total Sales
-          headline_aggregation: SUM
-        ordered_column_ids:
-        - Department
-        - Total Sales
-        client_state: "{\"widthState\":{},\"wrapTableHeader\":true}"
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
-      chart:
-        type: COLUMN
-        chart_columns:
-        - column_id: Department
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Department
-          "y":
-          - Total Sales
-        client_state: "{\"chartProperties\":{\"gridLines\":{},\"showRoundedNumbers\":true,\"chartSpecific\":{},\"responsiveLayoutPreference\":3.0},\"axisProperties\":{\"5dfcbd7d-fdee-49d2-93a7-0c675eb70a36\":{\"linkedColumns\":[\"Total Sales\"],\"axisType\":\"Y\",\"isOpposite\":false},\"95b61e81-1806-4a09-8e7c-769286bf9d71\":{\"linkedColumns\":[\"Department\"],\"axisType\":\"X\"}},\"systemSeriesColors\":{\"Total Sales\":\"#8C62F5\"},\"version\":\"V3\",\"columnProperties\":{\"Department\":{},\"Total Sales\":{}}}"
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"5dfcbd7d-fdee-49d2-93a7-0c675eb70a36\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"95b61e81-1806-4a09-8e7c-769286bf9d71\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"}]}"
-      display_mode: TABLE_MODE
-    viz_guid: 91600fc3-bf56-425e-b350-c07469b188e9
-  - id: Viz_4
-    answer:
       name: KPI
       tables:
       - id: Retail Sales - Classic
@@ -152,9 +80,6 @@ liveboard:
     oper: in
     values:
     - East
-    excluded_visualizations:
-    - Viz_3
-    - Viz_2
     is_mandatory: false
     is_single_value: false
     display_name: ""
@@ -168,7 +93,7 @@ liveboard:
         "y": 8
         height: 8
         width: 6
-      - visualization_id: Viz_4
+      - visualization_id: Viz_2
         x: 0
         "y": 16
         height: 4
@@ -176,15 +101,4 @@ liveboard:
       id: f6415347-dd86-45bf-b163-a37f2e181d21
     - name: Departmental Sales
       description: ""
-      tiles:
-      - visualization_id: Viz_3
-        x: 0
-        "y": 2
-        height: 8
-        width: 6
-      - visualization_id: Viz_2
-        x: 6
-        "y": 2
-        height: 8
-        width: 6
       id: 9ff5d9ff-1e29-4998-97f2-f3dcdd1198ea

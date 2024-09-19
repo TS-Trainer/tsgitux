@@ -221,7 +221,7 @@ liveboard:
   - id: Viz_7
     viz_guid: 6a3b3030-3a41-4e05-8aef-9c6214333551
     note_tile:
-      html_parsed_string: "<h1 dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Hey Jude dont lemme down</span></h1><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(201, 240, 245);\"></div>"
+      html_parsed_string: "<h1 dir=\"ltr\"><span style=\"white-space: pre-wrap;\">I am</span></h1><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(201, 240, 245);\"></div>"
   filters:
   - column:
     - Retail Sales - Classic::Store Region

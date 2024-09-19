@@ -5,7 +5,7 @@ liveboard:
   - id: Viz_1
     viz_guid: cba13c5a-def3-4404-84ee-b13227df37a0
     note_tile:
-      html_parsed_string: "<h1><span style=\"white-space: pre-wrap;\">2</span></h1><p class=\"theme-module__editor-paragraph\"><span style=\"white-space: pre-wrap;\">1</span></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
+      html_parsed_string: "<h1><span style=\"white-space: pre-wrap;\">1</span></h1><p class=\"theme-module__editor-paragraph\"><span style=\"white-space: pre-wrap;\">1</span></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
   layout:
     tiles:
     - visualization_id: Viz_1

@@ -33,6 +33,7 @@ table:
     db_column_properties:
       data_type: VARCHAR
   - name: Customer_Gender
+    description: This is the age of my customer
     db_column_name: Customer_Gender
     properties:
       column_type: ATTRIBUTE

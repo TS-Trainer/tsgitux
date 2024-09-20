@@ -152,17 +152,3 @@ table:
       value_casing: UNKNOWN
     db_column_properties:
       data_type: INT64
-  rls_rules:
-    tables:
-    - name: HO_Store_Dimension
-      fqn: dd6c04e6-e439-4c0c-8011-c9d822c9101c
-    table_paths:
-    - id: HO_Store_Dimension_1
-      table: HO_Store_Dimension
-      join_path:
-      - {}
-      column:
-      - Store_Region
-    rules:
-    - name: RLS Demo MG
-      expr: "[HO_Store_Dimension_1::Store_Region] = ts_groups or ts_groups = 'gms'"

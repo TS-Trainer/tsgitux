@@ -64,6 +64,7 @@ worksheet:
     column_id: HO_Customer_Dimension_1::Customer_Name
     properties:
       column_type: ATTRIBUTE
+      index_type: DONT_INDEX
       value_casing: UNKNOWN
   - name: Customer Age
     column_id: HO_Customer_Dimension_1::Customer_Age

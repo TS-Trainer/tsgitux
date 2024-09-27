@@ -21,7 +21,7 @@ answer:
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: COLUMN
+    type: BAR
     chart_columns:
     - column_id: Store State
     - column_id: Total Sales Dollar Amount
@@ -31,5 +31,5 @@ answer:
       "y":
       - Total Sales Dollar Amount
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Dollar Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a692ce88-fe52-43f1-aa3e-444732f8a50f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"02b51e24-fb80-4715-8164-c701945585bd\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Dollar Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a692ce88-fe52-43f1-aa3e-444732f8a50f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"02b51e24-fb80-4715-8164-c701945585bd\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales Dollar Amount\",\"color\": \"#2E75F0\"}]}"
   display_mode: CHART_MODE

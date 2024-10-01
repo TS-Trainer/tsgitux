@@ -149,6 +149,40 @@ liveboard:
     viz_guid: 61329df1-8a51-4e68-99fa-68e766b60249
     note_tile:
       html_parsed_string: "<h1 dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Sales and Quantity Liveboard</span></h1><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">The visualisations in this Liveboard are organised in two tabs: Sales and Quantity. </span></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Click </span><a href=\"https://www.thoughtspot.com/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">here</span></a><span style=\"white-space: pre-wrap;\"> for more information.</span></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
+  - id: Viz_6
+    answer:
+      name: Total sales by city
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales] for each [city] [region] = 'midwest'"
+      answer_columns:
+      - name: Total sales
+      - name: city
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: city
+          show_headline: false
+        ordered_column_ids:
+        - city
+        - Total sales
+        client_state: ""
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: city
+        axis_configs:
+        - x:
+          - city
+          "y":
+          - Total sales
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 02489148-7c22-4185-a879-5fec3b54737b
   layout:
     tabs:
     - name: Sales
@@ -174,6 +208,7 @@ liveboard:
         "y": 0
         height: 4
         width: 3
+      - visualization_id: Viz_6
       id: b627f550-5771-4c8a-a986-6a778875fc02
     - name: Quantity
       description: ""

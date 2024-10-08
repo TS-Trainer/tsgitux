@@ -217,6 +217,7 @@ liveboard:
         - Product Description
         - Total Sales Dollar Amount
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Product Description\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Dollar Amount\",\"columnProperty\": {}}]}"
       chart:
         type: STACKED_COLUMN
         chart_columns:
@@ -231,12 +232,9 @@ liveboard:
           color:
           - Department
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Sales Dollar Amount\",\"columnProperty\": {}},{\"columnId\": \"Product Description\",\"columnProperty\": {}},{\"columnId\": \"Department\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8f5fb926-c5c4-4067-bc68-cec2c9ab144f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"0915f649-bdc5-4193-b1e9-757bae46e3e5\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Description\"]}}]}"
       display_mode: TABLE_MODE
     viz_guid: 5431d605-4db6-4cf1-8bb9-54833e01fa08
-  - id: Viz_8
-    viz_guid: e4031c59-ccd7-48a6-a63f-e4fa35633908
-    note_tile:
-      html_parsed_string: "<h1 dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Version 2 test</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
   filters:
   - column:
     - Retail Sales - Classic::Store Region
@@ -251,36 +249,26 @@ liveboard:
     display_name: ""
   layout:
     tiles:
-    - visualization_id: Viz_2
-      x: 6
-      "y": 4
-      height: 8
-      width: 6
-    - visualization_id: Viz_5
-      x: 0
-      "y": 4
-      height: 4
-      width: 4
-    - visualization_id: Viz_7
-      x: 0
-      "y": 36
-      height: 8
-      width: 12
-    - visualization_id: Viz_1
-      x: 4
-      "y": 0
-      height: 4
-      width: 6
     - visualization_id: Viz_3
       x: 0
       "y": 12
       height: 8
       width: 12
-    - visualization_id: Viz_8
+    - visualization_id: Viz_2
+      x: 6
+      "y": 4
+      height: 8
+      width: 6
+    - visualization_id: Viz_1
+      x: 4
+      "y": 0
+      height: 4
+      width: 6
+    - visualization_id: Viz_5
       x: 0
       "y": 0
       height: 4
-      width: 3
+      width: 4
     - visualization_id: Viz_4
       x: 0
       "y": 20
@@ -291,3 +279,8 @@ liveboard:
       "y": 28
       height: 8
       width: 6
+    - visualization_id: Viz_7
+      x: 0
+      "y": 36
+      height: 8
+      width: 12

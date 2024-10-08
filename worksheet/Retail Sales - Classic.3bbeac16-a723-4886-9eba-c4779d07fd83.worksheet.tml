@@ -51,8 +51,6 @@ worksheet:
       - Product_Key
   - id: Sales_1
     table: Sales
-    join_path:
-    - {}
   - id: Stores_1
     table: Stores
     join_path:

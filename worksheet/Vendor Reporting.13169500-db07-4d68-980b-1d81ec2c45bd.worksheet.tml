@@ -7,8 +7,6 @@ worksheet:
   table_paths:
   - id: Vendors_1
     table: Vendors
-    join_path:
-    - {}
   worksheet_columns:
   - name: Vendor Name
     column_id: Vendors_1::Vendor Name

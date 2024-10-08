@@ -172,3 +172,58 @@ table:
       value_casing: UNKNOWN
     db_column_properties:
       data_type: INT64
+  joins_with:
+  - name: HO_Product_Dimension_to_Top 3 Departments by Sales - SD
+    destination:
+      name: Top 3 Departments by Sales - SD
+      fqn: 812a5be6-2eaf-4ae8-9f77-a5072969e739
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments by Sales - SD::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Top 3 Departments by Sales View - IE
+    destination:
+      name: Top 3 Departments by Sales View - IE
+      fqn: f9fecc7a-6805-48bb-8cb3-c2f3404bc9fe
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments by Sales View - IE::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Top 3 Departments by Sales View - JD
+    destination:
+      name: Top 3 Departments by Sales View - JD
+      fqn: 7951248a-c47f-4f0d-8a04-6e8f39a33d0c
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments by Sales View - JD::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Top 3 Departments by Sales View - JDS
+    destination:
+      name: Top 3 Departments by Sales View - JDS
+      fqn: f2a12d17-ebd1-43e9-817f-d465a39f3014
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments by Sales View - JDS::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Top 3 Departments by Sales View - LT
+    destination:
+      name: Top 3 Departments by Sales View - LT
+      fqn: c3b5e377-9609-4760-b45a-0e9b60997efe
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments by Sales View - LT::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Top 3 Departments by Sales View - VK
+    destination:
+      name: Top 3 Departments by Sales View - VK
+      fqn: d8609fb4-d7b8-4052-aaa9-f5ee2307dcd3
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments by Sales View - VK::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Top 3 Dept by Sales View - SL
+    destination:
+      name: Top 3 Dept by Sales View - SL
+      fqn: c8f29419-1496-4a5f-825f-efd7bae5ba76
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Dept by Sales View - SL::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Total Sales by Department - JN
+    destination:
+      name: Total Sales by Department - JN
+      fqn: 85fb32ab-f646-4d89-947a-d89318f9fcc1
+    "on": "[HO_Product_Dimension::Department_Description] = [Total Sales by Department - JN::Department]"
+    type: INNER
+  - name: View join
+    destination:
+      name: Tope 3 Depts View - SCJ
+      fqn: 74bea316-ab04-4929-b17c-5bf9dfa11384
+    "on": "[HO_Product_Dimension::Department_Description] = [Tope 3 Depts View - SCJ::Department Name]"
+    type: INNER

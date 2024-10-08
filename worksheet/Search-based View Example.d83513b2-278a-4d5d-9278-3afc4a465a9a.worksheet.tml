@@ -1,0 +1,56 @@
+guid: d83513b2-278a-4d5d-9278-3afc4a465a9a
+worksheet:
+  name: Search-based View Example
+  tables:
+  - name: HO_Product_Dimension
+    fqn: 4f9c18e8-3a07-4fa2-b830-33ccdf63f8c9
+  - name: HO_Retail_Sales_Fact
+    fqn: 37abc608-a652-4141-982e-95de07795a52
+  - name: Top 3 Departments by Sales View - JDS
+    fqn: f2a12d17-ebd1-43e9-817f-d465a39f3014
+  joins:
+  - name: HO_Product_Dimension_to_Top 3 Departments by Sales View - JDS
+    source: HO_Product_Dimension
+    destination: Top 3 Departments by Sales View - JDS
+    type: INNER
+    is_one_to_one: false
+  - name: Product_Key - Product_Key
+    source: HO_Retail_Sales_Fact
+    destination: HO_Product_Dimension
+    type: INNER
+    is_one_to_one: false
+  table_paths:
+  - id: HO_Product_Dimension_1
+    table: HO_Product_Dimension
+    join_path:
+    - join:
+      - Product_Key - Product_Key
+  - id: HO_Retail_Sales_Fact_1
+    table: HO_Retail_Sales_Fact
+  - id: Top 3 Departments by Sales View - JDS_1
+    table: Top 3 Departments by Sales View - JDS
+    join_path:
+    - join:
+      - Product_Key - Product_Key
+      - HO_Product_Dimension_to_Top 3 Departments by Sales View - JDS
+  worksheet_columns:
+  - name: Product Description
+    column_id: HO_Product_Dimension_1::Product_Description
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+  - name: Sales Dollar Amount
+    column_id: HO_Retail_Sales_Fact_1::Sales_Dollar_Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+  - name: Department
+    column_id: Top 3 Departments by Sales View - JDS_1::Department
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+  properties:
+    is_bypass_rls: false
+    join_progressive: true

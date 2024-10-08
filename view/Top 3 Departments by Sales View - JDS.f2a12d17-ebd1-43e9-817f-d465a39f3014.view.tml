@@ -1,0 +1,23 @@
+guid: f2a12d17-ebd1-43e9-817f-d465a39f3014
+view:
+  name: Top 3 Departments by Sales View - JDS
+  tables:
+  - id: My First Worksheet - JDS
+    name: My First Worksheet - JDS
+    fqn: c56d30a1-9feb-4ea6-b205-a4f0b8afacb0
+  search_query: "[Department] [Sales] top 3"
+  view_columns:
+  - name: Department
+    search_output_column: Department
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+  - name: Total Sales
+    search_output_column: Total Sales
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      currency_type:
+        iso_code: USD
+      value_casing: UNKNOWN

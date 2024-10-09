@@ -233,6 +233,10 @@ liveboard:
         client_state: ""
       display_mode: TABLE_MODE
     viz_guid: 2ca55cc4-3535-4b49-b558-e31f821c9be8
+  - id: Viz_8
+    viz_guid: 92cdb668-3ab9-4617-9c29-d75c1ed9cee6
+    note_tile:
+      html_parsed_string: "<h1 dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Change to show Versioning</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
   filters:
   - column:
     - Retail Sales - Classic::Store Region
@@ -252,6 +256,16 @@ liveboard:
       "y": 12
       height: 8
       width: 12
+    - visualization_id: Viz_7
+      x: 0
+      "y": 36
+      height: 8
+      width: 12
+    - visualization_id: Viz_8
+      x: 0
+      "y": 0
+      height: 4
+      width: 3
     - visualization_id: Viz_2
       x: 6
       "y": 4
@@ -264,9 +278,14 @@ liveboard:
       width: 6
     - visualization_id: Viz_5
       x: 0
-      "y": 0
+      "y": 4
       height: 4
       width: 4
+    - visualization_id: Viz_6
+      x: 0
+      "y": 28
+      height: 8
+      width: 6
     - visualization_id: Viz_4
       x: 0
       "y": 20

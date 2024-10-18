@@ -1,0 +1,35 @@
+guid: c9904bd2-c79d-4cca-9654-c8f0e3daf869
+answer:
+  name: Total Sales by Monthly Sale Date KPI MG
+  tables:
+  - id: Retail Sales - Classic
+    name: Retail Sales - Classic
+    fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+  search_query: "[Sales] [Sale Date].monthly"
+  answer_columns:
+  - name: Month(Sale Date)
+  - name: Total Sales
+  table:
+    table_columns:
+    - column_id: Month(Sale Date)
+      show_headline: false
+    - column_id: Total Sales
+      show_headline: false
+    ordered_column_ids:
+    - Month(Sale Date)
+    - Total Sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Month(Sale Date)
+    - column_id: Total Sales
+    axis_configs:
+    - x:
+      - Month(Sale Date)
+      "y":
+      - Total Sales
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"60c9fbec-6b5b-415c-aeae-42983399677d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"f1b6d20d-b0f9-4ea4-a9dd-bb14557f5b0e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#2770ef\"}]}"
+  display_mode: CHART_MODE

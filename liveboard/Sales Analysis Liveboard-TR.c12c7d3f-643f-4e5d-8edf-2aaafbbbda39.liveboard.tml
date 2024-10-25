@@ -48,42 +48,6 @@ liveboard:
     viz_guid: 3ae1da12-1307-470e-ae47-b01c38e97d27
   - id: Viz_2
     answer:
-      name: Departmental Sales-TR
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Department]"
-      answer_columns:
-      - name: Department
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Department
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Department
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: COLUMN
-        chart_columns:
-        - column_id: Department
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Department
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2b7c168e-e5e7-48e6-8fab-20cb337efee3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"c0586c93-6f7b-4148-ba77-d35177f14aa0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#48D1E0\"}]}"
-      display_mode: CHART_MODE
-    viz_guid: 717645ed-31fb-48a2-af7e-ee79cd953e38
-  - id: Viz_3
-    answer:
       name: Total Deal Size by Vendor State
       tables:
       - id: Vendor Reporting
@@ -118,7 +82,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.0834306933546007E7,4583214.150187498],\"zoomLevel\": 4.0},\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"a80a390e-68a9-4854-9cba-82ffd9494bf7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"84c4a78e-53d4-45f7-abe2-869ad884ca7a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"colorMap\": [{\"serieName\": \"Vendor State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: 3c3e160c-a216-4c0a-8279-2c2c12490bea
-  - id: Viz_4
+  - id: Viz_3
     answer:
       name: Company Sales
       tables:
@@ -145,7 +109,7 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 39955665-1e44-4746-b1ed-f4e84f73cb5a
-  - id: Viz_5
+  - id: Viz_4
     answer:
       name: Company Profit
       tables:
@@ -172,11 +136,11 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: b084c829-aa35-4b65-99e0-113d072903bc
-  - id: Viz_6
+  - id: Viz_5
     viz_guid: 26fe1ae6-ee6e-4012-8675-1f614c64d502
     note_tile:
       html_parsed_string: "<h1 dir=\"ltr\" style=\"text-align: center;\"><span style=\"color: rgb(114, 31, 39); white-space: pre-wrap;\">Sales Analysis Liveboard</span></h1><ul><li value=\"1\"><span style=\"white-space: pre-wrap;\">This Liveboard was sourced from two worksheets: 1) Retail Sales -Classic 2) Vendor Reporting.</span></li></ul><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(252, 230, 232);\"></div>"
-  - id: Viz_7
+  - id: Viz_6
     answer:
       name: Total Sales by Store Region-TR
       tables:
@@ -220,8 +184,8 @@ liveboard:
     values:
     - East
     excluded_visualizations:
-    - Viz_5
     - Viz_4
+    - Viz_3
     is_mandatory: true
     is_single_value: false
     display_name: Regional Filter
@@ -235,22 +199,17 @@ liveboard:
         "y": 2
         height: 5
         width: 12
-      - visualization_id: Viz_2
-        x: 0
-        "y": 7
-        height: 5
-        width: 6
-      - visualization_id: Viz_4
+      - visualization_id: Viz_3
         x: 0
         "y": 0
         height: 2
         width: 3
-      - visualization_id: Viz_5
+      - visualization_id: Viz_4
         x: 9
         "y": 0
         height: 2
         width: 3
-      - visualization_id: Viz_6
+      - visualization_id: Viz_5
         x: 3
         "y": 0
         height: 2
@@ -259,12 +218,12 @@ liveboard:
     - name: Geo-spatial Analysis
       description: ""
       tiles:
-      - visualization_id: Viz_3
+      - visualization_id: Viz_2
         x: 0
         "y": 0
         height: 8
         width: 6
-      - visualization_id: Viz_7
+      - visualization_id: Viz_6
         x: 6
         "y": 0
         height: 8

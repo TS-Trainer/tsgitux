@@ -1,0 +1,272 @@
+guid: c12c7d3f-643f-4e5d-8edf-2aaafbbbda39
+liveboard:
+  name: Sales Analysis Liveboard-TR
+  description: My First Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Canned tuna example-TR
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Product Name] [Sale Date].monthly [Sale Date].2023 [Product Name].'dealzone canned tuna' [Product Name].'santop canned tuna' [Product Name].\"trader jon\\'s canned tuna\""
+      answer_columns:
+      - name: Month(Sale Date)
+      - name: Product Name
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Month(Sale Date)
+          show_headline: false
+        - column_id: Product Name
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Product Name
+        - Month(Sale Date)
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {\"conditionalFormatting\": {}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"LESS_THAN\",\"value\": \"100\",\"plotAsBand\": false,\"fontProperties\": {\"bold\": true,\"italic\": false,\"strikeThrough\": false,\"underline\": false},\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#F04152\"},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Total Sales\",\"isHighlightRow\": false},{\"operator\": \"GREATER_THAN\",\"value\": \"600\",\"plotAsBand\": false,\"fontProperties\": {\"color\": \"#FDE9AF\",\"bold\": true,\"italic\": false,\"strikeThrough\": false,\"underline\": false},\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#06BF7F\"},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Total Sales\",\"isHighlightRow\": false}]}}}]}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Month(Sale Date)
+        - column_id: Product Name
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Month(Sale Date)
+          "y":
+          - Total Sales
+          color:
+          - Product Name
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"markersEnabled\": true,\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true,\"legendPosition\": \"TOP_LEGEND\"},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Month(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"dataLabels\": true,\"conditionalFormatting\": {\"rows\": [{\"operator\": \"LESS_THAN\",\"value\": \"100\",\"plotAsBand\": false,\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#F04152\"},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Total Sales\",\"isHighlightRow\": false},{\"operator\": \"GREATER_THAN\",\"value\": \"600\",\"plotAsBand\": false,\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"#06BF7F\"},\"comparisonType\": \"VALUE_BASED\",\"lhsColumnId\": \"Total Sales\",\"isHighlightRow\": false}]}}}],\"axisProperties\": [{\"id\": \"175f0de7-2bd3-462e-bce9-1fba8ac87250\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"58fcd014-9012-4be1-8e65-5743ea4cb9ff\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Sale Date)\"]}}],\"seriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#FCC838\"},{\"serieName\": \"dealzone canned tuna\",\"color\": \"#2E75F0\"},{\"serieName\": \"trader jon's canned tuna\",\"color\": \"#FCC838\"},{\"serieName\": \"santop canned tuna\",\"color\": \"#FF8142\"}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#FCC838\"},{\"serieName\": \"dealzone canned tuna\",\"color\": \"#2E75F0\"},{\"serieName\": \"santop canned tuna\",\"color\": \"#48D1E0\"},{\"serieName\": \"trader jon's canned tuna\",\"color\": \"#FCC838\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 3ae1da12-1307-470e-ae47-b01c38e97d27
+  - id: Viz_2
+    answer:
+      name: Departmental Sales-TR
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Department]"
+      answer_columns:
+      - name: Department
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Department
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Department
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Department
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Department
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2b7c168e-e5e7-48e6-8fab-20cb337efee3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"c0586c93-6f7b-4148-ba77-d35177f14aa0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 717645ed-31fb-48a2-af7e-ee79cd953e38
+  - id: Viz_3
+    answer:
+      name: Total Deal Size by Vendor State
+      tables:
+      - id: Vendor Reporting
+        name: Vendor Reporting
+        fqn: 13169500-db07-4d68-980b-1d81ec2c45bd
+      search_query: "[Vendor State] [Deal Size]"
+      answer_columns:
+      - name: Total Deal Size
+      - name: Vendor State
+      table:
+        table_columns:
+        - column_id: Total Deal Size
+          headline_aggregation: SUM
+        - column_id: Vendor State
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Vendor State
+        - Total Deal Size
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Total Deal Size
+        - column_id: Vendor State
+        axis_configs:
+        - x:
+          - Vendor State
+          "y":
+          - Total Deal Size
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.0834306933546007E7,4583214.150187498],\"zoomLevel\": 4.0},\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"a80a390e-68a9-4854-9cba-82ffd9494bf7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"84c4a78e-53d4-45f7-abe2-869ad884ca7a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"colorMap\": [{\"serieName\": \"Vendor State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+      display_mode: CHART_MODE
+    viz_guid: 3c3e160c-a216-4c0a-8279-2c2c12490bea
+  - id: Viz_4
+    answer:
+      name: Company Sales
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales]"
+      answer_columns:
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Total Sales
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Sales
+        axis_configs:
+        - "y":
+          - Total Sales
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 39955665-1e44-4746-b1ed-f4e84f73cb5a
+  - id: Viz_5
+    answer:
+      name: Company Profit
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Gross Margin ($)]"
+      answer_columns:
+      - name: Total Gross Margin ($)
+      table:
+        table_columns:
+        - column_id: Total Gross Margin ($)
+          show_headline: false
+        ordered_column_ids:
+        - Total Gross Margin ($)
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Gross Margin ($)
+        axis_configs:
+        - "y":
+          - Total Gross Margin ($)
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: b084c829-aa35-4b65-99e0-113d072903bc
+  - id: Viz_6
+    viz_guid: 26fe1ae6-ee6e-4012-8675-1f614c64d502
+    note_tile:
+      html_parsed_string: "<h1 dir=\"ltr\" style=\"text-align: center;\"><span style=\"color: rgb(114, 31, 39); white-space: pre-wrap;\">Sales Analysis Liveboard</span></h1><ul><li value=\"1\"><span style=\"white-space: pre-wrap;\">This Liveboard was sourced from two worksheets: 1) Retail Sales -Classic 2) Vendor Reporting.</span></li></ul><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(252, 230, 232);\"></div>"
+  - id: Viz_7
+    answer:
+      name: Total Sales by Store Region-TR
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Store Region]"
+      answer_columns:
+      - name: Store Region
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Store Region
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Store Region
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Store Region
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Store Region
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.068243386571385E7,4623172.994484288],\"zoomLevel\": 3.9066758771206103,\"extent\": [-1.6438856086420504E7,2138987.1585310986,-4926011.645007195,7107358.830437477]},\"chartSpecific\": {\"customProps\": \"{\\\"tileType\\\":\\\"dark-v9\\\"}\",\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"91b2fd04-85b0-4b0e-809f-897c4e74d599\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"05633bd7-2025-49de-b1b1-61f3a3d0afa3\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store Region\"]}}],\"multiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store Region\",\"color\": [\"#a6d2ff\",\"#3873c1\"]}]}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store Region\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+      display_mode: CHART_MODE
+    viz_guid: 334cbd9e-3c18-4c9e-a706-7bccc220d076
+  filters:
+  - column:
+    - Retail Sales - Classic::Store Region
+    - Vendor Reporting::Vendor Region
+    oper: in
+    values:
+    - East
+    excluded_visualizations:
+    - Viz_5
+    - Viz_4
+    is_mandatory: true
+    is_single_value: false
+    display_name: Regional Filter
+  layout:
+    tabs:
+    - name: Sales Analysis
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 2
+        height: 5
+        width: 12
+      - visualization_id: Viz_2
+        x: 0
+        "y": 7
+        height: 5
+        width: 6
+      - visualization_id: Viz_4
+        x: 0
+        "y": 0
+        height: 2
+        width: 3
+      - visualization_id: Viz_5
+        x: 9
+        "y": 0
+        height: 2
+        width: 3
+      - visualization_id: Viz_6
+        x: 3
+        "y": 0
+        height: 2
+        width: 6
+      id: 350f6831-c676-4a59-b88f-8027de5d6a74
+    - name: Geo-spatial Analysis
+      description: ""
+      tiles:
+      - visualization_id: Viz_3
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_7
+        x: 6
+        "y": 0
+        height: 8
+        width: 6
+      id: cf0a9dd1-4ca0-4aac-a5ee-92ec82b02f45

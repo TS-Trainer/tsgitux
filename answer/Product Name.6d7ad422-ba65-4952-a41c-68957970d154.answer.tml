@@ -1,0 +1,33 @@
+guid: 6d7ad422-ba65-4952-a41c-68957970d154
+answer:
+  name: Product Name
+  tables:
+  - id: Retail Sales - Classic
+    name: Retail Sales - Classic
+    fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+  search_query: "[Product Name] [Sales] top"
+  answer_columns:
+  - name: Product Name
+  - name: Total Sales
+  table:
+    table_columns:
+    - column_id: Product Name
+      show_headline: false
+    - column_id: Total Sales
+      show_headline: false
+    ordered_column_ids:
+    - Product Name
+    - Total Sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Product Name
+    - column_id: Total Sales
+    axis_configs:
+    - "y":
+      - Product Name
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"5d9c483a-27e7-47a0-8adc-156004ecc4e5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Product Name\"],\"isOpposite\": false}},{\"id\": \"c726ec4c-998a-4d3a-b550-5fe958435e7b\",\"properties\": {\"axisType\": \"X\"}}],\"systemSeriesColors\": [{\"serieName\": \"380f345b-c1b3-4ab1-adc5-b2307a70e4a7\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Sales\",\"color\": \"#2E75F0\"}]}"
+  display_mode: CHART_MODE

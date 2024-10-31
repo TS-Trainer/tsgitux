@@ -221,15 +221,15 @@ liveboard:
         height: 4
         width: 3
       - visualization_id: Viz_3
-        x: 6
+        x: 0
         "y": 4
         height: 8
         width: 6
       - visualization_id: Viz_5
-        x: 6
-        "y": 12
-        height: 8
-        width: 6
+        x: 9
+        "y": 0
+        height: 4
+        width: 3
       id: b2ca696a-93f2-4c0f-b773-b876bbba6c19
     - name: Tab 2
       description: ""

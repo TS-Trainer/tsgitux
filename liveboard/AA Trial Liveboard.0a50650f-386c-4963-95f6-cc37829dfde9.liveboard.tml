@@ -27,6 +27,7 @@ liveboard:
         - Quarter(Sale Date)
         - Total Sales
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
       chart:
         type: LINE
         chart_columns:
@@ -39,6 +40,7 @@ liveboard:
           "y":
           - Total Sales
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"5682a543-a47a-4d89-9c94-e57d0a9ebc83\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"0bac6f37-b59c-4f58-b9c4-1343bb8abc70\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}]}"
       display_mode: CHART_MODE
     viz_guid: 72a243da-2e25-405b-8590-90b5d0638e88
   - id: Viz_2
@@ -221,15 +223,15 @@ liveboard:
         height: 4
         width: 3
       - visualization_id: Viz_3
-        x: 0
+        x: 6
         "y": 4
         height: 8
         width: 6
       - visualization_id: Viz_5
-        x: 9
-        "y": 0
-        height: 4
-        width: 3
+        x: 6
+        "y": 12
+        height: 8
+        width: 6
       id: b2ca696a-93f2-4c0f-b773-b876bbba6c19
     - name: Tab 2
       description: ""

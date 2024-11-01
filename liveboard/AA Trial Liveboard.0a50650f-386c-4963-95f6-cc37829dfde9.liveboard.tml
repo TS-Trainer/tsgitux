@@ -118,50 +118,9 @@ liveboard:
           - Total Sales
         client_state: ""
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7cd8dbc3-350e-43b6-bc0a-02b98474b0e4\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"9ad711c9-352c-4060-ab28-bb672a20c163\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
-      display_mode: CHART_MODE
-    viz_guid: 63d7ea65-4166-4965-8465-9d9c169f6fb4
-  - id: Viz_4
-    answer:
-      name: Total Sales by Store State
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Store State] [Store Region] [Sales]"
-      answer_columns:
-      - name: Store Region
-      - name: Store State
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Store Region
-          show_headline: false
-        - column_id: Store State
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Store State
-        - Store Region
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: GEO_AREA
-        chart_columns:
-        - column_id: Store Region
-        - column_id: Store State
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Store State
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7cd8dbc3-350e-43b6-bc0a-02b98474b0e4\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"9ad711c9-352c-4060-ab28-bb672a20c163\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: TABLE_MODE
     viz_guid: 32c5f91e-fcb9-408d-b1da-e68ea9f7a963
-  - id: Viz_5
+  - id: Viz_4
     answer:
       name: Total Deal Size by Vendor State
       tables:
@@ -222,12 +181,7 @@ liveboard:
         "y": 0
         height: 4
         width: 3
-      - visualization_id: Viz_3
-        x: 6
-        "y": 4
-        height: 8
-        width: 6
-      - visualization_id: Viz_5
+      - visualization_id: Viz_4
         x: 6
         "y": 12
         height: 8
@@ -236,7 +190,7 @@ liveboard:
     - name: Tab 2
       description: ""
       tiles:
-      - visualization_id: Viz_4
+      - visualization_id: Viz_3
         x: 0
         "y": 0
         height: 8

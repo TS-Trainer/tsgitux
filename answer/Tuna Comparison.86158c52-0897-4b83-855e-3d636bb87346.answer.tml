@@ -10,12 +10,11 @@ answer:
     name: Sales Indicator
     expr: "if ( sum ( [Sales] ) > 3000 ) then 'record sale' else 'normal sale' "
     was_auto_generated: false
-  search_query: "[Product Name] [Sales] [Sale Date].quarterly [Product Name].'santop tuna' [Product Name].'dealzone canned tuna' [Sales Indicator]"
+  search_query: "[Product Name] [Sale Date].quarterly [Product Name].'santop tuna' [Product Name].'dealzone canned tuna' [Sales Indicator]"
   answer_columns:
   - name: Product Name
   - name: Quarter(Sale Date)
   - name: Sales Indicator
-  - name: Total Sales
   table:
     table_columns:
     - column_id: Product Name
@@ -24,29 +23,25 @@ answer:
       show_headline: false
     - column_id: Sales Indicator
       show_headline: false
-    - column_id: Total Sales
-      show_headline: false
     ordered_column_ids:
     - Product Name
     - Quarter(Sale Date)
     - Sales Indicator
-    - Total Sales
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: LINE
+    type: SCATTER
     chart_columns:
     - column_id: Product Name
     - column_id: Quarter(Sale Date)
     - column_id: Sales Indicator
-    - column_id: Total Sales
     axis_configs:
     - x:
       - Quarter(Sale Date)
       "y":
-      - Total Sales
-      color:
       - Product Name
+      category:
+      - Sales Indicator
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"592f75ba-765e-4c37-ba19-7ed0f4847ec1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"8fe8eb53-615f-458a-8ac3-612cbf02cfb9\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#2E75F0\"},{\"serieName\": \"dealzone canned tuna\",\"color\": \"#2E75F0\"},{\"serieName\": \"santop tuna\",\"color\": \"#48D1E0\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Sales Indicator\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"df67204c-7ca0-459b-9f68-acefe803ec28\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Product Name\"],\"isOpposite\": false}},{\"id\": \"9a32a68d-40fb-4a02-864e-86ca2a908260\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"a97bf273-26c5-44b7-8885-9eeebe65c5e1\",\"color\": \"#2E75F0\"},{\"serieName\": \"dealzone canned tuna\",\"color\": \"#2E75F0\"},{\"serieName\": \"santop tuna\",\"color\": \"#48D1E0\"}]}"
   display_mode: TABLE_MODE

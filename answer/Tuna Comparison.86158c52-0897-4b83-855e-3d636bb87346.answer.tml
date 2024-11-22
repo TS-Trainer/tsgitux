@@ -34,7 +34,7 @@ answer:
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: LINE
+    type: COLUMN
     chart_columns:
     - column_id: Product Name
     - column_id: Quarter(Sale Date)
@@ -46,5 +46,5 @@ answer:
       "y":
       - Total Cost
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Sales Indicator\",\"columnProperty\": {}},{\"columnId\": \"Total Cost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c2c5c073-636f-4df5-9e4e-111625e6ff6e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Cost\"],\"isOpposite\": false}},{\"id\": \"08003005-d1ad-41d8-a7d3-f473167a3432\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"a97bf273-26c5-44b7-8885-9eeebe65c5e1\",\"color\": \"#2E75F0\"},{\"serieName\": \"dealzone canned tuna\",\"color\": \"#2E75F0\"},{\"serieName\": \"santop tuna\",\"color\": \"#48D1E0\"}]}"
-  display_mode: TABLE_MODE
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Sales Indicator\",\"columnProperty\": {}},{\"columnId\": \"Total Cost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c2c5c073-636f-4df5-9e4e-111625e6ff6e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Cost\"],\"isOpposite\": false}},{\"id\": \"08003005-d1ad-41d8-a7d3-f473167a3432\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Cost\",\"color\": \"#FCC838\"}]}"
+  display_mode: CHART_MODE

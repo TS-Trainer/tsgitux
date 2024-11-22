@@ -1,0 +1,42 @@
+guid: be74d982-93f9-4ef7-909c-ac01eeb3cbc6
+answer:
+  name: Legends filtered
+  tables:
+  - id: Retail Sales - Classic
+    name: Retail Sales - Classic
+    fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+  search_query: "[Category] [Sales] [Store Region]"
+  answer_columns:
+  - name: Category
+  - name: Store Region
+  - name: Total Sales
+  table:
+    table_columns:
+    - column_id: Category
+      show_headline: false
+    - column_id: Store Region
+      show_headline: false
+    - column_id: Total Sales
+      show_headline: false
+    ordered_column_ids:
+    - Category
+    - Store Region
+    - Total Sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Category
+    - column_id: Store Region
+    - column_id: Total Sales
+    axis_configs:
+    - x:
+      - Store Region
+      "y":
+      - Total Sales
+      color:
+      - Category
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"visibleSeriesNames\": [\"food\"],\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Store Region\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b0121bd4-9548-4077-97c8-5b7b1fc8109b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"c52adb41-c8a3-46ac-bc3c-739728c62761\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store Region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#48D1E0\"},{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"}]}"
+  display_mode: CHART_MODE

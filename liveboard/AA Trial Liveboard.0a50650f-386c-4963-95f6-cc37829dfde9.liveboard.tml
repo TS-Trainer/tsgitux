@@ -218,18 +218,18 @@ liveboard:
         height: 4
         width: 6
       - visualization_id: Viz_2
-        x: 6
-        "y": 0
+        x: 3
+        "y": 4
         height: 4
         width: 3
       - visualization_id: Viz_3
         x: 6
-        "y": 4
+        "y": 0
         height: 8
         width: 6
       - visualization_id: Viz_5
         x: 6
-        "y": 12
+        "y": 8
         height: 8
         width: 6
       id: b2ca696a-93f2-4c0f-b773-b876bbba6c19

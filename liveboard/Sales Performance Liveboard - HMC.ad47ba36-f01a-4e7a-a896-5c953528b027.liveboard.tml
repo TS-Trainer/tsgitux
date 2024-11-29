@@ -232,6 +232,7 @@ liveboard:
         ordered_column_ids:
         - Total Sales
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -240,6 +241,7 @@ liveboard:
         - "y":
           - Total Sales
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e73f8962-4609-47d9-9adc-a4979082d012\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"ed64ed7d-c6cc-44eb-a5bb-56c2d50faf36\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: 6358db72-51c0-4bc5-bc93-d5a8d6084523
   - id: Viz_7
@@ -259,6 +261,7 @@ liveboard:
         ordered_column_ids:
         - Total Gross Margin ($)
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Gross Margin ($)\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -267,8 +270,13 @@ liveboard:
         - "y":
           - Total Gross Margin ($)
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Gross Margin ($)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e6811937-8f33-496e-bc65-bea5bf02b728\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Gross Margin ($)\"],\"isOpposite\": false}},{\"id\": \"8206bcd7-83c7-4076-986c-e394e7a8290f\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: daf979e9-5acc-4ccc-a260-4a0835c2d88f
+  - id: Viz_8
+    viz_guid: a15cf9ef-6dc7-454d-aef1-c6d7bee41817
+    note_tile:
+      html_parsed_string: "<h1 dir=\"ltr\" style=\"text-align: center;\"><span style=\"color: rgb(119, 126, 139); white-space: pre-wrap;\">Sales Performance </span></h1><ol><li value=\"1\"><span style=\"white-space: pre-wrap;\">This liveboard shows sales data across various dimensions.</span></li><li value=\"2\"><span style=\"white-space: pre-wrap;\">Please refer to the official documentation using this </span><a href=\"https://docs.thoughtspot.com/cloud/latest/liveboards\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">link</span></a><span style=\"white-space: pre-wrap;\">.</span></li><li value=\"3\"><span style=\"white-space: pre-wrap;\">For further information, please contact: </span><a href=\"mailto:abc@gmail.com\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">abc@gmail.com</span></a></li></ol><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(155, 229, 203);\"></div>"
   filters:
   - column:
     - Retail Sales - Classic::Store Region
@@ -313,6 +321,11 @@ liveboard:
         "y": 0
         height: 2
         width: 3
+      - visualization_id: Viz_8
+        x: 3
+        "y": 0
+        height: 2
+        width: 6
       id: d12bc01e-3455-459c-8052-4ef62eda692d
     - name: Geospatial Analysis
       description: ""

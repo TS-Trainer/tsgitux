@@ -32,8 +32,6 @@ worksheet:
       - C_DIM_RETAPP_STORES
   - id: FACT_RETAPP_SALES_1
     table: FACT_RETAPP_SALES
-    join_path:
-    - {}
   worksheet_columns:
   - name: Productname
     column_id: DIM_RETAPP_PRODUCTS_1::PRODUCTNAME

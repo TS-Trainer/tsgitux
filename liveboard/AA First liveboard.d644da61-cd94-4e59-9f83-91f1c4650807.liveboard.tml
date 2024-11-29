@@ -343,12 +343,12 @@ liveboard:
         height: 5
         width: 3
       - visualization_id: Viz_3
-        x: 3
+        x: 7
         "y": 0
         height: 6
         width: 4
       - visualization_id: Viz_4
-        x: 7
+        x: 3
         "y": 0
         height: 6
         width: 4

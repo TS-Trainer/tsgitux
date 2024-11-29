@@ -138,6 +138,7 @@ liveboard:
         - Store Region
         - Total Sales
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
       chart:
         type: GEO_AREA
         chart_columns:
@@ -149,6 +150,7 @@ liveboard:
           "y":
           - Total Sales
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"6ea96c9f-ae58-434f-aa2e-11c2f41c27d3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"1a918c34-07c5-4a76-b6b5-2293fc82595d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store Region\"]}}]}"
       display_mode: CHART_MODE
     viz_guid: 954ae991-750f-4055-99e9-7ac5d25a86ae
   - id: Viz_5
@@ -176,6 +178,7 @@ liveboard:
         - Category
         - Total Sales
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
       chart:
         type: COLUMN
         chart_columns:
@@ -218,6 +221,7 @@ liveboard:
         - Category
         - Total Sales
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
       chart:
         type: COLUMN
         chart_columns:
@@ -260,6 +264,7 @@ liveboard:
         - Vendor State
         - Total Deal Size
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Vendor Region\",\"columnProperty\": {}},{\"columnId\": \"Vendor State\",\"columnProperty\": {}},{\"columnId\": \"Total Deal Size\",\"columnProperty\": {}}]}"
       chart:
         type: GEO_AREA
         chart_columns:
@@ -343,12 +348,12 @@ liveboard:
         height: 5
         width: 3
       - visualization_id: Viz_3
-        x: 7
+        x: 3
         "y": 0
         height: 6
         width: 4
       - visualization_id: Viz_4
-        x: 3
+        x: 7
         "y": 0
         height: 6
         width: 4

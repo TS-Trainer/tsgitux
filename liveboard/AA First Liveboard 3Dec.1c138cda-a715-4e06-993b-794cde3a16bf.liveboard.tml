@@ -134,6 +134,7 @@ liveboard:
         - Department
         - Total Sales
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
       chart:
         type: STACKED_COLUMN
         chart_columns:
@@ -172,6 +173,7 @@ liveboard:
         - Quarter(Sale Date)
         - Total Sales
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -207,6 +209,7 @@ liveboard:
         - Store Region
         - Total Sales
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
       chart:
         type: GEO_AREA
         chart_columns:
@@ -246,6 +249,7 @@ liveboard:
         - Product Name
         - Total Sales
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
       chart:
         type: GEO_AREA
         chart_columns:
@@ -286,6 +290,7 @@ liveboard:
         - Vendor State
         - Total Deal Size
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Vendor Region\",\"columnProperty\": {}},{\"columnId\": \"Vendor State\",\"columnProperty\": {}},{\"columnId\": \"Total Deal Size\",\"columnProperty\": {}}]}"
       chart:
         type: GEO_AREA
         chart_columns:
@@ -312,8 +317,6 @@ liveboard:
     oper: in
     values:
     - east
-    - Midwest
-    - South
     is_mandatory: true
     is_single_value: false
     display_name: ""
@@ -363,12 +366,12 @@ liveboard:
         width: 3
       - visualization_id: Viz_3
         x: 3
-        "y": 6
+        "y": 0
         height: 6
         width: 3
       - visualization_id: Viz_4
         x: 3
-        "y": 12
+        "y": 6
         height: 4
         width: 3
       - visualization_id: Viz_5
@@ -377,13 +380,13 @@ liveboard:
         height: 4
         width: 3
       - visualization_id: Viz_6
-        x: 3
+        x: 6
         "y": 0
         height: 6
         width: 3
       - visualization_id: Viz_7
         x: 6
-        "y": 0
+        "y": 6
         height: 4
         width: 6
       - visualization_id: Viz_9

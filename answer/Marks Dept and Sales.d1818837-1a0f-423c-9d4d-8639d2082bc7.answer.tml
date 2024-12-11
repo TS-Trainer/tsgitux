@@ -5,31 +5,31 @@ answer:
   - id: Marks Product Worksheet
     name: Marks Product Worksheet
     fqn: 7221548f-cad4-41b4-bfe4-51609670559e
-  search_query: "[Department Description] [Sales Dollar Amount]"
+  search_query: "[Department Description] [Cost Dollar Amount]"
   answer_columns:
   - name: Department Description
-  - name: Total Sales Dollar Amount
+  - name: Total Cost Dollar Amount
   table:
     table_columns:
     - column_id: Department Description
       show_headline: false
-    - column_id: Total Sales Dollar Amount
+    - column_id: Total Cost Dollar Amount
       show_headline: false
     ordered_column_ids:
     - Department Description
-    - Total Sales Dollar Amount
+    - Total Cost Dollar Amount
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: COLUMN
+    type: PIE
     chart_columns:
     - column_id: Department Description
-    - column_id: Total Sales Dollar Amount
+    - column_id: Total Cost Dollar Amount
     axis_configs:
     - x:
       - Department Description
       "y":
-      - Total Sales Dollar Amount
+      - Total Cost Dollar Amount
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Department Description\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Dollar Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"255cea0c-4827-497f-b59e-479097fd2e8f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"e812d784-a6e1-419a-87b3-92c9b079c120\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department Description\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales Dollar Amount\",\"color\": \"#FCC838\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Department Description\",\"columnProperty\": {}},{\"columnId\": \"Total Cost Dollar Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"43eb6b7d-7916-461d-bbd1-b241628e0a97\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Cost Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"7030e5df-bcba-4194-bd01-f1be0a20d820\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department Description\"]}}],\"systemSeriesColors\": [{\"serieName\": \"0bdb7e35-6655-4a56-ba62-75c8fd7526ca\",\"color\": \"#FCC838\"},{\"serieName\": \"Total Cost Dollar Amount\",\"color\": \"#FCC838\"},{\"serieName\": \"bakery\",\"color\": \"#B094F8\"},{\"serieName\": \"canned goods\",\"color\": \"#8C62F5\"},{\"serieName\": \"cleaning supplies\",\"color\": \"#56D3A8\"},{\"serieName\": \"dairy\",\"color\": \"#06BF7F\"},{\"serieName\": \"frozen goods\",\"color\": \"#BF982A\"},{\"serieName\": \"gifts\",\"color\": \"#FCD977\"},{\"serieName\": \"liquor\",\"color\": \"#FCC838\"},{\"serieName\": \"meat\",\"color\": \"#369FAA\"},{\"serieName\": \"medical\",\"color\": \"#82DFE9\"},{\"serieName\": \"pharmacy\",\"color\": \"#48D1E0\"},{\"serieName\": \"photography\",\"color\": \"#2359B6\"},{\"serieName\": \"produce\",\"color\": \"#71A1F4\"},{\"serieName\": \"seafood\",\"color\": \"#2E75F0\"}]}"
   display_mode: CHART_MODE

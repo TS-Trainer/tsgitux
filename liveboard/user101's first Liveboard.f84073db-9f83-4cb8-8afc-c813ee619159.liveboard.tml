@@ -1,0 +1,282 @@
+guid: f84073db-9f83-4cb8-8afc-c813ee619159
+liveboard:
+  name: user101's first Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Sales by Store State
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Store State]"
+      answer_columns:
+      - name: Store State
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Store State
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Sales
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Store State
+        - Total Sales
+        client_state: "{\"widthState\":{},\"wrapTableHeader\":true}"
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Store State
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Store State
+          "y":
+          - Total Sales
+        client_state: "{\"systemMultiColorSeriesColors\":{\"Total Sales\":{\"Store State\":[\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}},\"chartProperties\":{\"gridLines\":{},\"showRoundedNumbers\":true,\"chartSpecific\":{},\"responsiveLayoutPreference\":1.0,\"mapviewport\":{\"zoomLevel\":5.0,\"center\":[-1.0670154693088695E7,4614999.07705929]}},\"axisProperties\":{\"0d7247dc-f3ca-4f94-9bec-863da4381c82\":{\"linkedColumns\":[\"Total Sales\"],\"axisType\":\"Y\",\"isOpposite\":false},\"0817972c-60e2-4be6-97e9-4ecbc0fb802a\":{\"linkedColumns\":[\"Store State\"],\"axisType\":\"X\"}},\"version\":\"V3\",\"columnProperties\":{\"Store State\":{},\"Total Sales\":{}}}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"mapviewport\": {\"center\": [-1.0670154693088695E7,4614999.07705929],\"zoomLevel\": 5.0},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"0d7247dc-f3ca-4f94-9bec-863da4381c82\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"0817972c-60e2-4be6-97e9-4ecbc0fb802a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+      display_mode: CHART_MODE
+    viz_guid: df8beb45-27ce-4d08-b2c1-887dce968f92
+  - id: Viz_2
+    answer:
+      name: Total Sales by Department
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Department]"
+      answer_columns:
+      - name: Department
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Department
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Sales
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Department
+        - Total Sales
+        client_state: "{\"widthState\":{},\"wrapTableHeader\":true}"
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Department
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Department
+          "y":
+          - Total Sales
+        client_state: "{\"chartProperties\":{\"gridLines\":{},\"showRoundedNumbers\":true,\"chartSpecific\":{},\"responsiveLayoutPreference\":3.0},\"axisProperties\":{\"5dfcbd7d-fdee-49d2-93a7-0c675eb70a36\":{\"linkedColumns\":[\"Total Sales\"],\"axisType\":\"Y\",\"isOpposite\":false},\"95b61e81-1806-4a09-8e7c-769286bf9d71\":{\"linkedColumns\":[\"Department\"],\"axisType\":\"X\"}},\"systemSeriesColors\":{\"Total Sales\":\"#8C62F5\"},\"version\":\"V3\",\"columnProperties\":{\"Department\":{},\"Total Sales\":{}}}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"5dfcbd7d-fdee-49d2-93a7-0c675eb70a36\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"95b61e81-1806-4a09-8e7c-769286bf9d71\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 634c012a-d15e-47a8-85ad-6788ab785829
+  - id: Viz_3
+    answer:
+      name: Total Sales by Department
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Department]"
+      answer_columns:
+      - name: Department
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Department
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Sales
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Department
+        - Total Sales
+        client_state: "{\"widthState\":{},\"wrapTableHeader\":true}"
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Department
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Department
+          "y":
+          - Total Sales
+        client_state: "{\"chartProperties\":{\"gridLines\":{},\"showRoundedNumbers\":true,\"chartSpecific\":{},\"responsiveLayoutPreference\":3.0},\"axisProperties\":{\"5dfcbd7d-fdee-49d2-93a7-0c675eb70a36\":{\"linkedColumns\":[\"Total Sales\"],\"axisType\":\"Y\",\"isOpposite\":false},\"95b61e81-1806-4a09-8e7c-769286bf9d71\":{\"linkedColumns\":[\"Department\"],\"axisType\":\"X\"}},\"systemSeriesColors\":{\"Total Sales\":\"#8C62F5\"},\"version\":\"V3\",\"columnProperties\":{\"Department\":{},\"Total Sales\":{}}}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"5dfcbd7d-fdee-49d2-93a7-0c675eb70a36\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"95b61e81-1806-4a09-8e7c-769286bf9d71\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: e7a286ef-0e33-4fa8-82e4-d8dabfdc9f9e
+  - id: Viz_4
+    answer:
+      name: Total Deal Size by Vendor State
+      tables:
+      - id: Vendor Reporting
+        name: Vendor Reporting
+        fqn: 13169500-db07-4d68-980b-1d81ec2c45bd
+      search_query: "[Vendor State] [Deal Size]"
+      answer_columns:
+      - name: Total Deal Size
+      - name: Vendor State
+      table:
+        table_columns:
+        - column_id: Total Deal Size
+          headline_aggregation: SUM
+        - column_id: Vendor State
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Vendor State
+        - Total Deal Size
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Total Deal Size
+        - column_id: Vendor State
+        axis_configs:
+        - x:
+          - Vendor State
+          "y":
+          - Total Deal Size
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.0834306933546007E7,4583214.150187498],\"zoomLevel\": 4.0},\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"a80a390e-68a9-4854-9cba-82ffd9494bf7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"84c4a78e-53d4-45f7-abe2-869ad884ca7a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"colorMap\": [{\"serieName\": \"Vendor State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+      display_mode: CHART_MODE
+    viz_guid: 9c3fb9e6-8c67-4b50-91a8-ea9d112c521e
+  - id: Viz_5
+    answer:
+      name: Monthly KPI - MY
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Sale Date].monthly [Sale Date].'last 36 months'"
+      answer_columns:
+      - name: Month(Sale Date)
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Month(Sale Date)
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Month(Sale Date)
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Sale Date)
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Month(Sale Date)
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"customProps\": \"{\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnomalies\\\":true,\\\"showBounds\\\":true,\\\"customCompare\\\":\\\"PREV_YEAR\\\",\\\"genericCompareValue\\\":\\\"1\\\"}\",\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Month(Sale Date)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3a49cd5b-175d-4e46-927e-94653481bd0a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"0f0fa252-6a4b-435a-8658-a7eedf4f99af\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 365ddc43-4cb9-4e27-8b30-a23379c48aaf
+  - id: Viz_6
+    answer:
+      name: Weekly KPI - MY
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Sale Date].'last 36 months' [Sale Date].weekly"
+      answer_columns:
+      - name: Total Sales
+      - name: Week(Sale Date)
+      table:
+        table_columns:
+        - column_id: Total Sales
+          show_headline: false
+        - column_id: Week(Sale Date)
+          show_headline: false
+        ordered_column_ids:
+        - Week(Sale Date)
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Sales
+        - column_id: Week(Sale Date)
+        axis_configs:
+        - x:
+          - Week(Sale Date)
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"customProps\": \"{\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnomalies\\\":true,\\\"showBounds\\\":true,\\\"customCompare\\\":\\\"PREV_YEAR\\\",\\\"genericCompareValue\\\":\\\"1\\\"}\",\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Week(Sale Date)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"19c17a09-8523-4748-8b43-f97ca22c937c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"82f9ae52-2a8a-4e82-86c7-2dcbd10cd611\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Week(Sale Date)\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 2af44abf-6b88-42d1-9baa-c573a75f8ad9
+  - id: Viz_7
+    viz_guid: acbc5985-c3d7-40eb-b469-aaf45791cdee
+    note_tile:
+      html_parsed_string: "<h1 dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Highway X</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><table class=\"theme-module__editor-table\"><colgroup><col><col><col></colgroup><tbody><tr><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\"><p class=\"theme-module__editor-paragraph\"><br></p></th><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\"><p class=\"theme-module__editor-paragraph\"><br></p></th><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\"><p class=\"theme-module__editor-paragraph\"><br></p></th></tr><tr><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\"><p class=\"theme-module__editor-paragraph\"><br></p></th><td class=\"theme-module__editor-table-cell\"><p class=\"theme-module__editor-paragraph\"><br></p></td><td class=\"theme-module__editor-table-cell\"><p class=\"theme-module__editor-paragraph\"><br></p></td></tr><tr><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\"><p class=\"theme-module__editor-paragraph\"><br></p></th><td class=\"theme-module__editor-table-cell\"><p class=\"theme-module__editor-paragraph\"><br></p></td><td class=\"theme-module__editor-table-cell\"><p class=\"theme-module__editor-paragraph\"><br></p></td></tr></tbody></table><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(227, 217, 252);\"></div>"
+  filters:
+  - column:
+    - Retail Sales - Classic::Store Region
+    - Vendor Reporting::Vendor Region
+    oper: in
+    values:
+    - East
+    excluded_visualizations:
+    - Viz_5
+    - Viz_6
+    is_mandatory: true
+    is_single_value: false
+    display_name: ""
+  layout:
+    tabs:
+    - name: Regional Sales
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 4
+        height: 8
+        width: 6
+      - visualization_id: Viz_4
+        x: 6
+        "y": 4
+        height: 8
+        width: 6
+      - visualization_id: Viz_5
+        x: 0
+        "y": 0
+        height: 4
+        width: 3
+      - visualization_id: Viz_6
+        x: 9
+        "y": 0
+        height: 4
+        width: 3
+      - visualization_id: Viz_7
+        x: 3
+        "y": 0
+        height: 4
+        width: 6
+      id: aef714e1-947e-4c3d-8693-9d2d4dab1dab
+    - name: Department Sales
+      description: ""
+      tiles:
+      - visualization_id: Viz_3
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_2
+        x: 6
+        "y": 0
+        height: 8
+        width: 6
+      id: f3e0f16c-fb01-4485-a6e3-2e92cae58e5e

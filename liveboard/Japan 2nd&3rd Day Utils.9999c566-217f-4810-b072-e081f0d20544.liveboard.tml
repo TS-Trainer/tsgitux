@@ -22,10 +22,6 @@ liveboard:
     viz_guid: 06ae59ee-7018-42bb-bc41-fc87620c7708
     note_tile:
       html_parsed_string: "<h1 dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Google Drive</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">follow this </span><a href=\"https://drive.google.com/drive/folders/1kwjCwNo-D2lOuQelKs30b85jH6rYZskm?usp=drive_link\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">link</span></a></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
-  - id: Viz_6
-    viz_guid: 77090f08-0cbf-4048-aa2c-0e62e442f8ae
-    note_tile:
-      html_parsed_string: "<h1 dir=\"ltr\"><span style=\"white-space: pre-wrap;\">C'mon</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
   layout:
     tabs:
     - name: Connection
@@ -69,12 +65,3 @@ liveboard:
         height: 4
         width: 3
       id: 11f10447-4bb7-4939-8af2-58bc09047e11
-    - name: Tab 5
-      description: ""
-      tiles:
-      - visualization_id: Viz_6
-        x: 0
-        "y": 0
-        height: 4
-        width: 3
-      id: 270f62ce-1de7-4604-84f6-3505545cef84

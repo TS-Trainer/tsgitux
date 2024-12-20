@@ -60,3 +60,6 @@ table:
       index_type: DONT_INDEX
     db_column_properties:
       data_type: DATE
+  properties:
+    sage_config:
+      is_sage_enabled: false

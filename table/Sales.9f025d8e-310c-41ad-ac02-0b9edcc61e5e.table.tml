@@ -140,3 +140,6 @@ table:
       fqn: ff693a24-fa0e-48ef-8d50-e3749615774d
     "on": "([Sales::Store Key] = [Stores::Store Key])"
     type: INNER
+  properties:
+    sage_config:
+      is_sage_enabled: false

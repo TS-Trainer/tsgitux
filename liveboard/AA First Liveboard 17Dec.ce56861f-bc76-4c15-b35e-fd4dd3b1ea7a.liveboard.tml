@@ -209,6 +209,42 @@ liveboard:
     viz_guid: d4271530-1c27-4012-8957-2e4b6c519c42
   - id: Viz_6
     answer:
+      name: Total Sales by Store State
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Store State]"
+      answer_columns:
+      - name: Store State
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Store State
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Store State
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Store State
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Store State
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1e417e2b-45de-4f86-b5ca-ee6d7fd99b58\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"2600edf5-749c-4b0b-8ff7-747e86a7d534\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 8fb0cebe-1c25-4f4d-bdde-fa6f1b57fc13
+  - id: Viz_7
+    answer:
       name: Total Sales by Department
       tables:
       - id: Retail Sales - Classic
@@ -228,6 +264,7 @@ liveboard:
         - Department
         - Total Sales
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
       chart:
         type: COLUMN
         chart_columns:
@@ -239,9 +276,10 @@ liveboard:
           "y":
           - Total Sales
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Department\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"03b31bda-f0ad-44b9-9622-7d2829e1af6b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"fc074b4d-2b4b-4856-ac03-7320735b2def\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}]}"
       display_mode: CHART_MODE
     viz_guid: 3f1a05f5-ca08-4429-9254-fe2183a167d2
-  - id: Viz_7
+  - id: Viz_8
     answer:
       name: State-wise Deal size - Vendor Reporting
       tables:
@@ -262,6 +300,7 @@ liveboard:
         - Vendor State
         - Total Deal Size
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Vendor State\",\"columnProperty\": {}},{\"columnId\": \"Total Deal Size\",\"columnProperty\": {}}]}"
       chart:
         type: GEO_AREA
         chart_columns:
@@ -273,9 +312,10 @@ liveboard:
           "y":
           - Total Deal Size
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Vendor State\",\"columnProperty\": {}},{\"columnId\": \"Total Deal Size\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"319ef85e-09bd-4c4a-bb1e-36c95770a0f8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"63552a90-6469-4f7e-a83c-b21aaaa3492d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor State\"]}}]}"
       display_mode: CHART_MODE
     viz_guid: 4951d5fa-5580-4314-8fd6-5c3309f29981
-  - id: Viz_8
+  - id: Viz_9
     viz_guid: c6f91e53-2974-4158-b4db-6ecaba914e04
     note_tile:
       html_parsed_string: "<h1 dir=\"ltr\"><span style=\"white-space: pre-wrap;\">THIS IS MY NOTICE BOARD</span></h1><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
@@ -348,16 +388,21 @@ liveboard:
         height: 6
         width: 6
       - visualization_id: Viz_5
-        x: 3
+        x: 8
         "y": 0
         height: 6
         width: 4
       - visualization_id: Viz_6
+        x: 3
+        "y": 0
+        height: 6
+        width: 5
+      - visualization_id: Viz_7
         x: 6
         "y": 6
         height: 6
         width: 6
-      - visualization_id: Viz_8
+      - visualization_id: Viz_9
         x: 0
         "y": 0
         height: 4
@@ -366,7 +411,7 @@ liveboard:
     - name: Vendor Reporting
       description: ""
       tiles:
-      - visualization_id: Viz_7
+      - visualization_id: Viz_8
         x: 0
         "y": 0
         height: 6

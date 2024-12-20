@@ -10,10 +10,11 @@ answer:
     name: Sales Indicator
     expr: "if ( sum ( [Sales] ) > 3000 ) then 'record sale' else 'normal sale' "
     was_auto_generated: false
-  search_query: "[Sales] [Product Name] [Product Name].'dealzone canned tuna' [Product Name].'santop tuna' [Sale Date].quarterly"
+  search_query: "[Sales] [Product Name] [Product Name].'dealzone canned tuna' [Product Name].'santop tuna' [Sale Date].quarterly [Cost]"
   answer_columns:
   - name: Product Name
   - name: Quarter(Sale Date)
+  - name: Total Cost
   - name: Total Sales
   table:
     table_columns:
@@ -21,12 +22,15 @@ answer:
       show_headline: false
     - column_id: Quarter(Sale Date)
       show_headline: false
+    - column_id: Total Cost
+      show_headline: false
     - column_id: Total Sales
       show_headline: false
     ordered_column_ids:
     - Product Name
     - Quarter(Sale Date)
     - Total Sales
+    - Total Cost
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
@@ -34,6 +38,7 @@ answer:
     chart_columns:
     - column_id: Product Name
     - column_id: Quarter(Sale Date)
+    - column_id: Total Cost
     - column_id: Total Sales
     axis_configs:
     - x:

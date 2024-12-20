@@ -209,40 +209,6 @@ liveboard:
     viz_guid: d4271530-1c27-4012-8957-2e4b6c519c42
   - id: Viz_6
     answer:
-      name: Total Sales by Store State
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Store State]"
-      answer_columns:
-      - name: Store State
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Store State
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Store State
-        - Total Sales
-        client_state: ""
-      chart:
-        type: GEO_AREA
-        chart_columns:
-        - column_id: Store State
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Store State
-          "y":
-          - Total Sales
-        client_state: ""
-      display_mode: CHART_MODE
-    viz_guid: 8fb0cebe-1c25-4f4d-bdde-fa6f1b57fc13
-  - id: Viz_7
-    answer:
       name: Total Sales by Department
       tables:
       - id: Retail Sales - Classic
@@ -275,7 +241,7 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 3f1a05f5-ca08-4429-9254-fe2183a167d2
-  - id: Viz_8
+  - id: Viz_7
     answer:
       name: State-wise Deal size - Vendor Reporting
       tables:
@@ -309,7 +275,7 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 4951d5fa-5580-4314-8fd6-5c3309f29981
-  - id: Viz_9
+  - id: Viz_8
     viz_guid: c6f91e53-2974-4158-b4db-6ecaba914e04
     note_tile:
       html_parsed_string: "<h1 dir=\"ltr\"><span style=\"white-space: pre-wrap;\">THIS IS MY NOTICE BOARD</span></h1><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
@@ -387,16 +353,11 @@ liveboard:
         height: 6
         width: 4
       - visualization_id: Viz_6
-        x: 7
-        "y": 0
-        height: 6
-        width: 5
-      - visualization_id: Viz_7
         x: 6
         "y": 6
         height: 6
         width: 6
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 0
         "y": 0
         height: 4
@@ -405,7 +366,7 @@ liveboard:
     - name: Vendor Reporting
       description: ""
       tiles:
-      - visualization_id: Viz_8
+      - visualization_id: Viz_7
         x: 0
         "y": 0
         height: 6

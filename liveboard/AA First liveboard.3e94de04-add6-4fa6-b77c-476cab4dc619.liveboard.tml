@@ -302,10 +302,6 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [2185564.550302736,-80952.02373180803],\"zoomLevel\": 5.141192501499452,\"extent\": [-1414158.7093880624,-1930717.3956246765,5785287.809993534,1768813.3481610606]},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Deal Size\",\"columnProperty\": {}},{\"columnId\": \"Vendor Region\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f87dabbf-1112-4de7-9839-11776260459d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"efb9b797-7c77-4316-8b36-718b39f9528f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor Region\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"colorMap\": [{\"serieName\": \"Vendor Region\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: 75790dea-130e-4d60-826f-74de4c5e7e2c
-  - id: Viz_9
-    viz_guid: 41d16a39-2ef8-4213-94e8-a01aa1a3c0a3
-    note_tile:
-      html_parsed_string: "<h2 class=\"theme-module__editor-h2\"><br></h2><h1 dir=\"ltr\"><span style=\"white-space: pre-wrap;\">This is my first liveboard</span></h1><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
   filters:
   - column:
     - Retail Sales - Classic::Store Region
@@ -389,11 +385,6 @@ liveboard:
         "y": 0
         height: 4
         width: 6
-      - visualization_id: Viz_9
-        x: 0
-        "y": 0
-        height: 4
-        width: 3
       id: aeea00a2-aeab-44ff-8793-1f76509907cc
     - name: Vendor Reporting
       description: ""

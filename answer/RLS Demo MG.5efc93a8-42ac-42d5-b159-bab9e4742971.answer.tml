@@ -21,7 +21,7 @@ answer:
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: COLUMN
+    type: PIE
     chart_columns:
     - column_id: Store State
     - column_id: Total Gross Profit Dollar Amount
@@ -31,5 +31,5 @@ answer:
       "y":
       - Total Gross Profit Dollar Amount
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Gross Profit Dollar Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"220d9c87-15d5-4541-af55-2413a7abca13\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Gross Profit Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"bafb64f1-46f2-43c9-950c-723804e9164f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Gross Profit Dollar Amount\",\"color\": \"#FF8142\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Gross Profit Dollar Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"220d9c87-15d5-4541-af55-2413a7abca13\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Gross Profit Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"bafb64f1-46f2-43c9-950c-723804e9164f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Gross Profit Dollar Amount\",\"color\": \"#FF8142\"},{\"serieName\": \"ca\",\"color\": \"#FFA97E\"},{\"serieName\": \"co\",\"color\": \"#FF8142\"},{\"serieName\": \"ct\",\"color\": \"#B094F8\"},{\"serieName\": \"fl\",\"color\": \"#8C62F5\"},{\"serieName\": \"ia\",\"color\": \"#049160\"},{\"serieName\": \"il\",\"color\": \"#56D3A8\"},{\"serieName\": \"in\",\"color\": \"#06BF7F\"},{\"serieName\": \"ma\",\"color\": \"#BF982A\"},{\"serieName\": \"md\",\"color\": \"#FCD977\"},{\"serieName\": \"mi\",\"color\": \"#FCC838\"},{\"serieName\": \"nj\",\"color\": \"#369FAA\"},{\"serieName\": \"nv\",\"color\": \"#82DFE9\"},{\"serieName\": \"pa\",\"color\": \"#48D1E0\"},{\"serieName\": \"sd\",\"color\": \"#2359B6\"},{\"serieName\": \"tn\",\"color\": \"#71A1F4\"},{\"serieName\": \"tx\",\"color\": \"#2E75F0\"}]}"
   display_mode: CHART_MODE

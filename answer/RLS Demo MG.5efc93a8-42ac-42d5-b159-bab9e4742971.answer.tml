@@ -5,31 +5,31 @@ answer:
   - id: My Sales Worksheet MG
     name: My Sales Worksheet MG
     fqn: a67d4970-a4b1-4d0b-84e1-e8e51b7bf485
-  search_query: "[Store State] [Gross Profit Dollar Amount]"
+  search_query: "[Store State] [Sales Dollar Amount]"
   answer_columns:
   - name: Store State
-  - name: Total Gross Profit Dollar Amount
+  - name: Total Sales Dollar Amount
   table:
     table_columns:
     - column_id: Store State
       show_headline: false
-    - column_id: Total Gross Profit Dollar Amount
+    - column_id: Total Sales Dollar Amount
       show_headline: false
     ordered_column_ids:
     - Store State
-    - Total Gross Profit Dollar Amount
+    - Total Sales Dollar Amount
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: PIE
+    type: GEO_AREA
     chart_columns:
     - column_id: Store State
-    - column_id: Total Gross Profit Dollar Amount
+    - column_id: Total Sales Dollar Amount
     axis_configs:
     - x:
       - Store State
       "y":
-      - Total Gross Profit Dollar Amount
+      - Total Sales Dollar Amount
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Gross Profit Dollar Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"220d9c87-15d5-4541-af55-2413a7abca13\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Gross Profit Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"bafb64f1-46f2-43c9-950c-723804e9164f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Gross Profit Dollar Amount\",\"color\": \"#FF8142\"},{\"serieName\": \"ca\",\"color\": \"#FFA97E\"},{\"serieName\": \"co\",\"color\": \"#FF8142\"},{\"serieName\": \"ct\",\"color\": \"#B094F8\"},{\"serieName\": \"fl\",\"color\": \"#8C62F5\"},{\"serieName\": \"ia\",\"color\": \"#049160\"},{\"serieName\": \"il\",\"color\": \"#56D3A8\"},{\"serieName\": \"in\",\"color\": \"#06BF7F\"},{\"serieName\": \"ma\",\"color\": \"#BF982A\"},{\"serieName\": \"md\",\"color\": \"#FCD977\"},{\"serieName\": \"mi\",\"color\": \"#FCC838\"},{\"serieName\": \"nj\",\"color\": \"#369FAA\"},{\"serieName\": \"nv\",\"color\": \"#82DFE9\"},{\"serieName\": \"pa\",\"color\": \"#48D1E0\"},{\"serieName\": \"sd\",\"color\": \"#2359B6\"},{\"serieName\": \"tn\",\"color\": \"#71A1F4\"},{\"serieName\": \"tx\",\"color\": \"#2E75F0\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.064814595591484E7,4622824.942063094],\"zoomLevel\": 4.11133610239635,\"extent\": [-1.5430394900568256E7,2009796.8728727335,-5865897.011261424,7235853.011253455]},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Dollar Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"64c82f1c-0841-4232-a316-53523511f29c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"ca1fee34-408f-441e-902e-4900c7175d75\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales Dollar Amount\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
   display_mode: CHART_MODE

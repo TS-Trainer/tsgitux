@@ -40,3 +40,6 @@ table:
       value_casing: UNKNOWN
     db_column_properties:
       data_type: VARCHAR
+  properties:
+    sage_config:
+      is_sage_enabled: false

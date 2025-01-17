@@ -179,3 +179,12 @@ table:
       fqn: f2a12d17-ebd1-43e9-817f-d465a39f3014
     "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments by Sales View - JDS::Department]"
     type: INNER
+  - name: HO_Product_Dimension_to_Top 3 Dept View
+    destination:
+      name: Top 3 Dept View
+      fqn: 4647442a-877a-4124-a790-373a79c187cc
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Dept View::Department]"
+    type: INNER
+  properties:
+    sage_config:
+      is_sage_enabled: false

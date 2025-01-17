@@ -1,0 +1,35 @@
+guid: 5efc93a8-42ac-42d5-b159-bab9e4742971
+answer:
+  name: RLS Demo MG
+  tables:
+  - id: My Sales Worksheet MG
+    name: My Sales Worksheet MG
+    fqn: a67d4970-a4b1-4d0b-84e1-e8e51b7bf485
+  search_query: "[Store State] [Sales Dollar Amount]"
+  answer_columns:
+  - name: Store State
+  - name: Total Sales Dollar Amount
+  table:
+    table_columns:
+    - column_id: Store State
+      show_headline: false
+    - column_id: Total Sales Dollar Amount
+      show_headline: false
+    ordered_column_ids:
+    - Store State
+    - Total Sales Dollar Amount
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: GEO_AREA
+    chart_columns:
+    - column_id: Store State
+    - column_id: Total Sales Dollar Amount
+    axis_configs:
+    - x:
+      - Store State
+      "y":
+      - Total Sales Dollar Amount
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.064814595591484E7,4622824.942063094],\"zoomLevel\": 4.11133610239635,\"extent\": [-1.5430394900568256E7,2009796.8728727335,-5865897.011261424,7235853.011253455]},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Dollar Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"64c82f1c-0841-4232-a316-53523511f29c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"ca1fee34-408f-441e-902e-4900c7175d75\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales Dollar Amount\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+  display_mode: CHART_MODE

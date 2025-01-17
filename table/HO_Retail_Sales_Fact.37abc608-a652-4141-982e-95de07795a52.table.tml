@@ -165,3 +165,6 @@ table:
       fqn: dd6c04e6-e439-4c0c-8011-c9d822c9101c
     "on": "([HO_Retail_Sales_Fact::Store_Key] = [HO_Store_Dimension::Store_Key])"
     type: INNER
+  properties:
+    sage_config:
+      is_sage_enabled: false

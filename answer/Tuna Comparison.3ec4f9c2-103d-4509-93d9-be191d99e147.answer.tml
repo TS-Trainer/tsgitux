@@ -44,7 +44,7 @@ answer:
       - Product Name
     client_state: ""
     client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"conditionalFormatting\": {}}}],\"axisProperties\": [{\"id\": \"99135eae-e4f7-4fc2-8cf6-926bf0f30823\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"6988141f-1a8a-4b33-a95e-a83e40b974c1\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"dealzone canned tuna\",\"color\": \"#48D1E0\"},{\"serieName\": \"santop tuna\",\"color\": \"#2E75F0\"}]}"
-  display_mode: TABLE_MODE
+  display_mode: CHART_MODE
   parameters:
   - id: b05f15cd-3ff0-433f-a9a3-56ffef47cd01
     name: Record Sale Value

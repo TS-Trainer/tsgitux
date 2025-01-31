@@ -175,41 +175,6 @@ liveboard:
     viz_guid: cf29b7f4-7a16-40a7-9f04-5602ecce5bb9
   - id: Viz_5
     answer:
-      name: Total Sales by Monthly Sale Date
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Sale Date].monthly"
-      answer_columns:
-      - name: Month(Sale Date)
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Month(Sale Date)
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Month(Sale Date)
-        - Total Sales
-        client_state: ""
-      chart:
-        type: KPI
-        chart_columns:
-        - column_id: Month(Sale Date)
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Month(Sale Date)
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Month(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"13928b7d-8c81-483d-b9b5-1d148c2b8325\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"1401de0f-85f4-4550-a8a6-a417d8ee10aa\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Sale Date)\"]}}]}"
-      display_mode: CHART_MODE
-    viz_guid: 395af831-8f77-46ee-afe2-00e4b24cf289
-  - id: Viz_6
-    answer:
       name: "Total Sales by Store Region, Department"
       tables:
       - id: Retail Sales - Classic
@@ -247,7 +212,7 @@ liveboard:
         client_state: ""
       display_mode: TABLE_MODE
     viz_guid: f7bc7267-c1b5-460b-a11d-891c8e58a074
-  - id: Viz_7
+  - id: Viz_6
     answer:
       name: Monthly Sales KPI AA
       tables:
@@ -283,7 +248,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"customProps\": \"{\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnomalies\\\":true,\\\"showBounds\\\":true,\\\"customCompare\\\":\\\"PREV_AVAILABLE\\\"}\",\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Month(Sale Date)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ff20a32f-00ea-4838-962b-7312c9133fd8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"fc85efae-b94d-4d3f-811a-fef3077de9a7\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"}]}"
       display_mode: CHART_MODE
     viz_guid: 76706559-de1c-4d39-866f-80cd9e3315b9
-  - id: Viz_8
+  - id: Viz_7
     answer:
       name: "Total Deal Size by Vendor Region, Vendor State, Vendor Name"
       tables:
@@ -329,7 +294,7 @@ liveboard:
         client_state: ""
       display_mode: TABLE_MODE
     viz_guid: b9660a44-6029-4594-b377-2e153c383f66
-  - id: Viz_9
+  - id: Viz_8
     answer:
       name: Deal Size by Vendor Region
       tables:
@@ -441,15 +406,10 @@ liveboard:
         width: 4
       - visualization_id: Viz_5
         x: 0
-        "y": 0
-        height: 4
-        width: 3
-      - visualization_id: Viz_6
-        x: 0
         "y": 13
         height: 8
         width: 4
-      - visualization_id: Viz_7
+      - visualization_id: Viz_6
         x: 4
         "y": 8
         height: 4
@@ -458,12 +418,12 @@ liveboard:
     - name: Vendor Reporting
       description: ""
       tiles:
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 0
         "y": 0
         height: 5
         width: 4
-      - visualization_id: Viz_8
+      - visualization_id: Viz_7
         x: 0
         "y": 5
         height: 8

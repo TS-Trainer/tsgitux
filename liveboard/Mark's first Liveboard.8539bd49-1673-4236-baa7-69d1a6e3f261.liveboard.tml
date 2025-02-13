@@ -38,3 +38,17 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"region\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"160a5eec-7c3e-4ee9-bbb9-f5d1c82f926e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"ed4fba24-4e7d-4189-8f56-f9c5e6723a8a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total quantity purchased\",\"color\": \"#747E8C\"},{\"serieName\": \"east\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: 802db137-bb11-40f8-ad92-97695a335486
+  layout:
+    tabs:
+    - name: BK Quantity Sold
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      id: c7a17b72-99e4-42b1-a09d-8070bf242702
+    - name: BK Revenues
+      description: ""
+      id: 91a87e5b-7898-4f37-aff0-0f4a8decd4d3

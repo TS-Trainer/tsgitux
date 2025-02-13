@@ -1,6 +1,6 @@
 guid: 8539bd49-1673-4236-baa7-69d1a6e3f261
 liveboard:
-  name: Mark's first Liveboard
+  name: BK Versioning Liveboard
   visualizations:
   - id: Viz_1
     answer:
@@ -87,4 +87,8 @@ liveboard:
       description: ""
       tiles:
       - visualization_id: Viz_2
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
       id: 91a87e5b-7898-4f37-aff0-0f4a8decd4d3

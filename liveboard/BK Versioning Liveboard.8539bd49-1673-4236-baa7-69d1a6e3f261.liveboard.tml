@@ -23,6 +23,7 @@ liveboard:
         - product
         - Total sales
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
       chart:
         type: COLUMN
         chart_columns:
@@ -34,11 +35,15 @@ liveboard:
           "y":
           - Total sales
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"product\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f5658882-105c-463a-a518-6263adbeb9ce\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"efc68501-a17a-4afc-879e-15209d7357f7\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"product\"]}}]}"
       display_mode: CHART_MODE
     viz_guid: 2f2df98a-7711-40d6-95fb-f0b3d58de1e7
   layout:
     tabs:
     - name: BK Quantity Sold
+      description: ""
+      id: c7a17b72-99e4-42b1-a09d-8070bf242702
+    - name: BK Revenues
       description: ""
       tiles:
       - visualization_id: Viz_1
@@ -46,7 +51,4 @@ liveboard:
         "y": 0
         height: 8
         width: 6
-      id: c7a17b72-99e4-42b1-a09d-8070bf242702
-    - name: BK Revenues
-      description: ""
       id: 91a87e5b-7898-4f37-aff0-0f4a8decd4d3

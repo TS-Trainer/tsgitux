@@ -9,31 +9,33 @@ liveboard:
       - id: (Sample) Retail - Apparel
         name: (Sample) Retail - Apparel
         fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
-      search_query: "[sales] [store]"
+      search_query: "[store] [quantity purchased]"
       answer_columns:
-      - name: Total sales
+      - name: Total quantity purchased
       - name: store
       table:
         table_columns:
-        - column_id: Total sales
+        - column_id: Total quantity purchased
           show_headline: false
         - column_id: store
           show_headline: false
         ordered_column_ids:
         - store
-        - Total sales
+        - Total quantity purchased
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"store\",\"columnProperty\": {}}]}"
       chart:
         type: COLUMN
         chart_columns:
-        - column_id: Total sales
+        - column_id: Total quantity purchased
         - column_id: store
         axis_configs:
         - x:
           - store
           "y":
-          - Total sales
+          - Total quantity purchased
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"store\",\"columnProperty\": {}},{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"03307ad6-dafc-4355-8240-10c029c2b5cb\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"edf84e0e-a18b-49af-9c4c-6b864ac2cf24\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"store\"]}}],\"systemSeriesColors\": [{\"serieName\": \"6896cc68-376c-483c-a478-ab35c757c4cf\",\"color\": \"#8C62F5\"},{\"serieName\": \"Total quantity purchased\",\"color\": \"#06BF7F\"}]}"
       display_mode: CHART_MODE
     viz_guid: 78c0e7c7-371d-4ef0-ba4c-9b5e971b00bb
   layout:

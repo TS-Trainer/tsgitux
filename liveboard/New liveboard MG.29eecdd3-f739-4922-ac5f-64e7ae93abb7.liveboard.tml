@@ -1,0 +1,38 @@
+guid: 29eecdd3-f739-4922-ac5f-64e7ae93abb7
+liveboard:
+  name: New liveboard MG
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total sales by store
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales] [store]"
+      answer_columns:
+      - name: Total sales
+      - name: store
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: store
+          show_headline: false
+        ordered_column_ids:
+        - store
+        - Total sales
+        client_state: ""
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: store
+        axis_configs:
+        - x:
+          - store
+          "y":
+          - Total sales
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 78c0e7c7-371d-4ef0-ba4c-9b5e971b00bb

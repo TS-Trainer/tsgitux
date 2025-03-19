@@ -36,3 +36,14 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 78c0e7c7-371d-4ef0-ba4c-9b5e971b00bb
+  layout:
+    tabs:
+    - name: New Tab Demo
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      id: 12bfe293-f91c-4243-aa0e-26e537d85139

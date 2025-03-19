@@ -5,31 +5,31 @@ answer:
   - id: (Sample) Retail - Apparel
     name: (Sample) Retail - Apparel
     fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
-  search_query: "[region] [sales]"
+  search_query: "[quantity purchased] [region]"
   answer_columns:
-  - name: Total sales
+  - name: Total quantity purchased
   - name: region
   table:
     table_columns:
-    - column_id: Total sales
+    - column_id: Total quantity purchased
       show_headline: false
     - column_id: region
       show_headline: false
     ordered_column_ids:
     - region
-    - Total sales
+    - Total quantity purchased
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: PIE
+    type: COLUMN
     chart_columns:
-    - column_id: Total sales
+    - column_id: Total quantity purchased
     - column_id: region
     axis_configs:
     - x:
       - region
       "y":
-      - Total sales
+      - Total quantity purchased
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"region\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1805b3fa-0825-41ba-a033-5edb66c6cc2f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"a2dc220d-36c4-4785-b652-f0d1124027ab\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"306f12b4-9533-43b4-8ffd-3cc4b1ab37b3\",\"color\": \"#747E8C\"},{\"serieName\": \"Total sales\",\"color\": \"#2E75F0\"},{\"serieName\": \"east\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"region\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"160a5eec-7c3e-4ee9-bbb9-f5d1c82f926e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"ed4fba24-4e7d-4189-8f56-f9c5e6723a8a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total quantity purchased\",\"color\": \"#747E8C\"}]}"
   display_mode: CHART_MODE

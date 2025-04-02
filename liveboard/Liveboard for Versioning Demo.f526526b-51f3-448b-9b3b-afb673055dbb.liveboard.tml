@@ -76,7 +76,7 @@ liveboard:
     viz_guid: 08a44cf6-7d4d-4eda-8feb-1756f78e2b5c
   layout:
     tabs:
-    - name: Regional Sales
+    - name: Store State Sales
       description: ""
       tiles:
       - visualization_id: Viz_1

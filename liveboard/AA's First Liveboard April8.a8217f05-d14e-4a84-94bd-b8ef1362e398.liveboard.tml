@@ -305,10 +305,6 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"markersEnabled\": true,\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"2b7d5d66-a22f-417a-be86-5f0ef3d2a8f7\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}},{\"id\": \"c1fb2730-036a-43fe-ac0d-17b3fc266375\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\",\"Total Quantity\"],\"format\": {\"category\": \"NUMBER\",\"numberFormatConfig\": {\"unit\": \"THOUSANDS\",\"decimals\": 0.0,\"negativeValueFormat\": \"PREFIX_DASH\",\"toSeparateThousands\": true},\"isCategoryEditable\": true},\"isOpposite\": false}}],\"seriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"},{\"serieName\": \"Total Quantity\",\"color\": \"#F04152\"}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"},{\"serieName\": \"Total Quantity\",\"color\": \"#48D1E0\"}]}"
       display_mode: CHART_MODE
     viz_guid: 26d70282-397c-49b5-bd6a-62c33e1816df
-  - id: Viz_9
-    viz_guid: e61501d7-848b-49ec-8eb6-b4b6abe8fdc7
-    note_tile:
-      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">TS Notice Board</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">TS launches 10.6</span></p><p class=\"theme-module__editor-paragraph\"><br></p><table class=\"theme-module__editor-table\"><colgroup><col><col><col></colgroup><tbody><tr><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\"><p class=\"theme-module__editor-paragraph\"><br></p></th><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\"><p class=\"theme-module__editor-paragraph\"><br></p></th><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\"><p class=\"theme-module__editor-paragraph\"><br></p></th></tr><tr><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\"><p class=\"theme-module__editor-paragraph\"><br></p></th><td class=\"theme-module__editor-table-cell\"><p class=\"theme-module__editor-paragraph\"><br></p></td><td class=\"theme-module__editor-table-cell\"><p class=\"theme-module__editor-paragraph\"><br></p></td></tr><tr><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\"><p class=\"theme-module__editor-paragraph\"><br></p></th><td class=\"theme-module__editor-table-cell\"><p class=\"theme-module__editor-paragraph\"><br></p></td><td class=\"theme-module__editor-table-cell\"><p class=\"theme-module__editor-paragraph\"><br></p></td></tr></tbody></table><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
   filters:
   - column:
     - Retail Sales - Classic::Store Region
@@ -392,11 +388,6 @@ liveboard:
         "y": 10
         height: 5
         width: 6
-      - visualization_id: Viz_9
-        x: 0
-        "y": 0
-        height: 4
-        width: 3
       id: af1fb758-9b66-45f3-9351-55df6e23b084
     - name: Vendor Reporting
       description: ""

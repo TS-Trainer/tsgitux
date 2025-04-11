@@ -148,40 +148,6 @@ liveboard:
     viz_guid: 899853f3-3413-453f-8986-25b3762d3e19
   - id: Viz_5
     answer:
-      name: Total Sales by Store State
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Store State]"
-      answer_columns:
-      - name: Store State
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Store State
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Store State
-        - Total Sales
-        client_state: ""
-      chart:
-        type: GEO_AREA
-        chart_columns:
-        - column_id: Store State
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Store State
-          "y":
-          - Total Sales
-        client_state: ""
-      display_mode: CHART_MODE
-    viz_guid: 0ee365d6-b063-434c-a18a-cc5a4d4d4cd0
-  - id: Viz_6
-    answer:
       name: "Total Sales by Store Region, Category"
       tables:
       - id: Retail Sales - Classic
@@ -221,7 +187,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1826d0ba-b291-4b3e-bbca-bc888ffafc63\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"ef882cbf-2a0e-4db5-9fee-152c2a44897d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store Region\",\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: 61d8e266-80b8-46ef-ac4b-79d50871621a
-  - id: Viz_7
+  - id: Viz_6
     answer:
       name: Total Sales by Store Region and Category
       tables:
@@ -263,7 +229,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"bd4f5380-392b-4a20-a7d0-9c44d4f92db0\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"c5b233f1-de0e-44a4-b63c-043fc4b0d652\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store Region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"},{\"serieName\": \"east, food\",\"color\": \"#C26232\"},{\"serieName\": \"east, medical\",\"color\": \"#FFCCB3\"},{\"serieName\": \"east, misc\",\"color\": \"#FF8142\"},{\"serieName\": \"east, non-food\",\"color\": \"#6A4ABA\"},{\"serieName\": \"midwest, food\",\"color\": \"#D1C0FB\"},{\"serieName\": \"midwest, medical\",\"color\": \"#8C62F5\"},{\"serieName\": \"midwest, misc\",\"color\": \"#049160\"},{\"serieName\": \"midwest, non-food\",\"color\": \"#9BE5CB\"},{\"serieName\": \"south, food\",\"color\": \"#06BF7F\"},{\"serieName\": \"south, medical\",\"color\": \"#BF982A\"},{\"serieName\": \"south, misc\",\"color\": \"#FDE9AF\"},{\"serieName\": \"south, non-food\",\"color\": \"#FCC838\"},{\"serieName\": \"southwest, food\",\"color\": \"#82DFE9\"},{\"serieName\": \"southwest, medical\",\"color\": \"#369FAA\"},{\"serieName\": \"southwest, misc\",\"color\": \"#B5ECF2\"},{\"serieName\": \"southwest, non-food\",\"color\": \"#48D1E0\"},{\"serieName\": \"west, food\",\"color\": \"#71A1F4\"},{\"serieName\": \"west, medical\",\"color\": \"#2359B6\"},{\"serieName\": \"west, misc\",\"color\": \"#ABC7F9\"},{\"serieName\": \"west, non-food\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Sales\",\"color\": \"#FF8142\"}]}"
       display_mode: CHART_MODE
     viz_guid: e503f638-0160-4a45-b2fb-afa1f15868ee
-  - id: Viz_8
+  - id: Viz_7
     answer:
       name: Total Deal Size by Vendor State
       tables:
@@ -297,7 +263,7 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 84247480-d98b-437d-9885-297117f93f61
-  - id: Viz_9
+  - id: Viz_8
     answer:
       name: 2 Y-Axes Demo AA
       tables:
@@ -339,7 +305,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"markersEnabled\": true,\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"2b7d5d66-a22f-417a-be86-5f0ef3d2a8f7\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}},{\"id\": \"c1fb2730-036a-43fe-ac0d-17b3fc266375\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\",\"Total Quantity\"],\"format\": {\"category\": \"NUMBER\",\"numberFormatConfig\": {\"unit\": \"THOUSANDS\",\"decimals\": 0.0,\"negativeValueFormat\": \"PREFIX_DASH\",\"toSeparateThousands\": true},\"isCategoryEditable\": true},\"isOpposite\": false}}],\"seriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"},{\"serieName\": \"Total Quantity\",\"color\": \"#F04152\"}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"},{\"serieName\": \"Total Quantity\",\"color\": \"#48D1E0\"}]}"
       display_mode: CHART_MODE
     viz_guid: 26d70282-397c-49b5-bd6a-62c33e1816df
-  - id: Viz_10
+  - id: Viz_9
     viz_guid: e61501d7-848b-49ec-8eb6-b4b6abe8fdc7
     note_tile:
       html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">TS Notice Board</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">TS launches 10.6</span></p><p class=\"theme-module__editor-paragraph\"><br></p><table class=\"theme-module__editor-table\"><colgroup><col><col><col></colgroup><tbody><tr><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\"><p class=\"theme-module__editor-paragraph\"><br></p></th><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\"><p class=\"theme-module__editor-paragraph\"><br></p></th><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\"><p class=\"theme-module__editor-paragraph\"><br></p></th></tr><tr><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\"><p class=\"theme-module__editor-paragraph\"><br></p></th><td class=\"theme-module__editor-table-cell\"><p class=\"theme-module__editor-paragraph\"><br></p></td><td class=\"theme-module__editor-table-cell\"><p class=\"theme-module__editor-paragraph\"><br></p></td></tr><tr><th class=\"theme-module__editor-table-cell theme-module__editor-table-cell-header\"><p class=\"theme-module__editor-paragraph\"><br></p></th><td class=\"theme-module__editor-table-cell\"><p class=\"theme-module__editor-paragraph\"><br></p></td><td class=\"theme-module__editor-table-cell\"><p class=\"theme-module__editor-paragraph\"><br></p></td></tr></tbody></table><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
@@ -417,21 +383,16 @@ liveboard:
         height: 6
         width: 6
       - visualization_id: Viz_5
-        x: 3
-        "y": 0
-        height: 6
-        width: 4
-      - visualization_id: Viz_6
         x: 7
         "y": 0
         height: 6
         width: 5
-      - visualization_id: Viz_7
+      - visualization_id: Viz_6
         x: 0
         "y": 10
         height: 5
         width: 6
-      - visualization_id: Viz_10
+      - visualization_id: Viz_9
         x: 0
         "y": 0
         height: 4
@@ -440,12 +401,12 @@ liveboard:
     - name: Vendor Reporting
       description: ""
       tiles:
-      - visualization_id: Viz_8
+      - visualization_id: Viz_7
         x: 0
         "y": 0
         height: 6
         width: 4
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 4
         "y": 0
         height: 8

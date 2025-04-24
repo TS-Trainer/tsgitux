@@ -34,7 +34,7 @@ answer:
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: LINE
+    type: PIE
     chart_columns:
     - column_id: Product Name
     - column_id: Quarter(Sale Date)
@@ -42,11 +42,9 @@ answer:
     - column_id: Total Sales
     axis_configs:
     - x:
-      - Quarter(Sale Date)
+      - Sales Indicator
       "y":
       - Total Sales
-      color:
-      - Product Name
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0940b74b-dc5f-4ab6-ac94-bc998c1eb588\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"cd0c4912-2c44-4e4d-aff8-5d12d55615a2\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"},{\"serieName\": \"dealzone canned tuna\",\"color\": \"#2E75F0\"},{\"serieName\": \"santop tuna\",\"color\": \"#48D1E0\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Sales Indicator\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e2e42624-f6eb-4ddd-8816-024c29b62401\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"be77cd17-98ba-4c0a-a14a-5953294811f0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Sales Indicator\"]}}],\"systemSeriesColors\": [{\"serieName\": \"record sale\",\"color\": \"#747E8C\"}]}"
   display_mode: CHART_MODE

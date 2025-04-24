@@ -1,0 +1,703 @@
+guid: b9d95a36-d2fc-45fa-bb8c-d2b285799043
+liveboard:
+  name: user016 Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Tuna Sales Comparison
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Sale Date] [Sale Date].quarterly [Product Name] [Product Name].'santop tuna' [Product Name].'dealzone canned tuna'"
+      answer_columns:
+      - name: Product Name
+      - name: Quarter(Sale Date)
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Product Name
+          show_headline: false
+        - column_id: Quarter(Sale Date)
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Quarter(Sale Date)
+        - Product Name
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Product Name
+        - column_id: Quarter(Sale Date)
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Quarter(Sale Date)
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"showLinearRegressionLine\": false,\"chartSpecific\": {\"markersEnabled\": true,\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"04e200c5-27f8-4d9c-9369-ddd0f1b296b3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"360e0535-32b6-4870-9dea-508764afd720\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 805b5be6-16c4-425d-9371-710bbcfa35f6
+  - id: Viz_2
+    answer:
+      name: Class Pie Chart SH
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] by [Category] [Store Region]"
+      answer_columns:
+      - name: Category
+      - name: Store Region
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Category
+          show_headline: false
+        - column_id: Store Region
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Category
+        - Store Region
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Category
+        - column_id: Store Region
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Store Region
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Store Region\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"4a72bb6d-de21-4abc-bbb9-26bd390598c7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"9bbf3671-64d7-4bd8-a3ac-df319b9d034d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store Region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#48D1E0\"},{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"},{\"serieName\": \"food, east\",\"color\": \"#C26232\"},{\"serieName\": \"food, midwest\",\"color\": \"#FFCCB3\"},{\"serieName\": \"food, south\",\"color\": \"#FF8142\"},{\"serieName\": \"food, southwest\",\"color\": \"#6A4ABA\"},{\"serieName\": \"food, west\",\"color\": \"#D1C0FB\"},{\"serieName\": \"medical, east\",\"color\": \"#8C62F5\"},{\"serieName\": \"medical, midwest\",\"color\": \"#049160\"},{\"serieName\": \"medical, south\",\"color\": \"#9BE5CB\"},{\"serieName\": \"medical, southwest\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical, west\",\"color\": \"#BF982A\"},{\"serieName\": \"misc, east\",\"color\": \"#FDE9AF\"},{\"serieName\": \"misc, midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"misc, south\",\"color\": \"#82DFE9\"},{\"serieName\": \"misc, southwest\",\"color\": \"#369FAA\"},{\"serieName\": \"misc, west\",\"color\": \"#B5ECF2\"},{\"serieName\": \"non-food, east\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food, midwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"non-food, south\",\"color\": \"#2359B6\"},{\"serieName\": \"non-food, southwest\",\"color\": \"#ABC7F9\"},{\"serieName\": \"non-food, west\",\"color\": \"#2E75F0\"},{\"serieName\": \"east\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"},{\"serieName\": \"east, food\",\"color\": \"#C26232\"},{\"serieName\": \"east, medical\",\"color\": \"#FFCCB3\"},{\"serieName\": \"east, misc\",\"color\": \"#FF8142\"},{\"serieName\": \"east, non-food\",\"color\": \"#6A4ABA\"},{\"serieName\": \"midwest, food\",\"color\": \"#D1C0FB\"},{\"serieName\": \"midwest, medical\",\"color\": \"#8C62F5\"},{\"serieName\": \"midwest, misc\",\"color\": \"#049160\"},{\"serieName\": \"midwest, non-food\",\"color\": \"#9BE5CB\"},{\"serieName\": \"south, food\",\"color\": \"#06BF7F\"},{\"serieName\": \"south, medical\",\"color\": \"#BF982A\"},{\"serieName\": \"south, misc\",\"color\": \"#FDE9AF\"},{\"serieName\": \"south, non-food\",\"color\": \"#FCC838\"},{\"serieName\": \"southwest, food\",\"color\": \"#82DFE9\"},{\"serieName\": \"southwest, medical\",\"color\": \"#369FAA\"},{\"serieName\": \"southwest, misc\",\"color\": \"#B5ECF2\"},{\"serieName\": \"southwest, non-food\",\"color\": \"#48D1E0\"},{\"serieName\": \"west, food\",\"color\": \"#71A1F4\"},{\"serieName\": \"west, medical\",\"color\": \"#2359B6\"},{\"serieName\": \"west, misc\",\"color\": \"#ABC7F9\"},{\"serieName\": \"west, non-food\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: efb55668-6ade-4a47-aed3-57f808ee852f
+  - id: Viz_3
+    answer:
+      name: Total Sales by Store State
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Store State]"
+      answer_columns:
+      - name: Store State
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Store State
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Sales
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Store State
+        - Total Sales
+        client_state: "{\"widthState\":{},\"wrapTableHeader\":true}"
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Store State
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Store State
+          "y":
+          - Total Sales
+        client_state: "{\"systemMultiColorSeriesColors\":{\"Total Sales\":{\"Store State\":[\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}},\"chartProperties\":{\"gridLines\":{},\"showRoundedNumbers\":true,\"chartSpecific\":{},\"responsiveLayoutPreference\":1.0,\"mapviewport\":{\"zoomLevel\":5.0,\"center\":[-1.0670154693088695E7,4614999.07705929]}},\"axisProperties\":{\"0d7247dc-f3ca-4f94-9bec-863da4381c82\":{\"linkedColumns\":[\"Total Sales\"],\"axisType\":\"Y\",\"isOpposite\":false},\"0817972c-60e2-4be6-97e9-4ecbc0fb802a\":{\"linkedColumns\":[\"Store State\"],\"axisType\":\"X\"}},\"version\":\"V3\",\"columnProperties\":{\"Store State\":{},\"Total Sales\":{}}}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"mapviewport\": {\"center\": [-1.0670154693088695E7,4614999.07705929],\"zoomLevel\": 5.0,\"extent\": [-1.3152829371791221E7,3294167.2282914445,-8187480.014386171,5935830.925827136]},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"0d7247dc-f3ca-4f94-9bec-863da4381c82\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"0817972c-60e2-4be6-97e9-4ecbc0fb802a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+      display_mode: CHART_MODE
+    viz_guid: 3ef4f245-bc40-4a3b-9dba-20e99d0a7217
+  - id: Viz_4
+    answer:
+      name: Class Pivot Table SH
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Department] [Product Name] [Store Region] [Sales]"
+      answer_columns:
+      - name: Department
+      - name: Product Name
+      - name: Store Region
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Department
+          show_headline: false
+        - column_id: Product Name
+          show_headline: false
+        - column_id: Store Region
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Department
+        - Product Name
+        - Store Region
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: PIVOT_TABLE
+        chart_columns:
+        - column_id: Department
+        - column_id: Product Name
+        - column_id: Store Region
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Department
+          - Product Name
+          "y":
+          - Total Sales
+          color:
+          - Store Region
+        - "y":
+          - Total Sales
+        - x:
+          - Department
+          "y":
+          - Total Sales
+        - "y":
+          - Total Sales
+          color:
+          - Store Region
+        - x:
+          - Department
+          "y":
+          - Total Sales
+          color:
+          - Store Region
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotState\": {},\"summaryMode\": \"None\",\"isStackedAsPercent\": false,\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Store Region\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"72451a42-f087-4000-8745-4bc6961e4f9a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"0b709ed6-5432-46a9-9c05-1a7f54203458\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\",\"Product Name\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: e9150499-7fc9-4f3c-a3ac-6a7511de78e8
+  - id: Viz_5
+    answer:
+      name: Class Monthly Sales KPI SH
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sale Date].monthly [Sales]"
+      answer_columns:
+      - name: Month(Sale Date)
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Month(Sale Date)
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Month(Sale Date)
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Sale Date)
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Month(Sale Date)
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Month(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"60902c9c-07c4-4000-9f9f-2d97b2dbc934\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"d6676a18-a007-4a35-a091-fc08a67a3eec\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: caf244cc-6758-452b-ba81-4598f75b814a
+  - id: Viz_6
+    answer:
+      name: "Total Sales, 15 day moving average by Sale Date"
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      formulas:
+      - id: 15 day moving average
+        name: 15 day moving average
+        expr: "moving_average ( [Sales] , 7 , 7 , [Sale Date] )"
+        was_auto_generated: false
+      search_query: "[Sales] [Sale Date] [Sale Date].detailed [Sale Date].2024 [15 day moving average]"
+      answer_columns:
+      - name: 15 day moving average
+      - name: Sale Date
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: 15 day moving average
+          show_headline: false
+        - column_id: Sale Date
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Sale Date
+        - Total Sales
+        - 15 day moving average
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: 15 day moving average
+        - column_id: Sale Date
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Sale Date
+          "y":
+          - Total Sales
+          - 15 day moving average
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"visibleSeriesNames\": [\"15 day moving average\"],\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Sale Date\",\"columnProperty\": {}},{\"columnId\": \"15 day moving average\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"59f8a220-89e0-49d1-987c-cf91bba34cf5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"b0193ade-3f59-42ca-b7b1-54470fd02423\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"15 day moving average\"],\"isOpposite\": true}},{\"id\": \"1184237d-1bf2-4d86-8319-2284ebfb1cec\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Sale Date\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#06BF7F\"},{\"serieName\": \"15 day moving average\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: e38be83a-1e01-444f-a6a0-7f19d18ec99e
+  - id: Viz_7
+    answer:
+      name: "Total Sales, 15 day moving average by Sale Date"
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      formulas:
+      - id: 15 day moving average
+        name: 15 day moving average
+        expr: "moving_average ( [Sales] , 7 , 7 , [Sale Date] )"
+        was_auto_generated: false
+      search_query: "[Sales] [Sale Date] [Sale Date].detailed [Sale Date].2024 [15 day moving average]"
+      answer_columns:
+      - name: 15 day moving average
+      - name: Sale Date
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: 15 day moving average
+          show_headline: false
+        - column_id: Sale Date
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Sale Date
+        - Total Sales
+        - 15 day moving average
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: 15 day moving average
+        - column_id: Sale Date
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Sale Date
+          "y":
+          - Total Sales
+          - 15 day moving average
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"visibleSeriesNames\": [\"15 day moving average\"],\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Sale Date\",\"columnProperty\": {}},{\"columnId\": \"15 day moving average\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"59f8a220-89e0-49d1-987c-cf91bba34cf5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"b0193ade-3f59-42ca-b7b1-54470fd02423\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"15 day moving average\"],\"isOpposite\": true}},{\"id\": \"1184237d-1bf2-4d86-8319-2284ebfb1cec\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Sale Date\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#06BF7F\"},{\"serieName\": \"15 day moving average\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 07166db2-411e-4b13-b636-65bd0bb57da4
+  - id: Viz_8
+    answer:
+      name: "Total Sales, 15 day moving average by Sale Date"
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      formulas:
+      - id: 15 day moving average
+        name: 15 day moving average
+        expr: "moving_average ( [Sales] , 7 , 7 , [Sale Date] )"
+        was_auto_generated: false
+      search_query: "[Sales] [Sale Date] [Sale Date].detailed [Sale Date].2024 [15 day moving average]"
+      answer_columns:
+      - name: 15 day moving average
+      - name: Sale Date
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: 15 day moving average
+          show_headline: false
+        - column_id: Sale Date
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Sale Date
+        - Total Sales
+        - 15 day moving average
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: 15 day moving average
+        - column_id: Sale Date
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Sale Date
+          "y":
+          - Total Sales
+          - 15 day moving average
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"visibleSeriesNames\": [\"15 day moving average\"],\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Sale Date\",\"columnProperty\": {}},{\"columnId\": \"15 day moving average\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"59f8a220-89e0-49d1-987c-cf91bba34cf5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"b0193ade-3f59-42ca-b7b1-54470fd02423\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"15 day moving average\"],\"isOpposite\": true}},{\"id\": \"1184237d-1bf2-4d86-8319-2284ebfb1cec\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Sale Date\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#06BF7F\"},{\"serieName\": \"15 day moving average\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 0a885d0a-7303-4d37-80b7-c76dbc8a17b1
+  - id: Viz_9
+    answer:
+      name: "Total Sales, 15 day moving average by Sale Date"
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      formulas:
+      - id: 15 day moving average
+        name: 15 day moving average
+        expr: "moving_average ( [Sales] , 7 , 7 , [Sale Date] )"
+        was_auto_generated: false
+      search_query: "[Sales] [Sale Date] [Sale Date].detailed [Sale Date].2024 [15 day moving average]"
+      answer_columns:
+      - name: 15 day moving average
+      - name: Sale Date
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: 15 day moving average
+          show_headline: false
+        - column_id: Sale Date
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Sale Date
+        - Total Sales
+        - 15 day moving average
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: 15 day moving average
+        - column_id: Sale Date
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Sale Date
+          "y":
+          - Total Sales
+          - 15 day moving average
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"visibleSeriesNames\": [\"15 day moving average\"],\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Sale Date\",\"columnProperty\": {}},{\"columnId\": \"15 day moving average\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"59f8a220-89e0-49d1-987c-cf91bba34cf5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"b0193ade-3f59-42ca-b7b1-54470fd02423\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"15 day moving average\"],\"isOpposite\": true}},{\"id\": \"1184237d-1bf2-4d86-8319-2284ebfb1cec\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Sale Date\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#06BF7F\"},{\"serieName\": \"15 day moving average\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 859a6b29-dbbf-4dcb-b850-af0f7b60273e
+  - id: Viz_10
+    answer:
+      name: Total QUANTITYPURCHASED by PRODUCTTYPE
+      tables:
+      - id: DIM_RETAPP_PRODUCTS
+        name: DIM_RETAPP_PRODUCTS
+        fqn: 8d6e671c-2fd9-4136-8858-3ca0a2b68aa3
+      - id: FACT_RETAPP_SALES
+        name: FACT_RETAPP_SALES
+        fqn: 88801461-d936-4a55-990e-c44d5dc3a383
+      joins:
+      - id: C_DIM_RETAPP_PRODUCTS
+        name: C_DIM_RETAPP_PRODUCTS
+        source: FACT_RETAPP_SALES
+        destination: DIM_RETAPP_PRODUCTS
+      table_paths:
+      - id: DIM_RETAPP_PRODUCTS_1
+        table: DIM_RETAPP_PRODUCTS
+        join_path:
+        - join:
+          - C_DIM_RETAPP_PRODUCTS
+      - id: FACT_RETAPP_SALES_1
+        table: FACT_RETAPP_SALES
+      search_query: "[FACT_RETAPP_SALES_1::QUANTITYPURCHASED] [DIM_RETAPP_PRODUCTS_1::PRODUCTTYPE]"
+      answer_columns:
+      - name: PRODUCTTYPE
+      - name: Total QUANTITYPURCHASED
+      table:
+        table_columns:
+        - column_id: PRODUCTTYPE
+          show_headline: false
+        - column_id: Total QUANTITYPURCHASED
+          show_headline: false
+        ordered_column_ids:
+        - PRODUCTTYPE
+        - Total QUANTITYPURCHASED
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: PRODUCTTYPE
+        - column_id: Total QUANTITYPURCHASED
+        axis_configs:
+        - x:
+          - PRODUCTTYPE
+          "y":
+          - Total QUANTITYPURCHASED
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"PRODUCTTYPE\",\"columnProperty\": {}},{\"columnId\": \"Total QUANTITYPURCHASED\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"84aef513-697b-4fbb-a493-6dfd9f6855be\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total QUANTITYPURCHASED\"],\"isOpposite\": false}},{\"id\": \"6d8e7ef9-509a-4429-8839-c52ad3842b74\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"PRODUCTTYPE\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total QUANTITYPURCHASED\",\"color\": \"#8C62F5\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 4da13d7a-3120-4678-9fdd-efe4df3c4f7a
+  - id: Viz_11
+    answer:
+      name: Gross Margin Percentage
+      tables:
+      - id: BSR Retail Sales Model
+        name: BSR Retail Sales Model
+        fqn: 01979bbd-2f65-43ce-b98f-4664ebfcd6ce
+      search_query: "[Department] [Gross Profit Dollar Amount] [Sales Dollar Amount] [Gross Margin Percent]"
+      answer_columns:
+      - name: Department
+      - name: Gross Margin Percent
+        format:
+          category: PERCENTAGE
+          percentageFormatConfig:
+            decimals: 2.0
+          isCategoryEditable: true
+      - name: Total Gross Profit Dollar Amount
+      - name: Total Sales Dollar Amount
+      table:
+        table_columns:
+        - column_id: Department
+          show_headline: false
+        - column_id: Gross Margin Percent
+          show_headline: false
+        - column_id: Total Gross Profit Dollar Amount
+          show_headline: false
+        - column_id: Total Sales Dollar Amount
+          show_headline: false
+        ordered_column_ids:
+        - Department
+        - Total Gross Profit Dollar Amount
+        - Total Sales Dollar Amount
+        - Gross Margin Percent
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: BUBBLE
+        chart_columns:
+        - column_id: Department
+        - column_id: Gross Margin Percent
+        - column_id: Total Gross Profit Dollar Amount
+        - column_id: Total Sales Dollar Amount
+        axis_configs:
+        - x:
+          - Total Gross Profit Dollar Amount
+          "y":
+          - Total Sales Dollar Amount
+          color:
+          - Department
+          size: Gross Margin Percent
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Total Gross Profit Dollar Amount\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Dollar Amount\",\"columnProperty\": {}},{\"columnId\": \"Gross Margin Percent\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"5a6f2aeb-66b6-4627-93d6-abb839a56e75\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"d3a26e2d-a999-471b-9343-74c222c4fd7a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Gross Profit Dollar Amount\"]}}],\"systemSeriesColors\": [{\"serieName\": \"bakery\",\"color\": \"rgba(46,117,240,0.5)\"},{\"serieName\": \"canned goods\",\"color\": \"rgba(72,209,224,0.5)\"},{\"serieName\": \"cleaning supplies\",\"color\": \"rgba(252,200,56,0.5)\"},{\"serieName\": \"dairy\",\"color\": \"rgba(6,191,127,0.5)\"},{\"serieName\": \"frozen goods\",\"color\": \"rgba(140,98,245,0.5)\"},{\"serieName\": \"gifts\",\"color\": \"rgba(255,129,66,0.5)\"},{\"serieName\": \"liquor\",\"color\": \"rgba(171,199,249,0.5)\"},{\"serieName\": \"meat\",\"color\": \"rgba(181,236,242,0.5)\"},{\"serieName\": \"medical\",\"color\": \"rgba(253,233,175,0.5)\"},{\"serieName\": \"pharmacy\",\"color\": \"rgba(155,229,203,0.5)\"},{\"serieName\": \"photography\",\"color\": \"rgba(209,192,251,0.5)\"},{\"serieName\": \"produce\",\"color\": \"rgba(255,204,179,0.5)\"},{\"serieName\": \"seafood\",\"color\": \"rgba(35,89,182,0.5)\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 3fdaf368-dea3-4f9a-9fa3-f6d3a599d2ec
+  - id: Viz_12
+    answer:
+      name: "Total Quantity_In_Stock, Total Sales_Dollar_Amount by Product_Description"
+      tables:
+      - id: HO_Product_Dimension
+        name: HO_Product_Dimension
+        fqn: 4f9c18e8-3a07-4fa2-b830-33ccdf63f8c9
+      - id: HO_Retail_Orders_Fact
+        name: HO_Retail_Orders_Fact
+        fqn: a18e1212-1a28-4ddf-8b7a-deaa2c87a4b2
+      - id: HO_Retail_Sales_Fact
+        name: HO_Retail_Sales_Fact
+        fqn: 37abc608-a652-4141-982e-95de07795a52
+      joins:
+      - id: HO_Retail_Orders_Fact_to_HO_Product_Dimension
+        name: HO_Retail_Orders_Fact_to_HO_Product_Dimension
+        source: HO_Retail_Orders_Fact
+        destination: HO_Product_Dimension
+      - id: Product_Key - Product_Key
+        name: Product_Key - Product_Key
+        source: HO_Retail_Sales_Fact
+        destination: HO_Product_Dimension
+      table_paths:
+      - id: HO_Product_Dimension_1
+        table: HO_Product_Dimension
+        join_path:
+        - join:
+          - HO_Retail_Orders_Fact_to_HO_Product_Dimension
+        - join:
+          - Product_Key - Product_Key
+      - id: HO_Retail_Orders_Fact_1
+        table: HO_Retail_Orders_Fact
+      - id: HO_Retail_Sales_Fact_1
+        table: HO_Retail_Sales_Fact
+      search_query: "[HO_Product_Dimension_1::Product_Description] [HO_Retail_Orders_Fact_1::Quantity_In_Stock] [HO_Retail_Sales_Fact_1::Sales_Dollar_Amount]"
+      answer_columns:
+      - name: Product_Description
+      - name: Total Quantity_In_Stock
+      - name: Total Sales_Dollar_Amount
+      table:
+        table_columns:
+        - column_id: Product_Description
+          show_headline: false
+        - column_id: Total Quantity_In_Stock
+          show_headline: false
+        - column_id: Total Sales_Dollar_Amount
+          show_headline: false
+        ordered_column_ids:
+        - Product_Description
+        - Total Quantity_In_Stock
+        - Total Sales_Dollar_Amount
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Product_Description
+        - column_id: Total Quantity_In_Stock
+        - column_id: Total Sales_Dollar_Amount
+        axis_configs:
+        - x:
+          - Total Quantity_In_Stock
+          "y":
+          - Total Sales_Dollar_Amount
+          category:
+          - Product_Description
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product_Description\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity_In_Stock\",\"columnProperty\": {}},{\"columnId\": \"Total Sales_Dollar_Amount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0f75db4f-843d-4ec4-b6a4-e70f6462cf48\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales_Dollar_Amount\"],\"isOpposite\": false}},{\"id\": \"1995a91a-67c2-47e4-aa22-ad9d5ae071a5\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Quantity_In_Stock\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales_Dollar_Amount\",\"color\": \"#FCC838\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 8ffe61a1-d545-4233-9f31-9f6a31a62d2a
+  - id: Viz_13
+    answer:
+      name: "Total Quantity Ordered, Total Shipping Cost by Shipper Name, Daily Ordered Date, Daily Shipped Date"
+      tables:
+      - id: multiple join paths
+        name: multiple join paths
+        fqn: b1f624c0-6368-447f-ba98-25117fd9d637
+      search_query: "[Quantity Ordered] [Shipping Cost] [Shipper Name] [Ordered Date] [Ordered Date].daily [Shipped Date] [Shipped Date].daily"
+      answer_columns:
+      - name: Day(Ordered Date)
+      - name: Day(Shipped Date)
+      - name: Shipper Name
+      - name: Total Quantity Ordered
+      - name: Total Shipping Cost
+      table:
+        table_columns:
+        - column_id: Day(Ordered Date)
+          show_headline: false
+        - column_id: Day(Shipped Date)
+          show_headline: false
+        - column_id: Shipper Name
+          show_headline: false
+        - column_id: Total Quantity Ordered
+          show_headline: false
+        - column_id: Total Shipping Cost
+          show_headline: false
+        ordered_column_ids:
+        - Shipper Name
+        - Day(Ordered Date)
+        - Day(Shipped Date)
+        - Total Quantity Ordered
+        - Total Shipping Cost
+        client_state: ""
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Day(Ordered Date)
+        - column_id: Day(Shipped Date)
+        - column_id: Shipper Name
+        - column_id: Total Quantity Ordered
+        - column_id: Total Shipping Cost
+        axis_configs:
+        - x:
+          - Day(Ordered Date)
+          "y":
+          - Total Quantity Ordered
+          - Total Shipping Cost
+        client_state: ""
+      display_mode: TABLE_MODE
+    viz_guid: ac79d730-6958-48f8-9a44-7bee4e69ff1b
+  filters:
+  - column:
+    - Retail Sales - Classic::Store Region
+    oper: in
+    values:
+    - West
+    excluded_visualizations:
+    - Viz_3
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - Retail Sales - Classic::Category
+    excluded_visualizations:
+    - Viz_3
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tabs:
+    - name: Retail
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 4
+        height: 4
+        width: 6
+      - visualization_id: Viz_2
+        x: 0
+        "y": 8
+        height: 8
+        width: 6
+      - visualization_id: Viz_4
+        x: 6
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_5
+        x: 0
+        "y": 0
+        height: 4
+        width: 6
+      - visualization_id: Viz_6
+      - visualization_id: Viz_7
+      - visualization_id: Viz_8
+      - visualization_id: Viz_9
+      - visualization_id: Viz_10
+      - visualization_id: Viz_11
+      - visualization_id: Viz_12
+      - visualization_id: Viz_13
+      id: e9db3e13-dcd4-4527-8e22-665540eede9d
+    - name: Distribution
+      description: ""
+      tiles:
+      - visualization_id: Viz_3
+        x: 0
+        "y": 0
+        height: 8
+        width: 12
+      id: e24ccd94-638a-4270-9faf-c191f2dcd6fe
+  ordered_chips:
+  - name: Retail Sales - Classic::Store Region
+    type: FILTER
+  - name: Retail Sales - Classic::Category
+    type: FILTER

@@ -1,0 +1,50 @@
+guid: b1f624c0-6368-447f-ba98-25117fd9d637
+model:
+  name: multiple join paths
+  model_tables:
+  - name: HO_Date_Dimension
+    alias: Ordered Date Table
+    fqn: cd9560b4-7766-4599-af3c-36c2acfe6357
+  - name: HO_Retail_Orders_Fact
+    fqn: 7ebc659c-de99-478f-a46b-2fc5af9b71c6
+    joins:
+    - with: Ordered Date Table
+      referencing_join: BSR_orderdate_join
+    - with: shipped date table
+      referencing_join: BSR_shippeddate_join
+  - name: HO_Date_Dimension
+    alias: shipped date table
+    fqn: cd9560b4-7766-4599-af3c-36c2acfe6357
+  columns:
+  - name: Shipper Name
+    column_id: HO_Retail_Orders_Fact::Shipper_Name
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Shipping Cost
+    column_id: HO_Retail_Orders_Fact::Shipping_Cost
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Quantity Ordered
+    column_id: HO_Retail_Orders_Fact::Quantity_Ordered
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Ordered Date
+    column_id: Ordered Date Table::Date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Shipped Date
+    column_id: shipped date table::Date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
+    sage_config:
+      is_sage_enabled: false

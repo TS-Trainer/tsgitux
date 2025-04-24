@@ -1,0 +1,42 @@
+guid: cd9560b4-7766-4599-af3c-36c2acfe6357
+table:
+  name: HO_Date_Dimension
+  db: HO_retail
+  schema: PUBLIC
+  db_table: HO_Date_Dimension
+  connection:
+    name: BSR Snowflake Connection
+    fqn: 9d22bf99-e824-49f4-a9e6-fc6f811ac434
+  columns:
+  - name: Date_Key
+    db_column_name: Date_Key
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: Date
+    db_column_name: Date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE
+  - name: Holiday_Indicator
+    db_column_name: Holiday_Indicator
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Selling_Season
+    db_column_name: Selling_Season
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  properties:
+    sage_config:
+      is_sage_enabled: false

@@ -1,0 +1,40 @@
+guid: a9f20ee4-a5f1-435f-8797-23394222f234
+answer:
+  name: "Total Sales by Store Region, Store Name"
+  tables:
+  - id: Retail Sales - Classic
+    name: Retail Sales - Classic
+    fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+  search_query: "[Store Region] [Store Name] [Sales] sort by [Store Region] sort by [Store Name]"
+  answer_columns:
+  - name: Store Name
+  - name: Store Region
+  - name: Total Sales
+  table:
+    table_columns:
+    - column_id: Store Name
+      show_headline: false
+    - column_id: Store Region
+      show_headline: false
+    - column_id: Total Sales
+      show_headline: false
+    ordered_column_ids:
+    - Store Region
+    - Store Name
+    - Total Sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: GEO_AREA
+    chart_columns:
+    - column_id: Store Name
+    - column_id: Store Region
+    - column_id: Total Sales
+    axis_configs:
+    - x:
+      - Store Region
+      "y":
+      - Total Sales
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Store Name\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"835c9c7f-0921-4e34-a9d8-c1075a631b1e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"f5bbecf3-e3f5-42a1-9ec6-aca53abab82a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store Region\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store Region\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+  display_mode: TABLE_MODE

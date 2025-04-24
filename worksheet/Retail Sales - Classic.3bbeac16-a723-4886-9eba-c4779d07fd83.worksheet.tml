@@ -24,14 +24,10 @@ model:
   formulas:
   - id: '% Gross Margin'
     name: '% Gross Margin'
-    expr: sum ( [Sales::Gross Profit Dollar Amount] ) / sum ( [Sales::Sales Dollar
-      Amount] ) * 100
+    expr: sum ( [Sales::Gross Profit Dollar Amount] ) / sum ( [Sales::Sales Dollar Amount] ) * 100
   - id: Age Group
     name: Age Group
-    expr: if ( [Customers::Customer Age] >= 18 and [Customers::Customer Age] < 30
-      ) then 'a) 18-29' else if ( [Customers::Customer Age] >= 30 and [Customers::Customer
-      Age] < 50 ) then 'b) 30-49' else if ( [Customers::Customer Age] >= 50 and [Customers::Customer
-      Age] < 65 ) then 'c) 50-64' else 'd) 65+'
+    expr: if ( [Customers::Customer Age] >= 18 and [Customers::Customer Age] < 30 ) then 'a) 18-29' else if ( [Customers::Customer Age] >= 30 and [Customers::Customer Age] < 50 ) then 'b) 30-49' else if ( [Customers::Customer Age] >= 50 and [Customers::Customer Age] < 65 ) then 'c) 50-64' else 'd) 65+'
   - id: Basket Size
     name: Basket Size
     expr: sum ( [Sales::Sales Dollar Amount] ) / sum ( [Sales::Sales Quantity] )
@@ -43,20 +39,13 @@ model:
     expr: if ( [Customers::Customer Gender] = "male" ) then "male" else "female"
   - id: Household Income
     name: Household Income
-    expr: if ( [Customers::Annual Income] < 15000 ) then "a) <$15,000" else if ( [Customers::Annual
-      Income] < [Sales::Cost Dollar Amount] ) then "b) $15,000-$50,000" else if (
-      [Customers::Annual Income] < 75000 ) then "c) $50,000-$75,000" else if ( [Customers::Annual
-      Income] < 100000 ) then "d) $75,000-$100,000" else if ( [Customers::Annual Income]
-      < 150000 ) then "e) $100,000-$150,000" else if ( [Customers::Annual Income]
-      < 300000 ) then "f) $150,000-$300,000" else "g) $300,000+"
+    expr: if ( [Customers::Annual Income] < 15000 ) then "a) <$15,000" else if ( [Customers::Annual Income] < [Sales::Cost Dollar Amount] ) then "b) $15,000-$50,000" else if ( [Customers::Annual Income] < 75000 ) then "c) $50,000-$75,000" else if ( [Customers::Annual Income] < 100000 ) then "d) $75,000-$100,000" else if ( [Customers::Annual Income] < 150000 ) then "e) $100,000-$150,000" else if ( [Customers::Annual Income] < 300000 ) then "f) $150,000-$300,000" else "g) $300,000+"
   - id: IsGrocery
     name: IsGrocery
-    expr: if ( contains ( [Products::Department] , "produce" ) ) then 'grocery' else
-      'not grocery'
+    expr: if ( contains ( [Products::Department] , "produce" ) ) then 'grocery' else 'not grocery'
   - id: IsWine
     name: IsWine
-    expr: if ( contains ( [Products::Product Description] , "wine" ) ) then 'wine'
-      else 'not wine'
+    expr: if ( contains ( [Products::Product Description] , "wine" ) ) then 'wine' else 'not wine'
   - id: Month-Over-Month
     name: Month-Over-Month
     expr: month_number ( [Date] )
@@ -65,8 +54,7 @@ model:
     expr: '[Sales::POS Transaction Number] + 100000'
   - id: Sales per square foot
     name: Sales per square foot
-    expr: sum ( [Sales::Sales Dollar Amount] ) / min ( [Stores::Total Square Footage]
-      )
+    expr: sum ( [Sales::Sales Dollar Amount] ) / min ( [Stores::Total Square Footage] )
   - id: Year-Over-Year
     name: Year-Over-Year
     expr: year ( [Date] )

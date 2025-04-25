@@ -304,10 +304,6 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"% Gross Margin\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"9f64e64d-dd5a-4206-a57e-0fcc5167a8c3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"% Gross Margin\"],\"isOpposite\": false}},{\"id\": \"fa99cf39-95e3-4729-a8fa-67136d15c399\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"% Gross Margin\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: 7cdbe54d-137b-468b-aedf-870e1cd23c21
-  - id: Viz_9
-    viz_guid: 29c959ab-8e17-4c7f-b2e0-4fdd80cd9cc6
-    note_tile:
-      html_parsed_string: "<h2 class=\"theme-module__editor-h2\"><br></h2><h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Welcome to my liveboard.</span></h1><h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><a href=\"https://www.training.thoughtspot.com\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to access TS University.</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
   layout:
     tabs:
     - name: Retail Sales
@@ -343,11 +339,6 @@ liveboard:
         "y": 10
         height: 6
         width: 4
-      - visualization_id: Viz_9
-        x: 0
-        "y": 0
-        height: 4
-        width: 3
       id: 12ea408d-11a8-4c34-a73c-43044e19b39b
     - name: Vendor Reporting
       description: ""

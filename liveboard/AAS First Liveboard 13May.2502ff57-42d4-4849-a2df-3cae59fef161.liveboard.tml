@@ -148,6 +148,42 @@ liveboard:
     viz_guid: 98633361-3f05-4af3-8983-03841f0b021f
   - id: Viz_5
     answer:
+      name: Total Sales by Store State
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Store State] [Store Region].west"
+      answer_columns:
+      - name: Store State
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Store State
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Store State
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Store State
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Store State
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"a5692022-6e69-45d7-ad8d-b5aa37499c75\",\"columnProperty\": {}},{\"columnId\": \"7d2274b3-fcaa-4011-8c52-f93e28a9ff5c\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"12101e7a-e26a-49d0-a97c-126da7449eeb\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"76a916b8-953f-4abd-843f-cade83d506ec\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+      display_mode: CHART_MODE
+    viz_guid: b654bc5b-acfa-4a1d-a705-dda66c5bb1af
+  - id: Viz_6
+    answer:
       name: Untitled
       tables:
       - id: Retail Sales - Classic
@@ -182,7 +218,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a31cfbd0-010c-4ad9-b326-d51407548350\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"233ccf35-18d0-4f5f-90ce-7f25d6237220\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store Region\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"b049bd0f-8254-4072-bf5d-72982e7f6601\",\"colorMap\": [{\"serieName\": \"2f6fd34d-1a21-4e00-a047-ca278ed6d33f\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]},{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store Region\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: 1945a2a6-13d2-4c84-8667-0de4f3e62430
-  - id: Viz_6
+  - id: Viz_7
     answer:
       name: Total Sales by Product Name
       tables:
@@ -218,7 +254,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"374d7a64-7781-427f-ba7f-8cc0ac0938ec\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"f209314f-59f6-4a57-a3c6-a7086c661761\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Name\"]}}],\"seriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#F47E89\"}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#FCC838\"}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"b049bd0f-8254-4072-bf5d-72982e7f6601\",\"colorMap\": [{\"serieName\": \"2f6fd34d-1a21-4e00-a047-ca278ed6d33f\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]},{\"serieName\": \"f891595c-a1b8-4f49-b308-d02d8b9f54f4\",\"colorMap\": [{\"serieName\": \"82d1840f-2e82-4d0e-95a4-4d0256f39e10\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: 344a8a9b-5779-497c-99de-395d4c19e576
-  - id: Viz_7
+  - id: Viz_8
     answer:
       name: Total Deal Size by Vendor State
       tables:
@@ -254,6 +290,10 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Vendor State\",\"columnProperty\": {}},{\"columnId\": \"Total Deal Size\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"5509bb95-6360-41b3-9ac4-f869c52e2210\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"c181e6fd-5462-4b11-8cf3-a444e8a4b693\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"colorMap\": [{\"serieName\": \"Vendor State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: 9ac68d00-5865-45c4-9b88-73a4f9cfa360
+  - id: Viz_9
+    viz_guid: 001ab881-cfcf-40c3-a57d-f35a96dc3c90
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\"><br></h2><h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">This is a demo liveboard.</span></h1><h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">go to </span><a href=\"https://www.thoughtspot.com\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">TS Portal</span></a></h2><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
   filters:
   - column:
     - Retail Sales - Classic::Store Region
@@ -324,19 +364,29 @@ liveboard:
         width: 3
       - visualization_id: Viz_5
         x: 3
-        "y": 6
+        "y": 0
         height: 6
         width: 4
       - visualization_id: Viz_6
         x: 3
+        "y": 6
+        height: 6
+        width: 4
+      - visualization_id: Viz_7
+        x: 3
         "y": 12
         height: 8
         width: 8
+      - visualization_id: Viz_9
+        x: 0
+        "y": 0
+        height: 4
+        width: 3
       id: 074dd987-3f21-4b44-8597-3e52c08d2f91
     - name: Vendor Reporting
       description: ""
       tiles:
-      - visualization_id: Viz_7
+      - visualization_id: Viz_8
         x: 0
         "y": 0
         height: 6

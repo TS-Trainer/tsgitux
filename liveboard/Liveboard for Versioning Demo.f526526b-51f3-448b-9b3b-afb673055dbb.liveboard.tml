@@ -79,18 +79,17 @@ liveboard:
     - name: Store State Sales
       description: ""
       tiles:
-      - visualization_id: Viz_2
-        x: 0
-        "y": 0
-        height: 8
-        width: 12
-      id: e24b0d3f-5bc1-45d2-9f05-cfecc466154b
-    - name: Department Sales
-      description: ""
-      tiles:
       - visualization_id: Viz_1
         x: 0
         "y": 0
         height: 8
         width: 6
+      - visualization_id: Viz_2
+        x: 0
+        "y": 8
+        height: 8
+        width: 12
+      id: e24b0d3f-5bc1-45d2-9f05-cfecc466154b
+    - name: Department Sales
+      description: ""
       id: cd92d7c5-6c8c-41b3-a132-aad50f6b79f9

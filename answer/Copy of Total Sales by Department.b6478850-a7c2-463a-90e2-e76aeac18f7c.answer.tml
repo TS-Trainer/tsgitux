@@ -1,0 +1,41 @@
+guid: b6478850-a7c2-463a-90e2-e76aeac18f7c
+answer:
+  name: Copy of Total Sales by Department
+  tables:
+  - id: Sales Model Demo MG
+    name: Sales Model Demo MG
+    fqn: 10331c34-5abe-424e-8a59-4bf9e1ba7ae8
+  search_query: "[Profit Margin] [Profit] [Category]"
+  answer_columns:
+  - name: Category
+  - name: Profit Margin
+  - name: Total Profit
+  table:
+    table_columns:
+    - column_id: Category
+      show_headline: false
+    - column_id: Profit Margin
+      show_headline: false
+    - column_id: Total Profit
+      show_headline: false
+    ordered_column_ids:
+    - Category
+    - Profit Margin
+    - Total Profit
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Category
+    - column_id: Profit Margin
+    - column_id: Total Profit
+    axis_configs:
+    - x:
+      - Category
+      "y":
+      - Profit Margin
+      - Total Profit
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Profit Margin\",\"columnProperty\": {}},{\"columnId\": \"Total Profit\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0a7390a5-6a66-47db-bf46-12d89bf73290\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Profit Margin\"],\"isOpposite\": false}},{\"id\": \"586538fd-18f2-4574-b377-7cc5e0462d6e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Profit\"],\"isOpposite\": true}},{\"id\": \"1f2602c3-7b56-4029-a9a0-16a481697b10\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"f590c376-b1cb-447a-893d-5dcad010356b\",\"color\": \"#FF8142\"},{\"serieName\": \"Profit Margin\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Profit\",\"color\": \"#2E75F0\"}]}"
+  display_mode: CHART_MODE

@@ -1,0 +1,84 @@
+guid: 888117e8-3ec6-4aa1-9b4f-920b0521eb5d
+liveboard:
+  name: DemoMG
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Tuna Sales
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      formulas:
+      - id: Sales Type
+        name: Sales Type
+        expr: "if ( sum ( [Sales] ) > [Record Threshold Indicator] ) then 'record sale' else 'normal sale'"
+        was_auto_generated: false
+      search_query: "[Product Name] [Sales] [Product Name].'dealzone canned tuna' [Product Name].'santop tuna' [Sale Date] [Sale Date].quarterly [Sales Type]"
+      answer_columns:
+      - name: Product Name
+      - name: Quarter(Sale Date)
+      - name: Sales Type
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Product Name
+          show_headline: false
+        - column_id: Quarter(Sale Date)
+          show_headline: false
+        - column_id: Sales Type
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Product Name
+        - Quarter(Sale Date)
+        - Sales Type
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"widthState\": [{\"columnId\": \"Sales Type\",\"width\": 124.85305786132812}],\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {\"conditionalFormatting\": {}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"conditionalFormatting\": {}}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Product Name
+        - column_id: Quarter(Sale Date)
+        - column_id: Sales Type
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Quarter(Sale Date)
+          "y":
+          - Total Sales
+          color:
+          - Product Name
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"conditionalFormatting\": {}}}],\"axisProperties\": [{\"id\": \"3c33289d-fb44-4708-8424-f9670e8e87ec\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"d8a398af-ae9a-4118-9dfc-163db8bee2d0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"dealzone canned tuna\",\"color\": \"#48D1E0\"},{\"serieName\": \"santop tuna\",\"color\": \"#2E75F0\"}]}"
+      display_mode: TABLE_MODE
+      parameters:
+      - id: b1ed1301-8b7f-4e4c-813d-95ff22ac7e1c
+        name: Record Threshold Indicator
+        data_type: INT64
+        default_value: "3000"
+        range_config:
+          range_min: "1000"
+          range_max: "5000"
+          include_min: true
+          include_max: true
+        description: ""
+    viz_guid: 7db2684b-40ad-4c62-9b91-a5b3f678bb67
+  filters:
+  - column:
+    - Product Name
+    oper: in
+    values:
+    - bestprice air purifier
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: LARGE
+  ordered_chips:
+  - name: Product Name
+    type: FILTER

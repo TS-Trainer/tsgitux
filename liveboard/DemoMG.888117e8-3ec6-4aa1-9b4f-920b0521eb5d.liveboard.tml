@@ -52,10 +52,10 @@ liveboard:
           color:
           - Product Name
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"conditionalFormatting\": {}}}],\"axisProperties\": [{\"id\": \"3c33289d-fb44-4708-8424-f9670e8e87ec\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"d8a398af-ae9a-4118-9dfc-163db8bee2d0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"dealzone canned tuna\",\"color\": \"#48D1E0\"},{\"serieName\": \"santop tuna\",\"color\": \"#2E75F0\"}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"2cce5d96-bb73-4712-8fc2-69b675bb5fa3\",\"columnProperty\": {}},{\"columnId\": \"1882a7f2-3e6a-4882-8712-ab012cd9bf7e\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"conditionalFormatting\": {}}}],\"axisProperties\": [{\"id\": \"3c33289d-fb44-4708-8424-f9670e8e87ec\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"d8a398af-ae9a-4118-9dfc-163db8bee2d0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"dealzone canned tuna\",\"color\": \"#48D1E0\"},{\"serieName\": \"santop tuna\",\"color\": \"#2E75F0\"}]}"
       display_mode: TABLE_MODE
       parameters:
-      - id: b1ed1301-8b7f-4e4c-813d-95ff22ac7e1c
+      - id: 5c380190-cfd5-4859-8217-431c0d8090b3
         name: Record Threshold Indicator
         data_type: INT64
         default_value: "3000"
@@ -76,19 +76,9 @@ liveboard:
     is_single_value: false
     display_name: ""
   layout:
-    tabs:
-    - name: New Tab
-      description: ""
-      id: 11399abc-0c34-4cab-b395-8329409a8b8d
-    - name: 2nd Tab
-      description: ""
-      tiles:
-      - visualization_id: Viz_1
-        x: 0
-        "y": 0
-        height: 8
-        width: 12
-      id: 79d202a8-9d74-4af8-992d-e5519059b64a
+    tiles:
+    - visualization_id: Viz_1
+      size: LARGE
   ordered_chips:
   - name: Product Name
     type: FILTER

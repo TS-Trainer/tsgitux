@@ -76,9 +76,19 @@ liveboard:
     is_single_value: false
     display_name: ""
   layout:
-    tiles:
-    - visualization_id: Viz_1
-      size: LARGE
+    tabs:
+    - name: New Tab
+      description: ""
+      id: 11399abc-0c34-4cab-b395-8329409a8b8d
+    - name: 2nd Tab
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 0
+        height: 8
+        width: 12
+      id: 79d202a8-9d74-4af8-992d-e5519059b64a
   ordered_chips:
   - name: Product Name
     type: FILTER

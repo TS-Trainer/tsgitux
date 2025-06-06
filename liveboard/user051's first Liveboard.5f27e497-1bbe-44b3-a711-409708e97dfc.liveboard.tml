@@ -147,10 +147,6 @@ liveboard:
       display_mode: CHART_MODE
     viz_guid: b4fec984-ef34-4115-90f7-8828cdfd0985
   - id: Viz_5
-    viz_guid: bc6b6158-1ec5-4cc2-bd7d-9091eebc2eb4
-    note_tile:
-      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">ALERT</span></h2><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">The Region filter does </span><b><strong class=\"theme-module__editor-text-bold\" style=\"white-space: pre-wrap;\">NOT</strong></b><span style=\"white-space: pre-wrap;\"> apply to this Department tab.</span></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
-  - id: Viz_6
     answer:
       name: Total Sales by Quarterly Sale Date KPI
       tables:
@@ -186,7 +182,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"customProps\": \"{\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnomalies\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showBounds\\\":true,\\\"customCompare\\\":\\\"PREV_YEAR\\\"}\",\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8ec8bdc8-b0ba-43f9-a484-8ddf9dc1744d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"b0684e45-26ee-4b01-84bb-390f0706b9d2\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#FF8142\"}]}"
       display_mode: CHART_MODE
     viz_guid: 2e4c4b39-0f78-434a-b5b0-9b9c1a732958
-  - id: Viz_7
+  - id: Viz_6
     answer:
       name: Tuna Comparison Demo
       tables:
@@ -257,27 +253,30 @@ liveboard:
         "y": 0
         height: 8
         width: 6
+      - visualization_id: Viz_5
+        x: 0
+        "y": 8
+        height: 4
+        width: 3
       - visualization_id: Viz_6
-      - visualization_id: Viz_7
+        x: 0
+        "y": 12
+        height: 8
+        width: 12
+      - visualization_id: Viz_3
+        x: 0
+        "y": 20
+        height: 8
+        width: 6
       id: 98fedbf1-3e51-46b1-8daf-0870edb8f8d9
     - name: Departmental Sales
       description: ""
       tiles:
-      - visualization_id: Viz_3
-        x: 0
-        "y": 2
-        height: 8
-        width: 6
       - visualization_id: Viz_2
         x: 6
-        "y": 2
+        "y": 0
         height: 8
         width: 6
-      - visualization_id: Viz_5
-        x: 0
-        "y": 0
-        height: 2
-        width: 12
       id: cee88900-a06f-438b-a0f7-f8ba2c531b0f
   ordered_chips:
   - name: Retail Sales - Classic::Store Region

@@ -334,10 +334,6 @@ liveboard:
       display_mode: CHART_MODE
     viz_guid: 807062ba-2067-4259-8871-3cc2fefb7f16
   - id: Viz_9
-    viz_guid: b0bea15c-c6d7-4d46-afb8-38fdd5d1435d
-    note_tile:
-      html_parsed_string: "<h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Visit </span><a href=\"https://www.training.thoughtspot.com\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">TS University!</span></a></h1><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
-  - id: Viz_10
     answer:
       name: Category Wise Sales AAS
       tables:
@@ -444,11 +440,6 @@ liveboard:
         "y": 7
         height: 6
         width: 6
-      - visualization_id: Viz_9
-        x: 0
-        "y": 0
-        height: 4
-        width: 3
       id: 6b7fcd9d-84b4-4d0f-9a5d-a0fe5ad8f245
     - name: Vendor Reporting
       description: ""
@@ -458,7 +449,11 @@ liveboard:
         "y": 0
         height: 7
         width: 4
-      - visualization_id: Viz_10
+      - visualization_id: Viz_9
+        x: 4
+        "y": 0
+        height: 8
+        width: 6
       id: d8da462a-1578-44b8-a2fb-a96b3e01f199
   ordered_chips:
   - name: Retail Sales - Classic::Store Region

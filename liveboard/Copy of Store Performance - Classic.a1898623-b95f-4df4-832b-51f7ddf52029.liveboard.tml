@@ -1,0 +1,364 @@
+guid: a1898623-b95f-4df4-832b-51f7ddf52029
+liveboard:
+  name: Copy of Store Performance - Classic
+  description: Recent store and regional performance
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "Top 10 Stores by Gross Margin, Last 60 Days"
+      description: Top 10 stores ranked by gross margin over the last 60 days
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "top 10 [Store Name] by [Gross Margin ($)] [Sale Date].'last 60 days'"
+      answer_columns:
+      - name: Store Name
+      - name: Total Gross Margin ($)
+      table:
+        table_columns:
+        - column_id: Store Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Gross Margin ($)
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Store Name
+        - Total Gross Margin ($)
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Store Name\",\"columnProperty\": {}},{\"columnId\": \"Total Gross Margin ($)\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Store Name
+        - column_id: Total Gross Margin ($)
+        axis_configs:
+        - x:
+          - Store Name
+          "y":
+          - Total Gross Margin ($)
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Store Name\",\"columnProperty\": {}},{\"columnId\": \"Total Gross Margin ($)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"5c88df66-2cbe-4552-bd8a-68add5b4f626\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Gross Margin ($)\"],\"isOpposite\": false}},{\"id\": \"c22390ee-c15f-4005-8075-0905b729cfe9\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Gross Margin ($)\",\"color\": \"#FF5E45\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: ed94babb-8f05-4249-95e2-3f79f7992c66
+  - id: Viz_2
+    answer:
+      name: "Sales by State, Last 60 Days"
+      description: Sales by store state over the last 60 days
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Store State] [Sales] [Sale Date].'last 60 days'"
+      answer_columns:
+      - name: Store State
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Store State
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Sales
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Store State
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Store State
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Store State
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {\"dataLabels\": false}},{\"columnId\": \"Store State\",\"columnProperty\": {\"dataLabels\": false}}],\"axisProperties\": [{\"id\": \"b27bcb5d-0874-4fe6-ae43-a0569395762d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"5c5f88af-0b06-4a2d-8410-82db231cd1d4\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 80ca0167-69a0-428b-b55f-4955baa80b3b
+  - id: Viz_3
+    answer:
+      name: "Sales by Store Zip, Last 30 Days"
+      description: Growth of sales by U.S. region for the last 10 months
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Store Zip Code] [Sale Date].'last week' [Store Region]"
+      answer_columns:
+      - name: Store Region
+      - name: Store Zip Code
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Store Region
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Store Zip Code
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Sales
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Store Zip Code
+        - Store Region
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Store Zip Code\",\"columnProperty\": {}},{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: GEO_BUBBLE
+        chart_columns:
+        - column_id: Store Region
+        - column_id: Store Zip Code
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Store Zip Code
+          "y":
+          - Total Sales
+          color:
+          - Store Region
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Store Zip Code\",\"columnProperty\": {}},{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8310aa52-7f85-44e5-b4e9-94ec6dc896dd\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"b16014ea-0f3c-4729-b2e2-7bdfe4016175\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store Zip Code\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 37b5dcb1-63e4-4cfc-81b5-687d926a5ca1
+  - id: Viz_4
+    answer:
+      name: "Top 3 Stores by Daily Sales, Last Week"
+      description: Top 10 store cities by sales per square foot over the last 60 days
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "top 3 [Store Name] ranked by [Sales] for each [Sale Date] [Sale Date].'last week' [Sale Date].daily [Sale Date].'day of week'"
+      answer_columns:
+      - name: Day of Week(Sale Date)
+      - name: Day(Sale Date)
+      - name: Store Name
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Day of Week(Sale Date)
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Day(Sale Date)
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Store Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Sales
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Day(Sale Date)
+        - Store Name
+        - Day of Week(Sale Date)
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Day(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Store Name\",\"columnProperty\": {}},{\"columnId\": \"Day of Week(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Day of Week(Sale Date)
+        - column_id: Day(Sale Date)
+        - column_id: Store Name
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Day(Sale Date)
+          "y":
+          - Total Sales
+          color:
+          - Store Name
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {},\"showStackedLabels\": true},\"columnProperties\": [{\"columnId\": \"Store Name\",\"columnProperty\": {}},{\"columnId\": \"Day(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Day of Week(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2f9bbcb2-e4b4-41d3-beeb-9e0ec762f9ea\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"b3485516-d200-4a20-997e-cbb86218eac6\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(Sale Date)\"]}}],\"seriesColors\": [{\"serieName\": \"arlington store #662\",\"color\": \"rgb(148,80,230)\"},{\"serieName\": \"chino hills store #533\",\"color\": \"rgb(178,130,250)\"},{\"serieName\": \"dayton store #846\",\"color\": \"rgb(126,61,199)\"},{\"serieName\": \"durham store #512\",\"color\": \"rgb(201,174,255)\"},{\"serieName\": \"east orange store #982\",\"color\": \"rgb(97,45,161)\"},{\"serieName\": \"fall river store #146\",\"color\": \"rgb(57,81,204)\"},{\"serieName\": \"fayetteville store #479\",\"color\": \"rgb(97,120,232)\"},{\"serieName\": \"folsom store #6\",\"color\": \"rgb(42,64,173)\"},{\"serieName\": \"houston store #437\",\"color\": \"rgb(140,157,245)\"},{\"serieName\": \"lauderhill store #203\",\"color\": \"rgb(23,39,145)\"},{\"serieName\": \"livonia store #650\",\"color\": \"rgb(50,149,230)\"},{\"serieName\": \"lynchburg store #898\",\"color\": \"rgb(88,174,245)\"},{\"serieName\": \"new orleans store #293\",\"color\": \"rgb(23,117,194)\"},{\"serieName\": \"plymouth store #448\",\"color\": \"rgb(133,200,255)\"},{\"serieName\": \"sacramento store #909\",\"color\": \"rgb(9,94,163)\"},{\"serieName\": \"santa monica store #121\",\"color\": \"rgb(26,197,219)\"},{\"serieName\": \"sioux falls store #49\",\"color\": \"rgb(103,217,235)\"},{\"serieName\": \"south bend store #263\",\"color\": \"rgb(10,167,181)\"},{\"serieName\": \"vacaville store #462\",\"color\": \"rgb(152,231,245)\"},{\"serieName\": \"waukesha store #314\",\"color\": \"rgb(9,143,151)\"},{\"serieName\": \"west covina store #34\",\"color\": \"rgb(70,194,123)\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 424ae9e8-706f-4e71-aef3-c9e5ff2ce576
+  - id: Viz_5
+    answer:
+      name: "Product Sales vs % Gross Margin, Last 30 Days"
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[% Gross Margin] [Sales] [Store Name] [Sale Date].'last 30 days' [% Gross Margin] > 0 [% Gross Margin] < 100"
+      answer_columns:
+      - name: '% Gross Margin'
+      - name: Store Name
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: '% Gross Margin'
+          headline_aggregation: SUM
+        - column_id: Store Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Sales
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Store Name
+        - '% Gross Margin'
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Store Name\",\"columnProperty\": {}},{\"columnId\": \"% Gross Margin\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: '% Gross Margin'
+          conditional_formatting:
+            rule:
+            - range:
+                min: 75.0
+                max: 0.0
+              color: "rgba(53, 204, 0, 1)"
+              plotAsBand: false
+            - range:
+                min: 0.0
+                max: 25.0
+              color: "rgba(214, 0, 0, 1)"
+              plotAsBand: false
+        - column_id: Store Name
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Total Sales
+          "y":
+          - '% Gross Margin'
+          category:
+          - Store Name
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"% Gross Margin\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"IS_BETWEEN\",\"rangeValues\": {\"min\": 75.0,\"max\": 0.0},\"plotAsBand\": false,\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"rgba(53, 204, 0, 1)\"}},{\"operator\": \"IS_BETWEEN\",\"rangeValues\": {\"min\": 0.0,\"max\": 25.0},\"plotAsBand\": false,\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"rgba(214, 0, 0, 1)\"}}]}}}],\"axisProperties\": [{\"id\": \"0b4bb12d-f660-40fc-aaf0-b65d283be9b5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"% Gross Margin\"],\"isOpposite\": false}},{\"id\": \"a2c492b5-d183-41a1-9bb4-b9a2caf10b00\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Sales\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: f32a700f-5467-4d80-9c8c-fd119ed2ffb3
+  - id: Viz_6
+    viz_guid: 9962cda6-f9ae-40b7-ab13-8d001b40963c
+    note_tile:
+      html_parsed_string: <h2><b><strong class="theme-module__editor-text-bold">Watch the video below to learn how to work with liveboards</strong></b></h2><iframe data-src-link="https://fast.wistia.net/embed/iframe/5vi5t4c1du?seo=false&amp;videoFoam=true" width="657" height="287" src="https://fast.wistia.net/embed/iframe/5vi5t4c1du?seo=false&amp;videoFoam=true" frameborder="0" title="Embedded Page"></iframe><h1></h1>
+  filters:
+  - column:
+    - Category
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - Store Region
+    oper: in
+    values:
+    - west
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - Age Group
+    oper: in
+    values:
+    - c) 50-64
+    - a) 18-29
+    - b) 30-49
+    - d) 65+
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      x: 6
+      "y": 0
+      height: 4
+      width: 3
+    - visualization_id: Viz_2
+      x: 9
+      "y": 0
+      height: 4
+      width: 3
+    - visualization_id: Viz_3
+      x: 0
+      "y": 4
+      height: 4
+      width: 6
+    - visualization_id: Viz_4
+      x: 9
+      "y": 4
+      height: 4
+      width: 3
+    - visualization_id: Viz_5
+      x: 6
+      "y": 4
+      height: 4
+      width: 3
+    - visualization_id: Viz_6
+      x: 0
+      "y": 0
+      height: 4
+      width: 6
+  ordered_chips:
+  - name: Category
+    type: FILTER
+  - name: Store Region
+    type: FILTER
+  - name: Age Group
+    type: FILTER
+  views:
+  - view_guid: 8eb112ec-a533-4725-a4c8-f828a57ec3fc
+    name: User11
+    view_filters:
+    - column:
+      - Category
+      oper: in
+      values:
+      - Medical
+    - column:
+      - Store Region
+      oper: in
+      values:
+      - south
+      - East
+    - column:
+      - Age Group
+      oper: in
+      values:
+      - c) 50-64
+      - a) 18-29
+      - b) 30-49
+      - d) 65+
+    is_public: true
+  - view_guid: 2bdee107-e2e8-4643-8daa-4568d51d535c
+    name: test view
+    view_filters:
+    - column:
+      - Category
+      oper: in
+      values:
+      - Food
+    - column:
+      - Store Region
+      oper: in
+      values:
+      - south
+      - East
+    - column:
+      - Age Group
+      oper: in
+      values:
+      - c) 50-64
+      - a) 18-29
+      - b) 30-49
+      - d) 65+
+    is_public: true
+  - view_guid: 1516a1f2-5aaa-4c2d-9658-bebd05130f28
+    name: Food and South View
+    view_filters:
+    - column:
+      - Category
+      oper: in
+      values:
+      - Food
+    - column:
+      - Store Region
+      oper: in
+      values:
+      - South
+    - column:
+      - Age Group
+      oper: in
+      values:
+      - c) 50-64
+      - a) 18-29
+      - b) 30-49
+      - d) 65+
+    is_public: true

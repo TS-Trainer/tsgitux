@@ -311,8 +311,5 @@ liveboard:
       - Age Group
       oper: in
       values:
-      - c) 50-64
-      - a) 18-29
       - b) 30-49
-      - d) 65+
     is_public: false

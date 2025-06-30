@@ -294,15 +294,14 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 79a25b57-2f14-465f-9be3-59d5eadf0d0b
-    name: testing004
+  - view_guid: b40a65b1-6d7e-4d01-9319-e781ebc47c04
+    name: West Region Food
     view_filters:
     - column:
       - Category
       oper: in
       values:
       - Food
-      - Medical
     - column:
       - Store Region
       oper: in

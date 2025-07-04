@@ -5,31 +5,31 @@ answer:
   - id: Sales Model Test
     name: Sales Model Test
     fqn: 554c9944-dcab-408d-9f61-8635962856c2
-  search_query: "[Department Description] [Gross Profit Dollar Amount]"
+  search_query: "[Department Description] [Sales Dollar Amount]"
   answer_columns:
   - name: Department Description
-  - name: Total Gross Profit Dollar Amount
+  - name: Total Sales Dollar Amount
   table:
     table_columns:
     - column_id: Department Description
       show_headline: false
-    - column_id: Total Gross Profit Dollar Amount
+    - column_id: Total Sales Dollar Amount
       show_headline: false
     ordered_column_ids:
     - Department Description
-    - Total Gross Profit Dollar Amount
+    - Total Sales Dollar Amount
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
     type: COLUMN
     chart_columns:
     - column_id: Department Description
-    - column_id: Total Gross Profit Dollar Amount
+    - column_id: Total Sales Dollar Amount
     axis_configs:
     - x:
       - Department Description
       "y":
-      - Total Gross Profit Dollar Amount
+      - Total Sales Dollar Amount
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Department Description\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total Gross Profit Dollar Amount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1654d640-6ecc-4a2c-870e-d5770786ea2e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Gross Profit Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"86adcb4e-463f-4137-b9a3-a7f1e934e86c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department Description\"]}}],\"systemSeriesColors\": [{\"serieName\": \"09a0273f-13da-42b2-84b2-400f61ba88cb\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Gross Profit Dollar Amount\",\"color\": \"#FCC838\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Department Description\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Dollar Amount\",\"columnProperty\": {}},{\"columnId\": \"f0a51563-9541-44f5-87d7-e6e5cfdf1c69\",\"columnProperty\": {}},{\"columnId\": \"eb0d071d-7712-43aa-9413-237c5de0bf64\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8d07b419-de75-46f4-8c13-dcb12d975d29\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"f9835f1f-43e0-4331-8d58-aa337933ef8f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department Description\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales Dollar Amount\",\"color\": \"#48D1E0\"}]}"
   display_mode: CHART_MODE

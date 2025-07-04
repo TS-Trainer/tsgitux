@@ -1,0 +1,35 @@
+guid: 997b1767-a0a1-4335-b5a9-9485dbbadd51
+answer:
+  name: Total Sales Dollar Amount by Department Description
+  tables:
+  - id: Sales Model Test
+    name: Sales Model Test
+    fqn: 554c9944-dcab-408d-9f61-8635962856c2
+  search_query: "[Department Description] [Sales Dollar Amount]"
+  answer_columns:
+  - name: Department Description
+  - name: Total Sales Dollar Amount
+  table:
+    table_columns:
+    - column_id: Department Description
+      show_headline: false
+    - column_id: Total Sales Dollar Amount
+      show_headline: false
+    ordered_column_ids:
+    - Department Description
+    - Total Sales Dollar Amount
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Department Description
+    - column_id: Total Sales Dollar Amount
+    axis_configs:
+    - x:
+      - Department Description
+      "y":
+      - Total Sales Dollar Amount
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Department Description\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Dollar Amount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8d07b419-de75-46f4-8c13-dcb12d975d29\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"f9835f1f-43e0-4331-8d58-aa337933ef8f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department Description\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales Dollar Amount\",\"color\": \"#48D1E0\"}]}"
+  display_mode: CHART_MODE

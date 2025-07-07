@@ -294,19 +294,19 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: b8aa0871-1652-40c9-b358-01077a55c242
-    name: Store Performance - Classic - east - JLH
+  - view_guid: 5c8f4393-4542-454c-bb7a-a989e143706b
+    name: Food View
     view_filters:
     - column:
       - Category
       oper: in
       values:
-      - Medical
+      - Food
     - column:
       - Store Region
       oper: in
       values:
-      - East
+      - west
     - column:
       - Age Group
       oper: in

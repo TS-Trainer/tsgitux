@@ -293,26 +293,3 @@ liveboard:
     type: FILTER
   - name: Age Group
     type: FILTER
-  views:
-  - view_guid: e585bca2-2838-453b-a45b-87503aedb9e5
-    name: East Region Food
-    view_filters:
-    - column:
-      - Category
-      oper: in
-      values:
-      - Food
-    - column:
-      - Store Region
-      oper: in
-      values:
-      - East
-    - column:
-      - Age Group
-      oper: in
-      values:
-      - c) 50-64
-      - a) 18-29
-      - b) 30-49
-      - d) 65+
-    is_public: false

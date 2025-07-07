@@ -294,12 +294,14 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 3826b415-03fe-4dd2-bb6b-359a60a29e11
-    name: East View
+  - view_guid: b8aa0871-1652-40c9-b358-01077a55c242
+    name: Store Performance - Classic - east - JLH
     view_filters:
     - column:
       - Category
-      oper: =
+      oper: in
+      values:
+      - Medical
     - column:
       - Store Region
       oper: in

@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: bbc4f6f8-8f30-4e0d-b993-a664959bb009
-    name: East Region Food View
+  - view_guid: cfa4748a-6daf-4150-8444-d78819687fa6
+    name: Eastside Food
     view_filters:
     - column:
       - Category
@@ -311,8 +311,8 @@ liveboard:
       - Age Group
       oper: in
       values:
-      - c) 50-64
       - a) 18-29
       - b) 30-49
+      - c) 50-64
       - d) 65+
     is_public: false

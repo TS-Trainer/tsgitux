@@ -1,0 +1,35 @@
+guid: 04af835c-339b-46b8-b8d5-c77df3cca98e
+answer:
+  name: Total Sales Amount by Department
+  tables:
+  - id: AAS TML_EDITED Sales Model 9July
+    name: AAS TML_EDITED Sales Model 9July
+    fqn: b87786c6-fadb-49e4-a7be-38f68429441c
+  search_query: "[Sales Amount] [Department]"
+  answer_columns:
+  - name: Department
+  - name: Total Sales Amount
+  table:
+    table_columns:
+    - column_id: Department
+      show_headline: false
+    - column_id: Total Sales Amount
+      show_headline: false
+    ordered_column_ids:
+    - Department
+    - Total Sales Amount
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Department
+    - column_id: Total Sales Amount
+    axis_configs:
+    - x:
+      - Department
+      "y":
+      - Total Sales Amount
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Amount\",\"columnProperty\": {}},{\"columnId\": \"cd9583a8-e856-475a-af2f-0f2085e1f965\",\"columnProperty\": {}},{\"columnId\": \"bb731efc-f816-4278-8208-83fda38815e7\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"9a28f08c-c9a4-4d8e-987b-033bde60aff1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Amount\"],\"isOpposite\": false}},{\"id\": \"b545ec4c-89c0-4154-9353-7c06c6744e27\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales Amount\",\"color\": \"#48D1E0\"}]}"
+  display_mode: CHART_MODE

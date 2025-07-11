@@ -1,6 +1,6 @@
 guid: 04af835c-339b-46b8-b8d5-c77df3cca98e
 answer:
-  name: Total Sales Amount by Department
+  name: Total Sales Amount by Category
   tables:
   - id: AAS TML_EDITED Sales Model 9July
     name: AAS TML_EDITED Sales Model 9July

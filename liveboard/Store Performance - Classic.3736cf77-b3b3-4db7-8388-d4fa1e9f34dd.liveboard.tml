@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: d246bb82-4e12-4106-bb27-62667b155700
-    name: look at me
+  - view_guid: a13cc4b5-cb10-45de-a738-dac32b270da3
+    name: Midwest Sales
     view_filters:
     - column:
       - Category

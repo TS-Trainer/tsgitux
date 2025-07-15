@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: d786ebab-468e-4384-95a5-b4bcd49eb52c
-    name: COpy View
+  - view_guid: 6bf1defa-fcee-455a-b669-09bda1c599c1
+    name: Test View for Food Category
     view_filters:
     - column:
       - Category
@@ -306,8 +306,27 @@ liveboard:
       - Store Region
       oper: in
       values:
-      - south
-      - East
+      - Midwest
+    - column:
+      - Age Group
+      oper: in
+      values:
+      - c) 50-64
+      - a) 18-29
+      - b) 30-49
+      - d) 65+
+    is_public: false
+  - view_guid: 66b44037-ffb7-4f70-84ca-4094061a97fc
+    name: Test View
+    view_filters:
+    - column:
+      - Category
+      oper: =
+    - column:
+      - Store Region
+      oper: in
+      values:
+      - Midwest
     - column:
       - Age Group
       oper: in

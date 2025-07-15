@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 24bb463d-7c21-41b5-8a3c-ed1ddb81f454
-    name: Midwest Store Performance
+  - view_guid: 53379219-ff03-4fd6-b39f-a56a96f65cc0
+    name: Midwest View - 061
     view_filters:
     - column:
       - Category

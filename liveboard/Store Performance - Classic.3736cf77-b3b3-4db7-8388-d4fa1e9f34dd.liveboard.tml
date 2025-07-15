@@ -294,18 +294,20 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: e0d32e12-95c3-4e56-bfa2-095c759b1ae8
-    name: test midwest
+  - view_guid: d786ebab-468e-4384-95a5-b4bcd49eb52c
+    name: COpy View
     view_filters:
     - column:
       - Category
-      oper: =
+      oper: in
+      values:
+      - Food
     - column:
       - Store Region
       oper: in
       values:
-      - west
-      - Midwest
+      - south
+      - East
     - column:
       - Age Group
       oper: in

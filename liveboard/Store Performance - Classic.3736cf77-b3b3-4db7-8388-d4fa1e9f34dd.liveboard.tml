@@ -294,21 +294,17 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 64a2839a-cc91-4560-8e49-5bda704812c7
-    name: Tyson's View of Store Performance
+  - view_guid: 6432c397-e33d-4a86-943d-3866a76fd1e8
+    name: Midwest
     view_filters:
     - column:
       - Category
-      oper: in
-      values:
-      - Food
-      - Medical
+      oper: =
     - column:
       - Store Region
       oper: in
       values:
-      - west
-      - Southwest
+      - Midwest
     - column:
       - Age Group
       oper: in

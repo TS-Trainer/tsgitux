@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 53379219-ff03-4fd6-b39f-a56a96f65cc0
-    name: Midwest View - 061
+  - view_guid: e0d32e12-95c3-4e56-bfa2-095c759b1ae8
+    name: test midwest
     view_filters:
     - column:
       - Category
@@ -304,6 +304,7 @@ liveboard:
       - Store Region
       oper: in
       values:
+      - west
       - Midwest
     - column:
       - Age Group

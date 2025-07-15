@@ -293,3 +293,24 @@ liveboard:
     type: FILTER
   - name: Age Group
     type: FILTER
+  views:
+  - view_guid: d246bb82-4e12-4106-bb27-62667b155700
+    name: look at me
+    view_filters:
+    - column:
+      - Category
+      oper: =
+    - column:
+      - Store Region
+      oper: in
+      values:
+      - Midwest
+    - column:
+      - Age Group
+      oper: in
+      values:
+      - c) 50-64
+      - a) 18-29
+      - b) 30-49
+      - d) 65+
+    is_public: false

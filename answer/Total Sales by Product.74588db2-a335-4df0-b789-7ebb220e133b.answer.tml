@@ -5,31 +5,31 @@ answer:
   - id: Sales Model MG
     name: Sales Model MG
     fqn: 182229c9-7a06-49bc-95d8-59bc848f5e6e
-  search_query: "[Department] [Profit]"
+  search_query: "[Sales] [Product]"
   answer_columns:
-  - name: Department
-  - name: Total Profit
+  - name: Product
+  - name: Total Sales
   table:
     table_columns:
-    - column_id: Department
+    - column_id: Product
       show_headline: false
-    - column_id: Total Profit
+    - column_id: Total Sales
       show_headline: false
     ordered_column_ids:
-    - Department
-    - Total Profit
+    - Product
+    - Total Sales
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
     type: COLUMN
     chart_columns:
-    - column_id: Department
-    - column_id: Total Profit
+    - column_id: Product
+    - column_id: Total Sales
     axis_configs:
     - x:
-      - Department
+      - Product
       "y":
-      - Total Profit
+      - Total Sales
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Total Profit\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3aea4431-fc7e-43fd-9ebc-9c9a8d13cdc5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Profit\"],\"isOpposite\": false}},{\"id\": \"7eb08fb2-7dca-4bef-b222-cff73087b3ff\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"95408a32-038d-49b3-80fa-66bc927121a5\",\"color\": \"#06BF7F\"},{\"serieName\": \"Total Profit\",\"color\": \"#48D1E0\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"6611ed43-a07d-4b73-89d1-45d89dcb2b14\",\"columnProperty\": {}},{\"columnId\": \"3077f8cc-9f29-44c7-bfec-69400419610d\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0a5a5516-7494-49b4-b37c-342358114cf3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"42fe9f37-abbd-4b09-970f-d3e9c4beb268\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#06BF7F\"}]}"
   display_mode: CHART_MODE

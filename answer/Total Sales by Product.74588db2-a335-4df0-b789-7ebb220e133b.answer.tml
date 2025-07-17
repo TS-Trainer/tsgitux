@@ -1,0 +1,35 @@
+guid: 74588db2-a335-4df0-b789-7ebb220e133b
+answer:
+  name: Total Sales by Product
+  tables:
+  - id: Sales Model MG
+    name: Sales Model MG
+    fqn: 182229c9-7a06-49bc-95d8-59bc848f5e6e
+  search_query: "[Sales] [Product]"
+  answer_columns:
+  - name: Product
+  - name: Total Sales
+  table:
+    table_columns:
+    - column_id: Product
+      show_headline: false
+    - column_id: Total Sales
+      show_headline: false
+    ordered_column_ids:
+    - Product
+    - Total Sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Product
+    - column_id: Total Sales
+    axis_configs:
+    - x:
+      - Product
+      "y":
+      - Total Sales
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0a5a5516-7494-49b4-b37c-342358114cf3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"42fe9f37-abbd-4b09-970f-d3e9c4beb268\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#06BF7F\"}]}"
+  display_mode: CHART_MODE

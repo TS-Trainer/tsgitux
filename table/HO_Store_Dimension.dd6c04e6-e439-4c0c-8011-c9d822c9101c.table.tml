@@ -170,7 +170,7 @@ table:
       - Store_Region
     rules:
     - name: RLS Demo MG
-      expr: "[HO_Store_Dimension_1::Store_Region] = ts_groups "
+      expr: "[HO_Store_Dimension_1::Store_Region] = ts_groups or ts_groups = 'gms'"
   properties:
     sage_config:
       is_sage_enabled: false

@@ -1,0 +1,55 @@
+guid: 50eb8cd7-0a30-4bee-8709-3714480cf62b
+table:
+  name: SALES_FACT
+  db: NEWRETAIL
+  schema: RETAIL
+  db_table: SALES_FACT
+  connection:
+    name: test
+    fqn: 4f6f8138-5b64-4f13-b390-ba67bcb3ffd0
+  columns:
+  - name: STORE_KEY
+    db_column_name: STORE_KEY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: CUSTOMER_KEY
+    db_column_name: CUSTOMER_KEY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: POS_TRANSACTION_NUMBER
+    db_column_name: POS_TRANSACTION_NUMBER
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+    db_column_properties:
+      data_type: INT64
+  - name: TIMESTAMP
+    db_column_name: TIMESTAMP
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: DATE_TIME
+  joins_with:
+  - name: FK_SALESFACT_TO_CUSTOMERDIM
+    destination:
+      name: CUSTOMER_DIMENSION
+      fqn: 045a99fb-91d0-4849-91a9-85d250ee033b
+    "on": "[SALES_FACT::CUSTOMER_KEY] = [CUSTOMER_DIMENSION::CUSTOMER_KEY]"
+    type: INNER
+  - name: FK_SALESFACT_TO_STOREDIM
+    destination:
+      name: STORE_DIMENSION
+      fqn: 74ac594e-c4e9-4701-bb72-ac1cb2a941ae
+    "on": "[SALES_FACT::STORE_KEY] = [STORE_DIMENSION::STORE_KEY]"
+    type: INNER
+  properties:
+    sage_config:
+      is_sage_enabled: false

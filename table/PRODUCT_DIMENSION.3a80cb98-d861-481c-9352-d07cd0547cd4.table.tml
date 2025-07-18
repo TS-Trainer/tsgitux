@@ -1,0 +1,93 @@
+guid: 3a80cb98-d861-481c-9352-d07cd0547cd4
+table:
+  name: PRODUCT_DIMENSION
+  db: NEWRETAIL
+  schema: RETAIL
+  db_table: PRODUCT_DIMENSION
+  connection:
+    name: test
+    fqn: 4f6f8138-5b64-4f13-b390-ba67bcb3ffd0
+  columns:
+  - name: PRODUCT_KEY
+    db_column_name: PRODUCT_KEY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: CATEGORY
+    db_column_name: CATEGORY
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: DEPARTMENT_KEY
+    db_column_name: DEPARTMENT_KEY
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCT_NAME
+    db_column_name: PRODUCT_NAME
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRICE
+    db_column_name: PRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: REGION_WEST
+    db_column_name: REGION_WEST
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: REGION_SOUTHWEST
+    db_column_name: REGION_SOUTHWEST
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: REGION_SOUTH
+    db_column_name: REGION_SOUTH
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: REGION_MIDWEST
+    db_column_name: REGION_MIDWEST
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: REGION_EAST
+    db_column_name: REGION_EAST
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: PRODUCT
+    db_column_name: PRODUCT
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  properties:
+    sage_config:
+      is_sage_enabled: false

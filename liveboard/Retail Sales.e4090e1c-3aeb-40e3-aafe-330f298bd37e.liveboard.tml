@@ -1,0 +1,478 @@
+guid: e4090e1c-3aeb-40e3-aafe-330f298bd37e
+liveboard:
+  name: Retail Sales
+  description: Used to demonstrate applying Liveboard filters.
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Quantity Purchased by Item Type
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[item type] top 10 by [quantity purchased] [state]"
+      answer_columns:
+      - name: Total quantity purchased
+      - name: item type
+      - name: state
+      table:
+        table_columns:
+        - column_id: Total quantity purchased
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        - column_id: state
+          show_headline: false
+        ordered_column_ids:
+        - item type
+        - state
+        - Total quantity purchased
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Total quantity purchased
+        - column_id: item type
+        - column_id: state
+        axis_configs:
+        - x:
+          - item type
+          "y":
+          - Total quantity purchased
+          color:
+          - state
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"55cbc13b-ca66-48de-8d5b-d4efe9f64d7f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"2e2e9579-dff9-42f5-a8f2-aa391bc92881\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"item type\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total quantity purchased\",\"color\": \"#2E75F0\"},{\"serieName\": \"pants\",\"color\": \"#48D1E0\"},{\"serieName\": \"shirts\",\"color\": \"#2E75F0\"},{\"serieName\": \"arizona\",\"color\": \"#8C62F5\"},{\"serieName\": \"california\",\"color\": \"#56D3A8\"},{\"serieName\": \"colorado\",\"color\": \"#06BF7F\"},{\"serieName\": \"illinois\",\"color\": \"#FCD977\"},{\"serieName\": \"massachusetts\",\"color\": \"#FCC838\"},{\"serieName\": \"michigan\",\"color\": \"#82DFE9\"},{\"serieName\": \"minnesota\",\"color\": \"#48D1E0\"},{\"serieName\": \"montana\",\"color\": \"#71A1F4\"},{\"serieName\": \"nevada\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 37ff3860-012c-4f3f-8c7f-7be394c821bc
+  - id: Viz_2
+    answer:
+      name: Sales over time
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales] [date].quarterly [date]"
+      answer_columns:
+      - name: Quarter(date)
+      - name: Total sales
+      table:
+        table_columns:
+        - column_id: Quarter(date)
+          show_headline: false
+        - column_id: Total sales
+          show_headline: false
+        ordered_column_ids:
+        - Quarter(date)
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: PIVOT_TABLE
+        chart_columns:
+        - column_id: Quarter(date)
+        - column_id: Total sales
+        axis_configs:
+        - x:
+          - Quarter(date)
+          "y":
+          - Total sales
+        - "y":
+          - Total sales
+        - x:
+          - Quarter(date)
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotState\": {\"fields\": [{\"dataField\": \"Quarter(date)\",\"sortBy\": \"value\",\"sortBySummaryField\": \"Quarter(date)\",\"sortOrder\": \"asc\",\"expanded\": false,\"area\": \"row\"}]}}},\"axisProperties\": [{\"id\": \"4bbdb0f9-56b6-4631-aac5-fcf77be21a17\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"969e5bcb-7cd8-4f1c-b742-91459284d9f1\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(date)\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 5ec24d4d-d08f-4a3b-a8a1-2c415a9ac65b
+  - id: Viz_3
+    answer:
+      name: Total sales by Monthly date
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales] [date].monthly"
+      answer_columns:
+      - name: Month(date)
+      - name: Total sales
+      table:
+        table_columns:
+        - column_id: Month(date)
+          show_headline: false
+        - column_id: Total sales
+          show_headline: false
+        ordered_column_ids:
+        - Month(date)
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(date)
+        - column_id: Total sales
+        axis_configs:
+        - x:
+          - Month(date)
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"3f5ed84e-b087-4217-86a0-f1d90f43ab28\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"d7347947-a39f-4ff4-bf03-08c4c6424806\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#2770ef\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: b569287f-5a5d-4542-b52e-17ae3a98685e
+  - id: Viz_4
+    answer:
+      name: Total sales by product and region
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "sum [sales] [region] [product]"
+      answer_columns:
+      - name: Total sales
+      - name: product
+      - name: region
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: product
+          show_headline: false
+        - column_id: region
+          show_headline: false
+        ordered_column_ids:
+        - region
+        - product
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: product
+        - column_id: region
+        axis_configs:
+        - x:
+          - product
+          "y":
+          - Total sales
+          color:
+          - region
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"visibleSeriesNames\": [\"west\"],\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"region\",\"columnProperty\": {}},{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8a2a3750-2a42-45e7-a516-6d5bea752c9d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"e303775b-f263-4289-a543-2de8eb31399f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"product\"]}}],\"systemSeriesColors\": [{\"serieName\": \"east\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: a27e123c-6a02-49ff-94c2-2ad93e961831
+  - id: Viz_5
+    answer:
+      name: Total sales by state
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "sum [sales] [state]"
+      answer_columns:
+      - name: Total sales
+      - name: state
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: state
+          show_headline: false
+        ordered_column_ids:
+        - state
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Total sales
+        - column_id: state
+        axis_configs:
+        - x:
+          - state
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"state\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e931c242-b1ed-44b7-aba0-81651770cea6\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"8352bccb-ddae-4f7f-8264-e4a8f9938822\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"state\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total sales\",\"colorMap\": [{\"serieName\": \"state\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+      display_mode: CHART_MODE
+    viz_guid: f21cfc02-333c-4c50-8ed4-e4dda6dd9380
+  - id: Viz_6
+    answer:
+      name: Total sales by item type
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "top [item type] ranked by sum [sales] sort by sum [sales] descending [item type].Jackets"
+      answer_columns:
+      - name: Total sales
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - item type
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: BAR
+        chart_columns:
+        - column_id: Total sales
+        - column_id: item type
+        axis_configs:
+        - x:
+          - item type
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b4a0210b-2b56-4d33-8071-e04fb6a3c615\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"bac61c8b-d5de-4796-b223-f54ae6f0f052\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"item type\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#FF8142\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 8ecc80e0-0181-4153-b7ca-5eaaf10bbfc3
+  - id: Viz_7
+    answer:
+      name: Total Sales by Category
+      tables:
+      - id: Retail
+        name: Retail
+        fqn: 05399b20-bb39-43a1-b548-7ba1b842e797
+      search_query: "average [Price] average [Cost] [Product]"
+      answer_columns:
+      - name: Average Cost
+      - name: Average Price
+      - name: Product
+      table:
+        table_columns:
+        - column_id: Average Cost
+          show_headline: false
+        - column_id: Average Price
+          show_headline: false
+        - column_id: Product
+          show_headline: false
+        ordered_column_ids:
+        - Product
+        - Average Price
+        - Average Cost
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Average Cost
+        - column_id: Average Price
+        - column_id: Product
+        axis_configs:
+        - x:
+          - Product
+          "y":
+          - Average Price
+          - Average Cost
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": false,\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Product\",\"columnProperty\": {}},{\"columnId\": \"Average Price\",\"columnProperty\": {\"dataLabels\": true}},{\"columnId\": \"Average Cost\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"ac3b9744-6534-4ab8-8b4e-594511184778\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product\"]}},{\"id\": \"d79bd1c0-8a89-420c-ad78-1aba6d5e4fc7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average Price\",\"Average Cost\"],\"format\": {\"category\": \"CURRENCY\",\"currencyFormatConfig\": {\"locale\": \"USD\",\"unit\": \"AUTO\",\"decimals\": 2.0,\"toSeparateThousands\": true},\"isCategoryEditable\": true},\"name\": \"Average Cost & Price\",\"yAxisRange\": {},\"isOpposite\": false}}],\"seriesColors\": [{\"serieName\": \"fddb6446-d043-490e-a7a2-929e8817cd29\",\"color\": \"#2E75F0\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"},{\"serieName\": \"medical\",\"color\": \"#06BF7F\"},{\"serieName\": \"food, alabama\",\"color\": \"#721F27\"},{\"serieName\": \"food, arizona\",\"color\": \"#F47E89\"},{\"serieName\": \"food, arkansas\",\"color\": \"#B6313E\"},{\"serieName\": \"food, california\",\"color\": \"#F9B3B9\"},{\"serieName\": \"food, colorado\",\"color\": \"#F04152\"},{\"serieName\": \"food, connecticut\",\"color\": \"#2F3947\"},{\"serieName\": \"food, delaware\",\"color\": \"#A2ACBA\"},{\"serieName\": \"food, florida\",\"color\": \"#47515F\"},{\"serieName\": \"food, georgia\",\"color\": \"#BEC6D0\"},{\"serieName\": \"food, idaho\",\"color\": \"#747E8C\"},{\"serieName\": \"food, illinois\",\"color\": \"#7A3D1F\"},{\"serieName\": \"food, indiana\",\"color\": \"#FFA97E\"},{\"serieName\": \"food, iowa\",\"color\": \"#C26232\"},{\"serieName\": \"food, kansas\",\"color\": \"#FFCCB3\"},{\"serieName\": \"food, kentucky\",\"color\": \"#FF8142\"},{\"serieName\": \"food, louisiana\",\"color\": \"#422E75\"},{\"serieName\": \"food, maine\",\"color\": \"#B094F8\"},{\"serieName\": \"food, maryland\",\"color\": \"#6A4ABA\"},{\"serieName\": \"food, massachusetts\",\"color\": \"#D1C0FB\"},{\"serieName\": \"food, michigan\",\"color\": \"#8C62F5\"},{\"serieName\": \"food, minnesota\",\"color\": \"#025B3C\"},{\"serieName\": \"food, mississippi\",\"color\": \"#56D3A8\"},{\"serieName\": \"food, missouri\",\"color\": \"#049160\"},{\"serieName\": \"food, montana\",\"color\": \"#9BE5CB\"},{\"serieName\": \"food, nebraska\",\"color\": \"#06BF7F\"},{\"serieName\": \"food, nevada\",\"color\": \"#785F1A\"},{\"serieName\": \"food, new hampshire\",\"color\": \"#FCD977\"},{\"serieName\": \"food, new jersey\",\"color\": \"#BF982A\"},{\"serieName\": \"food, new mexico\",\"color\": \"#FDE9AF\"},{\"serieName\": \"food, new york\",\"color\": \"#FCC838\"},{\"serieName\": \"food, north carolina\",\"color\": \"#22636B\"},{\"serieName\": \"food, ohio\",\"color\": \"#82DFE9\"},{\"serieName\": \"food, oklahoma\",\"color\": \"#369FAA\"},{\"serieName\": \"food, oregon\",\"color\": \"#B5ECF2\"},{\"serieName\": \"food, pennsylvania\",\"color\": \"#48D1E0\"},{\"serieName\": \"food, rhode island\",\"color\": \"#163772\"},{\"serieName\": \"food, south carolina\",\"color\": \"#71A1F4\"},{\"serieName\": \"food, south dakota\",\"color\": \"#2359B6\"},{\"serieName\": \"food, tennessee\",\"color\": \"#ABC7F9\"},{\"serieName\": \"food, texas\",\"color\": \"#2E75F0\"},{\"serieName\": \"food, utah\",\"color\": \"#721F27\"},{\"serieName\": \"food, virginia\",\"color\": \"#F47E89\"},{\"serieName\": \"food, washington\",\"color\": \"#B6313E\"},{\"serieName\": \"food, wisconsin\",\"color\": \"#F9B3B9\"},{\"serieName\": \"medical, alabama\",\"color\": \"#F04152\"},{\"serieName\": \"medical, arizona\",\"color\": \"#2F3947\"},{\"serieName\": \"medical, arkansas\",\"color\": \"#A2ACBA\"},{\"serieName\": \"medical, california\",\"color\": \"#47515F\"},{\"serieName\": \"medical, colorado\",\"color\": \"#BEC6D0\"},{\"serieName\": \"medical, connecticut\",\"color\": \"#747E8C\"},{\"serieName\": \"medical, delaware\",\"color\": \"#7A3D1F\"},{\"serieName\": \"medical, florida\",\"color\": \"#FFA97E\"},{\"serieName\": \"medical, georgia\",\"color\": \"#C26232\"},{\"serieName\": \"medical, idaho\",\"color\": \"#FFCCB3\"},{\"serieName\": \"medical, illinois\",\"color\": \"#FF8142\"},{\"serieName\": \"medical, indiana\",\"color\": \"#422E75\"},{\"serieName\": \"medical, iowa\",\"color\": \"#B094F8\"},{\"serieName\": \"medical, kansas\",\"color\": \"#6A4ABA\"},{\"serieName\": \"medical, kentucky\",\"color\": \"#D1C0FB\"},{\"serieName\": \"medical, louisiana\",\"color\": \"#8C62F5\"},{\"serieName\": \"medical, maine\",\"color\": \"#025B3C\"},{\"serieName\": \"medical, maryland\",\"color\": \"#56D3A8\"},{\"serieName\": \"medical, massachusetts\",\"color\": \"#049160\"},{\"serieName\": \"medical, michigan\",\"color\": \"#9BE5CB\"},{\"serieName\": \"medical, minnesota\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical, mississippi\",\"color\": \"#785F1A\"},{\"serieName\": \"medical, missouri\",\"color\": \"#FCD977\"},{\"serieName\": \"medical, montana\",\"color\": \"#BF982A\"},{\"serieName\": \"medical, nebraska\",\"color\": \"#FDE9AF\"},{\"serieName\": \"medical, nevada\",\"color\": \"#FCC838\"},{\"serieName\": \"medical, new jersey\",\"color\": \"#22636B\"},{\"serieName\": \"medical, new mexico\",\"color\": \"#82DFE9\"},{\"serieName\": \"medical, new york\",\"color\": \"#369FAA\"},{\"serieName\": \"medical, north carolina\",\"color\": \"#B5ECF2\"},{\"serieName\": \"medical, ohio\",\"color\": \"#48D1E0\"},{\"serieName\": \"medical, oklahoma\",\"color\": \"#163772\"},{\"serieName\": \"medical, oregon\",\"color\": \"#71A1F4\"},{\"serieName\": \"medical, pennsylvania\",\"color\": \"#2359B6\"},{\"serieName\": \"medical, rhode island\",\"color\": \"#ABC7F9\"},{\"serieName\": \"medical, south carolina\",\"color\": \"#2E75F0\"},{\"serieName\": \"medical, south dakota\",\"color\": \"#721F27\"},{\"serieName\": \"medical, tennessee\",\"color\": \"#F47E89\"},{\"serieName\": \"medical, texas\",\"color\": \"#B6313E\"},{\"serieName\": \"medical, utah\",\"color\": \"#F9B3B9\"},{\"serieName\": \"medical, virginia\",\"color\": \"#F04152\"},{\"serieName\": \"medical, washington\",\"color\": \"#2F3947\"},{\"serieName\": \"medical, wisconsin\",\"color\": \"#A2ACBA\"},{\"serieName\": \"misc, alabama\",\"color\": \"#47515F\"},{\"serieName\": \"misc, arizona\",\"color\": \"#BEC6D0\"},{\"serieName\": \"misc, arkansas\",\"color\": \"#747E8C\"},{\"serieName\": \"misc, california\",\"color\": \"#7A3D1F\"},{\"serieName\": \"misc, colorado\",\"color\": \"#FFA97E\"},{\"serieName\": \"misc, delaware\",\"color\": \"#C26232\"},{\"serieName\": \"misc, florida\",\"color\": \"#FFCCB3\"},{\"serieName\": \"misc, georgia\",\"color\": \"#FF8142\"},{\"serieName\": \"misc, idaho\",\"color\": \"#422E75\"},{\"serieName\": \"misc, illinois\",\"color\": \"#B094F8\"},{\"serieName\": \"misc, indiana\",\"color\": \"#6A4ABA\"},{\"serieName\": \"misc, iowa\",\"color\": \"#D1C0FB\"},{\"serieName\": \"misc, kansas\",\"color\": \"#8C62F5\"},{\"serieName\": \"misc, kentucky\",\"color\": \"#025B3C\"},{\"serieName\": \"misc, louisiana\",\"color\": \"#56D3A8\"},{\"serieName\": \"misc, maryland\",\"color\": \"#049160\"},{\"serieName\": \"misc, massachusetts\",\"color\": \"#9BE5CB\"},{\"serieName\": \"misc, michigan\",\"color\": \"#06BF7F\"},{\"serieName\": \"misc, minnesota\",\"color\": \"#785F1A\"},{\"serieName\": \"misc, mississippi\",\"color\": \"#FCD977\"},{\"serieName\": \"misc, missouri\",\"color\": \"#BF982A\"},{\"serieName\": \"misc, montana\",\"color\": \"#FDE9AF\"},{\"serieName\": \"misc, nebraska\",\"color\": \"#FCC838\"},{\"serieName\": \"misc, nevada\",\"color\": \"#22636B\"},{\"serieName\": \"misc, new jersey\",\"color\": \"#82DFE9\"},{\"serieName\": \"misc, new mexico\",\"color\": \"#369FAA\"},{\"serieName\": \"misc, north carolina\",\"color\": \"#B5ECF2\"},{\"serieName\": \"misc, ohio\",\"color\": \"#48D1E0\"},{\"serieName\": \"misc, oklahoma\",\"color\": \"#163772\"},{\"serieName\": \"misc, oregon\",\"color\": \"#71A1F4\"},{\"serieName\": \"misc, pennsylvania\",\"color\": \"#2359B6\"},{\"serieName\": \"misc, rhode island\",\"color\": \"#ABC7F9\"},{\"serieName\": \"misc, south carolina\",\"color\": \"#2E75F0\"},{\"serieName\": \"misc, south dakota\",\"color\": \"#721F27\"},{\"serieName\": \"misc, tennessee\",\"color\": \"#F47E89\"},{\"serieName\": \"misc, texas\",\"color\": \"#B6313E\"},{\"serieName\": \"misc, utah\",\"color\": \"#F9B3B9\"},{\"serieName\": \"misc, virginia\",\"color\": \"#F04152\"},{\"serieName\": \"misc, washington\",\"color\": \"#2F3947\"},{\"serieName\": \"misc, wisconsin\",\"color\": \"#A2ACBA\"},{\"serieName\": \"non-food, alabama\",\"color\": \"#47515F\"},{\"serieName\": \"non-food, arizona\",\"color\": \"#BEC6D0\"},{\"serieName\": \"non-food, arkansas\",\"color\": \"#747E8C\"},{\"serieName\": \"non-food, california\",\"color\": \"#7A3D1F\"},{\"serieName\": \"non-food, colorado\",\"color\": \"#FFA97E\"},{\"serieName\": \"non-food, connecticut\",\"color\": \"#C26232\"},{\"serieName\": \"non-food, delaware\",\"color\": \"#FFCCB3\"},{\"serieName\": \"non-food, florida\",\"color\": \"#FF8142\"},{\"serieName\": \"non-food, georgia\",\"color\": \"#422E75\"},{\"serieName\": \"non-food, idaho\",\"color\": \"#B094F8\"},{\"serieName\": \"non-food, illinois\",\"color\": \"#6A4ABA\"},{\"serieName\": \"non-food, indiana\",\"color\": \"#D1C0FB\"},{\"serieName\": \"non-food, iowa\",\"color\": \"#8C62F5\"},{\"serieName\": \"non-food, kansas\",\"color\": \"#025B3C\"},{\"serieName\": \"non-food, kentucky\",\"color\": \"#56D3A8\"},{\"serieName\": \"non-food, louisiana\",\"color\": \"#049160\"},{\"serieName\": \"non-food, maine\",\"color\": \"#9BE5CB\"},{\"serieName\": \"non-food, maryland\",\"color\": \"#06BF7F\"},{\"serieName\": \"non-food, massachusetts\",\"color\": \"#785F1A\"},{\"serieName\": \"non-food, michigan\",\"color\": \"#FCD977\"},{\"serieName\": \"non-food, minnesota\",\"color\": \"#BF982A\"},{\"serieName\": \"non-food, mississippi\",\"color\": \"#FDE9AF\"},{\"serieName\": \"non-food, missouri\",\"color\": \"#FCC838\"},{\"serieName\": \"non-food, montana\",\"color\": \"#22636B\"},{\"serieName\": \"non-food, nebraska\",\"color\": \"#82DFE9\"},{\"serieName\": \"non-food, nevada\",\"color\": \"#369FAA\"},{\"serieName\": \"non-food, new hampshire\",\"color\": \"#B5ECF2\"},{\"serieName\": \"non-food, new jersey\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food, new mexico\",\"color\": \"#163772\"},{\"serieName\": \"non-food, new york\",\"color\": \"#71A1F4\"},{\"serieName\": \"non-food, north carolina\",\"color\": \"#2359B6\"},{\"serieName\": \"non-food, ohio\",\"color\": \"#ABC7F9\"},{\"serieName\": \"non-food, oklahoma\",\"color\": \"#2E75F0\"},{\"serieName\": \"non-food, oregon\",\"color\": \"#721F27\"},{\"serieName\": \"non-food, pennsylvania\",\"color\": \"#F47E89\"},{\"serieName\": \"non-food, rhode island\",\"color\": \"#B6313E\"},{\"serieName\": \"non-food, south carolina\",\"color\": \"#F9B3B9\"},{\"serieName\": \"non-food, south dakota\",\"color\": \"#F04152\"},{\"serieName\": \"non-food, tennessee\",\"color\": \"#2F3947\"},{\"serieName\": \"non-food, texas\",\"color\": \"#A2ACBA\"},{\"serieName\": \"non-food, utah\",\"color\": \"#47515F\"},{\"serieName\": \"non-food, virginia\",\"color\": \"#BEC6D0\"},{\"serieName\": \"non-food, washington\",\"color\": \"#747E8C\"},{\"serieName\": \"non-food, wisconsin\",\"color\": \"#7A3D1F\"},{\"serieName\": \"food\",\"color\": \"#F04152\"}],\"systemSeriesColors\": [{\"serieName\": \"fddb6446-d043-490e-a7a2-929e8817cd29\",\"color\": \"#2E75F0\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"},{\"serieName\": \"medical\",\"color\": \"#06BF7F\"},{\"serieName\": \"food, alabama\",\"color\": \"#721F27\"},{\"serieName\": \"food, arizona\",\"color\": \"#F47E89\"},{\"serieName\": \"food, arkansas\",\"color\": \"#B6313E\"},{\"serieName\": \"food, california\",\"color\": \"#F9B3B9\"},{\"serieName\": \"food, colorado\",\"color\": \"#F04152\"},{\"serieName\": \"food, connecticut\",\"color\": \"#2F3947\"},{\"serieName\": \"food, delaware\",\"color\": \"#A2ACBA\"},{\"serieName\": \"food, florida\",\"color\": \"#47515F\"},{\"serieName\": \"food, georgia\",\"color\": \"#BEC6D0\"},{\"serieName\": \"food, idaho\",\"color\": \"#747E8C\"},{\"serieName\": \"food, illinois\",\"color\": \"#7A3D1F\"},{\"serieName\": \"food, indiana\",\"color\": \"#FFA97E\"},{\"serieName\": \"food, iowa\",\"color\": \"#C26232\"},{\"serieName\": \"food, kansas\",\"color\": \"#FFCCB3\"},{\"serieName\": \"food, kentucky\",\"color\": \"#FF8142\"},{\"serieName\": \"food, louisiana\",\"color\": \"#422E75\"},{\"serieName\": \"food, maine\",\"color\": \"#B094F8\"},{\"serieName\": \"food, maryland\",\"color\": \"#6A4ABA\"},{\"serieName\": \"food, massachusetts\",\"color\": \"#D1C0FB\"},{\"serieName\": \"food, michigan\",\"color\": \"#8C62F5\"},{\"serieName\": \"food, minnesota\",\"color\": \"#025B3C\"},{\"serieName\": \"food, mississippi\",\"color\": \"#56D3A8\"},{\"serieName\": \"food, missouri\",\"color\": \"#049160\"},{\"serieName\": \"food, montana\",\"color\": \"#9BE5CB\"},{\"serieName\": \"food, nebraska\",\"color\": \"#06BF7F\"},{\"serieName\": \"food, nevada\",\"color\": \"#785F1A\"},{\"serieName\": \"food, new hampshire\",\"color\": \"#FCD977\"},{\"serieName\": \"food, new jersey\",\"color\": \"#BF982A\"},{\"serieName\": \"food, new mexico\",\"color\": \"#FDE9AF\"},{\"serieName\": \"food, new york\",\"color\": \"#FCC838\"},{\"serieName\": \"food, north carolina\",\"color\": \"#22636B\"},{\"serieName\": \"food, ohio\",\"color\": \"#82DFE9\"},{\"serieName\": \"food, oklahoma\",\"color\": \"#369FAA\"},{\"serieName\": \"food, oregon\",\"color\": \"#B5ECF2\"},{\"serieName\": \"food, pennsylvania\",\"color\": \"#48D1E0\"},{\"serieName\": \"food, rhode island\",\"color\": \"#163772\"},{\"serieName\": \"food, south carolina\",\"color\": \"#71A1F4\"},{\"serieName\": \"food, south dakota\",\"color\": \"#2359B6\"},{\"serieName\": \"food, tennessee\",\"color\": \"#ABC7F9\"},{\"serieName\": \"food, texas\",\"color\": \"#2E75F0\"},{\"serieName\": \"food, utah\",\"color\": \"#721F27\"},{\"serieName\": \"food, virginia\",\"color\": \"#F47E89\"},{\"serieName\": \"food, washington\",\"color\": \"#B6313E\"},{\"serieName\": \"food, wisconsin\",\"color\": \"#F9B3B9\"},{\"serieName\": \"medical, alabama\",\"color\": \"#F04152\"},{\"serieName\": \"medical, arizona\",\"color\": \"#2F3947\"},{\"serieName\": \"medical, arkansas\",\"color\": \"#A2ACBA\"},{\"serieName\": \"medical, california\",\"color\": \"#47515F\"},{\"serieName\": \"medical, colorado\",\"color\": \"#BEC6D0\"},{\"serieName\": \"medical, connecticut\",\"color\": \"#747E8C\"},{\"serieName\": \"medical, delaware\",\"color\": \"#7A3D1F\"},{\"serieName\": \"medical, florida\",\"color\": \"#FFA97E\"},{\"serieName\": \"medical, georgia\",\"color\": \"#C26232\"},{\"serieName\": \"medical, idaho\",\"color\": \"#FFCCB3\"},{\"serieName\": \"medical, illinois\",\"color\": \"#FF8142\"},{\"serieName\": \"medical, indiana\",\"color\": \"#422E75\"},{\"serieName\": \"medical, iowa\",\"color\": \"#B094F8\"},{\"serieName\": \"medical, kansas\",\"color\": \"#6A4ABA\"},{\"serieName\": \"medical, kentucky\",\"color\": \"#D1C0FB\"},{\"serieName\": \"medical, louisiana\",\"color\": \"#8C62F5\"},{\"serieName\": \"medical, maine\",\"color\": \"#025B3C\"},{\"serieName\": \"medical, maryland\",\"color\": \"#56D3A8\"},{\"serieName\": \"medical, massachusetts\",\"color\": \"#049160\"},{\"serieName\": \"medical, michigan\",\"color\": \"#9BE5CB\"},{\"serieName\": \"medical, minnesota\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical, mississippi\",\"color\": \"#785F1A\"},{\"serieName\": \"medical, missouri\",\"color\": \"#FCD977\"},{\"serieName\": \"medical, montana\",\"color\": \"#BF982A\"},{\"serieName\": \"medical, nebraska\",\"color\": \"#FDE9AF\"},{\"serieName\": \"medical, nevada\",\"color\": \"#FCC838\"},{\"serieName\": \"medical, new jersey\",\"color\": \"#22636B\"},{\"serieName\": \"medical, new mexico\",\"color\": \"#82DFE9\"},{\"serieName\": \"medical, new york\",\"color\": \"#369FAA\"},{\"serieName\": \"medical, north carolina\",\"color\": \"#B5ECF2\"},{\"serieName\": \"medical, ohio\",\"color\": \"#48D1E0\"},{\"serieName\": \"medical, oklahoma\",\"color\": \"#163772\"},{\"serieName\": \"medical, oregon\",\"color\": \"#71A1F4\"},{\"serieName\": \"medical, pennsylvania\",\"color\": \"#2359B6\"},{\"serieName\": \"medical, rhode island\",\"color\": \"#ABC7F9\"},{\"serieName\": \"medical, south carolina\",\"color\": \"#2E75F0\"},{\"serieName\": \"medical, south dakota\",\"color\": \"#721F27\"},{\"serieName\": \"medical, tennessee\",\"color\": \"#F47E89\"},{\"serieName\": \"medical, texas\",\"color\": \"#B6313E\"},{\"serieName\": \"medical, utah\",\"color\": \"#F9B3B9\"},{\"serieName\": \"medical, virginia\",\"color\": \"#F04152\"},{\"serieName\": \"medical, washington\",\"color\": \"#2F3947\"},{\"serieName\": \"medical, wisconsin\",\"color\": \"#A2ACBA\"},{\"serieName\": \"misc, alabama\",\"color\": \"#47515F\"},{\"serieName\": \"misc, arizona\",\"color\": \"#BEC6D0\"},{\"serieName\": \"misc, arkansas\",\"color\": \"#747E8C\"},{\"serieName\": \"misc, california\",\"color\": \"#7A3D1F\"},{\"serieName\": \"misc, colorado\",\"color\": \"#FFA97E\"},{\"serieName\": \"misc, delaware\",\"color\": \"#C26232\"},{\"serieName\": \"misc, florida\",\"color\": \"#FFCCB3\"},{\"serieName\": \"misc, georgia\",\"color\": \"#FF8142\"},{\"serieName\": \"misc, idaho\",\"color\": \"#422E75\"},{\"serieName\": \"misc, illinois\",\"color\": \"#B094F8\"},{\"serieName\": \"misc, indiana\",\"color\": \"#6A4ABA\"},{\"serieName\": \"misc, iowa\",\"color\": \"#D1C0FB\"},{\"serieName\": \"misc, kansas\",\"color\": \"#8C62F5\"},{\"serieName\": \"misc, kentucky\",\"color\": \"#025B3C\"},{\"serieName\": \"misc, louisiana\",\"color\": \"#56D3A8\"},{\"serieName\": \"misc, maryland\",\"color\": \"#049160\"},{\"serieName\": \"misc, massachusetts\",\"color\": \"#9BE5CB\"},{\"serieName\": \"misc, michigan\",\"color\": \"#06BF7F\"},{\"serieName\": \"misc, minnesota\",\"color\": \"#785F1A\"},{\"serieName\": \"misc, mississippi\",\"color\": \"#FCD977\"},{\"serieName\": \"misc, missouri\",\"color\": \"#BF982A\"},{\"serieName\": \"misc, montana\",\"color\": \"#FDE9AF\"},{\"serieName\": \"misc, nebraska\",\"color\": \"#FCC838\"},{\"serieName\": \"misc, nevada\",\"color\": \"#22636B\"},{\"serieName\": \"misc, new jersey\",\"color\": \"#82DFE9\"},{\"serieName\": \"misc, new mexico\",\"color\": \"#369FAA\"},{\"serieName\": \"misc, north carolina\",\"color\": \"#B5ECF2\"},{\"serieName\": \"misc, ohio\",\"color\": \"#48D1E0\"},{\"serieName\": \"misc, oklahoma\",\"color\": \"#163772\"},{\"serieName\": \"misc, oregon\",\"color\": \"#71A1F4\"},{\"serieName\": \"misc, pennsylvania\",\"color\": \"#2359B6\"},{\"serieName\": \"misc, rhode island\",\"color\": \"#ABC7F9\"},{\"serieName\": \"misc, south carolina\",\"color\": \"#2E75F0\"},{\"serieName\": \"misc, south dakota\",\"color\": \"#721F27\"},{\"serieName\": \"misc, tennessee\",\"color\": \"#F47E89\"},{\"serieName\": \"misc, texas\",\"color\": \"#B6313E\"},{\"serieName\": \"misc, utah\",\"color\": \"#F9B3B9\"},{\"serieName\": \"misc, virginia\",\"color\": \"#F04152\"},{\"serieName\": \"misc, washington\",\"color\": \"#2F3947\"},{\"serieName\": \"misc, wisconsin\",\"color\": \"#A2ACBA\"},{\"serieName\": \"non-food, alabama\",\"color\": \"#47515F\"},{\"serieName\": \"non-food, arizona\",\"color\": \"#BEC6D0\"},{\"serieName\": \"non-food, arkansas\",\"color\": \"#747E8C\"},{\"serieName\": \"non-food, california\",\"color\": \"#7A3D1F\"},{\"serieName\": \"non-food, colorado\",\"color\": \"#FFA97E\"},{\"serieName\": \"non-food, connecticut\",\"color\": \"#C26232\"},{\"serieName\": \"non-food, delaware\",\"color\": \"#FFCCB3\"},{\"serieName\": \"non-food, florida\",\"color\": \"#FF8142\"},{\"serieName\": \"non-food, georgia\",\"color\": \"#422E75\"},{\"serieName\": \"non-food, idaho\",\"color\": \"#B094F8\"},{\"serieName\": \"non-food, illinois\",\"color\": \"#6A4ABA\"},{\"serieName\": \"non-food, indiana\",\"color\": \"#D1C0FB\"},{\"serieName\": \"non-food, iowa\",\"color\": \"#8C62F5\"},{\"serieName\": \"non-food, kansas\",\"color\": \"#025B3C\"},{\"serieName\": \"non-food, kentucky\",\"color\": \"#56D3A8\"},{\"serieName\": \"non-food, louisiana\",\"color\": \"#049160\"},{\"serieName\": \"non-food, maine\",\"color\": \"#9BE5CB\"},{\"serieName\": \"non-food, maryland\",\"color\": \"#06BF7F\"},{\"serieName\": \"non-food, massachusetts\",\"color\": \"#785F1A\"},{\"serieName\": \"non-food, michigan\",\"color\": \"#FCD977\"},{\"serieName\": \"non-food, minnesota\",\"color\": \"#BF982A\"},{\"serieName\": \"non-food, mississippi\",\"color\": \"#FDE9AF\"},{\"serieName\": \"non-food, missouri\",\"color\": \"#FCC838\"},{\"serieName\": \"non-food, montana\",\"color\": \"#22636B\"},{\"serieName\": \"non-food, nebraska\",\"color\": \"#82DFE9\"},{\"serieName\": \"non-food, nevada\",\"color\": \"#369FAA\"},{\"serieName\": \"non-food, new hampshire\",\"color\": \"#B5ECF2\"},{\"serieName\": \"non-food, new jersey\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food, new mexico\",\"color\": \"#163772\"},{\"serieName\": \"non-food, new york\",\"color\": \"#71A1F4\"},{\"serieName\": \"non-food, north carolina\",\"color\": \"#2359B6\"},{\"serieName\": \"non-food, ohio\",\"color\": \"#ABC7F9\"},{\"serieName\": \"non-food, oklahoma\",\"color\": \"#2E75F0\"},{\"serieName\": \"non-food, oregon\",\"color\": \"#721F27\"},{\"serieName\": \"non-food, pennsylvania\",\"color\": \"#F47E89\"},{\"serieName\": \"non-food, rhode island\",\"color\": \"#B6313E\"},{\"serieName\": \"non-food, south carolina\",\"color\": \"#F9B3B9\"},{\"serieName\": \"non-food, south dakota\",\"color\": \"#F04152\"},{\"serieName\": \"non-food, tennessee\",\"color\": \"#2F3947\"},{\"serieName\": \"non-food, texas\",\"color\": \"#A2ACBA\"},{\"serieName\": \"non-food, utah\",\"color\": \"#47515F\"},{\"serieName\": \"non-food, virginia\",\"color\": \"#BEC6D0\"},{\"serieName\": \"non-food, washington\",\"color\": \"#747E8C\"},{\"serieName\": \"non-food, wisconsin\",\"color\": \"#7A3D1F\"},{\"serieName\": \"food\",\"color\": \"#F04152\"},{\"serieName\": \"Average Cost\",\"color\": \"#2E75F0\"},{\"serieName\": \"Average Price\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: d2a826f3-d32f-450d-ad25-943409eadad7
+  - id: Viz_8
+    answer:
+      name: Total sales by city
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "sum [sales] [city]"
+      answer_columns:
+      - name: Total sales
+      - name: city
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: city
+          show_headline: false
+        ordered_column_ids:
+        - city
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: city
+        axis_configs:
+        - x:
+          - city
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1998eeaf-a59b-43ef-b717-959148efca82\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"4a1b0f72-b059-4773-a454-a7e1b4dc697b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#8C62F5\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: f359fde8-37a5-450f-82f1-bab229b3aada
+  - id: Viz_9
+    answer:
+      name: Total sales by item type
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales] by [item type]"
+      answer_columns:
+      - name: Total sales
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - item type
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: item type
+        axis_configs:
+        - x:
+          - item type
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"905e59c1-56c8-4942-a8d3-532599cbe56e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"742d7ccd-1ef6-4899-ac2e-51fe56083b13\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"item type\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#FF8142\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 9b0d55e8-d4be-4536-bccb-48f8d9f492a5
+  - id: Viz_10
+    answer:
+      name: Total sales by item type
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales] [item type]"
+      answer_columns:
+      - name: Total sales
+      - name: item type
+      table:
+        table_columns:
+        - column_id: Total sales
+          show_headline: false
+        - column_id: item type
+          show_headline: false
+        ordered_column_ids:
+        - item type
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: item type
+        axis_configs:
+        - x:
+          - item type
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"item type\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"18cc9133-965f-44dd-b7fb-554f40a28343\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"9f3933b2-6583-4c0c-bf02-e13fd6171d05\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"item type\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: ade48a37-8643-4bae-beed-39df6d4969e3
+  filters:
+  - column:
+    - (Sample) Retail - Apparel::city
+    - Retail::Store City
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - (Sample) Retail - Apparel::region
+    is_mandatory: true
+    is_single_value: false
+    display_name: ""
+  - column:
+    - (Sample) Retail - Apparel::item type
+    excluded_visualizations:
+    - Viz_3
+    - Viz_1
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tabs:
+    - name: Sales
+      description: ""
+      tiles:
+      - visualization_id: Viz_2
+        x: 6
+        "y": 11
+        height: 4
+        width: 6
+      - visualization_id: Viz_3
+        x: 0
+        "y": 0
+        height: 5
+        width: 6
+      - visualization_id: Viz_4
+        x: 0
+        "y": 11
+        height: 8
+        width: 6
+      - visualization_id: Viz_5
+        x: 6
+        "y": 5
+        height: 6
+        width: 6
+      - visualization_id: Viz_6
+        x: 6
+        "y": 0
+        height: 5
+        width: 6
+      - visualization_id: Viz_7
+        x: 0
+        "y": 5
+        height: 6
+        width: 6
+      - visualization_id: Viz_8
+        x: 0
+        "y": 19
+        height: 8
+        width: 6
+      - visualization_id: Viz_9
+        x: 6
+        "y": 15
+        height: 8
+        width: 6
+      - visualization_id: Viz_10
+        x: 6
+        "y": 23
+        height: 8
+        width: 6
+      id: b1b36ddf-5268-4c19-a680-2580ee05a6c9
+    - name: Quantity
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      id: d3bce97a-de3f-49cf-9f83-df26295f5650
+  ordered_chips:
+  - name: (Sample) Retail - Apparel::city
+    type: FILTER
+  - name: (Sample) Retail - Apparel::region
+    type: FILTER
+  - name: (Sample) Retail - Apparel::item type
+    type: FILTER

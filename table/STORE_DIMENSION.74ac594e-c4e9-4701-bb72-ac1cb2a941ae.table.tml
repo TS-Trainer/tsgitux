@@ -1,0 +1,39 @@
+guid: 74ac594e-c4e9-4701-bb72-ac1cb2a941ae
+table:
+  name: STORE_DIMENSION
+  db: NEWRETAIL
+  schema: RETAIL
+  db_table: STORE_DIMENSION
+  connection:
+    name: test
+    fqn: 4f6f8138-5b64-4f13-b390-ba67bcb3ffd0
+  columns:
+  - name: STORE_KEY
+    db_column_name: STORE_KEY
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: STORE_NAME
+    db_column_name: STORE_NAME
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: STORE_CITY
+    db_column_name: STORE_CITY
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: STORE_STATE
+    db_column_name: STORE_STATE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  properties:
+    sage_config:
+      is_sage_enabled: false

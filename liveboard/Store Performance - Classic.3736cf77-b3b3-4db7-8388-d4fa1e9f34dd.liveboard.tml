@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: a3901bce-a4f7-453a-903e-1d33b633319e
-    name: Midwest Region
+  - view_guid: 7851f43a-1e94-4ac2-ab4b-e3eeb9f03379
+    name: Midwest Region view
     view_filters:
     - column:
       - Category

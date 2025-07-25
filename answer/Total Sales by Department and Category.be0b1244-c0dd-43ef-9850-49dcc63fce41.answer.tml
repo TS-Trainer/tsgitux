@@ -1,0 +1,42 @@
+guid: be0b1244-c0dd-43ef-9850-49dcc63fce41
+answer:
+  name: Total Sales by Department and Category
+  tables:
+  - id: Sales Model MG
+    name: Sales Model MG
+    fqn: 28bff338-7cb4-4fa3-a0f4-b2a4012b116d
+  search_query: "[Category] [Department] [Sales]"
+  answer_columns:
+  - name: Category
+  - name: Department
+  - name: Total Sales
+  table:
+    table_columns:
+    - column_id: Category
+      show_headline: false
+    - column_id: Department
+      show_headline: false
+    - column_id: Total Sales
+      show_headline: false
+    ordered_column_ids:
+    - Category
+    - Department
+    - Total Sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: STACKED_COLUMN
+    chart_columns:
+    - column_id: Category
+    - column_id: Department
+    - column_id: Total Sales
+    axis_configs:
+    - x:
+      - Department
+      "y":
+      - Total Sales
+      color:
+      - Category
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"5f90e9cb-3f0a-49b5-8cbb-7311f7a3c87b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"e1f1f3b0-7421-42be-b8e1-0bd623d2c966\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"}]}"
+  display_mode: CHART_MODE

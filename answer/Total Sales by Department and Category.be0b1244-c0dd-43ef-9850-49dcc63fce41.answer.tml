@@ -5,31 +5,38 @@ answer:
   - id: Sales Model MG
     name: Sales Model MG
     fqn: 28bff338-7cb4-4fa3-a0f4-b2a4012b116d
-  search_query: "[Category] [Profit]"
+  search_query: "[Category] [Department] [Sales]"
   answer_columns:
   - name: Category
-  - name: Total Profit
+  - name: Department
+  - name: Total Sales
   table:
     table_columns:
     - column_id: Category
       show_headline: false
-    - column_id: Total Profit
+    - column_id: Department
+      show_headline: false
+    - column_id: Total Sales
       show_headline: false
     ordered_column_ids:
     - Category
-    - Total Profit
+    - Department
+    - Total Sales
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: COLUMN
+    type: STACKED_COLUMN
     chart_columns:
     - column_id: Category
-    - column_id: Total Profit
+    - column_id: Department
+    - column_id: Total Sales
     axis_configs:
     - x:
-      - Category
+      - Department
       "y":
-      - Total Profit
+      - Total Sales
+      color:
+      - Category
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total Profit\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c72b162d-794b-430e-b35e-d76099a9c8e4\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Profit\"],\"isOpposite\": false}},{\"id\": \"ae29dd60-25a1-4126-80a1-c9486c9e4b8d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"},{\"serieName\": \"2bdb5022-4471-42c8-bfcf-e3c2e069306e\",\"color\": \"#FCC838\"},{\"serieName\": \"Total Profit\",\"color\": \"#06BF7F\"}]}"
-  display_mode: TABLE_MODE
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"a5cec036-45c9-408d-afc6-8f0661ef528f\",\"columnProperty\": {}},{\"columnId\": \"21fc7cd9-ba6e-4570-926a-8e1da769f7af\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"5f90e9cb-3f0a-49b5-8cbb-7311f7a3c87b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"e1f1f3b0-7421-42be-b8e1-0bd623d2c966\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"}]}"
+  display_mode: CHART_MODE

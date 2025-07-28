@@ -294,19 +294,19 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: f98f8f69-dea9-4d64-bb57-4d1c51620ac0
-    name: myview-SH
+  - view_guid: 388b0976-749f-47a0-af63-124dac4b66cd
+    name: Food Sales East Region
     view_filters:
     - column:
       - Category
-      oper: =
+      oper: in
+      values:
+      - Food
     - column:
       - Store Region
       oper: in
       values:
-      - west
       - East
-      - Southwest
     - column:
       - Age Group
       oper: in

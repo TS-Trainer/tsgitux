@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 9e498698-3302-42a7-bebf-22383043cd7e
-    name: My view YT
+  - view_guid: 8cee6997-a407-4c0d-85dd-ea4961810949
+    name: view - TakumiS
     view_filters:
     - column:
       - Category

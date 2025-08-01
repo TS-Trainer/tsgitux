@@ -22,43 +22,43 @@ model:
   - name: Dates
     fqn: 4f0af717-2d6f-45ec-ae69-b0f758a85156
   formulas:
-  - id: '% Gross Margin'
+  - id: formula_% Gross Margin
     name: '% Gross Margin'
     expr: sum ( [Sales::Gross Profit Dollar Amount] ) / sum ( [Sales::Sales Dollar Amount] ) * 100
-  - id: Age Group
+  - id: formula_Age Group
     name: Age Group
     expr: if ( [Customers::Customer Age] >= 18 and [Customers::Customer Age] < 30 ) then 'a) 18-29' else if ( [Customers::Customer Age] >= 30 and [Customers::Customer Age] < 50 ) then 'b) 30-49' else if ( [Customers::Customer Age] >= 50 and [Customers::Customer Age] < 65 ) then 'c) 50-64' else 'd) 65+'
-  - id: Basket Size
+  - id: formula_Basket Size
     name: Basket Size
     expr: sum ( [Sales::Sales Dollar Amount] ) / sum ( [Sales::Sales Quantity] )
-  - id: Day of Month
+  - id: formula_Day of Month
     name: Day of Month
-    expr: to_string ( [Date] , "%m/%d" )
-  - id: Gender
+    expr: to_string ( [formula_Date] , "%m/%d" )
+  - id: formula_Gender
     name: Gender
     expr: if ( [Customers::Customer Gender] = "male" ) then "male" else "female"
-  - id: Household Income
+  - id: formula_Household Income
     name: Household Income
     expr: if ( [Customers::Annual Income] < 15000 ) then "a) <$15,000" else if ( [Customers::Annual Income] < [Sales::Cost Dollar Amount] ) then "b) $15,000-$50,000" else if ( [Customers::Annual Income] < 75000 ) then "c) $50,000-$75,000" else if ( [Customers::Annual Income] < 100000 ) then "d) $75,000-$100,000" else if ( [Customers::Annual Income] < 150000 ) then "e) $100,000-$150,000" else if ( [Customers::Annual Income] < 300000 ) then "f) $150,000-$300,000" else "g) $300,000+"
-  - id: IsGrocery
+  - id: formula_IsGrocery
     name: IsGrocery
     expr: if ( contains ( [Products::Department] , "produce" ) ) then 'grocery' else 'not grocery'
-  - id: IsWine
+  - id: formula_IsWine
     name: IsWine
     expr: if ( contains ( [Products::Product Description] , "wine" ) ) then 'wine' else 'not wine'
-  - id: Month-Over-Month
+  - id: formula_Month-Over-Month
     name: Month-Over-Month
-    expr: month_number ( [Date] )
-  - id: POS Transaction Number
+    expr: month_number ( [formula_Date] )
+  - id: formula_POS Transaction Number
     name: POS Transaction Number
     expr: '[Sales::POS Transaction Number] + 100000'
-  - id: Sales per square foot
+  - id: formula_Sales per square foot
     name: Sales per square foot
     expr: sum ( [Sales::Sales Dollar Amount] ) / min ( [Stores::Total Square Footage] )
-  - id: Year-Over-Year
+  - id: formula_Year-Over-Year
     name: Year-Over-Year
-    expr: year ( [Date] )
-  - id: Date
+    expr: year ( [formula_Date] )
+  - id: formula_Date
     name: Date
     expr: add_days ( [Dates::Old Date] , diff_days ( today ( ) , 12/31/2007 ) )
   columns:
@@ -71,60 +71,60 @@ model:
       index_priority: 2.0
       synonym_type: USER_DEFINED
   - name: Age Group
-    formula_id: Age Group
+    formula_id: formula_Age Group
     properties:
       column_type: ATTRIBUTE
       index_type: DONT_INDEX
       synonyms:
       - Shopper Age Group
   - name: Sales per square foot
-    formula_id: Sales per square foot
+    formula_id: formula_Sales per square foot
     properties:
       column_type: MEASURE
       aggregation: SUM
       index_type: DONT_INDEX
       synonym_type: USER_DEFINED
   - name: Gender
-    formula_id: Gender
+    formula_id: formula_Gender
     properties:
       column_type: ATTRIBUTE
       index_type: DONT_INDEX
       synonyms:
       - Shopper Gender
   - name: IsWine
-    formula_id: IsWine
+    formula_id: formula_IsWine
     properties:
       column_type: ATTRIBUTE
       index_type: DONT_INDEX
       synonym_type: USER_DEFINED
   - name: Household Income
-    formula_id: Household Income
+    formula_id: formula_Household Income
     properties:
       column_type: ATTRIBUTE
       index_type: DONT_INDEX
       synonym_type: USER_DEFINED
   - name: '% Gross Margin'
-    formula_id: '% Gross Margin'
+    formula_id: formula_% Gross Margin
     properties:
       column_type: MEASURE
       aggregation: SUM
       index_type: DONT_INDEX
       synonym_type: USER_DEFINED
   - name: Sale Date
-    formula_id: Date
+    formula_id: formula_Date
     properties:
       column_type: ATTRIBUTE
       index_type: DONT_INDEX
       format_pattern: MM/dd/yyyy
       synonym_type: USER_DEFINED
   - name: IsGrocery
-    formula_id: IsGrocery
+    formula_id: formula_IsGrocery
     properties:
       column_type: ATTRIBUTE
       index_type: DONT_INDEX
       synonym_type: USER_DEFINED
   - name: Month-Over-Month
-    formula_id: Month-Over-Month
+    formula_id: formula_Month-Over-Month
     properties:
       column_type: ATTRIBUTE
       index_type: DONT_INDEX
@@ -132,7 +132,7 @@ model:
       - M-o-M
       - mom
   - name: Year-Over-Year
-    formula_id: Year-Over-Year
+    formula_id: formula_Year-Over-Year
     properties:
       column_type: ATTRIBUTE
       index_type: DONT_INDEX
@@ -140,19 +140,19 @@ model:
       - Y-o-Y
       - yoy
   - name: POS Transaction Number
-    formula_id: POS Transaction Number
+    formula_id: formula_POS Transaction Number
     properties:
       column_type: ATTRIBUTE
       index_type: DONT_INDEX
       synonym_type: USER_DEFINED
   - name: Day of Month
-    formula_id: Day of Month
+    formula_id: formula_Day of Month
     properties:
       column_type: ATTRIBUTE
       index_type: DONT_INDEX
       synonym_type: USER_DEFINED
   - name: Average Basket Size
-    formula_id: Basket Size
+    formula_id: formula_Basket Size
     properties:
       column_type: MEASURE
       aggregation: AVERAGE

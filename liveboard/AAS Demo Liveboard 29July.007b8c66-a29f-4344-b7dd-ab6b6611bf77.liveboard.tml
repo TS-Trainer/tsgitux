@@ -120,42 +120,6 @@ liveboard:
     viz_guid: e7d3f35a-c708-45bd-8df5-341383118ae0
   - id: Viz_4
     answer:
-      name: Source 1
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Store State] [Sales]"
-      answer_columns:
-      - name: Store State
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Store State
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Store State
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: GEO_AREA
-        chart_columns:
-        - column_id: Store State
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Store State
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.0669042818157215E7,4580136.447152504],\"zoomLevel\": 5.157600411087233,\"extent\": [-1.4228058005871262E7,2755675.180252881,-7110027.630443167,6404597.714052127]},\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"ad4991b0-d1e3-4148-b2f2-899a8ab866c2\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"4aa26e35-e182-43da-aa85-d9d39b29346a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
-      display_mode: CHART_MODE
-    viz_guid: 8f937eac-0aab-4fe1-885b-fcac1d59686b
-  - id: Viz_5
-    answer:
       name: "Total Sales by Product Name, Department and Store Region, Measure names"
       tables:
       - id: Retail Sales - Classic
@@ -212,7 +176,7 @@ liveboard:
           - key: split-by-color
       display_mode: CHART_MODE
     viz_guid: 9961a745-6b33-4b94-b377-444f68a6ca07
-  - id: Viz_6
+  - id: Viz_5
     answer:
       name: Total Quantity by Sale Date
       description: "For Mother's Choice Rubber Gloves(Product Name), Southwest(Store Region), <span class='trend-measure'>Total Quantity</span> is overall <span class='trend-direction'>trending downwards</span>."
@@ -272,7 +236,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"markersEnabled\": false,\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}},{\"columnId\": \"epoch\",\"columnProperty\": {}},{\"columnId\": \"linear model\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"739f8ec8-ed88-48f3-9460-84522fa0eb18\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\",\"linear model\"],\"isOpposite\": false}},{\"id\": \"899203ed-2d62-4a7f-942b-988c43615215\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#2E75F0\"},{\"serieName\": \"linear model\",\"color\": \"#48D1E0\"}]}"
       display_mode: CHART_MODE
     viz_guid: 7809fac7-5470-45a4-bb65-2c2596e047a4
-  - id: Viz_7
+  - id: Viz_6
     answer:
       name: Source 2
       tables:
@@ -308,7 +272,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Vendor State\",\"columnProperty\": {}},{\"columnId\": \"Total Deal Size\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0cafe03d-501c-48f6-a2d4-9d3a667375b0\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"bcfc52be-3abe-4e9d-ab58-5f165a32b0f6\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"colorMap\": [{\"serieName\": \"Vendor State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: 514b22c7-342f-4b8a-abe5-77259d0f5074
-  - id: Viz_8
+  - id: Viz_7
     answer:
       name: Total Annual Income by Category
       tables:
@@ -344,7 +308,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Annual Income\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1692a516-44fe-418a-80c9-823f0882bedb\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Annual Income\"],\"isOpposite\": false}},{\"id\": \"8efd7987-fd69-4381-8eb9-45b9e10d55d8\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Annual Income\",\"color\": \"#06BF7F\"}]}"
       display_mode: CHART_MODE
     viz_guid: 9edb022f-04fe-4ed0-aa28-890788d1fdd9
-  - id: Viz_9
+  - id: Viz_8
     answer:
       name: Total Annual Income by Category
       tables:
@@ -438,20 +402,15 @@ liveboard:
         width: 4
       - visualization_id: Viz_4
         x: 3
-        "y": 0
-        height: 7
-        width: 4
-      - visualization_id: Viz_5
-        x: 3
         "y": 7
         height: 7
         width: 8
-      - visualization_id: Viz_6
+      - visualization_id: Viz_5
         x: 0
         "y": 18
         height: 8
         width: 6
-      - visualization_id: Viz_8
+      - visualization_id: Viz_7
         x: 6
         "y": 14
         height: 8
@@ -460,12 +419,12 @@ liveboard:
     - name: Vendor Reporting
       description: ""
       tiles:
-      - visualization_id: Viz_7
+      - visualization_id: Viz_6
         x: 0
         "y": 0
         height: 7
         width: 4
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 4
         "y": 0
         height: 8

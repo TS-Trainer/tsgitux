@@ -416,10 +416,6 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Annual Income\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1692a516-44fe-418a-80c9-823f0882bedb\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Annual Income\"],\"isOpposite\": false}},{\"id\": \"8efd7987-fd69-4381-8eb9-45b9e10d55d8\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Annual Income\",\"color\": \"#06BF7F\"}]}"
       display_mode: CHART_MODE
     viz_guid: d5b59fe0-2e2d-475d-97d2-d63293046838
-  - id: Viz_11
-    viz_guid: 84ecb2b2-8c0b-45a2-99aa-ba376c14977e
-    note_tile:
-      html_parsed_string: "<h2 class=\"theme-module__editor-h2\"><br></h2><h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Default Liveboard for all Retail sales users</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><a href=\"https://docs.thoughtspot.com/cloud/10.11.0.cl/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit training portal.</span></h2><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
   filters:
   - column:
     - Retail Sales - Classic::Store Region
@@ -501,11 +497,6 @@ liveboard:
         "y": 14
         height: 8
         width: 6
-      - visualization_id: Viz_11
-        x: 0
-        "y": 0
-        height: 4
-        width: 3
       id: bb77a3ec-4a6e-4bb1-a762-921cb60d6c34
     - name: Vendor Reporting
       description: ""

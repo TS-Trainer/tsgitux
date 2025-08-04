@@ -294,7 +294,7 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 662fc15c-84f0-4ece-8da7-f483a84a19ac
+  - view_guid: 01306d26-b8c2-4ec7-b146-718cff4a46f3
     name: Food Sales in East Region
     view_filters:
     - column:

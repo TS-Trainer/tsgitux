@@ -190,43 +190,6 @@ liveboard:
     viz_guid: 6a77da8a-ef5c-4068-a1f6-468d54cd07de
   - id: Viz_5
     answer:
-      name: Quarterly Sales KPI AAS
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Sale Date].quarterly"
-      answer_columns:
-      - name: Quarter(Sale Date)
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Quarter(Sale Date)
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Quarter(Sale Date)
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: KPI
-        chart_columns:
-        - column_id: Quarter(Sale Date)
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Quarter(Sale Date)
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": false,\"yGridlineEnabled\": false},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"markersEnabled\": true,\"customProps\": \"{\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnomalies\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showBounds\\\":true,\\\"customCompare\\\":\\\"PREV_AVAILABLE\\\"}\",\"pivotSummariesState\": {}},\"showStackedLabels\": false,\"allLabels\": false},\"columnProperties\": [{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"dataLabels\": false}}],\"axisProperties\": [{\"id\": \"5d5f27ea-dfff-4ba3-888d-736fa30355d9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"c9f543da-cca8-4486-b7fe-378974ce7fe9\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#747E8C\"}],\"customColorSelectorArray\": [\"#06BF7F\",\"#F04152\",\"#06BF7F\",\"#E22B3D\"]}"
-      display_mode: CHART_MODE
-      dynamic_name: Quarterly Sales KPI AAS
-    viz_guid: d891984b-b23f-4331-a141-faea1beaf9b0
-  - id: Viz_6
-    answer:
       name: Multiple Attributes AAS
       tables:
       - id: Retail Sales - Classic
@@ -269,7 +232,7 @@ liveboard:
       display_mode: TABLE_MODE
       dynamic_name: Multiple Attributes AAS
     viz_guid: e2dd552d-1688-4d97-a221-b6e41d29cbbe
-  - id: Viz_7
+  - id: Viz_6
     answer:
       name: Multiple Attributes AAS
       tables:
@@ -313,7 +276,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Multiple Attributes AAS
     viz_guid: 5e92297e-77bf-4733-8bdd-2ef63b667683
-  - id: Viz_8
+  - id: Viz_7
     answer:
       name: Multiple Attributes AAS
       tables:
@@ -356,7 +319,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Multiple Attributes AAS
     viz_guid: 6783217f-4b53-4290-8566-703ebd46d94b
-  - id: Viz_9
+  - id: Viz_8
     answer:
       name: Total Deal Size by Vendor State
       tables:
@@ -450,20 +413,15 @@ liveboard:
         width: 8
       - visualization_id: Viz_5
         x: 0
-        "y": 0
-        height: 4
-        width: 3
-      - visualization_id: Viz_6
-        x: 0
         "y": 12
         height: 8
         width: 3
-      - visualization_id: Viz_7
+      - visualization_id: Viz_6
         x: 5
         "y": 7
         height: 5
         width: 6
-      - visualization_id: Viz_8
+      - visualization_id: Viz_7
         x: 7
         "y": 12
         height: 7
@@ -472,7 +430,7 @@ liveboard:
     - name: Tab 2
       description: ""
       tiles:
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 0
         "y": 0
         height: 7

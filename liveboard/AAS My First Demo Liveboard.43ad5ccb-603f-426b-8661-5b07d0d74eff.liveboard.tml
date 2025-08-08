@@ -4,43 +4,6 @@ liveboard:
   visualizations:
   - id: Viz_1
     answer:
-      name: Store level sales
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Store State]"
-      answer_columns:
-      - name: Store State
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Store State
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Store State
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: GEO_AREA
-        chart_columns:
-        - column_id: Store State
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Store State
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"22326f52-c066-4661-b949-0280e6c8b9e0\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"2c9e728a-ad27-4c29-b420-bae07e592df2\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
-      display_mode: CHART_MODE
-      dynamic_name: Store level sales
-    viz_guid: 7c5a08bf-b086-4f0a-bbbd-dd7a6f19c6a5
-  - id: Viz_2
-    answer:
       name: Department level sales
       tables:
       - id: Retail Sales - Classic
@@ -84,7 +47,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Department level sales
     viz_guid: 8be7fbbc-39d0-4315-bf9b-3037f6aad815
-  - id: Viz_3
+  - id: Viz_2
     answer:
       name: Stacked Column chart AAS
       tables:
@@ -128,7 +91,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Stacked Column chart AAS
     viz_guid: 5f350f8d-b953-40f8-bc3f-aa74b2268853
-  - id: Viz_4
+  - id: Viz_3
     answer:
       name: Pivot Table AAS
       tables:
@@ -188,7 +151,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Pivot Table AAS
     viz_guid: 6a77da8a-ef5c-4068-a1f6-468d54cd07de
-  - id: Viz_5
+  - id: Viz_4
     answer:
       name: Multiple Attributes AAS
       tables:
@@ -232,7 +195,7 @@ liveboard:
       display_mode: TABLE_MODE
       dynamic_name: Multiple Attributes AAS
     viz_guid: e2dd552d-1688-4d97-a221-b6e41d29cbbe
-  - id: Viz_6
+  - id: Viz_5
     answer:
       name: Multiple Attributes AAS
       tables:
@@ -276,7 +239,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Multiple Attributes AAS
     viz_guid: 5e92297e-77bf-4733-8bdd-2ef63b667683
-  - id: Viz_7
+  - id: Viz_6
     answer:
       name: Multiple Attributes AAS
       tables:
@@ -319,7 +282,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Multiple Attributes AAS
     viz_guid: 6783217f-4b53-4290-8566-703ebd46d94b
-  - id: Viz_8
+  - id: Viz_7
     answer:
       name: Total Deal Size by Vendor State
       tables:
@@ -392,36 +355,31 @@ liveboard:
       description: ""
       tiles:
       - visualization_id: Viz_1
-        x: 3
-        "y": 0
-        height: 7
-        width: 4
-      - visualization_id: Viz_2
         x: 0
         "y": 4
         height: 3
         width: 3
-      - visualization_id: Viz_3
+      - visualization_id: Viz_2
         x: 0
         "y": 7
         height: 5
         width: 5
-      - visualization_id: Viz_4
+      - visualization_id: Viz_3
         x: 3
         "y": 19
         height: 8
         width: 8
-      - visualization_id: Viz_5
+      - visualization_id: Viz_4
         x: 0
         "y": 12
         height: 8
         width: 3
-      - visualization_id: Viz_6
+      - visualization_id: Viz_5
         x: 5
         "y": 7
         height: 5
         width: 6
-      - visualization_id: Viz_7
+      - visualization_id: Viz_6
         x: 7
         "y": 12
         height: 7
@@ -430,7 +388,7 @@ liveboard:
     - name: Tab 2
       description: ""
       tiles:
-      - visualization_id: Viz_8
+      - visualization_id: Viz_7
         x: 0
         "y": 0
         height: 7

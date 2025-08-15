@@ -40,5 +40,16 @@ liveboard:
       dynamic_name: Total Sales by Monthly Sale Date KPI
     viz_guid: ebef0542-59a3-4b8a-8d34-6a377e7d9fe6
   layout:
-    tiles:
-    - visualization_id: Viz_1
+    tabs:
+    - name: Other Tab
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 0
+        height: 4
+        width: 3
+      id: 7a87ec29-416b-4d39-9e92-6413868f6440
+    - name: Region Tab
+      description: ""
+      id: 99a841f9-52e6-410c-a05e-8d3cabb163cb

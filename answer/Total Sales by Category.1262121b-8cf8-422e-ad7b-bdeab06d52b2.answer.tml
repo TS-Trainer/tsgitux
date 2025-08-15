@@ -5,32 +5,32 @@ answer:
   - id: Sales Model MG
     name: Sales Model MG
     fqn: 18a5d6cb-3927-4801-9e46-99ba0eb3c71f
-  search_query: "[Category] [Profit]"
+  search_query: "[Profit] [Department]"
   answer_columns:
-  - name: Category
+  - name: Department
   - name: Total Profit
   table:
     table_columns:
-    - column_id: Category
+    - column_id: Department
       show_headline: false
     - column_id: Total Profit
       show_headline: false
     ordered_column_ids:
-    - Category
+    - Department
     - Total Profit
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
     type: COLUMN
     chart_columns:
-    - column_id: Category
+    - column_id: Department
     - column_id: Total Profit
     axis_configs:
     - x:
-      - Category
+      - Department
       "y":
       - Total Profit
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total Profit\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"05a53f25-3a45-43ac-9dd6-7de180f08cdc\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Profit\"],\"isOpposite\": false}},{\"id\": \"4ae16f05-9dad-4da4-866f-de518419eb7b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"7abaafb1-630e-47bf-bfe6-34d5208e2f8a\",\"color\": \"#06BF7F\"},{\"serieName\": \"Total Profit\",\"color\": \"#48D1E0\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total Profit\",\"columnProperty\": {}},{\"columnId\": \"Department\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1a93a8d5-87bf-4517-9385-2c90928c5d82\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Profit\"],\"isOpposite\": false}},{\"id\": \"c636d32f-3fed-4616-8436-836b19f33d95\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"7abaafb1-630e-47bf-bfe6-34d5208e2f8a\",\"color\": \"#06BF7F\"},{\"serieName\": \"Total Profit\",\"color\": \"#48D1E0\"}]}"
   display_mode: CHART_MODE
   dynamic_name: Total Sales by Category

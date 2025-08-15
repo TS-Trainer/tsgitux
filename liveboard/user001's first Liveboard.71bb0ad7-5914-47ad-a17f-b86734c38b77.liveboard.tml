@@ -1,0 +1,44 @@
+guid: 71bb0ad7-5914-47ad-a17f-b86734c38b77
+liveboard:
+  name: user001's first Liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Sales by Monthly Sale Date KPI
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Sale Date] [Sale Date].monthly [Sale Date].'last 36 months'"
+      answer_columns:
+      - name: Month(Sale Date)
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Month(Sale Date)
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Month(Sale Date)
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Sale Date)
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Month(Sale Date)
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"customProps\": \"{\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnomalies\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showBounds\\\":true,\\\"customCompare\\\":\\\"PREV_YEAR\\\"}\",\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Month(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c852b835-fdf5-4659-a529-9828701ec3d9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"fdcf03d1-056f-4509-93d3-e0068b0fa571\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Total Sales by Monthly Sale Date KPI
+    viz_guid: ebef0542-59a3-4b8a-8d34-6a377e7d9fe6
+  layout:
+    tiles:
+    - visualization_id: Viz_1

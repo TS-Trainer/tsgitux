@@ -174,41 +174,23 @@ table:
     db_column_properties:
       data_type: INT64
   joins_with:
-  - name: HO_Product_Dimension_to_Top 3  Sales by Department
+  - name: HO_Product_Dimension_to_Top 3 Departments View
     destination:
-      name: Top 3  Sales by Department
-      fqn: 5e36cedd-e260-43a4-9a8a-ea1abeed5827
-    "on": "[HO_Product_Dimension::Department_Description] = [Top 3  Sales by Department::Department]"
+      name: Top 3 Departments View
+      fqn: d648489c-7539-45f3-bbd2-d1c977124e6d
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments View::Department]"
     type: INNER
-  - name: HO_Product_Dimension_to_Top 3 Department View
+  - name: HO_Product_Dimension_to_Top 3 Departments View
     destination:
-      name: Top 3 Department View
-      fqn: ef52d561-3caf-479a-b5ff-198fd7f86b48
-    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Department View::Department]"
+      name: Top 3 Departments View
+      fqn: 9f392338-ec8d-415f-b7ce-1c69b863bfad
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments View::Department]"
     type: INNER
   - name: HO_Product_Dimension_to_Top 3 Departments by Sales View - JDS
     destination:
       name: Top 3 Departments by Sales View - JDS
       fqn: f2a12d17-ebd1-43e9-817f-d465a39f3014
     "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments by Sales View - JDS::Department]"
-    type: INNER
-  - name: HO_Product_Dimension_to_Top 3 Dept View
-    destination:
-      name: Top 3 Dept View
-      fqn: f56f5778-c96c-4379-b0ef-c677bb22bb09
-    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Dept View::Department]"
-    type: INNER
-  - name: HO_Product_Dimension_to_Top 3 dep view
-    destination:
-      name: Top 3 dep view
-      fqn: 17b29f7d-7a22-4d83-98d9-f7d07cc863f9
-    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 dep view::Department ]"
-    type: INNER
-  - name: HO_Product_Dimension_to_Total 3 dept View
-    destination:
-      name: Total 3 dept View
-      fqn: 69d1622a-3272-41ee-a876-3e3794dd844c
-    "on": "[HO_Product_Dimension::Department_Description] = [Total 3 dept View::Department ]"
     type: INNER
   properties:
     sage_config:

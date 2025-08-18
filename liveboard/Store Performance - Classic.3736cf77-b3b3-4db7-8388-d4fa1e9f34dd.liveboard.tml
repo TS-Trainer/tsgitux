@@ -295,7 +295,7 @@ liveboard:
     type: FILTER
   views:
   - view_guid: 05f4eb42-1c40-47ac-8f84-0313c0d24176
-    name: Food Sales
+    name: Food Sales West
     view_filters:
     - column:
       - Category

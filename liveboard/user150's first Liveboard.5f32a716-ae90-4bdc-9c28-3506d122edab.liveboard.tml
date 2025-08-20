@@ -157,6 +157,10 @@ liveboard:
     viz_guid: ff3a61d5-ba38-4a10-b443-ffaf5d26901d
     note_tile:
       html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">How to use this Liveboard</span></h2><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Follow these rules to get the most out fo this LIveboard:</span></p><p class=\"theme-module__editor-paragraph\"><br></p><hr><ul class=\"theme-module__editor-ul\"><li value=\"1\" class=\"theme-module__editor-list-item\"><span style=\"white-space: pre-wrap;\">saodjfsajkfsd</span></li><li value=\"2\" class=\"theme-module__editor-list-item\"><span style=\"white-space: pre-wrap;\">adfkjasdjkasdfsdkf</span></li><li value=\"3\" class=\"theme-module__editor-list-item\"><span style=\"white-space: pre-wrap;\">asjdfals;kdflkjasdlkfjsa;dlkjfl;skdj</span></li><li value=\"4\" class=\"theme-module__editor-list-item\"><a href=\"https://www.thoughtspot.com\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Go to ThoughtSpot</span></a></li></ul><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
+  - id: Viz_6
+    viz_guid: c1db6459-8810-481f-aaaf-df4b86d6fbec
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Versioning Example</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
   filters:
   - column:
     - Retail Sales - Classic::Store Region
@@ -173,26 +177,31 @@ liveboard:
     tiles:
     - visualization_id: Viz_1
       x: 0
-      "y": 12
+      "y": 16
       height: 8
       width: 6
     - visualization_id: Viz_2
       x: 0
-      "y": 4
+      "y": 8
       height: 8
       width: 12
     - visualization_id: Viz_3
       x: 0
-      "y": 0
+      "y": 4
       height: 4
       width: 5
     - visualization_id: Viz_4
       x: 6
-      "y": 12
+      "y": 16
       height: 8
       width: 6
     - visualization_id: Viz_5
       x: 6
+      "y": 0
+      height: 4
+      width: 3
+    - visualization_id: Viz_6
+      x: 0
       "y": 0
       height: 4
       width: 3

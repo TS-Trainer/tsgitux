@@ -5,32 +5,30 @@ answer:
   - id: My First Model - JDS
     name: My First Model - JDS
     fqn: 19790218-f21d-4a14-adb5-f572fa35244d
-  search_query: "[Store State] [Sales]"
+  search_query: "[Sales] count [Store Name]"
   answer_columns:
-  - name: Store State
+  - name: Number of Store Name
   - name: Total Sales
   table:
     table_columns:
-    - column_id: Store State
+    - column_id: Number of Store Name
       show_headline: false
     - column_id: Total Sales
       show_headline: false
     ordered_column_ids:
-    - Store State
     - Total Sales
+    - Number of Store Name
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: GEO_AREA
+    type: KPI
     chart_columns:
-    - column_id: Store State
+    - column_id: Number of Store Name
     - column_id: Total Sales
     axis_configs:
-    - x:
-      - Store State
-      "y":
+    - "y":
       - Total Sales
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b78c0755-c68f-455e-9185-fe640817a399\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"379bda22-17ca-445e-a9c4-6d5092a390dd\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
-  display_mode: CHART_MODE
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f1a3a504-96f1-4222-8200-c896288d9d61\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"f0549b64-ae4b-4156-9924-0d4f5a5a7595\",\"properties\": {\"axisType\": \"X\"}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"42396890-defc-41c7-bffc-1265915667bd\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+  display_mode: TABLE_MODE
   dynamic_name: RLS Example

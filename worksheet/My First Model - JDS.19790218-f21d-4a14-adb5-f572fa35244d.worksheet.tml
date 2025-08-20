@@ -1,0 +1,200 @@
+guid: 19790218-f21d-4a14-adb5-f572fa35244d
+model:
+  name: My First Model - JDS
+  model_tables:
+  - name: HO_Customer_Dimension
+    fqn: ee1c3870-0c5c-41fd-a947-0d7f7ccf5fb8
+  - name: HO_Date_Dimension
+    fqn: 28829728-961d-4dd6-8e74-fd82579023e1
+  - name: HO_Product_Dimension
+    fqn: 4f9c18e8-3a07-4fa2-b830-33ccdf63f8c9
+  - name: HO_Retail_Sales_Fact
+    fqn: 37abc608-a652-4141-982e-95de07795a52
+    joins:
+    - with: HO_Customer_Dimension
+      referencing_join: Customer_Key - Customer_Key
+    - with: HO_Date_Dimension
+      referencing_join: Date_Key - Date_Key
+    - with: HO_Product_Dimension
+      referencing_join: Product_Key - Product_Key
+    - with: HO_Store_Dimension
+      referencing_join: Store_Key - Store_Key
+  - name: HO_Store_Dimension
+    fqn: dd6c04e6-e439-4c0c-8011-c9d822c9101c
+  formulas:
+  - id: formula_Profit Margin % -  GOOD
+    name: Profit Margin % -  GOOD
+    expr: 'sum ( [HO_Retail_Sales_Fact::Gross_Profit_Dollar_Amount] ) / sum ( [HO_Retail_Sales_Fact::Sales_Dollar_Amount] ) '
+  - id: formula_Profit Margin % - BAD
+    name: Profit Margin % - BAD
+    expr: '[HO_Retail_Sales_Fact::Gross_Profit_Dollar_Amount] / [HO_Retail_Sales_Fact::Sales_Dollar_Amount] '
+  columns:
+  - name: Customer Name
+    description: This is the first name and last name of my customers.
+    column_id: HO_Customer_Dimension::Customer_Name
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Client
+      - Buyer
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Profit Margin % - BAD
+    formula_id: formula_Profit Margin % - BAD
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: ' Age'
+    description: This is the age of the customer when they made a purchase with us.
+    column_id: HO_Customer_Dimension::Customer_Age
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+  - name: Occupation
+    column_id: HO_Customer_Dimension::Occupation
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Job
+      - Profession
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Date
+    column_id: HO_Date_Dimension::Date
+    properties:
+      column_type: ATTRIBUTE
+      aggregation: COUNT
+      index_type: DONT_INDEX
+      synonyms:
+      - Day
+      - Time
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Category
+    column_id: HO_Product_Dimension::Category_Description
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Type
+      - Class
+      spotiq_preference: EXCLUDE
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+      custom_order:
+      - Non-food
+      - Food
+      - Medical
+      - Misc
+  - name: Department
+    column_id: HO_Product_Dimension::Department_Description
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Section
+      - Division
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Product
+    description: HO Product Description
+    column_id: HO_Product_Dimension::Product_Description
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Item
+      - Goods
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Profit
+    column_id: HO_Retail_Sales_Fact::Gross_Profit_Dollar_Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Earnings
+      - Gain
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Pos Transaction Number
+    column_id: HO_Retail_Sales_Fact::POS_Transaction_Number
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      synonyms:
+      - Transaction ID
+      - Receipt Number
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Sales
+    column_id: HO_Retail_Sales_Fact::Sales_Dollar_Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Revenue
+      - Turnover
+      - Dolares
+      format_pattern: '#,##0.##'
+      currency_type:
+        iso_code: USD
+      synonym_type: USER_DEFINED
+      value_casing: UNKNOWN
+  - name: Units Purchased
+    column_id: HO_Retail_Sales_Fact::Sales_Quantity
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Quantity Bought
+      - Amount Acquired
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Store Name
+    column_id: HO_Store_Dimension::Store_Name
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Outlet
+      - Branch
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Store Region
+    column_id: HO_Store_Dimension::Store_Region
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Area
+      - Zone
+      geo_config:
+        custom_file_guid: 666f2831-d5c2-4cb3-ba24-03c4f5c39f8f
+        geometryType: POLYGON
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Store State
+    column_id: HO_Store_Dimension::Store_State
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Province
+      - Region
+      geo_config:
+        region_name:
+          country: UNITED STATES
+          region_name: state
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Profit Margin % -  GOOD
+    formula_id: formula_Profit Margin % -  GOOD
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
+    sage_config:
+      is_sage_enabled: true

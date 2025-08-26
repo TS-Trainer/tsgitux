@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 1b247f3f-2196-448f-b785-583016890d5d
-    name: KM filter
+  - view_guid: 6d22baba-faaf-48a7-88bb-6c3411605cee
+    name: MyFilter
     view_filters:
     - column:
       - Category

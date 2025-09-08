@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 72a5420c-7381-4daf-a23a-347098f92e07
-    name: East Food Sales
+  - view_guid: 643d5649-93ee-4793-9b3f-fd1b31da94d3
+    name: Vshyam - Test
     view_filters:
     - column:
       - Category

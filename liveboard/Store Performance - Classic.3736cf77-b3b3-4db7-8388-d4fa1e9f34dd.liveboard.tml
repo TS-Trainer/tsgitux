@@ -294,7 +294,7 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: ad273135-80c9-4e6b-9c39-d2b6c5e521b4
+  - view_guid: c3ce4bb9-38c7-4f15-a7b4-0892287d3f70
     name: East Region Food
     view_filters:
     - column:

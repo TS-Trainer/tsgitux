@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: cc36bb44-dd00-47b9-b4f1-5b3d590398f5
-    name: east region food
+  - view_guid: 550eb6bd-52a9-4f35-a26c-beeb189b1372
+    name: Amber East Region Food
     view_filters:
     - column:
       - Category

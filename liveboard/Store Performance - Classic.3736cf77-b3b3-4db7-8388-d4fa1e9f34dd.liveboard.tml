@@ -294,12 +294,14 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: d565c9d0-102d-4df3-905a-d0a82e5254f3
-    name: East region view SK
+  - view_guid: 72a5420c-7381-4daf-a23a-347098f92e07
+    name: East Food Sales
     view_filters:
     - column:
       - Category
-      oper: =
+      oper: in
+      values:
+      - Food
     - column:
       - Store Region
       oper: in

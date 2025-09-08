@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: acc2d27a-13b2-4ae9-82a1-d14d3815ada4
-    name: checcata east region food
+  - view_guid: ad273135-80c9-4e6b-9c39-d2b6c5e521b4
+    name: East Region Food
     view_filters:
     - column:
       - Category

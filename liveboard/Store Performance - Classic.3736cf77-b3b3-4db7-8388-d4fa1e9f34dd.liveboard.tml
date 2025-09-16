@@ -294,19 +294,21 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 83776a64-ef6d-4946-a2d9-1847f52e40df
-    name: Mid South and West Food View
+  - view_guid: 9ac05b23-fa9a-4c63-97d8-e7985e119805
+    name: Western Region Food Sales
     view_filters:
     - column:
       - Category
-      oper: =
+      oper: in
+      values:
+      - Food
     - column:
       - Store Region
       oper: in
       values:
-      - west
-      - Midwest
-      - South
+      - east
+      - south
+      - West
     - column:
       - Age Group
       oper: in

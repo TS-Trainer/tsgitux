@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 2f0b4550-812e-4064-9a4c-d9bc61bcbf08
-    name: west region food
+  - view_guid: 9aae9ba7-06c2-43e1-8f4e-5d1c7c71e7df
+    name: West Region Food
     view_filters:
     - column:
       - Category

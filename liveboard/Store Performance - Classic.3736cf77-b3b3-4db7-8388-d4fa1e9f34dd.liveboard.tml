@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 9d5f8f37-f3d8-429f-9bef-bbcadb291c61
-    name: New new view
+  - view_guid: 7ae90811-cb9a-48e0-b702-546d2157f499
+    name: Western Region - Food Sales
     view_filters:
     - column:
       - Category

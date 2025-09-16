@@ -294,7 +294,7 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 83ef1203-29a8-4266-9e8c-8487dd82a973
+  - view_guid: 5c1c6ce6-4e33-453f-b21b-b21a0aa8f5a3
     name: my filter
     view_filters:
     - column:

@@ -294,18 +294,19 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: ffcbef7b-1b32-4933-81df-f38e130d0dca
-    name: my filter
+  - view_guid: d3cc9d48-9040-4178-8033-147835d99e70
+    name: Western Food Sales
     view_filters:
     - column:
       - Category
-      oper: =
+      oper: in
+      values:
+      - Food
     - column:
       - Store Region
       oper: in
       values:
       - west
-      - East
     - column:
       - Age Group
       oper: in

@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: d3cc9d48-9040-4178-8033-147835d99e70
-    name: Western Food Sales
+  - view_guid: f39131a6-8c87-459e-b2b2-56acf994c057
+    name: MM's W. Region Food
     view_filters:
     - column:
       - Category

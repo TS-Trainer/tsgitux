@@ -1,0 +1,75 @@
+guid: 58c86362-b78a-4fe7-b417-54568ff9d918
+liveboard:
+  name: SWH Pinboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Available Products
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales] by [product]"
+      answer_columns:
+      - name: Total sales
+      - name: product
+      table:
+        table_columns:
+        - column_id: Total sales
+          headline_aggregation: SUM
+        - column_id: product
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - product
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"orderedColumnIds\": [\"Total sales\",\"product\"]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total sales
+        - column_id: product
+        axis_configs:
+        - x:
+          - product
+          "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"product\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7a7dcdfa-aa31-4609-a4d5-00161c5121e1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"b52aba3f-c1c9-4380-9886-8220d31db039\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"product\"]}}]}"
+      display_mode: TABLE_MODE
+    display_headline_column: product
+    viz_guid: a58c7941-b134-4566-b37e-399e6a8e9a46
+  - id: Viz_2
+    answer:
+      name: Total Sales
+      tables:
+      - id: (Sample) Retail - Apparel
+        name: (Sample) Retail - Apparel
+        fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+      search_query: "[sales]"
+      answer_columns:
+      - name: Total sales
+      table:
+        table_columns:
+        - column_id: Total sales
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total sales
+        axis_configs:
+        - "y":
+          - Total sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"643d189d-9da4-446b-9d20-63d79032bd6e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"8a7e8d52-3031-462d-86ab-5ebb8bef8d8e\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    display_headline_column: Total sales
+    viz_guid: 536ed975-3bf5-437c-a4aa-f9ba94588ddd
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+    - visualization_id: Viz_2

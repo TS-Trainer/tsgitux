@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 9069427c-f97d-446e-b0e6-21a279c3fdff
-    name: 'East region '
+  - view_guid: 08f967c7-55a8-4727-a3e0-32cd73cc3db7
+    name: East Region
     view_filters:
     - column:
       - Category

@@ -1,0 +1,42 @@
+guid: 3987f0b4-4dce-46cf-a3ee-04b9431c3c2a
+answer:
+  name: Tuna Sales MG
+  tables:
+  - id: Retail Sales - Classic
+    name: Retail Sales - Classic
+    fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+  search_query: "[Sales] [Product Name] [Product Name].'dealzone canned tuna' [Product Name].'santop tuna' [Sale Date].quarterly"
+  answer_columns:
+  - name: Product Name
+  - name: Quarter(Sale Date)
+  - name: Total Sales
+  table:
+    table_columns:
+    - column_id: Product Name
+      show_headline: false
+    - column_id: Quarter(Sale Date)
+      show_headline: false
+    - column_id: Total Sales
+      show_headline: false
+    ordered_column_ids:
+    - Product Name
+    - Quarter(Sale Date)
+    - Total Sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: LINE
+    chart_columns:
+    - column_id: Product Name
+    - column_id: Quarter(Sale Date)
+    - column_id: Total Sales
+    axis_configs:
+    - x:
+      - Quarter(Sale Date)
+      "y":
+      - Total Sales
+      color:
+      - Product Name
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0e2a2316-f98b-444d-a4cd-907e6bca8564\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"6af72603-dfee-45a5-a1c3-c39deb5160cb\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"},{\"serieName\": \"dealzone canned tuna\",\"color\": \"#2E75F0\"},{\"serieName\": \"santop tuna\",\"color\": \"#48D1E0\"}]}"
+  display_mode: CHART_MODE

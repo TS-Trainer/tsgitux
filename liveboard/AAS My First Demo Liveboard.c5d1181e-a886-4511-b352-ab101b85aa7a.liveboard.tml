@@ -345,10 +345,6 @@ liveboard:
       dynamic_name: Vendor Reporting
     viz_guid: b56593e8-671e-4373-b17a-2bdd8ff22508
   - id: Viz_9
-    viz_guid: cf86c838-7ec0-4e70-9e88-218d0d34ae5d
-    note_tile:
-      html_parsed_string: "<h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Guidelines to use this liveboard:</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><a href=\"https://www.docs.thoughtspot.com\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS Documentation</span></h2><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
-  - id: Viz_10
     answer:
       name: Sample Answer
       tables:
@@ -457,16 +453,11 @@ liveboard:
         "y": 6
         height: 6
         width: 4
-      - visualization_id: Viz_9
-        x: 0
-        "y": 0
-        height: 4
-        width: 3
       id: f14a766c-55ea-4f20-9322-bf45f55ed670
     - name: Vendor Reporting
       description: ""
       tiles:
-      - visualization_id: Viz_10
+      - visualization_id: Viz_9
         x: 0
         "y": 0
         height: 8

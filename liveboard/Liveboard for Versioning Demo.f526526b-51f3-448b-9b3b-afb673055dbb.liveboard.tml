@@ -38,6 +38,42 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"mapviewport\": {\"center\": [-1.0670154693088695E7,4614999.07705929],\"zoomLevel\": 4.718512831141135,\"extent\": [-1.4326902126251528E7,2872841.356869518,-7013407.259925863,6357156.797249063]},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"0d7247dc-f3ca-4f94-9bec-863da4381c82\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"0817972c-60e2-4be6-97e9-4ecbc0fb802a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"},{\"serieName\": \"alabama\",\"color\": \"#721F27\"},{\"serieName\": \"arizona\",\"color\": \"#F47E89\"},{\"serieName\": \"arkansas\",\"color\": \"#B6313E\"},{\"serieName\": \"california\",\"color\": \"#F9B3B9\"},{\"serieName\": \"colorado\",\"color\": \"#F04152\"},{\"serieName\": \"connecticut\",\"color\": \"#2F3947\"},{\"serieName\": \"delaware\",\"color\": \"#A2ACBA\"},{\"serieName\": \"florida\",\"color\": \"#47515F\"},{\"serieName\": \"georgia\",\"color\": \"#BEC6D0\"},{\"serieName\": \"idaho\",\"color\": \"#747E8C\"},{\"serieName\": \"illinois\",\"color\": \"#7A3D1F\"},{\"serieName\": \"indiana\",\"color\": \"#FFA97E\"},{\"serieName\": \"iowa\",\"color\": \"#C26232\"},{\"serieName\": \"kansas\",\"color\": \"#FFCCB3\"},{\"serieName\": \"kentucky\",\"color\": \"#FF8142\"},{\"serieName\": \"louisiana\",\"color\": \"#422E75\"},{\"serieName\": \"maine\",\"color\": \"#B094F8\"},{\"serieName\": \"maryland\",\"color\": \"#6A4ABA\"},{\"serieName\": \"massachusetts\",\"color\": \"#D1C0FB\"},{\"serieName\": \"michigan\",\"color\": \"#8C62F5\"},{\"serieName\": \"minnesota\",\"color\": \"#025B3C\"},{\"serieName\": \"mississippi\",\"color\": \"#56D3A8\"},{\"serieName\": \"missouri\",\"color\": \"#049160\"},{\"serieName\": \"montana\",\"color\": \"#9BE5CB\"},{\"serieName\": \"nebraska\",\"color\": \"#06BF7F\"},{\"serieName\": \"nevada\",\"color\": \"#785F1A\"},{\"serieName\": \"new hampshire\",\"color\": \"#FCD977\"},{\"serieName\": \"new jersey\",\"color\": \"#BF982A\"},{\"serieName\": \"new mexico\",\"color\": \"#FDE9AF\"},{\"serieName\": \"new york\",\"color\": \"#FCC838\"},{\"serieName\": \"north carolina\",\"color\": \"#22636B\"},{\"serieName\": \"ohio\",\"color\": \"#82DFE9\"},{\"serieName\": \"oklahoma\",\"color\": \"#369FAA\"},{\"serieName\": \"oregon\",\"color\": \"#B5ECF2\"},{\"serieName\": \"pennsylvania\",\"color\": \"#48D1E0\"},{\"serieName\": \"rhode island\",\"color\": \"#163772\"},{\"serieName\": \"south carolina\",\"color\": \"#71A1F4\"},{\"serieName\": \"south dakota\",\"color\": \"#2359B6\"},{\"serieName\": \"tennessee\",\"color\": \"#ABC7F9\"},{\"serieName\": \"texas\",\"color\": \"#2E75F0\"},{\"serieName\": \"utah\",\"color\": \"#721F27\"},{\"serieName\": \"virginia\",\"color\": \"#F47E89\"},{\"serieName\": \"washington\",\"color\": \"#B6313E\"},{\"serieName\": \"wisconsin\",\"color\": \"#F9B3B9\"}]}"
       display_mode: CHART_MODE
     viz_guid: 97da3310-50bc-4ea3-9c39-21d0325eff23
+  - id: Viz_2
+    answer:
+      name: Total Sales by Department
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Department]"
+      answer_columns:
+      - name: Department
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Department
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Sales
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Department
+        - Total Sales
+        client_state: "{\"widthState\":{},\"wrapTableHeader\":true}"
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Department
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Department
+          "y":
+          - Total Sales
+        client_state: "{\"chartProperties\":{\"gridLines\":{},\"showRoundedNumbers\":true,\"chartSpecific\":{},\"responsiveLayoutPreference\":3.0},\"axisProperties\":{\"5dfcbd7d-fdee-49d2-93a7-0c675eb70a36\":{\"linkedColumns\":[\"Total Sales\"],\"axisType\":\"Y\",\"isOpposite\":false},\"95b61e81-1806-4a09-8e7c-769286bf9d71\":{\"linkedColumns\":[\"Department\"],\"axisType\":\"X\"}},\"systemSeriesColors\":{\"Total Sales\":\"#8C62F5\"},\"version\":\"V3\",\"columnProperties\":{\"Department\":{},\"Total Sales\":{}}}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"5dfcbd7d-fdee-49d2-93a7-0c675eb70a36\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"95b61e81-1806-4a09-8e7c-769286bf9d71\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 08a44cf6-7d4d-4eda-8feb-1756f78e2b5c
   layout:
     tabs:
     - name: Store State Sales
@@ -51,4 +87,10 @@ liveboard:
       id: e24b0d3f-5bc1-45d2-9f05-cfecc466154b
     - name: Department Sales
       description: ""
+      tiles:
+      - visualization_id: Viz_2
+        x: 0
+        "y": 0
+        height: 8
+        width: 12
       id: cd92d7c5-6c8c-41b3-a132-aad50f6b79f9

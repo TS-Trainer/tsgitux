@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 0a888e50-cceb-4198-a382-deb4094c1efc
-    name: MKV East Region Food View
+  - view_guid: 73d06900-cce9-479a-a985-99b20ce19129
+    name: Store Performance - Food - East
     view_filters:
     - column:
       - Category

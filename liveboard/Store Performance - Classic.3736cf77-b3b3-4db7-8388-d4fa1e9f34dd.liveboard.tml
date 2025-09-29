@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 73d06900-cce9-479a-a985-99b20ce19129
-    name: Store Performance - Food - East
+  - view_guid: 830ea76d-8f74-4856-a657-7ce8e911e1bb
+    name: East Region Food
     view_filters:
     - column:
       - Category

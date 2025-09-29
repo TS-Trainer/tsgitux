@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: fa11960f-4040-494f-9c67-73700ad84d93
-    name: AK East Region Food
+  - view_guid: 9442928e-eb38-4a79-bf67-100a18866233
+    name: East Region Food
     view_filters:
     - column:
       - Category

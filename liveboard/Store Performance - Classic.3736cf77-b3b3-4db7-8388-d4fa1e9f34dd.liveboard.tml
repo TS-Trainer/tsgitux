@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: bc4adc0b-c21e-4a26-896d-5f423ea3919b
-    name: Midwest Region
+  - view_guid: c75d7385-f2e7-4940-9162-986934140261
+    name: Midwest
     view_filters:
     - column:
       - Category
@@ -314,8 +314,8 @@ liveboard:
       - b) 30-49
       - d) 65+
     is_public: false
-  - view_guid: 1128d546-5796-4e1f-a2a8-e7f27e0d53cd
-    name: Food and Midwest
+  - view_guid: 27e17927-cf7b-45ec-a5cb-29832d2f335c
+    name: Midwest Food
     view_filters:
     - column:
       - Category

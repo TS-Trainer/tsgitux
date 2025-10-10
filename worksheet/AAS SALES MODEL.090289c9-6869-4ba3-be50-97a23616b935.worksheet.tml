@@ -1,0 +1,192 @@
+guid: 090289c9-6869-4ba3-be50-97a23616b935
+model:
+  name: AAS SALES MODEL
+  model_tables:
+  - name: HO_Customer_Dimension
+    fqn: ee1c3870-0c5c-41fd-a947-0d7f7ccf5fb8
+  - name: HO_Date_Dimension
+    fqn: 28829728-961d-4dd6-8e74-fd82579023e1
+  - name: HO_Product_Dimension
+    fqn: 4f9c18e8-3a07-4fa2-b830-33ccdf63f8c9
+  - name: HO_Store_Dimension
+    fqn: dd6c04e6-e439-4c0c-8011-c9d822c9101c
+  - name: HO_Retail_Sales_Fact
+    fqn: 37abc608-a652-4141-982e-95de07795a52
+    joins:
+    - with: HO_Customer_Dimension
+      referencing_join: Customer_Key - Customer_Key
+    - with: HO_Date_Dimension
+      referencing_join: Date_Key - Date_Key
+    - with: HO_Product_Dimension
+      referencing_join: Product_Key - Product_Key
+    - with: HO_Store_Dimension
+      referencing_join: Store_Key - Store_Key
+  formulas:
+  - id: formula_SALES TAX
+    name: SALES TAX
+    expr: '( sum ( [HO_Retail_Sales_Fact::Sales_Dollar_Amount] ) ) * [Tax Rates] '
+  filters:
+  - column:
+    - Department
+    oper: in
+    values:
+    - bakery
+  columns:
+  - name: Customer Name
+    description: This is the first name and last name of my customers.
+    column_id: HO_Customer_Dimension::Customer_Name
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      synonyms:
+      - Client Name
+      - Buyer Name
+      is_hidden: true
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: SALES TAX
+    formula_id: formula_SALES TAX
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Tax Rate
+      - Sales Levy
+      synonym_type: AUTO_GENERATED
+  - name: Occupation
+    column_id: HO_Customer_Dimension::Occupation
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Profession
+      - Job
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Date
+    column_id: HO_Date_Dimension::Date
+    properties:
+      column_type: ATTRIBUTE
+      aggregation: COUNT
+      index_type: DONT_INDEX
+      synonyms:
+      - Day
+      - Time
+      is_attribution_dimension: false
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Product Name
+    description: HO Product Description
+    column_id: HO_Product_Dimension::Product_Description
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Item Name
+      - Object Name
+      synonym_type: USER_DEFINED
+      value_casing: UNKNOWN
+  - name: Category
+    description: This field contains data values for all types of products available across stores
+    column_id: HO_Product_Dimension::Category_Description
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Type
+      - Class
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+      custom_order:
+      - Food
+      - Non-food
+      - Medical
+      - Misc
+  - name: Department
+    column_id: HO_Product_Dimension::Department_Description
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Section
+      - Division
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Sales Amount
+    column_id: HO_Retail_Sales_Fact::Sales_Dollar_Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Revenue
+      - Turnover
+      format_pattern: '#,##0.0'
+      currency_type:
+        iso_code: USD
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Sales Quantity
+    column_id: HO_Retail_Sales_Fact::Sales_Quantity
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Units Sold
+      - Quantity Sold
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Gross Profit Amount
+    column_id: HO_Retail_Sales_Fact::Gross_Profit_Dollar_Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - Net Gain
+      - Gross Earnings
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Store Name
+    column_id: HO_Store_Dimension::Store_Name
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Outlet Name
+      - Branch Name
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  - name: Store State
+    column_id: HO_Store_Dimension::Store_State
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - Location State
+      - Region
+      geo_config:
+        region_name:
+          country: UNITED STATES
+          region_name: state
+      synonym_type: AUTO_GENERATED
+      value_casing: UNKNOWN
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
+    spotter_config:
+      is_spotter_enabled: true
+  parameters:
+  - id: 41c5a6f8-ab92-450f-bea5-e5b3d51a228f
+    name: Tax Rates
+    data_type: DOUBLE
+    default_value: '0.075'
+    list_config:
+      list_choice:
+      - value: '0.07'
+        display_name: 7%
+      - value: '0.075'
+        display_name: 7.5%
+      - value: '0.08'
+        display_name: 8%
+      - value: '0.085'
+        display_name: 8.5%
+      - value: '0.09'
+        display_name: 9%
+    description: ''

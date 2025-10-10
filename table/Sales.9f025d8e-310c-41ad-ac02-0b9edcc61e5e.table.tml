@@ -141,5 +141,5 @@ table:
     "on": "([Sales::Store Key] = [Stores::Store Key])"
     type: INNER
   properties:
-    sage_config:
-      is_sage_enabled: false
+    spotter_config:
+      is_spotter_enabled: false

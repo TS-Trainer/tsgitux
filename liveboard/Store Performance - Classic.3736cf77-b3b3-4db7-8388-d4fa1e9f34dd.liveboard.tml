@@ -294,28 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: a92595d1-0d08-42bc-b8a0-e9ac71a70c66
-    name: Midwest Region
-    view_filters:
-    - column:
-      - Category
-      oper: =
-    - column:
-      - Store Region
-      oper: in
-      values:
-      - Midwest
-    - column:
-      - Age Group
-      oper: in
-      values:
-      - c) 50-64
-      - a) 18-29
-      - b) 30-49
-      - d) 65+
-    is_public: false
-  - view_guid: 80654d76-8c43-48db-bbb0-53b55c8ac4ef
-    name: Food and Midwest
+  - view_guid: c10e5196-b4a3-4257-87e7-401246b2e789
+    name: Food Midwest 50-64
     view_filters:
     - column:
       - Category
@@ -332,7 +312,4 @@ liveboard:
       oper: in
       values:
       - c) 50-64
-      - a) 18-29
-      - b) 30-49
-      - d) 65+
     is_public: false

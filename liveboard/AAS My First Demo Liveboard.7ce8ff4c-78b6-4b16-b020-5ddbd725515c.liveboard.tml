@@ -41,43 +41,6 @@ liveboard:
     viz_guid: f23d9174-7990-4f40-808b-c0ca1b5ea53a
   - id: Viz_2
     answer:
-      name: States and their sales
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Store State]"
-      answer_columns:
-      - name: Store State
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Store State
-          headline_aggregation: COUNT_DISTINCT
-        - column_id: Total Sales
-          headline_aggregation: SUM
-        ordered_column_ids:
-        - Store State
-        - Total Sales
-        client_state: "{\"widthState\":{},\"wrapTableHeader\":true}"
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
-      chart:
-        type: GEO_AREA
-        chart_columns:
-        - column_id: Store State
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Store State
-          "y":
-          - Total Sales
-        client_state: "{\"systemMultiColorSeriesColors\":{\"Total Sales\":{\"Store State\":[\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}},\"chartProperties\":{\"gridLines\":{},\"showRoundedNumbers\":true,\"chartSpecific\":{},\"responsiveLayoutPreference\":1.0,\"mapviewport\":{\"zoomLevel\":5.0,\"center\":[-1.0670154693088695E7,4614999.07705929]}},\"axisProperties\":{\"0d7247dc-f3ca-4f94-9bec-863da4381c82\":{\"linkedColumns\":[\"Total Sales\"],\"axisType\":\"Y\",\"isOpposite\":false},\"0817972c-60e2-4be6-97e9-4ecbc0fb802a\":{\"linkedColumns\":[\"Store State\"],\"axisType\":\"X\"}},\"version\":\"V3\",\"columnProperties\":{\"Store State\":{},\"Total Sales\":{}}}"
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"mapviewport\": {\"center\": [-1.0670154693088695E7,4614999.07705929],\"zoomLevel\": 5.0,\"extent\": [-1.4639988194107609E7,2663103.12276903,-6700321.192069782,6566895.031349551]},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"0d7247dc-f3ca-4f94-9bec-863da4381c82\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"0817972c-60e2-4be6-97e9-4ecbc0fb802a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
-      display_mode: CHART_MODE
-      dynamic_name: States and their sales
-    viz_guid: 6b50b30d-dbdb-4479-b9ef-c8ea62757451
-  - id: Viz_3
-    answer:
       name: Total Sales by Store State
       tables:
       - id: Retail Sales - Classic
@@ -112,7 +75,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"mapviewport\": {\"center\": [-1.0670154693088695E7,4614999.07705929],\"zoomLevel\": 5.0,\"extent\": [-1.4639988194107609E7,2663103.12276903,-6700321.192069782,6566895.031349551]},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"0d7247dc-f3ca-4f94-9bec-863da4381c82\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"0817972c-60e2-4be6-97e9-4ecbc0fb802a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: TABLE_MODE
     viz_guid: ff6dff76-1db8-404a-93b2-2df42204b9b0
-  - id: Viz_4
+  - id: Viz_3
     answer:
       name: Donut Chart AAS
       tables:
@@ -155,7 +118,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Donut Chart AAS
     viz_guid: 2ac97865-ec2b-4e1c-9be3-56cf25317de1
-  - id: Viz_5
+  - id: Viz_4
     answer:
       name: Total Sales by Department
       tables:
@@ -192,7 +155,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Total Sales by Department
     viz_guid: 3272ea87-a38a-45d6-84e4-1cc360d3f802
-  - id: Viz_6
+  - id: Viz_5
     answer:
       name: Total Sales by Category
       tables:
@@ -228,7 +191,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"9b9427f7-0dac-40ef-874e-619c3df348e1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"5117de48-5754-4cf8-b154-72758b29624f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#2E75F0\"},{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: 7edc1a19-86e4-4245-8c64-605851d23930
-  - id: Viz_7
+  - id: Viz_6
     answer:
       name: "Total Sales by Department, Product Name and Store Region, Measure names"
       tables:
@@ -285,7 +248,7 @@ liveboard:
           - key: split-by-color
       display_mode: CHART_MODE
     viz_guid: 8e2f5642-87cf-40d5-b335-e15f1fb5c73e
-  - id: Viz_8
+  - id: Viz_7
     answer:
       name: Total Deal Size by Vendor State
       tables:
@@ -321,11 +284,11 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Vendor State\",\"columnProperty\": {}},{\"columnId\": \"Total Deal Size\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"bd18d444-cba9-49a5-bd18-1d6da97b24c2\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"0b22d9eb-a24b-47a7-872c-470f1206b8fa\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"colorMap\": [{\"serieName\": \"Vendor State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: 5c47cd0a-e63b-4d82-8edd-d800d00d7941
-  - id: Viz_9
+  - id: Viz_8
     viz_guid: 11ece829-35eb-4bdd-8e11-1aec1cc75fcc
     note_tile:
       html_parsed_string: "<h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Instructions Board for LB Users:</span></h1><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><a href=\"https://www.training.thoughtspot.com\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit the portal</span></h2><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
-  - id: Viz_10
+  - id: Viz_9
     answer:
       name: Total Deal Size by Vendor Region
       tables:
@@ -407,36 +370,31 @@ liveboard:
         height: 4
         width: 4
       - visualization_id: Viz_2
-        x: 4
-        "y": 0
-        height: 6
-        width: 4
-      - visualization_id: Viz_3
         x: 0
         "y": 8
         height: 8
         width: 4
-      - visualization_id: Viz_4
+      - visualization_id: Viz_3
         x: 8
         "y": 0
         height: 5
         width: 4
-      - visualization_id: Viz_5
+      - visualization_id: Viz_4
         x: 4
         "y": 11
         height: 5
         width: 7
-      - visualization_id: Viz_6
+      - visualization_id: Viz_5
         x: 4
         "y": 6
         height: 5
         width: 4
-      - visualization_id: Viz_7
+      - visualization_id: Viz_6
         x: 4
         "y": 16
         height: 6
         width: 7
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 0
         "y": 0
         height: 4
@@ -445,12 +403,12 @@ liveboard:
     - name: Vendor Reporting
       description: ""
       tiles:
-      - visualization_id: Viz_8
+      - visualization_id: Viz_7
         x: 0
         "y": 0
         height: 6
         width: 4
-      - visualization_id: Viz_10
+      - visualization_id: Viz_9
         x: 4
         "y": 0
         height: 8

@@ -157,42 +157,6 @@ liveboard:
     viz_guid: 3272ea87-a38a-45d6-84e4-1cc360d3f802
   - id: Viz_5
     answer:
-      name: Total Sales by Category
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Category]"
-      answer_columns:
-      - name: Category
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Category
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Category
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: PIE
-        chart_columns:
-        - column_id: Category
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Category
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"9b9427f7-0dac-40ef-874e-619c3df348e1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"5117de48-5754-4cf8-b154-72758b29624f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#2E75F0\"},{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"}]}"
-      display_mode: CHART_MODE
-    viz_guid: 7edc1a19-86e4-4245-8c64-605851d23930
-  - id: Viz_6
-    answer:
       name: "Total Sales by Department, Product Name and Store Region, Measure names"
       tables:
       - id: Retail Sales - Classic
@@ -248,7 +212,7 @@ liveboard:
           - key: split-by-color
       display_mode: CHART_MODE
     viz_guid: 8e2f5642-87cf-40d5-b335-e15f1fb5c73e
-  - id: Viz_7
+  - id: Viz_6
     answer:
       name: Total Deal Size by Vendor State
       tables:
@@ -284,11 +248,11 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Vendor State\",\"columnProperty\": {}},{\"columnId\": \"Total Deal Size\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"bd18d444-cba9-49a5-bd18-1d6da97b24c2\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"0b22d9eb-a24b-47a7-872c-470f1206b8fa\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"colorMap\": [{\"serieName\": \"Vendor State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: 5c47cd0a-e63b-4d82-8edd-d800d00d7941
-  - id: Viz_8
+  - id: Viz_7
     viz_guid: 11ece829-35eb-4bdd-8e11-1aec1cc75fcc
     note_tile:
       html_parsed_string: "<h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Instructions Board for LB Users:</span></h1><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><a href=\"https://www.training.thoughtspot.com\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit the portal</span></h2><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
-  - id: Viz_9
+  - id: Viz_8
     answer:
       name: Total Deal Size by Vendor Region
       tables:
@@ -386,15 +350,10 @@ liveboard:
         width: 7
       - visualization_id: Viz_5
         x: 4
-        "y": 6
-        height: 5
-        width: 4
-      - visualization_id: Viz_6
-        x: 4
         "y": 16
         height: 6
         width: 7
-      - visualization_id: Viz_8
+      - visualization_id: Viz_7
         x: 0
         "y": 0
         height: 4
@@ -403,12 +362,12 @@ liveboard:
     - name: Vendor Reporting
       description: ""
       tiles:
-      - visualization_id: Viz_7
+      - visualization_id: Viz_6
         x: 0
         "y": 0
         height: 6
         width: 4
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 4
         "y": 0
         height: 8

@@ -294,22 +294,25 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: c10e5196-b4a3-4257-87e7-401246b2e789
-    name: Food Midwest 50-64
+  - view_guid: d44738b9-1889-479d-be60-357f18e9a9b2
+    name: West Region Medical
     view_filters:
     - column:
       - Category
       oper: in
       values:
-      - Food
+      - Medical
     - column:
       - Store Region
       oper: in
       values:
-      - Midwest
+      - west
     - column:
       - Age Group
       oper: in
       values:
       - c) 50-64
+      - a) 18-29
+      - b) 30-49
+      - d) 65+
     is_public: false

@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 0e434adb-e027-4d15-9e68-58198c5f616f
-    name: West Region - Medical
+  - view_guid: 1a30bef0-a8de-4414-836a-b092df6a2a73
+    name: West Region Medical
     view_filters:
     - column:
       - Category

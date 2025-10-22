@@ -1,0 +1,36 @@
+guid: dd7ce4d7-e2b1-4012-9b1c-864638d75253
+answer:
+  name: Total Sales by Category
+  tables:
+  - id: Sales Model
+    name: Sales Model
+    fqn: 01c008fe-6f05-4164-85b2-e9532d63a101
+  search_query: "[Category] [Sales]"
+  answer_columns:
+  - name: Category
+  - name: Total Sales
+  table:
+    table_columns:
+    - column_id: Category
+      show_headline: false
+    - column_id: Total Sales
+      show_headline: false
+    ordered_column_ids:
+    - Category
+    - Total Sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Category
+    - column_id: Total Sales
+    axis_configs:
+    - x:
+      - Category
+      "y":
+      - Total Sales
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ff6c80d5-18c0-4b89-8102-7f79bd19f65f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"4711d393-dccc-4bce-ad99-e5fed35bbe0a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#FCC838\"}]}"
+  display_mode: CHART_MODE
+  dynamic_name: Total Sales by Category

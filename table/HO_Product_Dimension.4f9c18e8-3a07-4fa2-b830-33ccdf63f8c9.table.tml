@@ -174,53 +174,23 @@ table:
     db_column_properties:
       data_type: INT64
   joins_with:
-  - name: AAS_View_Join1
-    destination:
-      name: Top 5 Departments View
-      fqn: 1c8602f8-1eea-4a41-9849-17e6c931d752
-    "on": "[HO_Product_Dimension::Department_Description] = [Top 5 Departments View::Department]"
-    type: INNER
-  - name: HO_Product_Dimension_to_HO_Retail_Sales_Fact
-    destination:
-      name: Total Count Department by Department
-      fqn: f24c0708-52ae-42a6-bd6a-b45c83872564
-    "on": "[HO_Product_Dimension::Department_Description] = [Total Count Department by Department::Department]"
-    type: INNER
-  - name: HO_Product_Dimension_to_Top 3 Departments
-    destination:
-      name: Top 3 Departments
-      fqn: 1a928092-f86e-46a3-b952-16ffb1b756ad
-    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments::Department]"
-    type: INNER
-  - name: HO_Product_Dimension_to_Top 3 Departments VIEW
-    destination:
-      name: Top 3 Departments VIEW
-      fqn: 9d922109-9674-496c-9edd-516926ba11ff
-    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments VIEW::Department Description]"
-    type: INNER
-  - name: HO_Product_Dimension_to_Top 3 Departments View_1
-    destination:
-      name: Top 3 Departments View
-      fqn: 9ff46e69-9b3e-4be7-9986-a604e87c4a68
-    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments View::Department]"
-    type: INNER
-  - name: HO_Product_Dimension_to_Top 3 Departments View_1
-    destination:
-      name: Top 3 Departments View
-      fqn: abde7847-9994-496c-803f-162a295af8c5
-    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments View::Department]"
-    type: INNER
-  - name: HO_Product_Dimension_to_Top 3 Departments View_1
-    destination:
-      name: Top 3 Departments View
-      fqn: 39d0aa65-9148-4fa0-84a1-f9c4afcc36ab
-    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments View::Department]"
-    type: INNER
   - name: HO_Product_Dimension_to_Top 3 Departments by Sales View - JDS
     destination:
       name: Top 3 Departments by Sales View - JDS
       fqn: f2a12d17-ebd1-43e9-817f-d465a39f3014
     "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments by Sales View - JDS::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Top 3 Dept
+    destination:
+      name: Top 3 Dept
+      fqn: 76da040b-8cdd-43cf-8894-f5cbcc366c52
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Dept::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Total 3 Department
+    destination:
+      name: Total 3 Department
+      fqn: abfbf2ae-1c60-4166-9247-fbc01ac475fd
+    "on": "[HO_Product_Dimension::Department_Description] = [Total 3 Department::Department]"
     type: INNER
   properties:
     spotter_config:

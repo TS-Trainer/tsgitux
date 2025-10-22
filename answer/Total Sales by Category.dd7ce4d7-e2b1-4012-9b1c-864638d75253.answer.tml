@@ -5,32 +5,44 @@ answer:
   - id: Sales Model
     name: Sales Model
     fqn: 01c008fe-6f05-4164-85b2-e9532d63a101
-  search_query: "[Category] [Sales]"
+  search_query: "[Category] [Sales] [Profit] [Department]"
   answer_columns:
   - name: Category
+  - name: Department
+  - name: Total Profit
   - name: Total Sales
   table:
     table_columns:
     - column_id: Category
       show_headline: false
+    - column_id: Department
+      show_headline: false
+    - column_id: Total Profit
+      show_headline: false
     - column_id: Total Sales
       show_headline: false
     ordered_column_ids:
     - Category
+    - Department
     - Total Sales
+    - Total Profit
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: COLUMN
+    type: STACKED_COLUMN
     chart_columns:
     - column_id: Category
+    - column_id: Department
+    - column_id: Total Profit
     - column_id: Total Sales
     axis_configs:
     - x:
       - Category
       "y":
       - Total Sales
+      color:
+      - Department
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ff6c80d5-18c0-4b89-8102-7f79bd19f65f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"4711d393-dccc-4bce-ad99-e5fed35bbe0a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#FCC838\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total Profit\",\"columnProperty\": {}},{\"columnId\": \"Department\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"27d8bb19-9def-4b64-83b0-f2f3532043fe\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"c852465b-23e2-4987-9837-123b123333e6\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#FCC838\"},{\"serieName\": \"food, bakery\",\"color\": \"#B094F8\"},{\"serieName\": \"food, canned goods\",\"color\": \"#8C62F5\"},{\"serieName\": \"food, dairy\",\"color\": \"#56D3A8\"},{\"serieName\": \"food, frozen goods\",\"color\": \"#06BF7F\"},{\"serieName\": \"food, meat\",\"color\": \"#BF982A\"},{\"serieName\": \"food, produce\",\"color\": \"#FCD977\"},{\"serieName\": \"food, seafood\",\"color\": \"#FCC838\"},{\"serieName\": \"non-food, cleaning supplies\",\"color\": \"#369FAA\"},{\"serieName\": \"non-food, liquor\",\"color\": \"#82DFE9\"},{\"serieName\": \"misc, gifts\",\"color\": \"#48D1E0\"},{\"serieName\": \"medical, medical\",\"color\": \"#2359B6\"},{\"serieName\": \"medical, pharmacy\",\"color\": \"#71A1F4\"},{\"serieName\": \"misc, photography\",\"color\": \"#2E75F0\"},{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"},{\"serieName\": \"bakery\",\"color\": \"#B094F8\"},{\"serieName\": \"canned goods\",\"color\": \"#8C62F5\"},{\"serieName\": \"dairy\",\"color\": \"#56D3A8\"},{\"serieName\": \"frozen goods\",\"color\": \"#06BF7F\"},{\"serieName\": \"meat\",\"color\": \"#BF982A\"},{\"serieName\": \"produce\",\"color\": \"#FCD977\"},{\"serieName\": \"seafood\",\"color\": \"#369FAA\"},{\"serieName\": \"cleaning supplies\",\"color\": \"#82DFE9\"},{\"serieName\": \"liquor\",\"color\": \"#48D1E0\"},{\"serieName\": \"gifts\",\"color\": \"#2359B6\"},{\"serieName\": \"pharmacy\",\"color\": \"#2E75F0\"},{\"serieName\": \"photography\",\"color\": \"#B094F8\"}]}"
   display_mode: CHART_MODE
   dynamic_name: Total Sales by Category

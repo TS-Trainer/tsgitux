@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: e1b86482-3ab5-4a77-af14-2d506127af19
-    name: East Region - Food
+  - view_guid: 34e1b68f-6096-4987-85fb-3a24d481ea8f
+    name: test new view
     view_filters:
     - column:
       - Category
@@ -307,28 +307,6 @@ liveboard:
       oper: in
       values:
       - East
-    - column:
-      - Age Group
-      oper: in
-      values:
-      - c) 50-64
-      - a) 18-29
-      - b) 30-49
-      - d) 65+
-    is_public: false
-  - view_guid: 0e434adb-e027-4d15-9e68-58198c5f616f
-    name: West Region - Medical
-    view_filters:
-    - column:
-      - Category
-      oper: in
-      values:
-      - Medical
-    - column:
-      - Store Region
-      oper: in
-      values:
-      - west
     - column:
       - Age Group
       oper: in

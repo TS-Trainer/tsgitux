@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 9fa30ba9-e98e-43ea-9df2-83ddd7660177
-    name: DSA East Region Food store performance
+  - view_guid: f5821eaa-e62b-49e9-8265-bf9804a9343f
+    name: pm east region food
     view_filters:
     - column:
       - Category

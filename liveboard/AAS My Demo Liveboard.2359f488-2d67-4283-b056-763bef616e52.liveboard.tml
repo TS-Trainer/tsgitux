@@ -298,43 +298,6 @@ liveboard:
     viz_guid: 36021b6c-0028-4812-bb5e-ba6ea9d77df5
   - id: Viz_7
     answer:
-      name: Retail Sales Classic
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Store State]"
-      answer_columns:
-      - name: Store State
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Store State
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Store State
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: GEO_AREA
-        chart_columns:
-        - column_id: Store State
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Store State
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.0669042818157215E7,4580136.447152504],\"zoomLevel\": 5.09733165830736,\"extent\": [-1.437988550446885E7,2755581.632810738,-6958200.131845579,6404691.26149427]},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"160a5fbe-542b-4e54-af89-ab75cee0dadf\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"836ae64e-33b2-4f15-9b75-4184a5cedbc1\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
-      display_mode: CHART_MODE
-      dynamic_name: Retail Sales Classic
-    viz_guid: 03d9a3b6-8710-4d04-a18a-bacb6d70ce8a
-  - id: Viz_8
-    answer:
       name: Total Sales by Store State
       tables:
       - id: Retail Sales - Classic
@@ -369,7 +332,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.1130012058581453E7,4969076.666267502],\"zoomLevel\": 4.527871056055889,\"extent\": [-1.6636786224473532E7,2437928.4667878402,-5623237.892689373,7500224.865747164]},\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7bad41f4-1806-4d05-825e-195b884d6ae2\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"1c5b8056-4676-49ea-b88f-59ae656a2513\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: 1dcba546-b518-4722-9684-805448430938
-  - id: Viz_9
+  - id: Viz_8
     answer:
       name: Vendor Reporting model
       tables:
@@ -406,11 +369,11 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Vendor Reporting model
     viz_guid: e1c4044f-55fd-40e6-ad20-7f5ba06fe034
-  - id: Viz_10
+  - id: Viz_9
     viz_guid: 31104a28-5149-49e1-b7f7-137b17ecf747
     note_tile:
       html_parsed_string: "<h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Notice Board</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><a href=\"https://docs.thoughtspot.com/cloud/10.13.0.cl/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS University</span></h2><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
-  - id: Viz_11
+  - id: Viz_10
     answer:
       name: Conditional Formatting Example AAS
       tables:
@@ -539,26 +502,25 @@ liveboard:
         height: 5
         width: 4
       - visualization_id: Viz_7
-        x: 3
-        "y": 0
-        height: 6
-        width: 4
-      - visualization_id: Viz_8
         x: 0
         "y": 23
         height: 8
         width: 6
-      - visualization_id: Viz_10
+      - visualization_id: Viz_9
         x: 0
         "y": 0
         height: 4
         width: 3
-      - visualization_id: Viz_11
+      - visualization_id: Viz_10
+        x: 0
+        "y": 31
+        height: 8
+        width: 12
       id: a1cc9393-ad5a-441c-9d42-f2fde6f69e18
     - name: Vendor Reporting
       description: ""
       tiles:
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 0
         "y": 0
         height: 6

@@ -5,32 +5,32 @@ answer:
   - id: Sales Data Model MG 11-6
     name: Sales Data Model MG 11-6
     fqn: 8c2bb7ab-a9cd-4929-abe6-0f342580b7b9
-  search_query: "[Sales Dollar Amount] [Department Description]"
+  search_query: "[Sales Dollar Amount] [Category Description]"
   answer_columns:
-  - name: Department Description
+  - name: Category Description
   - name: Total Sales Dollar Amount
   table:
     table_columns:
-    - column_id: Department Description
+    - column_id: Category Description
       show_headline: false
     - column_id: Total Sales Dollar Amount
       show_headline: false
     ordered_column_ids:
-    - Department Description
+    - Category Description
     - Total Sales Dollar Amount
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
     type: COLUMN
     chart_columns:
-    - column_id: Department Description
+    - column_id: Category Description
     - column_id: Total Sales Dollar Amount
     axis_configs:
     - x:
-      - Department Description
+      - Category Description
       "y":
       - Total Sales Dollar Amount
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Sales Dollar Amount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Department Description\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"412eb151-f57b-4f14-9814-5f298f21c2e0\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"cc06f8bc-f320-4455-83d9-7abcd343277d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department Description\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales Dollar Amount\",\"color\": \"#FCC838\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category Description\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Dollar Amount\",\"columnProperty\": {}},{\"columnId\": \"b1a56eab-59c0-42b6-b8d0-0e5987184092\",\"columnProperty\": {}},{\"columnId\": \"ba65be94-fbe1-499e-bcbb-ee44275759cc\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"72b012c0-7a8d-49f7-9588-547a644cd4ae\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"46e2552c-38ba-4d58-8033-179ad6bcafd7\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category Description\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales Dollar Amount\",\"color\": \"#FCC838\"}]}"
   display_mode: CHART_MODE
   dynamic_name: Category Sales MG

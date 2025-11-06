@@ -5,25 +5,32 @@ answer:
   - id: Sales Data Model MG 11-6
     name: Sales Data Model MG 11-6
     fqn: 8c2bb7ab-a9cd-4929-abe6-0f342580b7b9
-  search_query: "[Product Description]"
+  search_query: "[Sales Dollar Amount] [Department Description]"
   answer_columns:
-  - name: Product Description
+  - name: Department Description
+  - name: Total Sales Dollar Amount
   table:
     table_columns:
-    - column_id: Product Description
+    - column_id: Department Description
+      show_headline: false
+    - column_id: Total Sales Dollar Amount
       show_headline: false
     ordered_column_ids:
-    - Product Description
+    - Department Description
+    - Total Sales Dollar Amount
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: KPI
+    type: COLUMN
     chart_columns:
-    - column_id: Product Description
+    - column_id: Department Description
+    - column_id: Total Sales Dollar Amount
     axis_configs:
-    - "y":
-      - Product Description
+    - x:
+      - Department Description
+      "y":
+      - Total Sales Dollar Amount
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Description\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"04739903-85f5-4382-b5cd-1a2a27646fb7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Product Description\"],\"isOpposite\": false}},{\"id\": \"02d50c88-edc0-423a-a149-53a9d21c25c8\",\"properties\": {\"axisType\": \"X\"}}],\"systemSeriesColors\": [{\"serieName\": \"a3b1b90e-da77-4501-bec7-902a697787f5\",\"color\": \"#FCC838\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Sales Dollar Amount\",\"columnProperty\": {}},{\"columnId\": \"7d3494d3-7025-403b-9eb3-e8446386de07\",\"columnProperty\": {}},{\"columnId\": \"595bc629-60f1-498b-9374-b438a68927bc\",\"columnProperty\": {}},{\"columnId\": \"Department Description\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"412eb151-f57b-4f14-9814-5f298f21c2e0\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"cc06f8bc-f320-4455-83d9-7abcd343277d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department Description\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales Dollar Amount\",\"color\": \"#FCC838\"}]}"
   display_mode: CHART_MODE
   dynamic_name: Category Sales MG

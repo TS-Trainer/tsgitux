@@ -5,32 +5,25 @@ answer:
   - id: Sales Data Model MG 11-6
     name: Sales Data Model MG 11-6
     fqn: 8c2bb7ab-a9cd-4929-abe6-0f342580b7b9
-  search_query: "[Sales Dollar Amount] [Category Description]"
+  search_query: "[Product Description]"
   answer_columns:
-  - name: Category Description
-  - name: Total Sales Dollar Amount
+  - name: Product Description
   table:
     table_columns:
-    - column_id: Category Description
-      show_headline: false
-    - column_id: Total Sales Dollar Amount
+    - column_id: Product Description
       show_headline: false
     ordered_column_ids:
-    - Category Description
-    - Total Sales Dollar Amount
+    - Product Description
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: COLUMN
+    type: KPI
     chart_columns:
-    - column_id: Category Description
-    - column_id: Total Sales Dollar Amount
+    - column_id: Product Description
     axis_configs:
-    - x:
-      - Category Description
-      "y":
-      - Total Sales Dollar Amount
+    - "y":
+      - Product Description
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category Description\",\"columnProperty\": {}},{\"columnId\": \"Total Sales Dollar Amount\",\"columnProperty\": {}},{\"columnId\": \"b1a56eab-59c0-42b6-b8d0-0e5987184092\",\"columnProperty\": {}},{\"columnId\": \"ba65be94-fbe1-499e-bcbb-ee44275759cc\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"72b012c0-7a8d-49f7-9588-547a644cd4ae\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"46e2552c-38ba-4d58-8033-179ad6bcafd7\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category Description\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales Dollar Amount\",\"color\": \"#FCC838\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Description\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"04739903-85f5-4382-b5cd-1a2a27646fb7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Product Description\"],\"isOpposite\": false}},{\"id\": \"02d50c88-edc0-423a-a149-53a9d21c25c8\",\"properties\": {\"axisType\": \"X\"}}],\"systemSeriesColors\": [{\"serieName\": \"a3b1b90e-da77-4501-bec7-902a697787f5\",\"color\": \"#FCC838\"}]}"
   display_mode: CHART_MODE
   dynamic_name: Category Sales MG

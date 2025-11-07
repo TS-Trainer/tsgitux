@@ -224,42 +224,6 @@ liveboard:
     viz_guid: d5133ce7-4782-4dc3-9ec2-487d2f3a2c1c
   - id: Viz_6
     answer:
-      name: Total Sales by Store State
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Store State]"
-      answer_columns:
-      - name: Store State
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Store State
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Store State
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: GEO_AREA
-        chart_columns:
-        - column_id: Store State
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Store State
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"513b9000-41e5-4809-93dd-2f4724c40a1d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"e73686c5-8c6c-4967-bd82-a3456950ee2f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
-      display_mode: CHART_MODE
-    viz_guid: bae12c35-999b-4167-b776-1e12918d5880
-  - id: Viz_7
-    answer:
       name: Total Sales by Quarterly Sale Date
       tables:
       - id: Retail Sales - Classic
@@ -294,7 +258,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"markersEnabled\": true,\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0e5f9bc7-02bd-4577-8b0a-867fb8d68469\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"c0ef4306-4e15-4912-81a9-0113c2d9542c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"bed270ee-e88b-45a9-8199-7f5150782c93\",\"colorMap\": [{\"serieName\": \"dc38b9a3-e032-4fae-93ac-7b94cd390674\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: 197b8906-66e3-4bd9-a5dd-1adf9193c1ce
-  - id: Viz_8
+  - id: Viz_7
     answer:
       name: Vendor Reporting Model
       tables:
@@ -331,7 +295,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Vendor Reporting Model
     viz_guid: b9dede4d-c2ae-4467-8e5b-6278081944d9
-  - id: Viz_9
+  - id: Viz_8
     answer:
       name: west Filter
       tables:
@@ -368,7 +332,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: west Filter
     viz_guid: 71b9eaf6-1430-4276-b6fa-1343070f69f2
-  - id: Viz_10
+  - id: Viz_9
     viz_guid: 5059fd9e-28df-4c7a-a054-2da08d9e6c3f
     note_tile:
       html_parsed_string: "<h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Welcome to TS!</span></h1><h1 class=\"theme-module__editor-h1\"><br></h1><h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><a href=\"https://www.training.thoughtspot.com\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS University!</span></h2><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
@@ -438,20 +402,15 @@ liveboard:
         width: 4
       - visualization_id: Viz_6
         x: 3
-        "y": 0
-        height: 6
-        width: 4
-      - visualization_id: Viz_7
-        x: 3
         "y": 12
         height: 4
         width: 8
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 0
         "y": 24
         height: 8
         width: 6
-      - visualization_id: Viz_10
+      - visualization_id: Viz_9
         x: 0
         "y": 0
         height: 4
@@ -460,7 +419,7 @@ liveboard:
     - name: Tab Two
       description: ""
       tiles:
-      - visualization_id: Viz_8
+      - visualization_id: Viz_7
         x: 0
         "y": 0
         height: 6

@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 2acbd203-e787-46e2-b06d-6f0cd77c17d9
-    name: My filer
+  - view_guid: acdebae1-ef2a-4c66-8796-f16c20d4d1f4
+    name: NY Filter
     view_filters:
     - column:
       - Category

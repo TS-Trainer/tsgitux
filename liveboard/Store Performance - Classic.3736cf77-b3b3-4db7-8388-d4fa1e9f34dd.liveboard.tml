@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: aea5928d-1f72-4e5f-b1bd-f7d5a1c04056
-    name: South View
+  - view_guid: 285966d4-6c03-4332-bc91-731bbd7cf7f6
+    name: South
     view_filters:
     - column:
       - Category

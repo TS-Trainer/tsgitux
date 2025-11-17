@@ -294,14 +294,34 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: e717925b-bba5-424b-b923-8d7425aee42e
-    name: south view
+  - view_guid: aef68707-34e0-4f9f-9046-6408f4b39d04
+    name: South and Food
     view_filters:
     - column:
       - Category
       oper: in
       values:
       - Food
+    - column:
+      - Store Region
+      oper: in
+      values:
+      - South
+    - column:
+      - Age Group
+      oper: in
+      values:
+      - c) 50-64
+      - a) 18-29
+      - b) 30-49
+      - d) 65+
+    is_public: false
+  - view_guid: aea5928d-1f72-4e5f-b1bd-f7d5a1c04056
+    name: South View
+    view_filters:
+    - column:
+      - Category
+      oper: =
     - column:
       - Store Region
       oper: in

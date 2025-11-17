@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 7ebcf76f-eb7c-4d3b-a13c-5cc3901d4d1b
-    name: My Filter
+  - view_guid: c02cceb4-0ee0-4e9f-899d-05f0a59d8fa2
+    name: west&east【NT】
     view_filters:
     - column:
       - Category

@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 748fa452-4eac-413e-bd90-bb0abd7b5285
-    name: マイフィルターMD
+  - view_guid: b18b92ea-ecf8-4a35-b1da-4c817405fd08
+    name: KEIKO Fil
     view_filters:
     - column:
       - Category

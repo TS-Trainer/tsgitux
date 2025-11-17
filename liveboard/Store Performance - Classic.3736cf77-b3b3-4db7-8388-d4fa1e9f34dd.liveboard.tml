@@ -294,12 +294,14 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: e717925b-bba5-424b-b923-8d7425aee42e
-    name: south view
+  - view_guid: 285966d4-6c03-4332-bc91-731bbd7cf7f6
+    name: South
     view_filters:
     - column:
       - Category
-      oper: =
+      oper: in
+      values:
+      - Food
     - column:
       - Store Region
       oper: in

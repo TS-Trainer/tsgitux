@@ -1,0 +1,36 @@
+guid: d008d32a-fd07-481a-813d-6d68956b5751
+answer:
+  name: Row level security example
+  tables:
+  - id: My First Booking Model - JDS
+    name: My First Booking Model - JDS
+    fqn: 9b2fb39b-9f82-4ccd-baaf-fff725d02eb4
+  search_query: "[Store State] [Sales]"
+  answer_columns:
+  - name: Store State
+  - name: Total Sales
+  table:
+    table_columns:
+    - column_id: Store State
+      show_headline: false
+    - column_id: Total Sales
+      show_headline: false
+    ordered_column_ids:
+    - Store State
+    - Total Sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: GEO_AREA
+    chart_columns:
+    - column_id: Store State
+    - column_id: Total Sales
+    axis_configs:
+    - x:
+      - Store State
+      "y":
+      - Total Sales
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"34de9563-6d44-46d7-977a-614167e26f17\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"642af615-5db7-4920-9984-c1e6d394ad35\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+  display_mode: CHART_MODE
+  dynamic_name: Row level security example

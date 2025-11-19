@@ -1,0 +1,211 @@
+guid: f03bd39e-9231-4b68-9972-ac1bd031ac0e
+liveboard:
+  name: user001's first liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Sales by Department
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Department]"
+      answer_columns:
+      - name: Department
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Department
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Sales
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Department
+        - Total Sales
+        client_state: "{\"widthState\":{},\"wrapTableHeader\":true}"
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true,\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Department
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Department
+          "y":
+          - Total Sales
+        client_state: "{\"chartProperties\":{\"gridLines\":{},\"showRoundedNumbers\":true,\"chartSpecific\":{},\"responsiveLayoutPreference\":3.0},\"axisProperties\":{\"5dfcbd7d-fdee-49d2-93a7-0c675eb70a36\":{\"linkedColumns\":[\"Total Sales\"],\"axisType\":\"Y\",\"isOpposite\":false},\"95b61e81-1806-4a09-8e7c-769286bf9d71\":{\"linkedColumns\":[\"Department\"],\"axisType\":\"X\"}},\"systemSeriesColors\":{\"Total Sales\":\"#8C62F5\"},\"version\":\"V3\",\"columnProperties\":{\"Department\":{},\"Total Sales\":{}}}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"5dfcbd7d-fdee-49d2-93a7-0c675eb70a36\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"95b61e81-1806-4a09-8e7c-769286bf9d71\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 501a9f76-85bc-45a0-878d-dc75c4eec594
+  - id: Viz_2
+    answer:
+      name: Sales Monthly KPI - JDS
+      description: This KPI is NOT filtered.  IT will always show full company data for the month.
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Sale Date].monthly [Sale Date].'last 6 months'"
+      answer_columns:
+      - name: Month(Sale Date)
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Month(Sale Date)
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Month(Sale Date)
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Sale Date)
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Month(Sale Date)
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"customProps\": \"{\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnomalies\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showBounds\\\":true,\\\"customCompare\\\":\\\"PREV_AVAILABLE\\\"}\",\"pivotSummariesState\": {}},\"dataSize\": 20000.0},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Month(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f094d7ea-ec62-4a73-8b64-cdabd8501214\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"af03ea39-cd6c-42b5-8cb1-5e380b0d4ee3\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Sale Date)\"]}}],\"seriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#9BE5CB\"}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Sales Monthly KPI - JDS
+      dynamic_description: This KPI is NOT filtered.  IT will always show full company data for the month.
+    viz_guid: a6e38140-ea01-4e9c-9d14-be5b1e227d69
+  - id: Viz_3
+    answer:
+      name: Total Deal Size by Vendor State
+      tables:
+      - id: Vendor Reporting
+        name: Vendor Reporting
+        fqn: 13169500-db07-4d68-980b-1d81ec2c45bd
+      search_query: "[Vendor State] [Deal Size]"
+      answer_columns:
+      - name: Total Deal Size
+      - name: Vendor State
+      table:
+        table_columns:
+        - column_id: Total Deal Size
+          headline_aggregation: SUM
+        - column_id: Vendor State
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Vendor State
+        - Total Deal Size
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Total Deal Size
+        - column_id: Vendor State
+        axis_configs:
+        - x:
+          - Vendor State
+          "y":
+          - Total Deal Size
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.0834306933546007E7,4583214.150187498],\"zoomLevel\": 4.0,\"extent\": [-1.7286815113267444E7,1780115.4489135141,-4381798.753824568,7386312.851461481]},\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"a80a390e-68a9-4854-9cba-82ffd9494bf7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"84c4a78e-53d4-45f7-abe2-869ad884ca7a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"colorMap\": [{\"serieName\": \"Vendor State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+      display_mode: CHART_MODE
+    viz_guid: aae471e1-700c-4123-9d3f-6ebfd2c95a61
+  - id: Viz_4
+    viz_guid: 6a3c4ed8-e48e-4574-8ce1-dc7347e220bf
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\"><br></h2><p class=\"theme-module__editor-paragraph\"><img id=\"6b630d62-7d49-460e-a53c-6efb311d037c\" alt=\"UPLOAD\" style=\"height: inherit; width: 100%; max-width: 100%;\"></p><p class=\"theme-module__editor-paragraph\"><br></p><hr><ol class=\"theme-module__editor-ol\"><li value=\"1\" class=\"theme-module__editor-list-item\"><span style=\"white-space: pre-wrap;\">Here's how to use this LIveboard</span></li></ol><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(0, 108, 228);\"></div>"
+  - id: Viz_5
+    answer:
+      name: Tuna Sales Comparison - JDS
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Sale Date].quarterly [Product Name] [Product Name].'santop tuna' [Product Name].'dealzone canned tuna'"
+      answer_columns:
+      - name: Product Name
+      - name: Quarter(Sale Date)
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Product Name
+          show_headline: false
+        - column_id: Quarter(Sale Date)
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Quarter(Sale Date)
+        - Product Name
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Product Name
+        - column_id: Quarter(Sale Date)
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Product Name
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"showLinearRegressionLine\": false,\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f5c3068a-9e71-4549-b586-6c6ee5b5efbe\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"19f7d072-71b1-4afe-9f19-87d7f058d642\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"dealzone canned tuna\",\"color\": \"#48D1E0\"},{\"serieName\": \"santop tuna\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Tuna Sales Comparison - JDS
+    viz_guid: eb1d3dc2-191c-4487-9c98-0e43efc6dbdf
+  filters:
+  - column:
+    - Retail Sales - Classic::Store Region
+    - Vendor Reporting::Vendor Region
+    oper: in
+    values:
+    - East
+    excluded_visualizations:
+    - Viz_2
+    is_mandatory: true
+    is_single_value: false
+    display_name: ""
+  layout:
+    tabs:
+    - name: Summary
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 6
+        "y": 12
+        height: 8
+        width: 6
+      - visualization_id: Viz_2
+        x: 0
+        "y": 0
+        height: 4
+        width: 7
+      - visualization_id: Viz_3
+        x: 0
+        "y": 12
+        height: 8
+        width: 6
+      - visualization_id: Viz_4
+        x: 7
+        "y": 0
+        height: 4
+        width: 3
+      id: b2e8afb5-bfcc-4600-afe4-e61836a6d2cb
+    - name: Detail
+      description: ""
+      tiles:
+      - visualization_id: Viz_5
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      id: c6ed1a00-14e4-43d1-bf60-f1a80d94439b
+  ordered_chips:
+  - name: Retail Sales - Classic::Store Region
+    type: FILTER

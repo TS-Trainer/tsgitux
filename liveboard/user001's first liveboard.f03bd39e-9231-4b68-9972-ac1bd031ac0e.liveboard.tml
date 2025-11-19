@@ -159,6 +159,10 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Tuna Sales Comparison - JDS
     viz_guid: eb1d3dc2-191c-4487-9c98-0e43efc6dbdf
+  - id: Viz_6
+    viz_guid: 415441b6-177e-4836-8747-8837c0d55bce
+    note_tile:
+      html_parsed_string: ""
   filters:
   - column:
     - Retail Sales - Classic::Store Region
@@ -178,21 +182,26 @@ liveboard:
       tiles:
       - visualization_id: Viz_1
         x: 6
-        "y": 12
+        "y": 8
         height: 8
         width: 6
       - visualization_id: Viz_2
         x: 0
-        "y": 0
+        "y": 4
         height: 4
         width: 7
       - visualization_id: Viz_3
         x: 0
-        "y": 12
+        "y": 8
         height: 8
         width: 6
       - visualization_id: Viz_4
         x: 7
+        "y": 0
+        height: 4
+        width: 3
+      - visualization_id: Viz_6
+        x: 0
         "y": 0
         height: 4
         width: 3

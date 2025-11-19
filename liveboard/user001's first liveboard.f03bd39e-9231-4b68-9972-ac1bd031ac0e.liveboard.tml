@@ -162,7 +162,7 @@ liveboard:
   - id: Viz_6
     viz_guid: 415441b6-177e-4836-8747-8837c0d55bce
     note_tile:
-      html_parsed_string: ""
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Booking.com Training</span></h2><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Jordan is tired and ready to go to sleep.</span></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
   filters:
   - column:
     - Retail Sales - Classic::Store Region

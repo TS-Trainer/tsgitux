@@ -186,6 +186,30 @@ table:
       fqn: 943002bd-010b-4fb1-a00b-4b6823704f39
     "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Dep by sales view AE::Department Description]"
     type: INNER
+  - name: HO_Product_Dimension_to_Top 3 Department View
+    destination:
+      name: Top 3 Department View
+      fqn: 781ccbc6-83b1-44ba-9efb-cdbfddbbfde6
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Department View::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Top 3 Department View
+    destination:
+      name: Top 3 Department View
+      fqn: 9fe6c20a-8370-4d43-b533-5b4925472dc6
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Department View::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Top 3 Department View
+    destination:
+      name: Top 3 Department View
+      fqn: 38c32450-6c11-4427-be15-9655b19c66a6
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Department View::Department]"
+    type: INNER
+  - name: HO_Product_Dimension_to_Top 3 Department View
+    destination:
+      name: Top 3 Department View
+      fqn: fae4aa0f-b7ab-44bf-ba56-5faaf9d4c1bd
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Department View::Department]"
+    type: INNER
   - name: HO_Product_Dimension_to_Top 3 Departments by Sales View - ASF
     destination:
       name: Top 3 Departments by Sales View - ASF

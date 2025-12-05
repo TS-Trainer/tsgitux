@@ -138,43 +138,6 @@ liveboard:
     viz_guid: d3603850-5bf3-4532-8cba-dabc6d233625
   - id: Viz_4
     answer:
-      name: Sales by Category Donut Chart AAS
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Category]"
-      answer_columns:
-      - name: Category
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Category
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Category
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: PIE
-        chart_columns:
-        - column_id: Category
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Category
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"markersEnabled\": true,\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"eafba553-a29e-4142-b61a-fae60a44ef93\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"bdbc9ef0-ebb0-4b77-9709-522b2695876d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"}]}"
-      display_mode: CHART_MODE
-      dynamic_name: Sales by Category Donut Chart AAS
-    viz_guid: 02e10ab9-e2f2-4e35-9c2d-d6a4fc699787
-  - id: Viz_5
-    answer:
       name: Total Sales by Product Name and Store Region
       tables:
       - id: Retail Sales - Classic
@@ -216,7 +179,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a91ad97b-fdf3-4c80-ab4a-852aaf34ceeb\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"e4ce69d2-89e4-4edd-b098-19404c26d4bd\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"east\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: ead09155-0f33-42d2-949d-b88f57dcd1a6
-  - id: Viz_6
+  - id: Viz_5
     answer:
       name: "Total Sales by Product Name, Store Region"
       tables:
@@ -259,7 +222,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a91ad97b-fdf3-4c80-ab4a-852aaf34ceeb\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"e4ce69d2-89e4-4edd-b098-19404c26d4bd\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"east\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"}]}"
       display_mode: TABLE_MODE
     viz_guid: fe4b70fc-8eb6-449c-9e19-091e8c8887f2
-  - id: Viz_7
+  - id: Viz_6
     answer:
       name: Retail Sales Classic
       tables:
@@ -348,21 +311,16 @@ liveboard:
       height: 8
       width: 6
     - visualization_id: Viz_4
-      x: 4
-      "y": 0
-      height: 6
-      width: 4
-    - visualization_id: Viz_5
       x: 0
       "y": 6
       height: 8
       width: 6
-    - visualization_id: Viz_6
+    - visualization_id: Viz_5
       x: 0
       "y": 18
       height: 8
       width: 6
-    - visualization_id: Viz_7
+    - visualization_id: Viz_6
       x: 8
       "y": 0
       height: 6

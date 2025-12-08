@@ -294,29 +294,7 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: f3c6a63a-6b1a-4b92-befd-dcb715547440
-    name: DV East Region Food Sales
-    view_filters:
-    - column:
-      - Category
-      oper: in
-      values:
-      - Food
-    - column:
-      - Store Region
-      oper: in
-      values:
-      - East
-    - column:
-      - Age Group
-      oper: in
-      values:
-      - c) 50-64
-      - a) 18-29
-      - b) 30-49
-      - d) 65+
-    is_public: false
-  - view_guid: 95432782-c62a-407a-b270-eb86c856d3fe
+  - view_guid: 6ea5f0e4-32ec-4361-8585-b4b9b5533e71
     name: East Region Food
     view_filters:
     - column:

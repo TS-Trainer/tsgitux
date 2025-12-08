@@ -316,3 +316,25 @@ liveboard:
       - b) 30-49
       - d) 65+
     is_public: false
+  - view_guid: 95432782-c62a-407a-b270-eb86c856d3fe
+    name: East Region Food
+    view_filters:
+    - column:
+      - Category
+      oper: in
+      values:
+      - Food
+    - column:
+      - Store Region
+      oper: in
+      values:
+      - East
+    - column:
+      - Age Group
+      oper: in
+      values:
+      - c) 50-64
+      - a) 18-29
+      - b) 30-49
+      - d) 65+
+    is_public: false

@@ -294,28 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: c102bfda-1607-43bf-a11b-a8a541f569c0
-    name: East Region
-    view_filters:
-    - column:
-      - Category
-      oper: =
-    - column:
-      - Store Region
-      oper: in
-      values:
-      - East
-    - column:
-      - Age Group
-      oper: in
-      values:
-      - c) 50-64
-      - a) 18-29
-      - b) 30-49
-      - d) 65+
-    is_public: false
-  - view_guid: b84ea321-ce12-4d7a-b680-b2502bf0d811
-    name: "east, food, 50-64"
+  - view_guid: d6551f37-7ede-4797-9258-e67db617a08f
+    name: East Region Food
     view_filters:
     - column:
       - Category
@@ -332,4 +312,7 @@ liveboard:
       oper: in
       values:
       - c) 50-64
+      - a) 18-29
+      - b) 30-49
+      - d) 65+
     is_public: false

@@ -294,8 +294,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 5d076698-021f-4ced-82e5-ce6ecbd43927
-    name: food east mill view
+  - view_guid: ebb6eb3c-50d5-44b0-a60e-4ef0c74602f9
+    name: Food and East
     view_filters:
     - column:
       - Category
@@ -311,5 +311,5 @@ liveboard:
       - Age Group
       oper: in
       values:
-      - b) 30-49
+      - c) 50-64
     is_public: false

@@ -1,0 +1,36 @@
+guid: 20deaa16-d3c3-4902-8436-e86c32615927
+answer:
+  name: USA Sales MG
+  tables:
+  - id: Sales Model Demo
+    name: Sales Model Demo
+    fqn: fff9ea61-d627-4e3c-8a83-a1cb5b235bda
+  search_query: "[Store State] [Sales]"
+  answer_columns:
+  - name: Store State
+  - name: Total Sales
+  table:
+    table_columns:
+    - column_id: Store State
+      show_headline: false
+    - column_id: Total Sales
+      show_headline: false
+    ordered_column_ids:
+    - Store State
+    - Total Sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: GEO_AREA
+    chart_columns:
+    - column_id: Store State
+    - column_id: Total Sales
+    axis_configs:
+    - x:
+      - Store State
+      "y":
+      - Total Sales
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.0882193925314808E7,4686946.947421535],\"zoomLevel\": 4.4386497248725085,\"extent\": [-1.4556580295547465E7,2568219.2467078124,-7207807.555082152,6805674.648135258]},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"88ab5789-88c7-4784-873c-dddc68b34baf\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"78960749-662e-46ad-9fee-cb699a64f0e9\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+  display_mode: CHART_MODE
+  dynamic_name: USA Sales MG

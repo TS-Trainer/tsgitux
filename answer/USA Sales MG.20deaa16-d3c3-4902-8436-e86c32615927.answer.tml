@@ -5,32 +5,32 @@ answer:
   - id: Sales Model Demo
     name: Sales Model Demo
     fqn: fff9ea61-d627-4e3c-8a83-a1cb5b235bda
-  search_query: "[Profit] [Category]"
+  search_query: "[Department] [Profit Margin]"
   answer_columns:
-  - name: Category
-  - name: Total Profit
+  - name: Department
+  - name: Profit Margin
   table:
     table_columns:
-    - column_id: Category
+    - column_id: Department
       show_headline: false
-    - column_id: Total Profit
+    - column_id: Profit Margin
       show_headline: false
     ordered_column_ids:
-    - Category
-    - Total Profit
+    - Department
+    - Profit Margin
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
     type: COLUMN
     chart_columns:
-    - column_id: Category
-    - column_id: Total Profit
+    - column_id: Department
+    - column_id: Profit Margin
     axis_configs:
     - x:
-      - Category
+      - Department
       "y":
-      - Total Profit
+      - Profit Margin
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Profit\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"eeb1f2e6-fced-4425-b558-df5b822228a4\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Profit\"],\"isOpposite\": false}},{\"id\": \"1212e163-dd99-4050-bf84-781f50c91fd0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Profit\",\"color\": \"#8C62F5\"}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"d58fdb63-37a0-4f7c-83ba-89e26cebb932\",\"colorMap\": [{\"serieName\": \"1d5b5610-df4f-4b0e-9a65-ad8a02777707\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Profit Margin\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7bc993fd-30fa-431a-a96c-29fae37b8079\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Profit Margin\"],\"isOpposite\": false}},{\"id\": \"28657d21-9052-4385-a1ff-33e2eeaa26d8\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"3c8107e2-ee45-446d-88e2-97702de4bdcc\",\"color\": \"#8C62F5\"},{\"serieName\": \"Profit Margin\",\"color\": \"#2E75F0\"}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"d58fdb63-37a0-4f7c-83ba-89e26cebb932\",\"colorMap\": [{\"serieName\": \"1d5b5610-df4f-4b0e-9a65-ad8a02777707\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
   display_mode: CHART_MODE
   dynamic_name: USA Sales MG

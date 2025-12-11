@@ -5,32 +5,32 @@ answer:
   - id: Sales Model Demo
     name: Sales Model Demo
     fqn: fff9ea61-d627-4e3c-8a83-a1cb5b235bda
-  search_query: "[Store State] [Sales]"
+  search_query: "[Profit] [Category]"
   answer_columns:
-  - name: Store State
-  - name: Total Sales
+  - name: Category
+  - name: Total Profit
   table:
     table_columns:
-    - column_id: Store State
+    - column_id: Category
       show_headline: false
-    - column_id: Total Sales
+    - column_id: Total Profit
       show_headline: false
     ordered_column_ids:
-    - Store State
-    - Total Sales
+    - Category
+    - Total Profit
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: GEO_AREA
+    type: COLUMN
     chart_columns:
-    - column_id: Store State
-    - column_id: Total Sales
+    - column_id: Category
+    - column_id: Total Profit
     axis_configs:
     - x:
-      - Store State
+      - Category
       "y":
-      - Total Sales
+      - Total Profit
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.0882193925314808E7,4686946.947421535],\"zoomLevel\": 4.4386497248725085,\"extent\": [-1.4556580295547465E7,2568219.2467078124,-7207807.555082152,6805674.648135258]},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"88ab5789-88c7-4784-873c-dddc68b34baf\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"78960749-662e-46ad-9fee-cb699a64f0e9\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Profit\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"eeb1f2e6-fced-4425-b558-df5b822228a4\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Profit\"],\"isOpposite\": false}},{\"id\": \"1212e163-dd99-4050-bf84-781f50c91fd0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Profit\",\"color\": \"#8C62F5\"}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"d58fdb63-37a0-4f7c-83ba-89e26cebb932\",\"colorMap\": [{\"serieName\": \"1d5b5610-df4f-4b0e-9a65-ad8a02777707\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
   display_mode: CHART_MODE
   dynamic_name: USA Sales MG

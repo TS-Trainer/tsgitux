@@ -279,43 +279,6 @@ liveboard:
     viz_guid: 0ffb2366-5dd0-4278-8409-ce8b7ea61079
   - id: Viz_7
     answer:
-      name: "Source: Retail Sales Classic"
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[] []"
-      answer_columns:
-      - name: Store State
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Store State
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Store State
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: GEO_AREA
-        chart_columns:
-        - column_id: Store State
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Store State
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"5d03811f-4f55-4ec4-a273-85b8ff8ec1b6\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"ef1b2908-8646-499c-8456-f5578eabf59d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
-      display_mode: CHART_MODE
-      dynamic_name: "Source: Retail Sales Classic"
-    viz_guid: 3ed6f0d6-9c48-4312-a9a4-0eeab5173db3
-  - id: Viz_8
-    answer:
       name: "Source: Vendor Reporting"
       tables:
       - id: Vendor Reporting
@@ -351,7 +314,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: "Source: Vendor Reporting"
     viz_guid: 9c622381-0992-4f0e-86b7-f364ee35e578
-  - id: Viz_9
+  - id: Viz_8
     answer:
       name: Total Sales by Category
       tables:
@@ -457,21 +420,16 @@ liveboard:
         "y": 14
         height: 8
         width: 5
-      - visualization_id: Viz_7
-        x: 4
-        "y": 4
-        height: 5
-        width: 3
       id: 77f3c21c-eaa4-46f5-8b02-491ddb19da2d
     - name: Vendor Reporting
       description: ""
       tiles:
-      - visualization_id: Viz_8
+      - visualization_id: Viz_7
         x: 0
         "y": 0
         height: 5
         width: 4
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 4
         "y": 0
         height: 8

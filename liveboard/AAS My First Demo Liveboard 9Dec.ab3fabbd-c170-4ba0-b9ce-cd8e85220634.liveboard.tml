@@ -9,7 +9,7 @@ liveboard:
       - id: Retail Sales - Classic
         name: Retail Sales - Classic
         fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Sale Date].quarterly"
+      search_query: "[] [].quarterly"
       answer_columns:
       - name: Quarter(Sale Date)
       - name: Total Sales
@@ -46,7 +46,7 @@ liveboard:
       - id: Retail Sales - Classic
         name: Retail Sales - Classic
         fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Department]"
+      search_query: "[] []"
       answer_columns:
       - name: Department
         custom_name: Department Name
@@ -93,7 +93,7 @@ liveboard:
       - id: Retail Sales - Classic
         name: Retail Sales - Classic
         fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Store Region] [Department] [Product Name]"
+      search_query: "[] [] [] []"
       answer_columns:
       - name: Department
       - name: Product Name
@@ -153,7 +153,7 @@ liveboard:
       - id: Retail Sales - Classic
         name: Retail Sales - Classic
         fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Category] [Store Region]"
+      search_query: "[] [] []"
       answer_columns:
       - name: Category
       - name: Store Region
@@ -196,7 +196,7 @@ liveboard:
       - id: Retail Sales - Classic
         name: Retail Sales - Classic
         fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Category] [Store Region]"
+      search_query: "[] [] []"
       answer_columns:
       - name: Category
       - name: Store Region
@@ -240,7 +240,7 @@ liveboard:
       - id: Retail Sales - Classic
         name: Retail Sales - Classic
         fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Category] [Store Region]"
+      search_query: "[] [] []"
       answer_columns:
       - name: Category
       - name: Store Region
@@ -284,7 +284,7 @@ liveboard:
       - id: Retail Sales - Classic
         name: Retail Sales - Classic
         fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Store State]"
+      search_query: "[] []"
       answer_columns:
       - name: Store State
       - name: Total Sales
@@ -352,17 +352,13 @@ liveboard:
       dynamic_name: "Source: Vendor Reporting"
     viz_guid: 9c622381-0992-4f0e-86b7-f364ee35e578
   - id: Viz_9
-    viz_guid: a680a046-6020-45cf-be7b-6848a85c5815
-    note_tile:
-      html_parsed_string: "<h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Useful for my Liveboard users:</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><a href=\"https://training.thoughtspot.com/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS university</span></h2><h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Register for your course</span></h2><h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Take certification</span></h2><h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Get certified</span></h2><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(255, 255, 255);\"></div>"
-  - id: Viz_10
     answer:
       name: Total Sales by Category
       tables:
       - id: Retail Sales - Classic
         name: Retail Sales - Classic
         fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Category]"
+      search_query: "[] []"
       answer_columns:
       - name: Category
       - name: Total Sales
@@ -466,11 +462,6 @@ liveboard:
         "y": 4
         height: 5
         width: 3
-      - visualization_id: Viz_9
-        x: 0
-        "y": 0
-        height: 4
-        width: 7
       id: 77f3c21c-eaa4-46f5-8b02-491ddb19da2d
     - name: Vendor Reporting
       description: ""
@@ -480,7 +471,11 @@ liveboard:
         "y": 0
         height: 5
         width: 4
-      - visualization_id: Viz_10
+      - visualization_id: Viz_9
+        x: 4
+        "y": 0
+        height: 8
+        width: 6
       id: 7d2b1d29-d71a-4b4f-b0bb-f4eb31b7d509
   ordered_chips:
   - name: Retail Sales - Classic::Store Region

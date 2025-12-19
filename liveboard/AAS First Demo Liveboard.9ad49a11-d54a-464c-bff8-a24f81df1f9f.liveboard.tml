@@ -296,47 +296,9 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Retail Sales Classic
     viz_guid: 3bd76180-5179-4921-83cf-0d1db1f2de46
-  - id: Viz_8
-    answer:
-      name: Vendor Reporting
-      tables:
-      - id: Vendor Reporting
-        name: Vendor Reporting
-        fqn: 13169500-db07-4d68-980b-1d81ec2c45bd
-      search_query: "[Deal Size] [Vendor State]"
-      answer_columns:
-      - name: Total Deal Size
-      - name: Vendor State
-      table:
-        table_columns:
-        - column_id: Total Deal Size
-          show_headline: false
-        - column_id: Vendor State
-          show_headline: false
-        ordered_column_ids:
-        - Vendor State
-        - Total Deal Size
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: GEO_AREA
-        chart_columns:
-        - column_id: Total Deal Size
-        - column_id: Vendor State
-        axis_configs:
-        - x:
-          - Vendor State
-          "y":
-          - Total Deal Size
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Vendor State\",\"columnProperty\": {}},{\"columnId\": \"Total Deal Size\",\"columnProperty\": {}},{\"columnId\": \"86d639fa-86db-46a3-9da5-cdb4c7271cd1\",\"columnProperty\": {}},{\"columnId\": \"2d0ede77-9410-43a1-9f69-2e035c93e4a0\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"07344350-36fa-4a1b-bb56-7be79cf9bfc7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"752be844-7079-4a08-af62-ae74cd4b75a5\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"colorMap\": [{\"serieName\": \"Vendor State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
-      display_mode: CHART_MODE
-      dynamic_name: Vendor Reporting
-    viz_guid: d00a02a3-ac91-4b01-a954-b1faa0f785ec
   filters:
   - column:
-    - Retail Sales - Classic::Store Region
-    - Vendor Reporting::Vendor Region
+    - Store Region
     oper: in
     values:
     - "{null}"
@@ -349,7 +311,7 @@ liveboard:
     is_single_value: false
     display_name: ""
   - column:
-    - Retail Sales - Classic::Department
+    - Department
     oper: in
     values:
     - Bakery
@@ -372,7 +334,7 @@ liveboard:
     tiles:
     - visualization_id: Viz_1
       x: 0
-      "y": 20
+      "y": 14
       height: 4
       width: 12
     - visualization_id: Viz_2
@@ -382,22 +344,22 @@ liveboard:
       width: 4
     - visualization_id: Viz_3
       x: 6
-      "y": 12
+      "y": 6
       height: 8
       width: 6
     - visualization_id: Viz_4
       x: 4
-      "y": 6
+      "y": 0
       height: 6
       width: 4
     - visualization_id: Viz_5
       x: 0
-      "y": 12
+      "y": 6
       height: 8
       width: 6
     - visualization_id: Viz_6
       x: 0
-      "y": 24
+      "y": 18
       height: 8
       width: 6
     - visualization_id: Viz_7
@@ -405,27 +367,22 @@ liveboard:
       "y": 0
       height: 6
       width: 4
-    - visualization_id: Viz_8
-      x: 4
-      "y": 0
-      height: 6
-      width: 4
   ordered_chips:
-  - name: Retail Sales - Classic::Store Region
+  - name: Store Region
     type: FILTER
-  - name: Retail Sales - Classic::Department
+  - name: Department
     type: FILTER
   views:
   - view_guid: 8c425fb8-6959-42b7-91db-aee1a718482e
     name: EAST REGION VIEW
     view_filters:
     - column:
-      - Retail Sales - Classic::Store Region
+      - Store Region
       oper: in
       values:
       - east
     - column:
-      - Retail Sales - Classic::Department
+      - Department
       oper: in
       values:
       - Bakery
@@ -446,12 +403,12 @@ liveboard:
     name: WEST REGION VIEW
     view_filters:
     - column:
-      - Retail Sales - Classic::Store Region
+      - Store Region
       oper: in
       values:
       - West
     - column:
-      - Retail Sales - Classic::Department
+      - Department
       oper: in
       values:
       - Bakery
@@ -468,3 +425,19 @@ liveboard:
       - Produce
       - Seafood
     is_public: false
+  style:
+    style_properties:
+    - name: lb_border_type
+      value: CURVED
+    - name: lb_brand_color
+      value: LBC_A
+    - name: hide_group_title
+      value: "false"
+    - name: hide_group_description
+      value: "false"
+    - name: hide_group_tile_description
+      value: "false"
+    - name: hide_tile_description
+      value: "false"
+    - name: kpi_hero_font_size
+      value: M

@@ -320,7 +320,7 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: a0dc7f34-6cf1-41f3-b8e8-dba58ac7e684
+  - view_guid: b7467c84-00b5-49d6-8d48-6107aacd4845
     name: Southwest Food
     view_filters:
     - column:
@@ -332,6 +332,7 @@ liveboard:
       - Store Region
       oper: in
       values:
+      - west
       - Southwest
     - column:
       - Age Group

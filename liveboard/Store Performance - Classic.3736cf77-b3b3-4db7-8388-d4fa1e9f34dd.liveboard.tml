@@ -342,6 +342,28 @@ liveboard:
       - b) 30-49
       - d) 65+
     is_public: false
+  - view_guid: 7b400a15-4930-4f18-9433-a9e5a5648a27
+    name: Medical South
+    view_filters:
+    - column:
+      - Category
+      oper: in
+      values:
+      - Medical
+    - column:
+      - Store Region
+      oper: in
+      values:
+      - South
+    - column:
+      - Age Group
+      oper: in
+      values:
+      - c) 50-64
+      - a) 18-29
+      - b) 30-49
+      - d) 65+
+    is_public: false
   style:
     style_properties:
     - name: lb_border_type

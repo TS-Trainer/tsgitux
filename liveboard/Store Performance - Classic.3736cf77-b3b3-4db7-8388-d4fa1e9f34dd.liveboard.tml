@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: d9bc654b-4d00-411b-b53f-25f3b95e5491
-    name: Bill
+  - view_guid: 8daac3c1-4b07-47aa-ad73-7a0baa9cceac
+    name: Southwest Food
     view_filters:
     - column:
       - Category

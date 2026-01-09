@@ -41,49 +41,6 @@ liveboard:
     viz_guid: 59c00307-8afc-4336-913c-634ba87ef9a8
   - id: Viz_2
     answer:
-      name: "Categy, Region Sales"
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Category] [Store Region]"
-      answer_columns:
-      - name: Category
-      - name: Store Region
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Category
-          show_headline: false
-        - column_id: Store Region
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Category
-        - Store Region
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: PIE
-        chart_columns:
-        - column_id: Category
-        - column_id: Store Region
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Category
-          - Store Region
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Store Region\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2324d69c-58d4-4cbd-a2ad-3935801a1915\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"96894907-9634-4fa7-b535-3e5155edc496\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\",\"Store Region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#FF8142\"},{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"},{\"serieName\": \"food, east\",\"color\": \"#C26232\"},{\"serieName\": \"food, midwest\",\"color\": \"#FFCCB3\"},{\"serieName\": \"food, south\",\"color\": \"#FF8142\"},{\"serieName\": \"food, southwest\",\"color\": \"#6A4ABA\"},{\"serieName\": \"food, west\",\"color\": \"#D1C0FB\"},{\"serieName\": \"medical, east\",\"color\": \"#8C62F5\"},{\"serieName\": \"medical, midwest\",\"color\": \"#049160\"},{\"serieName\": \"medical, south\",\"color\": \"#9BE5CB\"},{\"serieName\": \"medical, southwest\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical, west\",\"color\": \"#BF982A\"},{\"serieName\": \"misc, east\",\"color\": \"#FDE9AF\"},{\"serieName\": \"misc, midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"misc, south\",\"color\": \"#82DFE9\"},{\"serieName\": \"misc, southwest\",\"color\": \"#369FAA\"},{\"serieName\": \"misc, west\",\"color\": \"#B5ECF2\"},{\"serieName\": \"non-food, east\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food, midwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"non-food, south\",\"color\": \"#2359B6\"},{\"serieName\": \"non-food, southwest\",\"color\": \"#ABC7F9\"},{\"serieName\": \"non-food, west\",\"color\": \"#2E75F0\"}]}"
-      display_mode: CHART_MODE
-      dynamic_name: "Categy, Region Sales"
-    viz_guid: 36874e47-879b-422c-b92f-23484aa89609
-  - id: Viz_3
-    answer:
       name: Stacked Column Chart AAS
       tables:
       - id: Retail Sales - Classic
@@ -126,7 +83,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Stacked Column Chart AAS
     viz_guid: b27e156e-d50e-46c6-90f6-8d615223edcb
-  - id: Viz_4
+  - id: Viz_3
     answer:
       name: Stacked Column Chart AAS
       tables:
@@ -170,7 +127,7 @@ liveboard:
       display_mode: TABLE_MODE
       dynamic_name: Stacked Column Chart AAS
     viz_guid: d8ae5254-84b0-44d1-9b98-55df2027f2d6
-  - id: Viz_5
+  - id: Viz_4
     answer:
       name: Pivot Table AAS
       tables:
@@ -234,7 +191,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Pivot Table AAS
     viz_guid: 14ad1b6d-3c0b-43e8-bc5f-220974615acc
-  - id: Viz_6
+  - id: Viz_5
     answer:
       name: Total Sales by Product Name
       tables:
@@ -270,7 +227,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"163c9538-a406-4e93-a4e7-acc34ed06785\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"67f536cd-78c8-42ca-943e-83dc4779ed36\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#747E8C\"}]}"
       display_mode: CHART_MODE
     viz_guid: fabb14ec-cf3a-4fa5-ac66-0d531f6cfda1
-  - id: Viz_7
+  - id: Viz_6
     answer:
       name: SOURCE 1
       tables:
@@ -307,11 +264,11 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: SOURCE 1
     viz_guid: d54d7a8e-c301-4874-aa19-33560c0b0d89
-  - id: Viz_8
+  - id: Viz_7
     viz_guid: 10f90ae5-5f96-4976-a584-63ef09b74ad4
     note_tile:
       html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Click here to visit </span><a href=\"https://www.training.thoughtspot.com\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">TS University</span></a></h2><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
-  - id: Viz_9
+  - id: Viz_8
     answer:
       name: Sample Answer AAS
       tables:
@@ -393,31 +350,26 @@ liveboard:
         height: 5
         width: 3
       - visualization_id: Viz_2
-        x: 7
-        "y": 5
-        height: 5
-        width: 4
-      - visualization_id: Viz_3
         x: 0
         "y": 9
         height: 4
         width: 7
-      - visualization_id: Viz_4
+      - visualization_id: Viz_3
         x: 0
         "y": 13
         height: 8
         width: 5
-      - visualization_id: Viz_5
+      - visualization_id: Viz_4
         x: 5
         "y": 17
         height: 8
         width: 6
-      - visualization_id: Viz_6
+      - visualization_id: Viz_5
         x: 5
         "y": 13
         height: 4
         width: 6
-      - visualization_id: Viz_8
+      - visualization_id: Viz_7
         x: 0
         "y": 0
         height: 4
@@ -426,12 +378,12 @@ liveboard:
     - name: Tab 2
       description: ""
       tiles:
-      - visualization_id: Viz_7
+      - visualization_id: Viz_6
         x: 3
         "y": 0
         height: 5
         width: 4
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 0
         "y": 5
         height: 8

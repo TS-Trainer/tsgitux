@@ -308,47 +308,10 @@ liveboard:
       dynamic_name: SOURCE 1
     viz_guid: d54d7a8e-c301-4874-aa19-33560c0b0d89
   - id: Viz_8
-    answer:
-      name: SOURCE 2
-      tables:
-      - id: Vendor Reporting
-        name: Vendor Reporting
-        fqn: 13169500-db07-4d68-980b-1d81ec2c45bd
-      search_query: "[Deal Size] [Vendor State]"
-      answer_columns:
-      - name: Total Deal Size
-      - name: Vendor State
-      table:
-        table_columns:
-        - column_id: Total Deal Size
-          show_headline: false
-        - column_id: Vendor State
-          show_headline: false
-        ordered_column_ids:
-        - Vendor State
-        - Total Deal Size
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: GEO_AREA
-        chart_columns:
-        - column_id: Total Deal Size
-        - column_id: Vendor State
-        axis_configs:
-        - x:
-          - Vendor State
-          "y":
-          - Total Deal Size
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Vendor State\",\"columnProperty\": {}},{\"columnId\": \"Total Deal Size\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"262452e0-9013-4dd2-ad01-ee592549637d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"8989bea4-72c4-4377-97cc-16b5b2c7654e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"colorMap\": [{\"serieName\": \"Vendor State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
-      display_mode: CHART_MODE
-      dynamic_name: SOURCE 2
-    viz_guid: 2e22858e-269e-4476-9e3c-4f79524ff3f8
-  - id: Viz_9
     viz_guid: 10f90ae5-5f96-4976-a584-63ef09b74ad4
     note_tile:
       html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Click here to visit </span><a href=\"https://www.training.thoughtspot.com\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">TS University</span></a></h2><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
-  - id: Viz_10
+  - id: Viz_9
     answer:
       name: Sample Answer AAS
       tables:
@@ -387,8 +350,7 @@ liveboard:
     viz_guid: 0da12d2a-db84-4ac2-8bc8-f14412984066
   filters:
   - column:
-    - Retail Sales - Classic::Store Region
-    - Vendor Reporting::Vendor Region
+    - Store Region
     oper: in
     values:
     - east
@@ -401,7 +363,7 @@ liveboard:
     is_single_value: false
     display_name: ""
   - column:
-    - Retail Sales - Classic::Department
+    - Department
     oper: in
     values:
     - Bakery
@@ -456,11 +418,6 @@ liveboard:
         height: 4
         width: 6
       - visualization_id: Viz_8
-        x: 7
-        "y": 0
-        height: 5
-        width: 4
-      - visualization_id: Viz_9
         x: 0
         "y": 0
         height: 4
@@ -474,19 +431,23 @@ liveboard:
         "y": 0
         height: 5
         width: 4
-      - visualization_id: Viz_10
+      - visualization_id: Viz_9
+        x: 0
+        "y": 5
+        height: 8
+        width: 6
       id: b3df15c0-99fc-423b-ac85-d09cbfa17073
   ordered_chips:
-  - name: Retail Sales - Classic::Store Region
+  - name: Store Region
     type: FILTER
-  - name: Retail Sales - Classic::Department
+  - name: Department
     type: FILTER
   views:
   - view_guid: 838cd419-c904-4e12-9ca8-8d59c6a8e25d
     name: Dairy Dept
     view_filters:
     - column:
-      - Retail Sales - Classic::Store Region
+      - Store Region
       oper: in
       values:
       - east
@@ -496,7 +457,7 @@ liveboard:
       - Southwest
       - West
     - column:
-      - Retail Sales - Classic::Department
+      - Department
       oper: in
       values:
       - Dairy
@@ -505,7 +466,7 @@ liveboard:
     name: Bakery Dept
     view_filters:
     - column:
-      - Retail Sales - Classic::Store Region
+      - Store Region
       oper: in
       values:
       - east
@@ -515,7 +476,7 @@ liveboard:
       - Southwest
       - West
     - column:
-      - Retail Sales - Classic::Department
+      - Department
       oper: in
       values:
       - bakery

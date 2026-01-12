@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: d9bc654b-4d00-411b-b53f-25f3b95e5491
-    name: Southwest food
+  - view_guid: 6ccd8957-a19e-47d1-8cad-7a2008c9971e
+    name: East Region Food
     view_filters:
     - column:
       - Category
@@ -332,29 +332,7 @@ liveboard:
       - Store Region
       oper: in
       values:
-      - Southwest
-    - column:
-      - Age Group
-      oper: in
-      values:
-      - c) 50-64
-      - a) 18-29
-      - b) 30-49
-      - d) 65+
-    is_public: false
-  - view_guid: 7b400a15-4930-4f18-9433-a9e5a5648a27
-    name: Medical South
-    view_filters:
-    - column:
-      - Category
-      oper: in
-      values:
-      - Medical
-    - column:
-      - Store Region
-      oper: in
-      values:
-      - South
+      - East
     - column:
       - Age Group
       oper: in

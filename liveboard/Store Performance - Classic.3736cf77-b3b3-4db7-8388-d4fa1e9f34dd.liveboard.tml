@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: c267eadd-2a41-438a-809a-a724fa3a9cbc
-    name: East Region Food
+  - view_guid: 635b3f08-28c3-458d-9eb0-c1d775d13bbf
+    name: NMP East Region Food
     view_filters:
     - column:
       - Category

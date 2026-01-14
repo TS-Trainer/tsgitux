@@ -438,10 +438,6 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"75daec87-b562-4146-b3aa-28318d52bab3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"79491fa3-9f1d-4375-ba28-914904d4e56e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store Region\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store Region\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: e15ae94f-811f-4c6b-9913-df7dde6c9016
-  - id: Viz_12
-    viz_guid: 299cf283-b8a6-453d-8d83-f140808f5b93
-    note_tile:
-      html_parsed_string: "<h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><a href=\"https://www.training.thoughtspot.com\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS University</span></h1><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
   filters:
   - column:
     - Retail Sales - Classic::Store Region
@@ -522,11 +518,6 @@ liveboard:
         "y": 19
         height: 8
         width: 6
-      - visualization_id: Viz_12
-        x: 0
-        "y": 0
-        height: 4
-        width: 3
       id: 8dcb986f-16ad-46c9-9d7e-0380ce90c659
     - name: Vendor Reporting
       description: ""

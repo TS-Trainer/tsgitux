@@ -320,14 +320,15 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 3fe807fe-89cc-4045-ae33-9b5611d05e14
-    name: KEVR Food Sales East Region
+  - view_guid: 63aa1369-fc70-48ee-81bd-4e255cb93966
+    name: "Misc, Non-Food Sales for East Region"
     view_filters:
     - column:
       - Category
       oper: in
       values:
-      - Food
+      - Misc
+      - Non-food
     - column:
       - Store Region
       oper: in
@@ -337,9 +338,10 @@ liveboard:
       - Age Group
       oper: in
       values:
-      - c) 50-64
+      - "{null}"
       - a) 18-29
       - b) 30-49
+      - c) 50-64
       - d) 65+
     is_public: false
   style:

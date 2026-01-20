@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: a1d887fc-e981-473b-be2a-430a91c1a311
-    name: East Region Food
+  - view_guid: 3fe807fe-89cc-4045-ae33-9b5611d05e14
+    name: KEVR Food Sales East Region
     view_filters:
     - column:
       - Category

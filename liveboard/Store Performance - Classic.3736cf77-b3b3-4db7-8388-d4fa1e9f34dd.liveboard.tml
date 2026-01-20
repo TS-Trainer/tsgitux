@@ -320,19 +320,19 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 6251278b-b55a-441f-97a8-4fc665bed319
-    name: East region food
+  - view_guid: 76ff4f63-d24d-41e0-8d05-608ffad16fa3
+    name: East Region Medical
     view_filters:
     - column:
       - Category
       oper: in
       values:
-      - Food
+      - Medical
     - column:
       - Store Region
       oper: in
       values:
-      - East
+      - east
     - column:
       - Age Group
       oper: in

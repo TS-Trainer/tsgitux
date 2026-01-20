@@ -320,15 +320,14 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 63aa1369-fc70-48ee-81bd-4e255cb93966
-    name: "Misc, Non-Food Sales for East Region"
+  - view_guid: 04af4575-2673-48d3-9fe7-1280c88bd226
+    name: food sales east
     view_filters:
     - column:
       - Category
       oper: in
       values:
-      - Misc
-      - Non-food
+      - Food
     - column:
       - Store Region
       oper: in
@@ -338,10 +337,9 @@ liveboard:
       - Age Group
       oper: in
       values:
-      - "{null}"
+      - c) 50-64
       - a) 18-29
       - b) 30-49
-      - c) 50-64
       - d) 65+
     is_public: false
   style:

@@ -1,0 +1,558 @@
+guid: 1c4309cd-386b-4b52-820a-3c0cdee9ebd8
+liveboard:
+  name: AAS First Demo Liveboard 20Jan
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Quarterly Sales Updates
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Sale Date].quarterly"
+      answer_columns:
+      - name: Quarter(Sale Date)
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Quarter(Sale Date)
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Quarter(Sale Date)
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Quarter(Sale Date)
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Quarter(Sale Date)
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0,\"removeTrailingZeroes\": false},\"isCategoryEditable\": false},\"customProps\": \"{\\\"tileType\\\":null,\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true,\\\"borderWidth\\\":\\\"1\\\",\\\"opacity\\\":\\\"\\\",\\\"label\\\":{},\\\"value\\\":{}},\\\"regression\\\":{\\\"lineWidth\\\":\\\"\\\"},\\\"gridlines\\\":{\\\"xAxis\\\":{},\\\"yAxis\\\":{}},\\\"answerLevelSettings\\\":{\\\"chart\\\":{\\\"backgroundStyle\\\":null},\\\"plotArea\\\":{\\\"backgroundStyle\\\":null},\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"\\\",\\\"connectingLines\\\":false}},\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showAnomalies\\\":null,\\\"customCompare\\\":\\\"CUSTOM\\\",\\\"genericCompareValue\\\":3}\",\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\"}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\"}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\"}},{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\"}}],\"axisProperties\": [{\"id\": \"ece112f9-83b0-44cd-8090-714504e59dad\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"isAxisNameVisible\\\":true}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"enabled\\\":true,\\\"maxCharacters\\\":\\\"\\\"},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}},{\"id\": \"ed8f0418-f515-4d9a-ae5e-29b2f650c080\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"],\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"isAxisNameVisible\\\":true}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"enabled\\\":true,\\\"maxCharacters\\\":\\\"\\\"},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Quarterly Sales Updates
+    viz_guid: 766c0d03-05b6-4026-a284-85c23aba5c6e
+  - id: Viz_2
+    answer:
+      name: Department Sales Update
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Department]"
+      answer_columns:
+      - name: Department
+        custom_name: Department Name
+        dynamic_title: Department Name
+      - name: Total Sales
+        custom_name: Total Sales Amount
+        format:
+          category: NUMBER
+          numberFormatConfig:
+            unit: NONE
+            decimals: 0.0
+            negativeValueFormat: PREFIX_DASH
+            toSeparateThousands: true
+            removeTrailingZeroes: false
+          isCategoryEditable: true
+        dynamic_title: Total Sales Amount
+      table:
+        table_columns:
+        - column_id: Department
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Department
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Department
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Department
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": false},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0,\"removeTrailingZeroes\": false},\"isCategoryEditable\": false},\"customProps\": \"{\\\"tileType\\\":null,\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true,\\\"backgroundColor\\\":\\\"#F04152\\\",\\\"borderColor\\\":\\\"#323946\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"opacity\\\":\\\"90\\\",\\\"label\\\":{},\\\"value\\\":{}},\\\"regression\\\":{\\\"lineWidth\\\":\\\"\\\"},\\\"gridlines\\\":{\\\"xAxis\\\":{},\\\"yAxis\\\":{}},\\\"answerLevelSettings\\\":{\\\"chart\\\":{\\\"backgroundStyle\\\":{\\\"backgroundColor\\\":\\\"#FFFBF0\\\",\\\"borderColor\\\":\\\"\\\",\\\"backgroundOpacity\\\":0,\\\"borderWidth\\\":0}},\\\"plotArea\\\":{\\\"backgroundStyle\\\":null},\\\"backgroundColor\\\":\\\"#FFFBF0\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"\\\",\\\"connectingLines\\\":false}},\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showAnomalies\\\":null,\\\"customCompare\\\":null}\",\"pivotSummariesState\": {}},\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":{\\\"type\\\":\\\"DATA_LABEL_PROPS\\\",\\\"id\\\":\\\"Total Sales\\\",\\\"key\\\":\\\"labelTextStyle\\\"},\\\"boldFontWeight\\\":true,\\\"color\\\":\\\"#F04152\\\",\\\"fontSize\\\":\\\"12\\\",\\\"italicFontStyle\\\":false,\\\"underlineTextDecoration\\\":false}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\"}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\"}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\"}},{\"columnId\": \"Department\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\"}}],\"axisProperties\": [{\"id\": \"6d537940-88f9-4ff1-bede-c7f3efe89284\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"isAxisNameVisible\\\":true}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"enabled\\\":true,\\\"maxCharacters\\\":\\\"\\\"},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}},{\"id\": \"c015621c-f7c8-45f9-9490-45f429d3d388\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"],\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"isAxisNameVisible\\\":true}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"enabled\\\":true,\\\"maxCharacters\\\":\\\"\\\"},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}}],\"seriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#B094F8\"}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#FCC838\"},{\"serieName\": \"bakery\",\"color\": \"#B094F8\"},{\"serieName\": \"canned goods\",\"color\": \"#8C62F5\"},{\"serieName\": \"dairy\",\"color\": \"#56D3A8\"},{\"serieName\": \"frozen goods\",\"color\": \"#06BF7F\"},{\"serieName\": \"meat\",\"color\": \"#BF982A\"},{\"serieName\": \"produce\",\"color\": \"#FCD977\"},{\"serieName\": \"seafood\",\"color\": \"#FCC838\"},{\"serieName\": \"cleaning supplies\",\"color\": \"#369FAA\"},{\"serieName\": \"liquor\",\"color\": \"#82DFE9\"},{\"serieName\": \"gifts\",\"color\": \"#48D1E0\"},{\"serieName\": \"photography\",\"color\": \"#2359B6\"},{\"serieName\": \"medical\",\"color\": \"#71A1F4\"},{\"serieName\": \"pharmacy\",\"color\": \"#2E75F0\"},{\"serieName\": \"fe38fe3b-fffb-416d-9c31-cfaccc05afd8\",\"color\": \"#2E75F0\"}],\"tooltipConfig\": {\"columnIds\": [\"Total Sales\"]}}"
+      display_mode: CHART_MODE
+      dynamic_name: Department Sales Update
+    viz_guid: 95854007-02d1-47b8-9a51-3a5592d8dcf0
+  - id: Viz_3
+    answer:
+      name: Donut Chart AAS
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Category] [Store Region]"
+      answer_columns:
+      - name: Category
+      - name: Store Region
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Category
+          show_headline: false
+        - column_id: Store Region
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Category
+        - Store Region
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"widthState\": [{\"columnId\": \"Store Region\",\"width\": 182.48802185058594}]}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Category
+        - column_id: Store Region
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Category
+          - Store Region
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Store Region\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"29247c4c-6ff4-4278-aaba-41f344bf3d74\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"5265f726-6129-4db2-be3b-a1f6598e02b4\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\",\"Store Region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#FCC838\"},{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"},{\"serieName\": \"food, east\",\"color\": \"#C26232\"},{\"serieName\": \"food, midwest\",\"color\": \"#FFCCB3\"},{\"serieName\": \"food, south\",\"color\": \"#FF8142\"},{\"serieName\": \"food, southwest\",\"color\": \"#6A4ABA\"},{\"serieName\": \"food, west\",\"color\": \"#D1C0FB\"},{\"serieName\": \"medical, east\",\"color\": \"#8C62F5\"},{\"serieName\": \"medical, midwest\",\"color\": \"#049160\"},{\"serieName\": \"medical, south\",\"color\": \"#9BE5CB\"},{\"serieName\": \"medical, southwest\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical, west\",\"color\": \"#BF982A\"},{\"serieName\": \"misc, east\",\"color\": \"#FDE9AF\"},{\"serieName\": \"misc, midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"misc, south\",\"color\": \"#82DFE9\"},{\"serieName\": \"misc, southwest\",\"color\": \"#369FAA\"},{\"serieName\": \"misc, west\",\"color\": \"#B5ECF2\"},{\"serieName\": \"non-food, east\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food, midwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"non-food, south\",\"color\": \"#2359B6\"},{\"serieName\": \"non-food, southwest\",\"color\": \"#ABC7F9\"},{\"serieName\": \"non-food, west\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Donut Chart AAS
+    viz_guid: cfc4e483-d48d-4af5-b8f1-0abdc57d293d
+  - id: Viz_4
+    answer:
+      name: Donut Chart AAS
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Category] [Store Region]"
+      answer_columns:
+      - name: Category
+      - name: Store Region
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Category
+          show_headline: false
+        - column_id: Store Region
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Category
+        - Store Region
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"widthState\": [{\"columnId\": \"Store Region\",\"width\": 182.48802185058594}]}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Category
+        - column_id: Store Region
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Category
+          - Store Region
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Store Region\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"29247c4c-6ff4-4278-aaba-41f344bf3d74\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"5265f726-6129-4db2-be3b-a1f6598e02b4\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\",\"Store Region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#FCC838\"},{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"},{\"serieName\": \"food, east\",\"color\": \"#C26232\"},{\"serieName\": \"food, midwest\",\"color\": \"#FFCCB3\"},{\"serieName\": \"food, south\",\"color\": \"#FF8142\"},{\"serieName\": \"food, southwest\",\"color\": \"#6A4ABA\"},{\"serieName\": \"food, west\",\"color\": \"#D1C0FB\"},{\"serieName\": \"medical, east\",\"color\": \"#8C62F5\"},{\"serieName\": \"medical, midwest\",\"color\": \"#049160\"},{\"serieName\": \"medical, south\",\"color\": \"#9BE5CB\"},{\"serieName\": \"medical, southwest\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical, west\",\"color\": \"#BF982A\"},{\"serieName\": \"misc, east\",\"color\": \"#FDE9AF\"},{\"serieName\": \"misc, midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"misc, south\",\"color\": \"#82DFE9\"},{\"serieName\": \"misc, southwest\",\"color\": \"#369FAA\"},{\"serieName\": \"misc, west\",\"color\": \"#B5ECF2\"},{\"serieName\": \"non-food, east\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food, midwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"non-food, south\",\"color\": \"#2359B6\"},{\"serieName\": \"non-food, southwest\",\"color\": \"#ABC7F9\"},{\"serieName\": \"non-food, west\",\"color\": \"#2E75F0\"}]}"
+      display_mode: TABLE_MODE
+      dynamic_name: Donut Chart AAS
+    viz_guid: 1a2f995b-3788-47bc-8bd5-01ea03a08124
+  - id: Viz_5
+    answer:
+      name: Pivot Table AAS
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Department] [Product Name] [Store Region]"
+      answer_columns:
+      - name: Department
+      - name: Product Name
+      - name: Store Region
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Department
+          show_headline: false
+        - column_id: Product Name
+          show_headline: false
+        - column_id: Store Region
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Department
+        - Product Name
+        - Store Region
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: ADVANCED_PIVOT_TABLE
+        chart_columns:
+        - column_id: Department
+        - column_id: Measure names
+          type: MEASURE_NAMES
+        - column_id: Product Name
+        - column_id: Store Region
+        - column_id: Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Product Name\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Store Region\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"bd4eb2cf-f9c0-482f-b63a-9e4e2379159f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"17930636-73f9-445e-b7cb-1223c4a64bcf\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"bakery\",\"color\": \"#B094F8\"},{\"serieName\": \"canned goods\",\"color\": \"#8C62F5\"},{\"serieName\": \"dairy\",\"color\": \"#56D3A8\"},{\"serieName\": \"frozen goods\",\"color\": \"#06BF7F\"},{\"serieName\": \"meat\",\"color\": \"#BF982A\"},{\"serieName\": \"produce\",\"color\": \"#FCD977\"},{\"serieName\": \"seafood\",\"color\": \"#FCC838\"},{\"serieName\": \"cleaning supplies\",\"color\": \"#369FAA\"},{\"serieName\": \"liquor\",\"color\": \"#82DFE9\"},{\"serieName\": \"gifts\",\"color\": \"#48D1E0\"},{\"serieName\": \"photography\",\"color\": \"#2359B6\"},{\"serieName\": \"medical\",\"color\": \"#71A1F4\"},{\"serieName\": \"pharmacy\",\"color\": \"#2E75F0\"}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: rows
+            columns:
+            - Department
+            - Product Name
+            mode: COLUMN_DRIVEN
+          - key: values
+            columns:
+            - Total Sales
+            mode: COLUMN_DRIVEN
+          - key: columns
+            columns:
+            - Store Region
+            - Measure names
+            mode: COLUMN_DRIVEN
+          - key: split-by-color
+            mode: COLUMN_DRIVEN
+        custom_visual_props: "{}"
+      display_mode: CHART_MODE
+      dynamic_name: Pivot Table AAS
+    viz_guid: 51b88e17-3528-409d-9445-623065e7fae6
+  - id: Viz_6
+    answer:
+      name: Stacked Column Chart
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Category] [Store Region]"
+      answer_columns:
+      - name: Category
+      - name: Store Region
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Category
+          show_headline: false
+        - column_id: Store Region
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Category
+        - Store Region
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"widthState\": [{\"columnId\": \"Store Region\",\"width\": 182.48802185058594}]}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Category
+        - column_id: Store Region
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Category
+          "y":
+          - Total Sales
+          color:
+          - Store Region
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"visibleSeriesNames\": [\"east\",\"west\",\"southwest\",\"south\",\"midwest\"],\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"isStackedAsPercent\": false,\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0,\"removeTrailingZeroes\": false},\"isCategoryEditable\": false},\"customProps\": \"{\\\"tileType\\\":null,\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true,\\\"borderWidth\\\":\\\"1\\\",\\\"opacity\\\":\\\"\\\",\\\"label\\\":{},\\\"value\\\":{}},\\\"regression\\\":{\\\"lineWidth\\\":\\\"\\\"},\\\"gridlines\\\":{\\\"xAxis\\\":{},\\\"yAxis\\\":{}},\\\"answerLevelSettings\\\":{\\\"chart\\\":{\\\"backgroundStyle\\\":null},\\\"plotArea\\\":{\\\"backgroundStyle\\\":null},\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"\\\",\\\"connectingLines\\\":false}},\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showAnomalies\\\":null,\\\"customCompare\\\":null}\",\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\"}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\"}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\"}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\"}},{\"columnId\": \"Store Region\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\"}}],\"axisProperties\": [{\"id\": \"c1b6f7b9-49a9-4804-9a2d-25586f2d5407\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"isAxisNameVisible\\\":true}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"enabled\\\":true,\\\"maxCharacters\\\":\\\"\\\"},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}},{\"id\": \"99a5d461-b445-4790-a976-13df0c45ce0f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"],\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"isAxisNameVisible\\\":true}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"enabled\\\":true,\\\"maxCharacters\\\":\\\"\\\"},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}}],\"seriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#FCC838\"},{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"},{\"serieName\": \"food, east\",\"color\": \"#C26232\"},{\"serieName\": \"food, midwest\",\"color\": \"#FFCCB3\"},{\"serieName\": \"food, south\",\"color\": \"#FF8142\"},{\"serieName\": \"food, southwest\",\"color\": \"#6A4ABA\"},{\"serieName\": \"food, west\",\"color\": \"#D1C0FB\"},{\"serieName\": \"medical, east\",\"color\": \"#8C62F5\"},{\"serieName\": \"medical, midwest\",\"color\": \"#049160\"},{\"serieName\": \"medical, south\",\"color\": \"#9BE5CB\"},{\"serieName\": \"medical, southwest\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical, west\",\"color\": \"#BF982A\"},{\"serieName\": \"misc, east\",\"color\": \"#FDE9AF\"},{\"serieName\": \"misc, midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"misc, south\",\"color\": \"#82DFE9\"},{\"serieName\": \"misc, southwest\",\"color\": \"#369FAA\"},{\"serieName\": \"misc, west\",\"color\": \"#B5ECF2\"},{\"serieName\": \"non-food, east\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food, midwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"non-food, south\",\"color\": \"#2359B6\"},{\"serieName\": \"non-food, southwest\",\"color\": \"#ABC7F9\"},{\"serieName\": \"non-food, west\",\"color\": \"#2E75F0\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"},{\"serieName\": \"east\",\"color\": \"#F47E89\"}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#FCC838\"},{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"},{\"serieName\": \"food, east\",\"color\": \"#C26232\"},{\"serieName\": \"food, midwest\",\"color\": \"#FFCCB3\"},{\"serieName\": \"food, south\",\"color\": \"#FF8142\"},{\"serieName\": \"food, southwest\",\"color\": \"#6A4ABA\"},{\"serieName\": \"food, west\",\"color\": \"#D1C0FB\"},{\"serieName\": \"medical, east\",\"color\": \"#8C62F5\"},{\"serieName\": \"medical, midwest\",\"color\": \"#049160\"},{\"serieName\": \"medical, south\",\"color\": \"#9BE5CB\"},{\"serieName\": \"medical, southwest\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical, west\",\"color\": \"#BF982A\"},{\"serieName\": \"misc, east\",\"color\": \"#FDE9AF\"},{\"serieName\": \"misc, midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"misc, south\",\"color\": \"#82DFE9\"},{\"serieName\": \"misc, southwest\",\"color\": \"#369FAA\"},{\"serieName\": \"misc, west\",\"color\": \"#B5ECF2\"},{\"serieName\": \"non-food, east\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food, midwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"non-food, south\",\"color\": \"#2359B6\"},{\"serieName\": \"non-food, southwest\",\"color\": \"#ABC7F9\"},{\"serieName\": \"non-food, west\",\"color\": \"#2E75F0\"},{\"serieName\": \"east\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Stacked Column Chart
+    viz_guid: 119ea965-72ea-4706-8c45-9b5108d1b434
+  - id: Viz_7
+    answer:
+      name: "Source 1: Retail Sales Classic"
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Store State]"
+      answer_columns:
+      - name: Store State
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Store State
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Store State
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Store State
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Store State
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4de5467d-693b-4d76-8e8a-23f6f2d46850\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"e5240e58-6cd2-41c5-8120-0317f5acde37\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+      display_mode: CHART_MODE
+      dynamic_name: "Source 1: Retail Sales Classic"
+    viz_guid: ec925a13-5cce-4a7d-bf6f-52e33ba0a622
+  - id: Viz_8
+    answer:
+      name: "Source 2: Vendor Reporting"
+      tables:
+      - id: Vendor Reporting
+        name: Vendor Reporting
+        fqn: 13169500-db07-4d68-980b-1d81ec2c45bd
+      search_query: "[Deal Size] [Vendor State]"
+      answer_columns:
+      - name: Total Deal Size
+      - name: Vendor State
+      table:
+        table_columns:
+        - column_id: Total Deal Size
+          show_headline: false
+        - column_id: Vendor State
+          show_headline: false
+        ordered_column_ids:
+        - Vendor State
+        - Total Deal Size
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Total Deal Size
+        - column_id: Vendor State
+        axis_configs:
+        - x:
+          - Vendor State
+          "y":
+          - Total Deal Size
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Vendor State\",\"columnProperty\": {}},{\"columnId\": \"Total Deal Size\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"0e2b5a8d-12b8-4359-96b4-4843ccaa9338\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"f62e5104-bc2e-4c13-86fb-c86023f9117d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"colorMap\": [{\"serieName\": \"Vendor State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+      display_mode: CHART_MODE
+      dynamic_name: "Source 2: Vendor Reporting"
+    viz_guid: 56cf0d3a-e02b-468a-9b9a-8500f04dd666
+  - id: Viz_9
+    answer:
+      name: Total Deal Size by Vendor Region
+      tables:
+      - id: Vendor Reporting
+        name: Vendor Reporting
+        fqn: 13169500-db07-4d68-980b-1d81ec2c45bd
+      search_query: "[Deal Size] [Vendor Region]"
+      answer_columns:
+      - name: Total Deal Size
+      - name: Vendor Region
+      table:
+        table_columns:
+        - column_id: Total Deal Size
+          show_headline: false
+        - column_id: Vendor Region
+          show_headline: false
+        ordered_column_ids:
+        - Vendor Region
+        - Total Deal Size
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Total Deal Size
+        - column_id: Vendor Region
+        axis_configs:
+        - x:
+          - Vendor Region
+          "y":
+          - Total Deal Size
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Vendor Region\",\"columnProperty\": {}},{\"columnId\": \"Total Deal Size\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1f235e33-c885-4ffd-a10f-508ba1761a32\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"84b21073-b41c-496c-aff6-294417656f3b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor Region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 06ba8712-ed60-4517-ac25-cdea664ae885
+  - id: Viz_10
+    viz_guid: c8067d00-8d10-4f36-a8ab-71f7cd9c834d
+    note_tile:
+      html_parsed_string: "<p class=\"theme-module__editor-paragraph\"><br></p><h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Welcome to ThoughtSpot!</span></h1><h1 class=\"theme-module__editor-h1\"><br></h1><h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><a href=\"https://www.training.thoughtspot.com\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS University</span></h1><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
+  filters:
+  - column:
+    - Retail Sales - Classic::Store Region
+    - Vendor Reporting::Vendor Region
+    oper: in
+    values:
+    - East
+    is_mandatory: true
+    is_single_value: false
+    display_name: ""
+  - column:
+    - Retail Sales - Classic::Department
+    oper: in
+    values:
+    - Bakery
+    - Canned Goods
+    - Cleaning Supplies
+    - Dairy
+    - Frozen Goods
+    - Gifts
+    - Liquor
+    - Meat
+    - Medical
+    - Pharmacy
+    - Photography
+    - Produce
+    - Seafood
+    excluded_visualizations:
+    - Viz_7
+    - Viz_2
+    - Viz_6
+    - Viz_5
+    - Viz_4
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tabs:
+    - name: 1. Retail Sales Classic
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 5
+        height: 5
+        width: 4
+      - visualization_id: Viz_2
+        x: 0
+        "y": 10
+        height: 4
+        width: 6
+      - visualization_id: Viz_3
+        x: 8
+        "y": 0
+        height: 5
+        width: 4
+      - visualization_id: Viz_4
+        x: 6
+        "y": 9
+        height: 8
+        width: 6
+      - visualization_id: Viz_5
+        x: 0
+        "y": 14
+        height: 8
+        width: 6
+      - visualization_id: Viz_6
+        x: 4
+        "y": 5
+        height: 4
+        width: 6
+      - visualization_id: Viz_7
+        x: 4
+        "y": 0
+        height: 5
+        width: 4
+      - visualization_id: Viz_10
+        x: 0
+        "y": 0
+        height: 5
+        width: 4
+      id: 07dd9b1a-67dd-4e47-bf23-216d9f759ac0
+    - name: 2. Vendor Reporting
+      description: ""
+      tiles:
+      - visualization_id: Viz_8
+        x: 0
+        "y": 0
+        height: 5
+        width: 4
+      - visualization_id: Viz_9
+        x: 4
+        "y": 0
+        height: 8
+        width: 6
+      id: 64b8e9cf-6e99-4acb-8eb9-ab0cf69ef452
+  ordered_chips:
+  - name: Retail Sales - Classic::Store Region
+    type: FILTER
+  - name: Retail Sales - Classic::Department
+    type: FILTER
+  views:
+  - view_guid: b09777ba-7179-42b8-9841-715a33358e04
+    name: EAST - Bakery & Dairy
+    view_filters:
+    - column:
+      - Retail Sales - Classic::Store Region
+      oper: in
+      values:
+      - east
+    - column:
+      - Retail Sales - Classic::Department
+      oper: in
+      values:
+      - bakery
+      - dairy
+    is_public: true
+  - view_guid: 19de64d2-130e-4ce4-8428-7e03ad884374
+    name: EAST - All Departments
+    view_filters:
+    - column:
+      - Retail Sales - Classic::Store Region
+      oper: in
+      values:
+      - east
+    - column:
+      - Retail Sales - Classic::Department
+      oper: in
+      values:
+      - Bakery
+      - Canned Goods
+      - Cleaning Supplies
+      - Dairy
+      - Frozen Goods
+      - Gifts
+      - Liquor
+      - Meat
+      - Medical
+      - Pharmacy
+      - Photography
+      - Produce
+      - Seafood
+    is_public: true
+  style:
+    style_properties:
+    - name: lb_border_type
+      value: CURVED
+    - name: lb_brand_color
+      value: LBC_D
+    - name: hide_group_title
+      value: "false"
+    - name: hide_group_description
+      value: "true"
+    - name: hide_group_tile_description
+      value: "false"
+    - name: hide_tile_description
+      value: "false"
+    - name: kpi_hero_font_size
+      value: M

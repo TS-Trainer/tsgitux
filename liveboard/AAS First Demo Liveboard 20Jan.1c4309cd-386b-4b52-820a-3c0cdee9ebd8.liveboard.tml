@@ -285,43 +285,6 @@ liveboard:
     viz_guid: 119ea965-72ea-4706-8c45-9b5108d1b434
   - id: Viz_7
     answer:
-      name: "Source 1: Retail Sales Classic"
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Store State]"
-      answer_columns:
-      - name: Store State
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Store State
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Store State
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: GEO_AREA
-        chart_columns:
-        - column_id: Store State
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Store State
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4de5467d-693b-4d76-8e8a-23f6f2d46850\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"e5240e58-6cd2-41c5-8120-0317f5acde37\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
-      display_mode: CHART_MODE
-      dynamic_name: "Source 1: Retail Sales Classic"
-    viz_guid: ec925a13-5cce-4a7d-bf6f-52e33ba0a622
-  - id: Viz_8
-    answer:
       name: "Source 2: Vendor Reporting"
       tables:
       - id: Vendor Reporting
@@ -357,7 +320,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: "Source 2: Vendor Reporting"
     viz_guid: 56cf0d3a-e02b-468a-9b9a-8500f04dd666
-  - id: Viz_9
+  - id: Viz_8
     answer:
       name: Total Deal Size by Vendor Region
       tables:
@@ -393,7 +356,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Vendor Region\",\"columnProperty\": {}},{\"columnId\": \"Total Deal Size\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1f235e33-c885-4ffd-a10f-508ba1761a32\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"84b21073-b41c-496c-aff6-294417656f3b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor Region\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"color\": \"#06BF7F\"}]}"
       display_mode: CHART_MODE
     viz_guid: 06ba8712-ed60-4517-ac25-cdea664ae885
-  - id: Viz_10
+  - id: Viz_9
     viz_guid: c8067d00-8d10-4f36-a8ab-71f7cd9c834d
     note_tile:
       html_parsed_string: "<p class=\"theme-module__editor-paragraph\"><br></p><h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Welcome to ThoughtSpot!</span></h1><h1 class=\"theme-module__editor-h1\"><br></h1><h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><a href=\"https://www.training.thoughtspot.com\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS University</span></h1><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
@@ -425,7 +388,6 @@ liveboard:
     - Produce
     - Seafood
     excluded_visualizations:
-    - Viz_7
     - Viz_2
     - Viz_6
     - Viz_5
@@ -468,12 +430,7 @@ liveboard:
         "y": 5
         height: 4
         width: 6
-      - visualization_id: Viz_7
-        x: 4
-        "y": 0
-        height: 5
-        width: 4
-      - visualization_id: Viz_10
+      - visualization_id: Viz_9
         x: 0
         "y": 0
         height: 5
@@ -482,12 +439,12 @@ liveboard:
     - name: 2. Vendor Reporting
       description: ""
       tiles:
-      - visualization_id: Viz_8
+      - visualization_id: Viz_7
         x: 0
         "y": 0
         height: 5
         width: 4
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 4
         "y": 0
         height: 8

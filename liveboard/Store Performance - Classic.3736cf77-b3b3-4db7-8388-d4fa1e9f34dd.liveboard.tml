@@ -320,18 +320,39 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 01a3a75a-dc8d-4292-9f61-47ee1e899a06
-    name: Store Performance - South East
+  - view_guid: dfd84013-ac9e-4a29-af6b-50bd9974602d
+    name: East Region
     view_filters:
     - column:
       - Category
-      oper: =
+      oper: in
     - column:
       - Store Region
       oper: in
       values:
-      - east
-      - South
+      - East
+    - column:
+      - Age Group
+      oper: in
+      values:
+      - c) 50-64
+      - a) 18-29
+      - b) 30-49
+      - d) 65+
+    is_public: false
+  - view_guid: 5bef8055-5032-4f3f-ae3a-99f74b3de6a3
+    name: Food and East
+    view_filters:
+    - column:
+      - Category
+      oper: in
+      values:
+      - Food
+    - column:
+      - Store Region
+      oper: in
+      values:
+      - East
     - column:
       - Age Group
       oper: in

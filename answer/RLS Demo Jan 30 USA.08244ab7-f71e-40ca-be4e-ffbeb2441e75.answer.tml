@@ -5,32 +5,39 @@ answer:
   - id: Sales Team Model MG
     name: Sales Team Model MG
     fqn: 8f7d7a06-410f-4bae-96e0-ae51d70ea4e7
-  search_query: "[Store State] [Sales]"
+  search_query: "[Cost] [Category] [Department]"
   answer_columns:
-  - name: Store State
-  - name: Total Sales
+  - name: Category
+  - name: Department
+  - name: Total Cost
   table:
     table_columns:
-    - column_id: Store State
+    - column_id: Category
       show_headline: false
-    - column_id: Total Sales
+    - column_id: Department
+      show_headline: false
+    - column_id: Total Cost
       show_headline: false
     ordered_column_ids:
-    - Store State
-    - Total Sales
+    - Category
+    - Department
+    - Total Cost
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: GEO_AREA
+    type: STACKED_COLUMN
     chart_columns:
-    - column_id: Store State
-    - column_id: Total Sales
+    - column_id: Category
+    - column_id: Department
+    - column_id: Total Cost
     axis_configs:
     - x:
-      - Store State
+      - Department
       "y":
-      - Total Sales
+      - Total Cost
+      color:
+      - Category
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"mapviewport\": {\"center\": [-1.0691508895479567E7,4551148.0850898065],\"zoomLevel\": 3.979900577635095,\"extent\": [-1.6609505898830283E7,1351560.434493652,-4773511.892128851,7750735.735685961]},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"f30a2504-cbef-4692-b41d-2058e490b11a\",\"columnProperty\": {}},{\"columnId\": \"ce52fd6e-6ffc-433b-8573-1ea4c8bf9213\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"5da64d8f-ab78-4e24-a4c5-3a178f4bdebf\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"3bbc0dcd-99eb-4ab2-966e-e27e62419866\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Department\",\"columnProperty\": {}},{\"columnId\": \"Total Cost\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a28e347f-d982-4f09-bb70-3c0f6e582576\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Cost\"],\"isOpposite\": false}},{\"id\": \"7581788a-7c1e-4d0d-b0bd-a428d41cf2fa\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"non-food\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"medical\",\"color\": \"#2E75F0\"}]}"
   display_mode: CHART_MODE
   dynamic_name: RLS Demo Jan 30 USA

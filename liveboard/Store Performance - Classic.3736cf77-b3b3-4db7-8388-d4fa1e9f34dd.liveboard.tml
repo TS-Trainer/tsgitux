@@ -320,19 +320,19 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: b1ce70e0-d68f-480b-866a-3a8be4acef0f
-    name: SouthWest Non-food
+  - view_guid: 3a7f10b5-d783-484e-86d9-e26b0074f470
+    name: East Region Food
     view_filters:
     - column:
       - Category
       oper: in
       values:
-      - Non-food
+      - Food
     - column:
       - Store Region
       oper: in
       values:
-      - Southwest
+      - East
     - column:
       - Age Group
       oper: in

@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: b17a0af3-2fa2-4311-9f6e-a409e3fd2127
-    name: East Region Food
+  - view_guid: cdc963ce-4443-4c01-889b-696f96c9d656
+    name: benview
     view_filters:
     - column:
       - Category

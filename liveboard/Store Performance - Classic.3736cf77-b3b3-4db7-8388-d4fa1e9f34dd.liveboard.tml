@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 8d3b76a5-43c1-4841-ad9a-0896a10927f7
-    name: Elias - East Region Food
+  - view_guid: df400405-3526-4fad-b0e9-af1fd342bb2b
+    name: East Region Food
     view_filters:
     - column:
       - Category

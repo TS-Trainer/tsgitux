@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 7c83a667-8272-470c-a346-7086a92b75e6
-    name: West Region Food
+  - view_guid: 8d3b76a5-43c1-4841-ad9a-0896a10927f7
+    name: Elias - East Region Food
     view_filters:
     - column:
       - Category
@@ -332,7 +332,7 @@ liveboard:
       - Store Region
       oper: in
       values:
-      - west
+      - East
     - column:
       - Age Group
       oper: in

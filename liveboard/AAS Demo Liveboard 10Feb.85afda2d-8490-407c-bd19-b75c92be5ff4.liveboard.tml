@@ -285,6 +285,14 @@ liveboard:
     viz_guid: 589a0701-38d6-4cbf-a240-a34844b2eac9
     note_tile:
       html_parsed_string: "<h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Information Panel</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Visit TS Training University. </span><a href=\"https://www.training.thoughtspot.com\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\">.</span></p><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
+  groups:
+  - id: Group_1
+    name: Group 1
+    visualizations:
+    - Viz_2
+    - Viz_6
+    - Viz_5
+    group_guid: e01e84e9-51d3-483a-b557-1f52c5d28cf9
   filters:
   - column:
     - Retail Sales - Classic::Store Region
@@ -327,14 +335,9 @@ liveboard:
       tiles:
       - visualization_id: Viz_1
         x: 0
-        "y": 14
+        "y": 10
         height: 5
         width: 6
-      - visualization_id: Viz_2
-        x: 0
-        "y": 4
-        height: 5
-        width: 4
       - visualization_id: Viz_3
         x: 4
         "y": 5
@@ -345,22 +348,35 @@ liveboard:
         "y": 10
         height: 5
         width: 6
-      - visualization_id: Viz_5
-        x: 0
-        "y": 9
-        height: 5
-        width: 4
-      - visualization_id: Viz_6
-        x: 4
-        "y": 0
-        height: 5
-        width: 4
       - visualization_id: Viz_8
         x: 0
-        "y": 0
+        "y": 5
         height: 4
         width: 4
+      - visualization_id: Group_1
+        x: 0
+        "y": 0
+        height: 5
+        width: 12
       id: 0866062f-a5a4-4a29-857e-47d1f067a1b9
+      group_layouts:
+      - id: Group_1
+        tiles:
+        - visualization_id: Viz_5
+          x: 8
+          "y": 0
+          height: 5
+          width: 4
+        - visualization_id: Viz_6
+          x: 4
+          "y": 0
+          height: 5
+          width: 4
+        - visualization_id: Viz_2
+          x: 0
+          "y": 0
+          height: 5
+          width: 4
     - name: Tab 2 - VR
       description: ""
       tiles:

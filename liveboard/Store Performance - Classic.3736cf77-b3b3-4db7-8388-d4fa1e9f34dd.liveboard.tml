@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 6a46eaf7-2a0f-444c-9a15-38192bd7266f
-    name: CYW East Region View
+  - view_guid: 6ae88bcb-c079-4013-8434-bae2bb069f33
+    name: East Region Food
     view_filters:
     - column:
       - Category

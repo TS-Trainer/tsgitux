@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 6936f18c-ebcd-4153-a3b6-a94b974dd1e0
-    name: BD East Food Sales
+  - view_guid: 1bc61ba5-0e93-49ab-9f6e-89cd461cb15b
+    name: East Region Food
     view_filters:
     - column:
       - Category

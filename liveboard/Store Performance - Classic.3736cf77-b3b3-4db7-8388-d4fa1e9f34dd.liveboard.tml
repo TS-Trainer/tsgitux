@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 1bc61ba5-0e93-49ab-9f6e-89cd461cb15b
-    name: East Region Food
+  - view_guid: 6a2483f4-df55-47a9-ab63-207f5edb2f73
+    name: Ashu -East Region Food
     view_filters:
     - column:
       - Category

@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 084aba76-b428-450f-aa98-09c12664b613
-    name: ASoto East Region Food
+  - view_guid: 6a46eaf7-2a0f-444c-9a15-38192bd7266f
+    name: CYW East Region View
     view_filters:
     - column:
       - Category

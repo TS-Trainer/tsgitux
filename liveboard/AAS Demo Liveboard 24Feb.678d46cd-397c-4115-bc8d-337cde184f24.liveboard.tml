@@ -292,47 +292,10 @@ liveboard:
       dynamic_name: Donut Chart AAS
     viz_guid: 3e717d94-eb94-4ade-95f8-91c07c3e7a1c
   - id: Viz_7
-    answer:
-      name: SOURCE 2
-      tables:
-      - id: Vendor Reporting
-        name: Vendor Reporting
-        fqn: 13169500-db07-4d68-980b-1d81ec2c45bd
-      search_query: "[Deal Size] [Vendor State]"
-      answer_columns:
-      - name: Total Deal Size
-      - name: Vendor State
-      table:
-        table_columns:
-        - column_id: Total Deal Size
-          show_headline: false
-        - column_id: Vendor State
-          show_headline: false
-        ordered_column_ids:
-        - Vendor State
-        - Total Deal Size
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: GEO_AREA
-        chart_columns:
-        - column_id: Total Deal Size
-        - column_id: Vendor State
-        axis_configs:
-        - x:
-          - Vendor State
-          "y":
-          - Total Deal Size
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showDateLabel\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true,\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Vendor State\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Total Deal Size\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}}],\"axisProperties\": [{\"id\": \"949f674f-b50f-4065-aaf9-b99f2e061d87\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"f60e14ad-e633-4288-80cb-084cd22d712c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"colorMap\": [{\"serieName\": \"Vendor State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
-      display_mode: CHART_MODE
-      dynamic_name: SOURCE 2
-    viz_guid: 0bf02ee9-5ae2-4e60-ac8f-d7e048b96e88
-  - id: Viz_8
     viz_guid: e8b832a8-0702-4c4d-96f0-c6a4e6ef851b
     note_tile:
       html_parsed_string: "<h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">TS Notice Board for Users</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><a href=\"https://training.thoughtspot.com/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS University</span></h2><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
-  - id: Viz_9
+  - id: Viz_8
     answer:
       name: Total Sales by Product Name
       tables:
@@ -370,8 +333,7 @@ liveboard:
     viz_guid: dc835069-043e-4302-8130-9469ebf8bdab
   filters:
   - column:
-    - Retail Sales - Classic::Store Region
-    - Vendor Reporting::Vendor Region
+    - Store Region
     oper: in
     values:
     - east
@@ -384,7 +346,7 @@ liveboard:
     is_single_value: false
     display_name: ""
   - column:
-    - Retail Sales - Classic::Department
+    - Department
     oper: in
     values:
     - Bakery
@@ -438,42 +400,37 @@ liveboard:
         "y": 5
         height: 5
         width: 4
-      - visualization_id: Viz_7
-        x: 7
-        "y": 0
-        height: 5
-        width: 3
       id: e1f14907-c3ed-4215-abdd-0a82bcf4f947
     - name: TAB 2
       description: ""
       tiles:
-      - visualization_id: Viz_8
+      - visualization_id: Viz_7
         x: 0
         "y": 0
         height: 4
         width: 3
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 3
         "y": 0
         height: 8
         width: 6
       id: 7f531c1c-5875-46b5-a4ce-04100389f278
   ordered_chips:
-  - name: Retail Sales - Classic::Store Region
+  - name: Store Region
     type: FILTER
-  - name: Retail Sales - Classic::Department
+  - name: Department
     type: FILTER
   views:
   - view_guid: cb077d0a-9d44-4d3d-b32f-17d79d4d11ed
     name: EAST REGION VIEW
     view_filters:
     - column:
-      - Retail Sales - Classic::Store Region
+      - Store Region
       oper: in
       values:
       - east
     - column:
-      - Retail Sales - Classic::Department
+      - Department
       oper: in
       values:
       - Bakery
@@ -494,12 +451,12 @@ liveboard:
     name: WEST REGION VIEW
     view_filters:
     - column:
-      - Retail Sales - Classic::Store Region
+      - Store Region
       oper: in
       values:
       - West
     - column:
-      - Retail Sales - Classic::Department
+      - Department
       oper: in
       values:
       - Bakery

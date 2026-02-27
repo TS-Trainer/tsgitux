@@ -1,0 +1,572 @@
+guid: 678d46cd-397c-4115-bc8d-337cde184f24
+liveboard:
+  name: AAS Demo Liveboard 24Feb
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Quarterly Revenue Update KPI
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Sale Date].quarterly"
+      answer_columns:
+      - name: Quarter(Sale Date)
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Quarter(Sale Date)
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Quarter(Sale Date)
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Quarter(Sale Date)
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Quarter(Sale Date)
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0,\"removeTrailingZeroes\": false},\"isCategoryEditable\": false},\"customProps\": \"{\\\"tileType\\\":null,\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true,\\\"borderWidth\\\":\\\"1\\\",\\\"opacity\\\":\\\"\\\",\\\"label\\\":{},\\\"value\\\":{}},\\\"regression\\\":{\\\"lineWidth\\\":\\\"\\\"},\\\"gridlines\\\":{\\\"xAxis\\\":{},\\\"yAxis\\\":{}},\\\"answerLevelSettings\\\":{\\\"chart\\\":{\\\"backgroundStyle\\\":null},\\\"plotArea\\\":{\\\"backgroundStyle\\\":null},\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"\\\",\\\"connectingLines\\\":false},\\\"stackLabelStyles\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{}}},\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showAnomalies\\\":true,\\\"customCompare\\\":\\\"CUSTOM\\\",\\\"genericCompareValue\\\":\\\"3\\\"}\",\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showDateLabel\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true,\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null},\\\"customCompare\\\":\\\"CUSTOM\\\",\\\"genericCompareValue\\\":\\\"3\\\"}\",\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}}],\"axisProperties\": [{\"id\": \"944ae54c-86b3-4cee-a63d-20d5e5b358c1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"isAxisNameVisible\\\":true}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"enabled\\\":true,\\\"maxCharacters\\\":\\\"\\\"},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}},{\"id\": \"7f5e0173-16f3-4e0b-a083-c49607217648\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"],\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"isAxisNameVisible\\\":true}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"enabled\\\":true,\\\"maxCharacters\\\":\\\"\\\"},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#747E8C\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Quarterly Revenue Update KPI
+    viz_guid: 2664614a-6de6-4f5d-9e98-5a11e797e405
+  - id: Viz_2
+    answer:
+      name: Total Sales by Department AAS
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Department] [Store Region]"
+      answer_columns:
+      - name: Department
+        custom_name: Department Name
+        dynamic_title: Department Name
+      - name: Store Region
+      - name: Total Sales
+        custom_name: Total Sales Amount
+        format:
+          category: NUMBER
+          numberFormatConfig:
+            unit: MILLION
+            decimals: 0.0
+            negativeValueFormat: PREFIX_DASH
+            toSeparateThousands: true
+            removeTrailingZeroes: false
+          isCategoryEditable: true
+        dynamic_title: Total Sales Amount
+      table:
+        table_columns:
+        - column_id: Department
+          show_headline: false
+        - column_id: Store Region
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Department
+        - Store Region
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Department
+        - column_id: Store Region
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Department
+          "y":
+          - Total Sales
+          color:
+          - Store Region
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"visibleSeriesNames\": [\"south\",\"southwest\",\"west\",\"east\",\"midwest\"],\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0,\"removeTrailingZeroes\": false},\"isCategoryEditable\": false},\"customProps\": \"{\\\"tileType\\\":null,\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true,\\\"backgroundColor\\\":\\\"#049160\\\",\\\"borderColor\\\":\\\"#323946\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"opacity\\\":\\\"90\\\",\\\"label\\\":{},\\\"value\\\":{}},\\\"regression\\\":{\\\"lineWidth\\\":\\\"\\\"},\\\"gridlines\\\":{\\\"xAxis\\\":{},\\\"yAxis\\\":{}},\\\"answerLevelSettings\\\":{\\\"chart\\\":{\\\"backgroundStyle\\\":null},\\\"plotArea\\\":{\\\"backgroundStyle\\\":null},\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"\\\",\\\"connectingLines\\\":false},\\\"stackLabelStyles\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{}}},\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showAnomalies\\\":null,\\\"customCompare\\\":\\\"PREV_AVAILABLE\\\"}\",\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true,\"legendPosition\": \"TOP_LEGEND\",\"kpiDisplayProperties\": {\"showDateLabel\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true,\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"#fee9af\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null,\\\"boldFontWeight\\\":true,\\\"color\\\":\\\"#F04152\\\",\\\"fontSize\\\":\\\"12\\\",\\\"italicFontStyle\\\":false,\\\"underlineTextDecoration\\\":false}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Store Region\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}}],\"axisProperties\": [{\"id\": \"efaff4dd-9b4c-4dc4-bf78-4f3449b2fbbc\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"isAxisNameVisible\\\":true}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"enabled\\\":true,\\\"maxCharacters\\\":\\\"\\\"},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}},{\"id\": \"599bbd77-29dd-4c9c-93f1-0c41ed78fa1e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"],\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"isAxisNameVisible\\\":true}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"enabled\\\":true,\\\"maxCharacters\\\":\\\"\\\"},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}}],\"seriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#369FAA\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"},{\"serieName\": \"east\",\"color\": \"#F47E89\"}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#369FAA\"},{\"serieName\": \"east\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Total Sales by Department AAS
+    viz_guid: 5e449407-05e6-42fd-a814-73c524affaf3
+  - id: Viz_3
+    answer:
+      name: Total Sales by Department AAS
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Department] [Store Region]"
+      answer_columns:
+      - name: Department
+        custom_name: Department Name
+        dynamic_title: Department Name
+      - name: Store Region
+      - name: Total Sales
+        custom_name: Total Sales Amount
+        format:
+          category: NUMBER
+          numberFormatConfig:
+            unit: MILLION
+            decimals: 0.0
+            negativeValueFormat: PREFIX_DASH
+            toSeparateThousands: true
+            removeTrailingZeroes: false
+          isCategoryEditable: true
+        dynamic_title: Total Sales Amount
+      table:
+        table_columns:
+        - column_id: Department
+          show_headline: false
+        - column_id: Store Region
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Department
+        - Store Region
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Department
+        - column_id: Store Region
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Department
+          "y":
+          - Total Sales
+          color:
+          - Store Region
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"visibleSeriesNames\": [\"south\",\"southwest\",\"west\",\"east\",\"midwest\"],\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0,\"removeTrailingZeroes\": false},\"isCategoryEditable\": false},\"customProps\": \"{\\\"tileType\\\":null,\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true,\\\"backgroundColor\\\":\\\"#049160\\\",\\\"borderColor\\\":\\\"#323946\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"opacity\\\":\\\"90\\\",\\\"label\\\":{},\\\"value\\\":{}},\\\"regression\\\":{\\\"lineWidth\\\":\\\"\\\"},\\\"gridlines\\\":{\\\"xAxis\\\":{},\\\"yAxis\\\":{}},\\\"answerLevelSettings\\\":{\\\"chart\\\":{\\\"backgroundStyle\\\":null},\\\"plotArea\\\":{\\\"backgroundStyle\\\":null},\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"\\\",\\\"connectingLines\\\":false},\\\"stackLabelStyles\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{}}},\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showAnomalies\\\":null,\\\"customCompare\\\":\\\"PREV_AVAILABLE\\\"}\",\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true,\"legendPosition\": \"TOP_LEGEND\",\"kpiDisplayProperties\": {\"showDateLabel\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true,\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"#fee9af\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null,\\\"boldFontWeight\\\":true,\\\"color\\\":\\\"#F04152\\\",\\\"fontSize\\\":\\\"12\\\",\\\"italicFontStyle\\\":false,\\\"underlineTextDecoration\\\":false}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Store Region\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}}],\"axisProperties\": [{\"id\": \"efaff4dd-9b4c-4dc4-bf78-4f3449b2fbbc\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"isAxisNameVisible\\\":true}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"enabled\\\":true,\\\"maxCharacters\\\":\\\"\\\"},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}},{\"id\": \"599bbd77-29dd-4c9c-93f1-0c41ed78fa1e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"],\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"isAxisNameVisible\\\":true}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"enabled\\\":true,\\\"maxCharacters\\\":\\\"\\\"},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\"}}],\"seriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#369FAA\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"},{\"serieName\": \"east\",\"color\": \"#F47E89\"}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#369FAA\"},{\"serieName\": \"east\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"}]}"
+      display_mode: TABLE_MODE
+      dynamic_name: Total Sales by Department AAS
+    viz_guid: f06c919a-d708-4f4f-9c8f-5d9d5922cd6b
+  - id: Viz_4
+    answer:
+      name: Pivot Table AAS
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Store Region] [Department] [Product Name]"
+      answer_columns:
+      - name: Department
+      - name: Product Name
+      - name: Store Region
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Department
+          show_headline: false
+        - column_id: Product Name
+          show_headline: false
+        - column_id: Store Region
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Store Region
+        - Department
+        - Product Name
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: ADVANCED_PIVOT_TABLE
+        chart_columns:
+        - column_id: Department
+        - column_id: Measure names
+          type: MEASURE_NAMES
+        - column_id: Product Name
+        - column_id: Store Region
+        - column_id: Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Store Region\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Department\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Product Name\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}}],\"axisProperties\": [{\"id\": \"d2a31391-0628-4ea0-876f-756f25c080cc\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"d4fe3a97-ad69-49ad-b52c-9c9852df6e70\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store Region\",\"Measure names\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store Region\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: rows
+            columns:
+            - Department
+            - Product Name
+            mode: COLUMN_DRIVEN
+          - key: values
+            columns:
+            - Total Sales
+            mode: COLUMN_DRIVEN
+          - key: columns
+            columns:
+            - Store Region
+            - Measure names
+            mode: COLUMN_DRIVEN
+          - key: split-by-color
+            mode: COLUMN_DRIVEN
+        custom_visual_props: "{}"
+      display_mode: CHART_MODE
+      dynamic_name: Pivot Table AAS
+    viz_guid: 35e1a799-a568-42b0-bc8e-3f300e200f51
+  - id: Viz_5
+    answer:
+      name: Line Chart AAS
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Sale Date].quarterly"
+      answer_columns:
+      - name: Quarter(Sale Date)
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Quarter(Sale Date)
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Quarter(Sale Date)
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Quarter(Sale Date)
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Quarter(Sale Date)
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0,\"removeTrailingZeroes\": false},\"isCategoryEditable\": false},\"customProps\": \"{\\\"tileType\\\":null,\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true,\\\"borderWidth\\\":\\\"1\\\",\\\"opacity\\\":\\\"\\\",\\\"label\\\":{},\\\"value\\\":{}},\\\"regression\\\":{\\\"lineWidth\\\":\\\"\\\"},\\\"gridlines\\\":{\\\"xAxis\\\":{},\\\"yAxis\\\":{}},\\\"answerLevelSettings\\\":{\\\"chart\\\":{\\\"backgroundStyle\\\":null},\\\"plotArea\\\":{\\\"backgroundStyle\\\":null},\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"\\\",\\\"connectingLines\\\":false},\\\"stackLabelStyles\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{}}},\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showAnomalies\\\":null,\\\"customCompare\\\":\\\"PREV_AVAILABLE\\\"}\",\"pivotSummariesState\": {}},\"dataSize\": 20000.0},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":true,\\\"lineStyle\\\":null,\\\"markerStyle\\\":{\\\"type\\\":\\\"square\\\"}}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"9cd4abe7-e7e9-45db-a7c5-80034c1ce74b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"3a199210-ea70-4d9b-b504-7ed1469d4a98\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}],\"seriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#2359B6\"}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Line Chart AAS
+    viz_guid: 99d87f30-c06e-47d6-9a77-0d1927a354c8
+  - id: Viz_6
+    answer:
+      name: Donut Chart AAS
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Category]"
+      answer_columns:
+      - name: Category
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Category
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Category
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Category
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Category
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showDateLabel\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true,\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}}],\"axisProperties\": [{\"id\": \"c4e30796-675d-4e60-9e6e-0867358db00b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"9486f5a2-d2f2-45bf-a301-8e140c9a2513\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#747E8C\"},{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Donut Chart AAS
+    viz_guid: 3e717d94-eb94-4ade-95f8-91c07c3e7a1c
+  - id: Viz_7
+    answer:
+      name: SOURCE 1
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Store State]"
+      answer_columns:
+      - name: Store State
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Store State
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Store State
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Store State
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Store State
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showDateLabel\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true,\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}}],\"axisProperties\": [{\"id\": \"18e90dbe-8516-4097-bdaf-a7cb145eb0bc\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"9dbf4037-0d1a-4555-92b3-2e17abadac60\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+      display_mode: CHART_MODE
+      dynamic_name: SOURCE 1
+    viz_guid: 06dc8db6-551c-42e7-bdc6-0e8f9a25cfb3
+  - id: Viz_8
+    answer:
+      name: SOURCE 2
+      tables:
+      - id: Vendor Reporting
+        name: Vendor Reporting
+        fqn: 13169500-db07-4d68-980b-1d81ec2c45bd
+      search_query: "[Deal Size] [Vendor State]"
+      answer_columns:
+      - name: Total Deal Size
+      - name: Vendor State
+      table:
+        table_columns:
+        - column_id: Total Deal Size
+          show_headline: false
+        - column_id: Vendor State
+          show_headline: false
+        ordered_column_ids:
+        - Vendor State
+        - Total Deal Size
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: Total Deal Size
+        - column_id: Vendor State
+        axis_configs:
+        - x:
+          - Vendor State
+          "y":
+          - Total Deal Size
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showDateLabel\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true,\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Vendor State\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Total Deal Size\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}}],\"axisProperties\": [{\"id\": \"949f674f-b50f-4065-aaf9-b99f2e061d87\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"f60e14ad-e633-4288-80cb-084cd22d712c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"colorMap\": [{\"serieName\": \"Vendor State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+      display_mode: CHART_MODE
+      dynamic_name: SOURCE 2
+    viz_guid: 0bf02ee9-5ae2-4e60-ac8f-d7e048b96e88
+  - id: Viz_9
+    viz_guid: e8b832a8-0702-4c4d-96f0-c6a4e6ef851b
+    note_tile:
+      html_parsed_string: "<h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">TS Notice Board for Users</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><a href=\"https://training.thoughtspot.com/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS University</span></h2><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
+  - id: Viz_10
+    answer:
+      name: Total Sales by Product Name
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Product Name]"
+      answer_columns:
+      - name: Product Name
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Product Name
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Product Name
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Product Name
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Product Name
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showDateLabel\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true,\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Product Name\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true}}}],\"axisProperties\": [{\"id\": \"f8dcb5c9-480f-4dab-8412-12fd7b258a5b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"d5bdd295-aefd-462a-b748-ab977916639d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#2E75F0\"},{\"serieName\": \"bestprice air freshener\",\"color\": \"#721F27\"},{\"serieName\": \"bestprice air purifier\",\"color\": \"#F47E89\"},{\"serieName\": \"bestprice asthma inhaler\",\"color\": \"#B6313E\"},{\"serieName\": \"bestprice bagels\",\"color\": \"#F9B3B9\"},{\"serieName\": \"bestprice bananas\",\"color\": \"#F04152\"},{\"serieName\": \"bestprice birth control\",\"color\": \"#2F3947\"},{\"serieName\": \"bestprice bleach\",\"color\": \"#A2ACBA\"},{\"serieName\": \"bestprice blood pressure medicine\",\"color\": \"#47515F\"},{\"serieName\": \"bestprice bourbon\",\"color\": \"#BEC6D0\"},{\"serieName\": \"bestprice box of candy\",\"color\": \"#747E8C\"},{\"serieName\": \"bestprice cables\",\"color\": \"#7A3D1F\"},{\"serieName\": \"bestprice camera batteries\",\"color\": \"#FFA97E\"},{\"serieName\": \"bestprice canned chicken broth\",\"color\": \"#C26232\"},{\"serieName\": \"bestprice canned tuna\",\"color\": \"#FFCCB3\"},{\"serieName\": \"bestprice chicken nuggets\",\"color\": \"#FF8142\"},{\"serieName\": \"bestprice chicken patties\",\"color\": \"#422E75\"},{\"serieName\": \"bestprice chocolate chip cookies\",\"color\": \"#B094F8\"},{\"serieName\": \"bestprice chocolate ice cream\",\"color\": \"#6A4ABA\"},{\"serieName\": \"bestprice cholesterol reducer\",\"color\": \"#D1C0FB\"},{\"serieName\": \"bestprice cod\",\"color\": \"#8C62F5\"},{\"serieName\": \"bestprice crutches\",\"color\": \"#025B3C\"},{\"serieName\": \"bestprice cucumbers\",\"color\": \"#56D3A8\"},{\"serieName\": \"bestprice dish soap\",\"color\": \"#049160\"},{\"serieName\": \"bestprice fabric softener\",\"color\": \"#9BE5CB\"},{\"serieName\": \"bestprice feather duster\",\"color\": \"#06BF7F\"},{\"serieName\": \"bestprice film\",\"color\": \"#785F1A\"},{\"serieName\": \"bestprice fishing pole\",\"color\": \"#FCD977\"},{\"serieName\": \"bestprice french bread\",\"color\": \"#BF982A\"},{\"serieName\": \"bestprice ground beef\",\"color\": \"#FDE9AF\"},{\"serieName\": \"bestprice hamburger buns\",\"color\": \"#FCC838\"},{\"serieName\": \"bestprice hard lemonade\",\"color\": \"#22636B\"},{\"serieName\": \"bestprice hotdog buns\",\"color\": \"#82DFE9\"},{\"serieName\": \"bestprice ipa\",\"color\": \"#369FAA\"},{\"serieName\": \"bestprice lactose free milk\",\"color\": \"#B5ECF2\"},{\"serieName\": \"bestprice lens cleaner\",\"color\": \"#48D1E0\"},{\"serieName\": \"bestprice mezcal\",\"color\": \"#163772\"},{\"serieName\": \"bestprice mops\",\"color\": \"#71A1F4\"},{\"serieName\": \"bestprice mozzarella cheese\",\"color\": \"#2359B6\"},{\"serieName\": \"bestprice nicotine gum\",\"color\": \"#ABC7F9\"},{\"serieName\": \"bestprice nicotine patches\",\"color\": \"#2E75F0\"},{\"serieName\": \"bestprice onions\",\"color\": \"#721F27\"},{\"serieName\": \"bestprice paper towels\",\"color\": \"#F47E89\"},{\"serieName\": \"bestprice peanut butter cookies\",\"color\": \"#B6313E\"},{\"serieName\": \"bestprice pork\",\"color\": \"#F9B3B9\"},{\"serieName\": \"bestprice rash ointment\",\"color\": \"#F04152\"},{\"serieName\": \"bestprice red peppers\",\"color\": \"#2F3947\"},{\"serieName\": \"bestprice red wine\",\"color\": \"#A2ACBA\"},{\"serieName\": \"bestprice ring\",\"color\": \"#47515F\"},{\"serieName\": \"bestprice rubber gloves\",\"color\": \"#BEC6D0\"},{\"serieName\": \"bestprice rye\",\"color\": \"#747E8C\"},{\"serieName\": \"bestprice salmon\",\"color\": \"#7A3D1F\"},{\"serieName\": \"bestprice sardines\",\"color\": \"#FFA97E\"},{\"serieName\": \"bestprice sausage\",\"color\": \"#C26232\"},{\"serieName\": \"bestprice silver polishing cream\",\"color\": \"#FFCCB3\"},{\"serieName\": \"bestprice skim milk\",\"color\": \"#FF8142\"},{\"serieName\": \"bestprice sleeping pills\",\"color\": \"#422E75\"},{\"serieName\": \"bestprice sliced turkey\",\"color\": \"#B094F8\"},{\"serieName\": \"bestprice sling\",\"color\": \"#6A4ABA\"},{\"serieName\": \"bestprice squash\",\"color\": \"#D1C0FB\"},{\"serieName\": \"bestprice strawberry ice cream\",\"color\": \"#8C62F5\"},{\"serieName\": \"bestprice sushi\",\"color\": \"#025B3C\"},{\"serieName\": \"bestprice swordfish\",\"color\": \"#56D3A8\"},{\"serieName\": \"bestprice thermometer\",\"color\": \"#049160\"},{\"serieName\": \"bestprice ulcer medication\",\"color\": \"#9BE5CB\"},{\"serieName\": \"bestprice vodka\",\"color\": \"#06BF7F\"},{\"serieName\": \"bestprice watch\",\"color\": \"#785F1A\"},{\"serieName\": \"bestprice watermelon\",\"color\": \"#FCD977\"},{\"serieName\": \"bestprice whipped cream\",\"color\": \"#BF982A\"},{\"serieName\": \"bestprice whole milk\",\"color\": \"#FDE9AF\"},{\"serieName\": \"dealzone band aids\",\"color\": \"#FCC838\"},{\"serieName\": \"dealzone beard trimmer\",\"color\": \"#22636B\"},{\"serieName\": \"dealzone birth control\",\"color\": \"#82DFE9\"},{\"serieName\": \"dealzone blueberry muffins\",\"color\": \"#369FAA\"},{\"serieName\": \"dealzone bourbon\",\"color\": \"#B5ECF2\"},{\"serieName\": \"dealzone bracelet\",\"color\": \"#48D1E0\"},{\"serieName\": \"dealzone brooms\",\"color\": \"#163772\"},{\"serieName\": \"dealzone butter milk\",\"color\": \"#71A1F4\"},{\"serieName\": \"dealzone canned chicken broth\",\"color\": \"#2359B6\"},{\"serieName\": \"dealzone canned peaches\",\"color\": \"#ABC7F9\"},{\"serieName\": \"dealzone cheddar cheese\",\"color\": \"#2E75F0\"},{\"serieName\": \"dealzone chicken nuggets\",\"color\": \"#721F27\"},{\"serieName\": \"dealzone chicken wings\",\"color\": \"#F47E89\"},{\"serieName\": \"dealzone cinnamon buns\",\"color\": \"#B6313E\"},{\"serieName\": \"dealzone coffee cake\",\"color\": \"#F9B3B9\"},{\"serieName\": \"dealzone crab legs\",\"color\": \"#F04152\"},{\"serieName\": \"dealzone croissants\",\"color\": \"#2F3947\"},{\"serieName\": \"dealzone cucumbers\",\"color\": \"#A2ACBA\"},{\"serieName\": \"dealzone digital camera\",\"color\": \"#47515F\"},{\"serieName\": \"dealzone electric razor\",\"color\": \"#BEC6D0\"},{\"serieName\": \"dealzone flounder\",\"color\": \"#747E8C\"},{\"serieName\": \"dealzone flowers\",\"color\": \"#7A3D1F\"},{\"serieName\": \"dealzone fried fish patties\",\"color\": \"#FFA97E\"},{\"serieName\": \"dealzone frozen chicken patties\",\"color\": \"#C26232\"},{\"serieName\": \"dealzone frozen french fries\",\"color\": \"#FFCCB3\"},{\"serieName\": \"dealzone frozen spinach\",\"color\": \"#FF8142\"},{\"serieName\": \"dealzone frozen stuffed chicken\",\"color\": \"#422E75\"},{\"serieName\": \"dealzone fruit cocktail\",\"color\": \"#B094F8\"},{\"serieName\": \"dealzone garlic\",\"color\": \"#6A4ABA\"},{\"serieName\": \"dealzone grated parmesan cheese\",\"color\": \"#D1C0FB\"},{\"serieName\": \"dealzone green peppers\",\"color\": \"#8C62F5\"},{\"serieName\": \"dealzone haddock\",\"color\": \"#025B3C\"},{\"serieName\": \"dealzone half and half\",\"color\": \"#56D3A8\"},{\"serieName\": \"dealzone halibut\",\"color\": \"#049160\"},{\"serieName\": \"dealzone hamburger buns\",\"color\": \"#9BE5CB\"},{\"serieName\": \"dealzone heating pad\",\"color\": \"#06BF7F\"},{\"serieName\": \"dealzone ice\",\"color\": \"#785F1A\"},{\"serieName\": \"dealzone ipa\",\"color\": \"#FCD977\"},{\"serieName\": \"dealzone italian bread\",\"color\": \"#BF982A\"},{\"serieName\": \"dealzone jelly donuts\",\"color\": \"#FDE9AF\"},{\"serieName\": \"dealzone laundry detergent\",\"color\": \"#FCC838\"},{\"serieName\": \"dealzone low fat milk\",\"color\": \"#22636B\"},{\"serieName\": \"dealzone margarine\",\"color\": \"#82DFE9\"},{\"serieName\": \"dealzone mezcal\",\"color\": \"#369FAA\"},{\"serieName\": \"dealzone minestrone soup\",\"color\": \"#B5ECF2\"},{\"serieName\": \"dealzone nasal spray\",\"color\": \"#48D1E0\"},{\"serieName\": \"dealzone nicotine patches\",\"color\": \"#163772\"},{\"serieName\": \"dealzone onions\",\"color\": \"#71A1F4\"},{\"serieName\": \"dealzone oranges\",\"color\": \"#2359B6\"},{\"serieName\": \"dealzone perfume\",\"color\": \"#ABC7F9\"},{\"serieName\": \"dealzone photography paper\",\"color\": \"#2E75F0\"},{\"serieName\": \"dealzone pisco\",\"color\": \"#721F27\"},{\"serieName\": \"dealzone rotisserie chicken\",\"color\": \"#F47E89\"},{\"serieName\": \"dealzone rubber gloves\",\"color\": \"#B6313E\"},{\"serieName\": \"dealzone rum\",\"color\": \"#F9B3B9\"},{\"serieName\": \"dealzone rye\",\"color\": \"#F04152\"},{\"serieName\": \"dealzone salmon\",\"color\": \"#2F3947\"},{\"serieName\": \"dealzone silver polishing cream\",\"color\": \"#A2ACBA\"},{\"serieName\": \"dealzone skim milk\",\"color\": \"#47515F\"},{\"serieName\": \"dealzone sleeping pills\",\"color\": \"#BEC6D0\"},{\"serieName\": \"dealzone sliced turkey\",\"color\": \"#747E8C\"},{\"serieName\": \"dealzone splint\",\"color\": \"#7A3D1F\"},{\"serieName\": \"dealzone sponges\",\"color\": \"#FFA97E\"},{\"serieName\": \"dealzone steak\",\"color\": \"#C26232\"},{\"serieName\": \"dealzone swordfish\",\"color\": \"#FFCCB3\"},{\"serieName\": \"dealzone tennis racket\",\"color\": \"#FF8142\"},{\"serieName\": \"dealzone tequila\",\"color\": \"#422E75\"},{\"serieName\": \"dealzone thermometer\",\"color\": \"#B094F8\"},{\"serieName\": \"dealzone tuna\",\"color\": \"#6A4ABA\"},{\"serieName\": \"dealzone veal\",\"color\": \"#D1C0FB\"},{\"serieName\": \"easyfind american cheese\",\"color\": \"#8C62F5\"},{\"serieName\": \"easyfind analog camera\",\"color\": \"#025B3C\"},{\"serieName\": \"easyfind antibiotics\",\"color\": \"#56D3A8\"},{\"serieName\": \"easyfind bacon\",\"color\": \"#049160\"},{\"serieName\": \"easyfind baked beans\",\"color\": \"#9BE5CB\"},{\"serieName\": \"easyfind bananas\",\"color\": \"#06BF7F\"},{\"serieName\": \"easyfind basketball\",\"color\": \"#785F1A\"},{\"serieName\": \"easyfind bourbon\",\"color\": \"#FCD977\"},{\"serieName\": \"easyfind box of candy\",\"color\": \"#BF982A\"},{\"serieName\": \"easyfind butter milk\",\"color\": \"#FDE9AF\"},{\"serieName\": \"easyfind cables\",\"color\": \"#FCC838\"},{\"serieName\": \"easyfind camera case\",\"color\": \"#22636B\"},{\"serieName\": \"easyfind canned chicken broth\",\"color\": \"#82DFE9\"},{\"serieName\": \"easyfind canned olives\",\"color\": \"#369FAA\"},{\"serieName\": \"easyfind canned tomatoes\",\"color\": \"#B5ECF2\"},{\"serieName\": \"easyfind cod\",\"color\": \"#48D1E0\"},{\"serieName\": \"easyfind coffee cake\",\"color\": \"#163772\"},{\"serieName\": \"easyfind cold remedy\",\"color\": \"#71A1F4\"},{\"serieName\": \"easyfind crab legs\",\"color\": \"#2359B6\"},{\"serieName\": \"easyfind electric razor\",\"color\": \"#ABC7F9\"},{\"serieName\": \"easyfind flounder\",\"color\": \"#2E75F0\"},{\"serieName\": \"easyfind flowers\",\"color\": \"#721F27\"},{\"serieName\": \"easyfind frozen chicken patties\",\"color\": \"#F47E89\"},{\"serieName\": \"easyfind frozen french fries\",\"color\": \"#B6313E\"},{\"serieName\": \"easyfind frozen onion rings\",\"color\": \"#F9B3B9\"},{\"serieName\": \"easyfind grated parmesan cheese\",\"color\": \"#F04152\"},{\"serieName\": \"easyfind greeting cards\",\"color\": \"#2F3947\"},{\"serieName\": \"easyfind ground beef\",\"color\": \"#A2ACBA\"},{\"serieName\": \"easyfind half and half\",\"color\": \"#47515F\"},{\"serieName\": \"easyfind hard cider\",\"color\": \"#BEC6D0\"},{\"serieName\": \"easyfind hard lemonade\",\"color\": \"#747E8C\"},{\"serieName\": \"easyfind heart medication\",\"color\": \"#7A3D1F\"},{\"serieName\": \"easyfind hotdog buns\",\"color\": \"#FFA97E\"},{\"serieName\": \"easyfind ipa\",\"color\": \"#C26232\"},{\"serieName\": \"easyfind kidney beans\",\"color\": \"#FFCCB3\"},{\"serieName\": \"easyfind lamb\",\"color\": \"#FF8142\"},{\"serieName\": \"easyfind laundry detergent\",\"color\": \"#422E75\"},{\"serieName\": \"easyfind lens cleaner\",\"color\": \"#B094F8\"},{\"serieName\": \"easyfind low fat milk\",\"color\": \"#6A4ABA\"},{\"serieName\": \"easyfind mops\",\"color\": \"#D1C0FB\"},{\"serieName\": \"easyfind onions\",\"color\": \"#8C62F5\"},{\"serieName\": \"easyfind orthopedic brace\",\"color\": \"#025B3C\"},{\"serieName\": \"easyfind pain killers\",\"color\": \"#56D3A8\"},{\"serieName\": \"easyfind paper towels\",\"color\": \"#049160\"},{\"serieName\": \"easyfind peanut butter cookies\",\"color\": \"#9BE5CB\"},{\"serieName\": \"easyfind perfume\",\"color\": \"#06BF7F\"},{\"serieName\": \"easyfind photo albums\",\"color\": \"#785F1A\"},{\"serieName\": \"easyfind picture frames\",\"color\": \"#FCD977\"},{\"serieName\": \"easyfind pisco\",\"color\": \"#BF982A\"},{\"serieName\": \"easyfind pork\",\"color\": \"#FDE9AF\"},{\"serieName\": \"easyfind potatoes\",\"color\": \"#FCC838\"},{\"serieName\": \"easyfind red peppers\",\"color\": \"#22636B\"},{\"serieName\": \"easyfind red wine\",\"color\": \"#82DFE9\"},{\"serieName\": \"easyfind ring\",\"color\": \"#369FAA\"},{\"serieName\": \"easyfind rotisserie chicken\",\"color\": \"#B5ECF2\"},{\"serieName\": \"easyfind rum\",\"color\": \"#48D1E0\"},{\"serieName\": \"easyfind rye\",\"color\": \"#163772\"},{\"serieName\": \"easyfind salmon\",\"color\": \"#71A1F4\"},{\"serieName\": \"easyfind sliced turkey\",\"color\": \"#2359B6\"},{\"serieName\": \"easyfind sour cream\",\"color\": \"#ABC7F9\"},{\"serieName\": \"easyfind splint\",\"color\": \"#2E75F0\"},{\"serieName\": \"easyfind sponges\",\"color\": \"#721F27\"},{\"serieName\": \"easyfind squash\",\"color\": \"#F47E89\"},{\"serieName\": \"easyfind sushi\",\"color\": \"#B6313E\"},{\"serieName\": \"easyfind tenderloin\",\"color\": \"#F9B3B9\"},{\"serieName\": \"easyfind tomatoes\",\"color\": \"#F04152\"},{\"serieName\": \"easyfind tv dinner\",\"color\": \"#2F3947\"},{\"serieName\": \"easyfind ulcer medication\",\"color\": \"#A2ACBA\"},{\"serieName\": \"easyfind vapor rub\",\"color\": \"#47515F\"},{\"serieName\": \"easyfind veal\",\"color\": \"#BEC6D0\"},{\"serieName\": \"easyfind wheechair\",\"color\": \"#747E8C\"},{\"serieName\": \"easyfind white wine\",\"color\": \"#7A3D1F\"},{\"serieName\": \"joydeal adapters\",\"color\": \"#FFA97E\"},{\"serieName\": \"joydeal air humidifier\",\"color\": \"#C26232\"},{\"serieName\": \"joydeal ale\",\"color\": \"#FFCCB3\"},{\"serieName\": \"joydeal antibiotics\",\"color\": \"#FF8142\"},{\"serieName\": \"joydeal apples\",\"color\": \"#422E75\"},{\"serieName\": \"joydeal baked beans\",\"color\": \"#B094F8\"},{\"serieName\": \"joydeal bananas\",\"color\": \"#6A4ABA\"},{\"serieName\": \"joydeal basketball\",\"color\": \"#D1C0FB\"},{\"serieName\": \"joydeal birth control\",\"color\": \"#8C62F5\"},{\"serieName\": \"joydeal blueberry muffins\",\"color\": \"#025B3C\"},{\"serieName\": \"joydeal box of candy\",\"color\": \"#56D3A8\"},{\"serieName\": \"joydeal bratwurst\",\"color\": \"#049160\"},{\"serieName\": \"joydeal broccolli\",\"color\": \"#9BE5CB\"},{\"serieName\": \"joydeal brooms\",\"color\": \"#06BF7F\"},{\"serieName\": \"joydeal butter\",\"color\": \"#785F1A\"},{\"serieName\": \"joydeal camera cleaner kit\",\"color\": \"#FCD977\"},{\"serieName\": \"joydeal canned chicken broth\",\"color\": \"#BF982A\"},{\"serieName\": \"joydeal canned peaches\",\"color\": \"#FDE9AF\"},{\"serieName\": \"joydeal chicken noodle soup\",\"color\": \"#FCC838\"},{\"serieName\": \"joydeal chicken patties\",\"color\": \"#22636B\"},{\"serieName\": \"joydeal chicken wings\",\"color\": \"#82DFE9\"},{\"serieName\": \"joydeal chocolate chip cookies\",\"color\": \"#369FAA\"},{\"serieName\": \"joydeal cinnamon buns\",\"color\": \"#B5ECF2\"},{\"serieName\": \"joydeal clams\",\"color\": \"#48D1E0\"},{\"serieName\": \"joydeal corn muffins\",\"color\": \"#163772\"},{\"serieName\": \"joydeal cough syrup\",\"color\": \"#71A1F4\"},{\"serieName\": \"joydeal crab legs\",\"color\": \"#2359B6\"},{\"serieName\": \"joydeal electric razor\",\"color\": \"#ABC7F9\"},{\"serieName\": \"joydeal fishing pole\",\"color\": \"#2E75F0\"},{\"serieName\": \"joydeal french bread\",\"color\": \"#721F27\"},{\"serieName\": \"joydeal frozen french fries\",\"color\": \"#F47E89\"},{\"serieName\": \"joydeal frozen juice\",\"color\": \"#B6313E\"},{\"serieName\": \"joydeal frozen onion rings\",\"color\": \"#F9B3B9\"},{\"serieName\": \"joydeal frozen pizza\",\"color\": \"#F04152\"},{\"serieName\": \"joydeal frozen spinach\",\"color\": \"#2F3947\"},{\"serieName\": \"joydeal frozen stuffed chicken\",\"color\": \"#A2ACBA\"},{\"serieName\": \"joydeal garlic\",\"color\": \"#47515F\"},{\"serieName\": \"joydeal glazed ham\",\"color\": \"#BEC6D0\"},{\"serieName\": \"joydeal grated parmesan cheese\",\"color\": \"#747E8C\"},{\"serieName\": \"joydeal green peppers\",\"color\": \"#7A3D1F\"},{\"serieName\": \"joydeal greeting cards\",\"color\": \"#FFA97E\"},{\"serieName\": \"joydeal haddock\",\"color\": \"#C26232\"},{\"serieName\": \"joydeal half and half\",\"color\": \"#FFCCB3\"},{\"serieName\": \"joydeal heart medication\",\"color\": \"#FF8142\"},{\"serieName\": \"joydeal ipa\",\"color\": \"#422E75\"},{\"serieName\": \"joydeal jelly donuts\",\"color\": \"#B094F8\"},{\"serieName\": \"joydeal lactose free milk\",\"color\": \"#6A4ABA\"},{\"serieName\": \"joydeal lens cap\",\"color\": \"#D1C0FB\"},{\"serieName\": \"joydeal lima beans\",\"color\": \"#8C62F5\"},{\"serieName\": \"joydeal nasal spray\",\"color\": \"#025B3C\"},{\"serieName\": \"joydeal onions\",\"color\": \"#56D3A8\"},{\"serieName\": \"joydeal oven cleaner\",\"color\": \"#049160\"},{\"serieName\": \"joydeal paper towels\",\"color\": \"#9BE5CB\"},{\"serieName\": \"joydeal pork\",\"color\": \"#06BF7F\"},{\"serieName\": \"joydeal ring\",\"color\": \"#785F1A\"},{\"serieName\": \"joydeal rotisserie chicken\",\"color\": \"#FCD977\"},{\"serieName\": \"joydeal rum\",\"color\": \"#BF982A\"},{\"serieName\": \"joydeal rye\",\"color\": \"#FDE9AF\"},{\"serieName\": \"joydeal scotch\",\"color\": \"#FCC838\"},{\"serieName\": \"joydeal skim milk\",\"color\": \"#22636B\"},{\"serieName\": \"joydeal sour cream\",\"color\": \"#82DFE9\"},{\"serieName\": \"joydeal squash\",\"color\": \"#369FAA\"},{\"serieName\": \"joydeal steak\",\"color\": \"#B5ECF2\"},{\"serieName\": \"joydeal strawberries\",\"color\": \"#48D1E0\"},{\"serieName\": \"joydeal swordfish\",\"color\": \"#163772\"},{\"serieName\": \"joydeal tuna\",\"color\": \"#71A1F4\"},{\"serieName\": \"joydeal tv dinner\",\"color\": \"#2359B6\"},{\"serieName\": \"joydeal vodka\",\"color\": \"#ABC7F9\"},{\"serieName\": \"joydeal watch\",\"color\": \"#2E75F0\"},{\"serieName\": \"joydeal wheat bread\",\"color\": \"#721F27\"},{\"serieName\": \"joydeal yogurt\",\"color\": \"#F47E89\"},{\"serieName\": \"mother's choice adapters\",\"color\": \"#B6313E\"},{\"serieName\": \"mother's choice air humidifier\",\"color\": \"#F9B3B9\"},{\"serieName\": \"mother's choice antibiotics\",\"color\": \"#F04152\"},{\"serieName\": \"mother's choice apples\",\"color\": \"#2F3947\"},{\"serieName\": \"mother's choice asthma inhaler\",\"color\": \"#A2ACBA\"},{\"serieName\": \"mother's choice basketball\",\"color\": \"#47515F\"},{\"serieName\": \"mother's choice birthday cards\",\"color\": \"#BEC6D0\"},{\"serieName\": \"mother's choice blood pressure medicine\",\"color\": \"#747E8C\"},{\"serieName\": \"mother's choice bratwurst\",\"color\": \"#7A3D1F\"},{\"serieName\": \"mother's choice cables\",\"color\": \"#FFA97E\"},{\"serieName\": \"mother's choice camera case\",\"color\": \"#C26232\"},{\"serieName\": \"mother's choice camera cleaner kit\",\"color\": \"#FFCCB3\"},{\"serieName\": \"mother's choice camera strap\",\"color\": \"#FF8142\"},{\"serieName\": \"mother's choice canned chicken broth\",\"color\": \"#422E75\"},{\"serieName\": \"mother's choice canned corn\",\"color\": \"#B094F8\"},{\"serieName\": \"mother's choice canned olives\",\"color\": \"#6A4ABA\"},{\"serieName\": \"mother's choice canned tomatoes\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mother's choice cantaloupe\",\"color\": \"#8C62F5\"},{\"serieName\": \"mother's choice catfish\",\"color\": \"#025B3C\"},{\"serieName\": \"mother's choice chicken nuggets\",\"color\": \"#56D3A8\"},{\"serieName\": \"mother's choice chicken wings\",\"color\": \"#049160\"},{\"serieName\": \"mother's choice chocolate chip cookies\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mother's choice cold remedy\",\"color\": \"#06BF7F\"},{\"serieName\": \"mother's choice croissants\",\"color\": \"#785F1A\"},{\"serieName\": \"mother's choice decongestant\",\"color\": \"#FCD977\"},{\"serieName\": \"mother's choice diabetes blood testing kit\",\"color\": \"#BF982A\"},{\"serieName\": \"mother's choice eggs\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mother's choice english muffins\",\"color\": \"#FCC838\"},{\"serieName\": \"mother's choice fabric softener\",\"color\": \"#22636B\"},{\"serieName\": \"mother's choice feather duster\",\"color\": \"#82DFE9\"},{\"serieName\": \"mother's choice film\",\"color\": \"#369FAA\"},{\"serieName\": \"mother's choice football\",\"color\": \"#B5ECF2\"},{\"serieName\": \"mother's choice fruit cocktail\",\"color\": \"#48D1E0\"},{\"serieName\": \"mother's choice grated parmesan cheese\",\"color\": \"#163772\"},{\"serieName\": \"mother's choice halibut\",\"color\": \"#71A1F4\"},{\"serieName\": \"mother's choice hamburger buns\",\"color\": \"#2359B6\"},{\"serieName\": \"mother's choice hard lemonade\",\"color\": \"#ABC7F9\"},{\"serieName\": \"mother's choice hotdog buns\",\"color\": \"#2E75F0\"},{\"serieName\": \"mother's choice ipa\",\"color\": \"#721F27\"},{\"serieName\": \"mother's choice jelly donuts\",\"color\": \"#F47E89\"},{\"serieName\": \"mother's choice lamb\",\"color\": \"#B6313E\"},{\"serieName\": \"mother's choice lettuce\",\"color\": \"#F9B3B9\"},{\"serieName\": \"mother's choice onions\",\"color\": \"#F04152\"},{\"serieName\": \"mother's choice oranges\",\"color\": \"#2F3947\"},{\"serieName\": \"mother's choice perfume\",\"color\": \"#A2ACBA\"},{\"serieName\": \"mother's choice photography paper\",\"color\": \"#47515F\"},{\"serieName\": \"mother's choice picture frames\",\"color\": \"#BEC6D0\"},{\"serieName\": \"mother's choice pisco\",\"color\": \"#747E8C\"},{\"serieName\": \"mother's choice ring\",\"color\": \"#7A3D1F\"},{\"serieName\": \"mother's choice rubber gloves\",\"color\": \"#FFA97E\"},{\"serieName\": \"mother's choice rum\",\"color\": \"#C26232\"},{\"serieName\": \"mother's choice sausage\",\"color\": \"#FFCCB3\"},{\"serieName\": \"mother's choice silver polishing cream\",\"color\": \"#FF8142\"},{\"serieName\": \"mother's choice skim milk\",\"color\": \"#422E75\"},{\"serieName\": \"mother's choice sling\",\"color\": \"#B094F8\"},{\"serieName\": \"mother's choice steak\",\"color\": \"#6A4ABA\"},{\"serieName\": \"mother's choice strawberries\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mother's choice strawberry ice cream\",\"color\": \"#8C62F5\"},{\"serieName\": \"mother's choice swordfish\",\"color\": \"#025B3C\"},{\"serieName\": \"mother's choice tenderloin\",\"color\": \"#56D3A8\"},{\"serieName\": \"mother's choice tomatoes\",\"color\": \"#049160\"},{\"serieName\": \"mother's choice trash bags\",\"color\": \"#9BE5CB\"},{\"serieName\": \"mother's choice ulcer medication\",\"color\": \"#06BF7F\"},{\"serieName\": \"mother's choice watch\",\"color\": \"#785F1A\"},{\"serieName\": \"mother's choice watermelon\",\"color\": \"#FCD977\"},{\"serieName\": \"mother's choice whipped cream\",\"color\": \"#BF982A\"},{\"serieName\": \"mother's choice white wine\",\"color\": \"#FDE9AF\"},{\"serieName\": \"mother's choice whole milk\",\"color\": \"#FCC838\"},{\"serieName\": \"mother's choice yogurt\",\"color\": \"#22636B\"},{\"serieName\": \"pam's club air humidifier\",\"color\": \"#82DFE9\"},{\"serieName\": \"pam's club air purifier\",\"color\": \"#369FAA\"},{\"serieName\": \"pam's club allergy pills\",\"color\": \"#B5ECF2\"},{\"serieName\": \"pam's club bacon\",\"color\": \"#48D1E0\"},{\"serieName\": \"pam's club bagels\",\"color\": \"#163772\"},{\"serieName\": \"pam's club bananas\",\"color\": \"#71A1F4\"},{\"serieName\": \"pam's club birth control\",\"color\": \"#2359B6\"},{\"serieName\": \"pam's club blood pressure medicine\",\"color\": \"#ABC7F9\"},{\"serieName\": \"pam's club broccolli\",\"color\": \"#2E75F0\"},{\"serieName\": \"pam's club brooms\",\"color\": \"#721F27\"},{\"serieName\": \"pam's club butter\",\"color\": \"#F47E89\"},{\"serieName\": \"pam's club camera batteries\",\"color\": \"#B6313E\"},{\"serieName\": \"pam's club camera cleaner kit\",\"color\": \"#F9B3B9\"},{\"serieName\": \"pam's club canned green beans\",\"color\": \"#F04152\"},{\"serieName\": \"pam's club canned olives\",\"color\": \"#2F3947\"},{\"serieName\": \"pam's club canned tomatoes\",\"color\": \"#A2ACBA\"},{\"serieName\": \"pam's club canned tuna\",\"color\": \"#47515F\"},{\"serieName\": \"pam's club champagne\",\"color\": \"#BEC6D0\"},{\"serieName\": \"pam's club cholesterol reducer\",\"color\": \"#747E8C\"},{\"serieName\": \"pam's club cough syrup\",\"color\": \"#7A3D1F\"},{\"serieName\": \"pam's club crab legs\",\"color\": \"#FFA97E\"},{\"serieName\": \"pam's club crutches\",\"color\": \"#C26232\"},{\"serieName\": \"pam's club eggs\",\"color\": \"#FFCCB3\"},{\"serieName\": \"pam's club electric razor\",\"color\": \"#FF8142\"},{\"serieName\": \"pam's club english muffins\",\"color\": \"#422E75\"},{\"serieName\": \"pam's club fabric softener\",\"color\": \"#B094F8\"},{\"serieName\": \"pam's club fish sticks\",\"color\": \"#6A4ABA\"},{\"serieName\": \"pam's club frozen french fries\",\"color\": \"#D1C0FB\"},{\"serieName\": \"pam's club gin\",\"color\": \"#8C62F5\"},{\"serieName\": \"pam's club glazed ham\",\"color\": \"#025B3C\"},{\"serieName\": \"pam's club hard cider\",\"color\": \"#56D3A8\"},{\"serieName\": \"pam's club heating pad\",\"color\": \"#049160\"},{\"serieName\": \"pam's club ice cream sandwhiches\",\"color\": \"#9BE5CB\"},{\"serieName\": \"pam's club italian bread\",\"color\": \"#06BF7F\"},{\"serieName\": \"pam's club jelly donuts\",\"color\": \"#785F1A\"},{\"serieName\": \"pam's club kidney beans\",\"color\": \"#FCD977\"},{\"serieName\": \"pam's club lens cleaner\",\"color\": \"#BF982A\"},{\"serieName\": \"pam's club low fat milk\",\"color\": \"#FDE9AF\"},{\"serieName\": \"pam's club margarine\",\"color\": \"#FCC838\"},{\"serieName\": \"pam's club memory card\",\"color\": \"#22636B\"},{\"serieName\": \"pam's club mozzarella cheese\",\"color\": \"#82DFE9\"},{\"serieName\": \"pam's club peanut butter cookies\",\"color\": \"#369FAA\"},{\"serieName\": \"pam's club picture frames\",\"color\": \"#B5ECF2\"},{\"serieName\": \"pam's club rubber gloves\",\"color\": \"#48D1E0\"},{\"serieName\": \"pam's club sausage\",\"color\": \"#163772\"},{\"serieName\": \"pam's club shrimp\",\"color\": \"#71A1F4\"},{\"serieName\": \"pam's club skim milk\",\"color\": \"#2359B6\"},{\"serieName\": \"pam's club sleeping pills\",\"color\": \"#ABC7F9\"},{\"serieName\": \"pam's club sliced turkey\",\"color\": \"#2E75F0\"},{\"serieName\": \"pam's club splint\",\"color\": \"#721F27\"},{\"serieName\": \"pam's club sponges\",\"color\": \"#F47E89\"},{\"serieName\": \"pam's club starch\",\"color\": \"#B6313E\"},{\"serieName\": \"pam's club steak\",\"color\": \"#F9B3B9\"},{\"serieName\": \"pam's club strawberries\",\"color\": \"#F04152\"},{\"serieName\": \"pam's club stuffed animal\",\"color\": \"#2F3947\"},{\"serieName\": \"pam's club sushi\",\"color\": \"#A2ACBA\"},{\"serieName\": \"pam's club telephoto lens\",\"color\": \"#47515F\"},{\"serieName\": \"pam's club tennis racket\",\"color\": \"#BEC6D0\"},{\"serieName\": \"pam's club white bread\",\"color\": \"#747E8C\"},{\"serieName\": \"pam's club white wine\",\"color\": \"#7A3D1F\"},{\"serieName\": \"pam's club wrap bandage\",\"color\": \"#FFA97E\"},{\"serieName\": \"portland's best adapters\",\"color\": \"#C26232\"},{\"serieName\": \"portland's best air humidifier\",\"color\": \"#FFCCB3\"},{\"serieName\": \"portland's best american cheese\",\"color\": \"#FF8142\"},{\"serieName\": \"portland's best antibiotics\",\"color\": \"#422E75\"},{\"serieName\": \"portland's best baby powder\",\"color\": \"#B094F8\"},{\"serieName\": \"portland's best band aids\",\"color\": \"#6A4ABA\"},{\"serieName\": \"portland's best beard trimmer\",\"color\": \"#D1C0FB\"},{\"serieName\": \"portland's best birth control\",\"color\": \"#8C62F5\"},{\"serieName\": \"portland's best blueberry muffins\",\"color\": \"#025B3C\"},{\"serieName\": \"portland's best bourbon\",\"color\": \"#56D3A8\"},{\"serieName\": \"portland's best butter milk\",\"color\": \"#049160\"},{\"serieName\": \"portland's best canned chicken broth\",\"color\": \"#9BE5CB\"},{\"serieName\": \"portland's best canned green beans\",\"color\": \"#06BF7F\"},{\"serieName\": \"portland's best canned tomatoes\",\"color\": \"#785F1A\"},{\"serieName\": \"portland's best cantaloupe\",\"color\": \"#FCD977\"},{\"serieName\": \"portland's best catfish\",\"color\": \"#BF982A\"},{\"serieName\": \"portland's best chicken noodle soup\",\"color\": \"#FDE9AF\"},{\"serieName\": \"portland's best chicken nuggets\",\"color\": \"#FCC838\"},{\"serieName\": \"portland's best chocolate chip cookies\",\"color\": \"#22636B\"},{\"serieName\": \"portland's best clams\",\"color\": \"#82DFE9\"},{\"serieName\": \"portland's best cod\",\"color\": \"#369FAA\"},{\"serieName\": \"portland's best coffee cake\",\"color\": \"#B5ECF2\"},{\"serieName\": \"portland's best crutches\",\"color\": \"#48D1E0\"},{\"serieName\": \"portland's best cucumbers\",\"color\": \"#163772\"},{\"serieName\": \"portland's best decongestant\",\"color\": \"#71A1F4\"},{\"serieName\": \"portland's best digital camera\",\"color\": \"#2359B6\"},{\"serieName\": \"portland's best dish soap\",\"color\": \"#ABC7F9\"},{\"serieName\": \"portland's best eggs\",\"color\": \"#2E75F0\"},{\"serieName\": \"portland's best electric razor\",\"color\": \"#721F27\"},{\"serieName\": \"portland's best fish sticks\",\"color\": \"#F47E89\"},{\"serieName\": \"portland's best fishing pole\",\"color\": \"#B6313E\"},{\"serieName\": \"portland's best frozen french fries\",\"color\": \"#F9B3B9\"},{\"serieName\": \"portland's best fruit cocktail\",\"color\": \"#F04152\"},{\"serieName\": \"portland's best garlic\",\"color\": \"#2F3947\"},{\"serieName\": \"portland's best gin\",\"color\": \"#A2ACBA\"},{\"serieName\": \"portland's best glazed ham\",\"color\": \"#47515F\"},{\"serieName\": \"portland's best golf clubs\",\"color\": \"#BEC6D0\"},{\"serieName\": \"portland's best green peppers\",\"color\": \"#747E8C\"},{\"serieName\": \"portland's best hard lemonade\",\"color\": \"#7A3D1F\"},{\"serieName\": \"portland's best hot dogs\",\"color\": \"#FFA97E\"},{\"serieName\": \"portland's best ice\",\"color\": \"#C26232\"},{\"serieName\": \"portland's best ice cream sandwhiches\",\"color\": \"#FFCCB3\"},{\"serieName\": \"portland's best ipa\",\"color\": \"#FF8142\"},{\"serieName\": \"portland's best kidney beans\",\"color\": \"#422E75\"},{\"serieName\": \"portland's best low fat milk\",\"color\": \"#B094F8\"},{\"serieName\": \"portland's best margarine\",\"color\": \"#6A4ABA\"},{\"serieName\": \"portland's best nicotine gum\",\"color\": \"#D1C0FB\"},{\"serieName\": \"portland's best oranges\",\"color\": \"#8C62F5\"},{\"serieName\": \"portland's best oven cleaner\",\"color\": \"#025B3C\"},{\"serieName\": \"portland's best pain killers\",\"color\": \"#56D3A8\"},{\"serieName\": \"portland's best peanut butter cookies\",\"color\": \"#049160\"},{\"serieName\": \"portland's best perfume\",\"color\": \"#9BE5CB\"},{\"serieName\": \"portland's best photo albums\",\"color\": \"#06BF7F\"},{\"serieName\": \"portland's best picture frames\",\"color\": \"#785F1A\"},{\"serieName\": \"portland's best pisco\",\"color\": \"#FCD977\"},{\"serieName\": \"portland's best rash ointment\",\"color\": \"#BF982A\"},{\"serieName\": \"portland's best red peppers\",\"color\": \"#FDE9AF\"},{\"serieName\": \"portland's best sardines\",\"color\": \"#FCC838\"},{\"serieName\": \"portland's best sausage\",\"color\": \"#22636B\"},{\"serieName\": \"portland's best shrimp\",\"color\": \"#82DFE9\"},{\"serieName\": \"portland's best sling\",\"color\": \"#369FAA\"},{\"serieName\": \"portland's best sponges\",\"color\": \"#B5ECF2\"},{\"serieName\": \"portland's best strawberry ice cream\",\"color\": \"#48D1E0\"},{\"serieName\": \"portland's best sushi\",\"color\": \"#163772\"},{\"serieName\": \"portland's best swordfish\",\"color\": \"#71A1F4\"},{\"serieName\": \"portland's best telephoto lens\",\"color\": \"#2359B6\"},{\"serieName\": \"portland's best tenderloin\",\"color\": \"#ABC7F9\"},{\"serieName\": \"portland's best thermometer\",\"color\": \"#2E75F0\"},{\"serieName\": \"portland's best tuna\",\"color\": \"#721F27\"},{\"serieName\": \"portland's best ulcer medication\",\"color\": \"#F47E89\"},{\"serieName\": \"portland's best whipped cream\",\"color\": \"#B6313E\"},{\"serieName\": \"portland's best wrap bandage\",\"color\": \"#F9B3B9\"},{\"serieName\": \"santop allergy pills\",\"color\": \"#F04152\"},{\"serieName\": \"santop american cheese\",\"color\": \"#2F3947\"},{\"serieName\": \"santop analog camera\",\"color\": \"#A2ACBA\"},{\"serieName\": \"santop antibiotics\",\"color\": \"#47515F\"},{\"serieName\": \"santop apples\",\"color\": \"#BEC6D0\"},{\"serieName\": \"santop bagels\",\"color\": \"#747E8C\"},{\"serieName\": \"santop bananas\",\"color\": \"#7A3D1F\"},{\"serieName\": \"santop band aids\",\"color\": \"#FFA97E\"},{\"serieName\": \"santop birth control\",\"color\": \"#C26232\"},{\"serieName\": \"santop blueberry muffins\",\"color\": \"#FFCCB3\"},{\"serieName\": \"santop bourbon\",\"color\": \"#FF8142\"},{\"serieName\": \"santop bratwurst\",\"color\": \"#422E75\"},{\"serieName\": \"santop canned corn\",\"color\": \"#B094F8\"},{\"serieName\": \"santop canned tuna\",\"color\": \"#6A4ABA\"},{\"serieName\": \"santop chicken nuggets\",\"color\": \"#D1C0FB\"},{\"serieName\": \"santop chocolate chip cookies\",\"color\": \"#8C62F5\"},{\"serieName\": \"santop cod\",\"color\": \"#025B3C\"},{\"serieName\": \"santop cold remedy\",\"color\": \"#56D3A8\"},{\"serieName\": \"santop corn muffins\",\"color\": \"#049160\"},{\"serieName\": \"santop cough syrup\",\"color\": \"#9BE5CB\"},{\"serieName\": \"santop croissants\",\"color\": \"#06BF7F\"},{\"serieName\": \"santop decongestant\",\"color\": \"#785F1A\"},{\"serieName\": \"santop feather duster\",\"color\": \"#FCD977\"},{\"serieName\": \"santop film\",\"color\": \"#BF982A\"},{\"serieName\": \"santop flounder\",\"color\": \"#FDE9AF\"},{\"serieName\": \"santop frozen juice\",\"color\": \"#FCC838\"},{\"serieName\": \"santop frozen pizza\",\"color\": \"#22636B\"},{\"serieName\": \"santop frozen spinach\",\"color\": \"#82DFE9\"},{\"serieName\": \"santop frozen stuffed chicken\",\"color\": \"#369FAA\"},{\"serieName\": \"santop gin\",\"color\": \"#B5ECF2\"},{\"serieName\": \"santop glass cleaner\",\"color\": \"#48D1E0\"},{\"serieName\": \"santop green peppers\",\"color\": \"#163772\"},{\"serieName\": \"santop heating pad\",\"color\": \"#71A1F4\"},{\"serieName\": \"santop ice cream sandwhiches\",\"color\": \"#2359B6\"},{\"serieName\": \"santop ipa\",\"color\": \"#ABC7F9\"},{\"serieName\": \"santop lamb\",\"color\": \"#2E75F0\"},{\"serieName\": \"santop lens cap\",\"color\": \"#721F27\"},{\"serieName\": \"santop margarine\",\"color\": \"#F47E89\"},{\"serieName\": \"santop memory card\",\"color\": \"#B6313E\"},{\"serieName\": \"santop mezcal\",\"color\": \"#F9B3B9\"},{\"serieName\": \"santop minestrone soup\",\"color\": \"#F04152\"},{\"serieName\": \"santop mops\",\"color\": \"#2F3947\"},{\"serieName\": \"santop nicotine gum\",\"color\": \"#A2ACBA\"},{\"serieName\": \"santop orthopedic brace\",\"color\": \"#47515F\"},{\"serieName\": \"santop oven cleaner\",\"color\": \"#BEC6D0\"},{\"serieName\": \"santop peanut butter cookies\",\"color\": \"#747E8C\"},{\"serieName\": \"santop perfume\",\"color\": \"#7A3D1F\"},{\"serieName\": \"santop pisco\",\"color\": \"#FFA97E\"},{\"serieName\": \"santop pork\",\"color\": \"#C26232\"},{\"serieName\": \"santop potatoes\",\"color\": \"#FFCCB3\"},{\"serieName\": \"santop red peppers\",\"color\": \"#FF8142\"},{\"serieName\": \"santop ring\",\"color\": \"#422E75\"},{\"serieName\": \"santop rubber gloves\",\"color\": \"#B094F8\"},{\"serieName\": \"santop scotch\",\"color\": \"#6A4ABA\"},{\"serieName\": \"santop skim milk\",\"color\": \"#D1C0FB\"},{\"serieName\": \"santop sleeping pills\",\"color\": \"#8C62F5\"},{\"serieName\": \"santop sling\",\"color\": \"#025B3C\"},{\"serieName\": \"santop strawberries\",\"color\": \"#56D3A8\"},{\"serieName\": \"santop strawberry ice cream\",\"color\": \"#049160\"},{\"serieName\": \"santop stuffed animal\",\"color\": \"#9BE5CB\"},{\"serieName\": \"santop tenderloin\",\"color\": \"#06BF7F\"},{\"serieName\": \"santop tequila\",\"color\": \"#785F1A\"},{\"serieName\": \"santop tuna\",\"color\": \"#FCD977\"},{\"serieName\": \"santop ulcer medication\",\"color\": \"#BF982A\"},{\"serieName\": \"santop veal\",\"color\": \"#FDE9AF\"},{\"serieName\": \"santop vegatable soup\",\"color\": \"#FCC838\"},{\"serieName\": \"santop vodka\",\"color\": \"#22636B\"},{\"serieName\": \"santop wheat bread\",\"color\": \"#82DFE9\"},{\"serieName\": \"santop wheechair\",\"color\": \"#369FAA\"},{\"serieName\": \"santop whipped cream\",\"color\": \"#B5ECF2\"},{\"serieName\": \"santop whole milk\",\"color\": \"#48D1E0\"},{\"serieName\": \"santop wrap bandage\",\"color\": \"#163772\"},{\"serieName\": \"simplebuy adapters\",\"color\": \"#71A1F4\"},{\"serieName\": \"simplebuy air freshener\",\"color\": \"#2359B6\"},{\"serieName\": \"simplebuy allergy pills\",\"color\": \"#ABC7F9\"},{\"serieName\": \"simplebuy antibiotics\",\"color\": \"#2E75F0\"},{\"serieName\": \"simplebuy apples\",\"color\": \"#721F27\"},{\"serieName\": \"simplebuy bacon\",\"color\": \"#F47E89\"},{\"serieName\": \"simplebuy bananas\",\"color\": \"#B6313E\"},{\"serieName\": \"simplebuy beard trimmer\",\"color\": \"#F9B3B9\"},{\"serieName\": \"simplebuy birthday cards\",\"color\": \"#F04152\"},{\"serieName\": \"simplebuy blood pressure medicine\",\"color\": \"#2F3947\"},{\"serieName\": \"simplebuy blueberry muffins\",\"color\": \"#A2ACBA\"},{\"serieName\": \"simplebuy bourbon\",\"color\": \"#47515F\"},{\"serieName\": \"simplebuy bracelet\",\"color\": \"#BEC6D0\"},{\"serieName\": \"simplebuy broccolli\",\"color\": \"#747E8C\"},{\"serieName\": \"simplebuy butter\",\"color\": \"#7A3D1F\"},{\"serieName\": \"simplebuy butter milk\",\"color\": \"#FFA97E\"},{\"serieName\": \"simplebuy camera case\",\"color\": \"#C26232\"},{\"serieName\": \"simplebuy camera strap\",\"color\": \"#FFCCB3\"},{\"serieName\": \"simplebuy canned chicken broth\",\"color\": \"#FF8142\"},{\"serieName\": \"simplebuy canned chili\",\"color\": \"#422E75\"},{\"serieName\": \"simplebuy canned green beans\",\"color\": \"#B094F8\"},{\"serieName\": \"simplebuy cantaloupe\",\"color\": \"#6A4ABA\"},{\"serieName\": \"simplebuy chicken wings\",\"color\": \"#D1C0FB\"},{\"serieName\": \"simplebuy cinnamon buns\",\"color\": \"#8C62F5\"},{\"serieName\": \"simplebuy clams\",\"color\": \"#025B3C\"},{\"serieName\": \"simplebuy cod\",\"color\": \"#56D3A8\"},{\"serieName\": \"simplebuy cough syrup\",\"color\": \"#049160\"},{\"serieName\": \"simplebuy crab cakes\",\"color\": \"#9BE5CB\"},{\"serieName\": \"simplebuy crab legs\",\"color\": \"#06BF7F\"},{\"serieName\": \"simplebuy cucumbers\",\"color\": \"#785F1A\"},{\"serieName\": \"simplebuy feather duster\",\"color\": \"#FCD977\"},{\"serieName\": \"simplebuy first aid kit\",\"color\": \"#BF982A\"},{\"serieName\": \"simplebuy flounder\",\"color\": \"#FDE9AF\"},{\"serieName\": \"simplebuy fried fish patties\",\"color\": \"#FCC838\"},{\"serieName\": \"simplebuy frozen bagels\",\"color\": \"#22636B\"},{\"serieName\": \"simplebuy frozen chicken patties\",\"color\": \"#82DFE9\"},{\"serieName\": \"simplebuy frozen french fries\",\"color\": \"#369FAA\"},{\"serieName\": \"simplebuy frozen juice\",\"color\": \"#B5ECF2\"},{\"serieName\": \"simplebuy frozen onion rings\",\"color\": \"#48D1E0\"},{\"serieName\": \"simplebuy fruit cocktail\",\"color\": \"#163772\"},{\"serieName\": \"simplebuy hamburger buns\",\"color\": \"#71A1F4\"},{\"serieName\": \"simplebuy hard cider\",\"color\": \"#2359B6\"},{\"serieName\": \"simplebuy ice cream sandwhiches\",\"color\": \"#ABC7F9\"},{\"serieName\": \"simplebuy lima beans\",\"color\": \"#2E75F0\"},{\"serieName\": \"simplebuy lobster\",\"color\": \"#721F27\"},{\"serieName\": \"simplebuy margarine\",\"color\": \"#F47E89\"},{\"serieName\": \"simplebuy memory card\",\"color\": \"#B6313E\"},{\"serieName\": \"simplebuy minestrone soup\",\"color\": \"#F9B3B9\"},{\"serieName\": \"simplebuy mops\",\"color\": \"#F04152\"},{\"serieName\": \"simplebuy nicotine gum\",\"color\": \"#2F3947\"},{\"serieName\": \"simplebuy nicotine patches\",\"color\": \"#A2ACBA\"},{\"serieName\": \"simplebuy oranges\",\"color\": \"#47515F\"},{\"serieName\": \"simplebuy orthopedic brace\",\"color\": \"#BEC6D0\"},{\"serieName\": \"simplebuy oven cleaner\",\"color\": \"#747E8C\"},{\"serieName\": \"simplebuy paper towels\",\"color\": \"#7A3D1F\"},{\"serieName\": \"simplebuy perfume\",\"color\": \"#FFA97E\"},{\"serieName\": \"simplebuy pork\",\"color\": \"#C26232\"},{\"serieName\": \"simplebuy ring\",\"color\": \"#FFCCB3\"},{\"serieName\": \"simplebuy rubber gloves\",\"color\": \"#FF8142\"},{\"serieName\": \"simplebuy scallops\",\"color\": \"#422E75\"},{\"serieName\": \"simplebuy skim milk\",\"color\": \"#B094F8\"},{\"serieName\": \"simplebuy sliced turkey\",\"color\": \"#6A4ABA\"},{\"serieName\": \"simplebuy squash\",\"color\": \"#D1C0FB\"},{\"serieName\": \"simplebuy telephoto lens\",\"color\": \"#8C62F5\"},{\"serieName\": \"simplebuy tequila\",\"color\": \"#025B3C\"},{\"serieName\": \"simplebuy thermometer\",\"color\": \"#56D3A8\"},{\"serieName\": \"simplebuy tomatoes\",\"color\": \"#049160\"},{\"serieName\": \"simplebuy ulcer medication\",\"color\": \"#9BE5CB\"},{\"serieName\": \"simplebuy vanilla ice cream\",\"color\": \"#06BF7F\"},{\"serieName\": \"simplebuy veal\",\"color\": \"#785F1A\"},{\"serieName\": \"simplebuy vegatable soup\",\"color\": \"#FCD977\"},{\"serieName\": \"simplebuy wheat bread\",\"color\": \"#BF982A\"},{\"serieName\": \"simplebuy white bread\",\"color\": \"#FDE9AF\"},{\"serieName\": \"super-valu air humidifier\",\"color\": \"#FCC838\"},{\"serieName\": \"super-valu american cheese\",\"color\": \"#22636B\"},{\"serieName\": \"super-valu antibiotics\",\"color\": \"#82DFE9\"},{\"serieName\": \"super-valu asthma inhaler\",\"color\": \"#369FAA\"},{\"serieName\": \"super-valu baby powder\",\"color\": \"#B5ECF2\"},{\"serieName\": \"super-valu baked beans\",\"color\": \"#48D1E0\"},{\"serieName\": \"super-valu bananas\",\"color\": \"#163772\"},{\"serieName\": \"super-valu box of candy\",\"color\": \"#71A1F4\"},{\"serieName\": \"super-valu broccolli\",\"color\": \"#2359B6\"},{\"serieName\": \"super-valu brooms\",\"color\": \"#ABC7F9\"},{\"serieName\": \"super-valu butter milk\",\"color\": \"#2E75F0\"},{\"serieName\": \"super-valu camera batteries\",\"color\": \"#721F27\"},{\"serieName\": \"super-valu camera cleaner kit\",\"color\": \"#F47E89\"},{\"serieName\": \"super-valu canned chili\",\"color\": \"#B6313E\"},{\"serieName\": \"super-valu canned olives\",\"color\": \"#F9B3B9\"},{\"serieName\": \"super-valu canned tomatoes\",\"color\": \"#F04152\"},{\"serieName\": \"super-valu cantaloupe\",\"color\": \"#2F3947\"},{\"serieName\": \"super-valu champagne\",\"color\": \"#A2ACBA\"},{\"serieName\": \"super-valu chicken nuggets\",\"color\": \"#47515F\"},{\"serieName\": \"super-valu chocolate chip cookies\",\"color\": \"#BEC6D0\"},{\"serieName\": \"super-valu cold remedy\",\"color\": \"#747E8C\"},{\"serieName\": \"super-valu corn muffins\",\"color\": \"#7A3D1F\"},{\"serieName\": \"super-valu crab cakes\",\"color\": \"#FFA97E\"},{\"serieName\": \"super-valu crab legs\",\"color\": \"#C26232\"},{\"serieName\": \"super-valu decongestant\",\"color\": \"#FFCCB3\"},{\"serieName\": \"super-valu digital camera\",\"color\": \"#FF8142\"},{\"serieName\": \"super-valu dish soap\",\"color\": \"#422E75\"},{\"serieName\": \"super-valu eggs\",\"color\": \"#B094F8\"},{\"serieName\": \"super-valu english muffins\",\"color\": \"#6A4ABA\"},{\"serieName\": \"super-valu first aid kit\",\"color\": \"#D1C0FB\"},{\"serieName\": \"super-valu fish sticks\",\"color\": \"#8C62F5\"},{\"serieName\": \"super-valu fishing pole\",\"color\": \"#025B3C\"},{\"serieName\": \"super-valu flowers\",\"color\": \"#56D3A8\"},{\"serieName\": \"super-valu frozen bagels\",\"color\": \"#049160\"},{\"serieName\": \"super-valu frozen chicken patties\",\"color\": \"#9BE5CB\"},{\"serieName\": \"super-valu frozen onion rings\",\"color\": \"#06BF7F\"},{\"serieName\": \"super-valu fruit cocktail\",\"color\": \"#785F1A\"},{\"serieName\": \"super-valu gin\",\"color\": \"#FCD977\"},{\"serieName\": \"super-valu glass cleaner\",\"color\": \"#BF982A\"},{\"serieName\": \"super-valu glazed ham\",\"color\": \"#FDE9AF\"},{\"serieName\": \"super-valu greeting cards\",\"color\": \"#FCC838\"},{\"serieName\": \"super-valu heart medication\",\"color\": \"#22636B\"},{\"serieName\": \"super-valu hotdog buns\",\"color\": \"#82DFE9\"},{\"serieName\": \"super-valu italian bread\",\"color\": \"#369FAA\"},{\"serieName\": \"super-valu jelly donuts\",\"color\": \"#B5ECF2\"},{\"serieName\": \"super-valu kidney beans\",\"color\": \"#48D1E0\"},{\"serieName\": \"super-valu lactose free milk\",\"color\": \"#163772\"},{\"serieName\": \"super-valu laundry detergent\",\"color\": \"#71A1F4\"},{\"serieName\": \"super-valu lens cleaner\",\"color\": \"#2359B6\"},{\"serieName\": \"super-valu low fat milk\",\"color\": \"#ABC7F9\"},{\"serieName\": \"super-valu minestrone soup\",\"color\": \"#2E75F0\"},{\"serieName\": \"super-valu nasal spray\",\"color\": \"#721F27\"},{\"serieName\": \"super-valu nicotine patches\",\"color\": \"#F47E89\"},{\"serieName\": \"super-valu oven cleaner\",\"color\": \"#B6313E\"},{\"serieName\": \"super-valu picture frames\",\"color\": \"#F9B3B9\"},{\"serieName\": \"super-valu rash ointment\",\"color\": \"#F04152\"},{\"serieName\": \"super-valu red peppers\",\"color\": \"#2F3947\"},{\"serieName\": \"super-valu rubber gloves\",\"color\": \"#A2ACBA\"},{\"serieName\": \"super-valu salmon\",\"color\": \"#47515F\"},{\"serieName\": \"super-valu sardines\",\"color\": \"#BEC6D0\"},{\"serieName\": \"super-valu scallops\",\"color\": \"#747E8C\"},{\"serieName\": \"super-valu shrimp\",\"color\": \"#7A3D1F\"},{\"serieName\": \"super-valu skim milk\",\"color\": \"#FFA97E\"},{\"serieName\": \"super-valu sour cream\",\"color\": \"#C26232\"},{\"serieName\": \"super-valu splint\",\"color\": \"#FFCCB3\"},{\"serieName\": \"super-valu steak\",\"color\": \"#FF8142\"},{\"serieName\": \"super-valu swordfish\",\"color\": \"#422E75\"},{\"serieName\": \"super-valu telephoto lens\",\"color\": \"#B094F8\"},{\"serieName\": \"super-valu tequila\",\"color\": \"#6A4ABA\"},{\"serieName\": \"super-valu thermometer\",\"color\": \"#D1C0FB\"},{\"serieName\": \"super-valu tomatoes\",\"color\": \"#8C62F5\"},{\"serieName\": \"super-valu vanilla ice cream\",\"color\": \"#025B3C\"},{\"serieName\": \"super-valu watch\",\"color\": \"#56D3A8\"},{\"serieName\": \"super-valu wheat bread\",\"color\": \"#049160\"},{\"serieName\": \"super-valu wheechair\",\"color\": \"#9BE5CB\"},{\"serieName\": \"super-valu white wine\",\"color\": \"#06BF7F\"},{\"serieName\": \"super-valu wrap bandage\",\"color\": \"#785F1A\"},{\"serieName\": \"topquality air purifier\",\"color\": \"#FCD977\"},{\"serieName\": \"topquality ale\",\"color\": \"#BF982A\"},{\"serieName\": \"topquality allergy pills\",\"color\": \"#FDE9AF\"},{\"serieName\": \"topquality antibiotics\",\"color\": \"#FCC838\"},{\"serieName\": \"topquality apples\",\"color\": \"#22636B\"},{\"serieName\": \"topquality baby powder\",\"color\": \"#82DFE9\"},{\"serieName\": \"topquality bagels\",\"color\": \"#369FAA\"},{\"serieName\": \"topquality blood pressure medicine\",\"color\": \"#B5ECF2\"},{\"serieName\": \"topquality bracelet\",\"color\": \"#48D1E0\"},{\"serieName\": \"topquality bratwurst\",\"color\": \"#163772\"},{\"serieName\": \"topquality broccolli\",\"color\": \"#71A1F4\"},{\"serieName\": \"topquality brooms\",\"color\": \"#2359B6\"},{\"serieName\": \"topquality cables\",\"color\": \"#ABC7F9\"},{\"serieName\": \"topquality camera batteries\",\"color\": \"#2E75F0\"},{\"serieName\": \"topquality camera case\",\"color\": \"#721F27\"},{\"serieName\": \"topquality camera strap\",\"color\": \"#F47E89\"},{\"serieName\": \"topquality canned green beans\",\"color\": \"#B6313E\"},{\"serieName\": \"topquality canned olives\",\"color\": \"#F9B3B9\"},{\"serieName\": \"topquality canned peaches\",\"color\": \"#F04152\"},{\"serieName\": \"topquality catfish\",\"color\": \"#2F3947\"},{\"serieName\": \"topquality cheddar cheese\",\"color\": \"#A2ACBA\"},{\"serieName\": \"topquality chicken nuggets\",\"color\": \"#47515F\"},{\"serieName\": \"topquality cholesterol reducer\",\"color\": \"#BEC6D0\"},{\"serieName\": \"topquality cinnamon buns\",\"color\": \"#747E8C\"},{\"serieName\": \"topquality cold remedy\",\"color\": \"#7A3D1F\"},{\"serieName\": \"topquality cough syrup\",\"color\": \"#FFA97E\"},{\"serieName\": \"topquality crab legs\",\"color\": \"#C26232\"},{\"serieName\": \"topquality decongestant\",\"color\": \"#FFCCB3\"},{\"serieName\": \"topquality diabetes blood testing kit\",\"color\": \"#FF8142\"},{\"serieName\": \"topquality digital camera\",\"color\": \"#422E75\"},{\"serieName\": \"topquality english muffins\",\"color\": \"#B094F8\"},{\"serieName\": \"topquality fish sticks\",\"color\": \"#6A4ABA\"},{\"serieName\": \"topquality football\",\"color\": \"#D1C0FB\"},{\"serieName\": \"topquality french bread\",\"color\": \"#8C62F5\"},{\"serieName\": \"topquality fried fish patties\",\"color\": \"#025B3C\"},{\"serieName\": \"topquality frozen bagels\",\"color\": \"#56D3A8\"},{\"serieName\": \"topquality frozen juice\",\"color\": \"#049160\"},{\"serieName\": \"topquality frozen pizza\",\"color\": \"#9BE5CB\"},{\"serieName\": \"topquality frozen spinach\",\"color\": \"#06BF7F\"},{\"serieName\": \"topquality glass cleaner\",\"color\": \"#785F1A\"},{\"serieName\": \"topquality glazed ham\",\"color\": \"#FCD977\"},{\"serieName\": \"topquality golf clubs\",\"color\": \"#BF982A\"},{\"serieName\": \"topquality grated parmesan cheese\",\"color\": \"#FDE9AF\"},{\"serieName\": \"topquality green peppers\",\"color\": \"#FCC838\"},{\"serieName\": \"topquality greeting cards\",\"color\": \"#22636B\"},{\"serieName\": \"topquality ground beef\",\"color\": \"#82DFE9\"},{\"serieName\": \"topquality half and half\",\"color\": \"#369FAA\"},{\"serieName\": \"topquality hard cider\",\"color\": \"#B5ECF2\"},{\"serieName\": \"topquality hard lemonade\",\"color\": \"#48D1E0\"},{\"serieName\": \"topquality heating pad\",\"color\": \"#163772\"},{\"serieName\": \"topquality hot dogs\",\"color\": \"#71A1F4\"},{\"serieName\": \"topquality lettuce\",\"color\": \"#2359B6\"},{\"serieName\": \"topquality low fat milk\",\"color\": \"#ABC7F9\"},{\"serieName\": \"topquality margarine\",\"color\": \"#2E75F0\"},{\"serieName\": \"topquality mops\",\"color\": \"#721F27\"},{\"serieName\": \"topquality nasal spray\",\"color\": \"#F47E89\"},{\"serieName\": \"topquality onions\",\"color\": \"#B6313E\"},{\"serieName\": \"topquality paper towels\",\"color\": \"#F9B3B9\"},{\"serieName\": \"topquality peanut butter cookies\",\"color\": \"#F04152\"},{\"serieName\": \"topquality photo albums\",\"color\": \"#2F3947\"},{\"serieName\": \"topquality picture frames\",\"color\": \"#A2ACBA\"},{\"serieName\": \"topquality red peppers\",\"color\": \"#47515F\"},{\"serieName\": \"topquality rotisserie chicken\",\"color\": \"#BEC6D0\"},{\"serieName\": \"topquality rubber gloves\",\"color\": \"#747E8C\"},{\"serieName\": \"topquality scallops\",\"color\": \"#7A3D1F\"},{\"serieName\": \"topquality sleeping pills\",\"color\": \"#FFA97E\"},{\"serieName\": \"topquality strawberries\",\"color\": \"#C26232\"},{\"serieName\": \"topquality sushi\",\"color\": \"#FFCCB3\"},{\"serieName\": \"topquality tenderloin\",\"color\": \"#FF8142\"},{\"serieName\": \"topquality tequila\",\"color\": \"#422E75\"},{\"serieName\": \"topquality tomatoes\",\"color\": \"#B094F8\"},{\"serieName\": \"topquality vanilla ice cream\",\"color\": \"#6A4ABA\"},{\"serieName\": \"topquality veal\",\"color\": \"#D1C0FB\"},{\"serieName\": \"trader jon's air purifier\",\"color\": \"#8C62F5\"},{\"serieName\": \"trader jon's allergy pills\",\"color\": \"#025B3C\"},{\"serieName\": \"trader jon's antibiotics\",\"color\": \"#56D3A8\"},{\"serieName\": \"trader jon's apples\",\"color\": \"#049160\"},{\"serieName\": \"trader jon's bagels\",\"color\": \"#9BE5CB\"},{\"serieName\": \"trader jon's band aids\",\"color\": \"#06BF7F\"},{\"serieName\": \"trader jon's bourbon\",\"color\": \"#785F1A\"},{\"serieName\": \"trader jon's brooms\",\"color\": \"#FCD977\"},{\"serieName\": \"trader jon's cables\",\"color\": \"#BF982A\"},{\"serieName\": \"trader jon's camera batteries\",\"color\": \"#FDE9AF\"},{\"serieName\": \"trader jon's canned corn\",\"color\": \"#FCC838\"},{\"serieName\": \"trader jon's cantaloupe\",\"color\": \"#22636B\"},{\"serieName\": \"trader jon's champagne\",\"color\": \"#82DFE9\"},{\"serieName\": \"trader jon's chicken patties\",\"color\": \"#369FAA\"},{\"serieName\": \"trader jon's chocolate chip cookies\",\"color\": \"#B5ECF2\"},{\"serieName\": \"trader jon's chocolate ice cream\",\"color\": \"#48D1E0\"},{\"serieName\": \"trader jon's cholesterol reducer\",\"color\": \"#163772\"},{\"serieName\": \"trader jon's clams\",\"color\": \"#71A1F4\"},{\"serieName\": \"trader jon's cod\",\"color\": \"#2359B6\"},{\"serieName\": \"trader jon's cold remedy\",\"color\": \"#ABC7F9\"},{\"serieName\": \"trader jon's diabetes blood testing kit\",\"color\": \"#2E75F0\"},{\"serieName\": \"trader jon's digital camera\",\"color\": \"#721F27\"},{\"serieName\": \"trader jon's fabric softener\",\"color\": \"#F47E89\"},{\"serieName\": \"trader jon's fishing pole\",\"color\": \"#B6313E\"},{\"serieName\": \"trader jon's flounder\",\"color\": \"#F9B3B9\"},{\"serieName\": \"trader jon's flowers\",\"color\": \"#F04152\"},{\"serieName\": \"trader jon's football\",\"color\": \"#2F3947\"},{\"serieName\": \"trader jon's fried fish patties\",\"color\": \"#A2ACBA\"},{\"serieName\": \"trader jon's frozen bagels\",\"color\": \"#47515F\"},{\"serieName\": \"trader jon's frozen chicken patties\",\"color\": \"#BEC6D0\"},{\"serieName\": \"trader jon's frozen french fries\",\"color\": \"#747E8C\"},{\"serieName\": \"trader jon's frozen pizza\",\"color\": \"#7A3D1F\"},{\"serieName\": \"trader jon's fruit cocktail\",\"color\": \"#FFA97E\"},{\"serieName\": \"trader jon's garlic\",\"color\": \"#C26232\"},{\"serieName\": \"trader jon's gin\",\"color\": \"#FFCCB3\"},{\"serieName\": \"trader jon's golf clubs\",\"color\": \"#FF8142\"},{\"serieName\": \"trader jon's green peppers\",\"color\": \"#422E75\"},{\"serieName\": \"trader jon's ground beef\",\"color\": \"#B094F8\"},{\"serieName\": \"trader jon's haddock\",\"color\": \"#6A4ABA\"},{\"serieName\": \"trader jon's hard lemonade\",\"color\": \"#D1C0FB\"},{\"serieName\": \"trader jon's heating pad\",\"color\": \"#8C62F5\"},{\"serieName\": \"trader jon's hotdog buns\",\"color\": \"#025B3C\"},{\"serieName\": \"trader jon's ice cream sandwhiches\",\"color\": \"#56D3A8\"},{\"serieName\": \"trader jon's ipa\",\"color\": \"#049160\"},{\"serieName\": \"trader jon's italian bread\",\"color\": \"#9BE5CB\"},{\"serieName\": \"trader jon's kidney beans\",\"color\": \"#06BF7F\"},{\"serieName\": \"trader jon's lamb\",\"color\": \"#785F1A\"},{\"serieName\": \"trader jon's laundry detergent\",\"color\": \"#FCD977\"},{\"serieName\": \"trader jon's lettuce\",\"color\": \"#BF982A\"},{\"serieName\": \"trader jon's memory card\",\"color\": \"#FDE9AF\"},{\"serieName\": \"trader jon's mezcal\",\"color\": \"#FCC838\"},{\"serieName\": \"trader jon's mops\",\"color\": \"#22636B\"},{\"serieName\": \"trader jon's oranges\",\"color\": \"#82DFE9\"},{\"serieName\": \"trader jon's peanut butter cookies\",\"color\": \"#369FAA\"},{\"serieName\": \"trader jon's perfume\",\"color\": \"#B5ECF2\"},{\"serieName\": \"trader jon's pork\",\"color\": \"#48D1E0\"},{\"serieName\": \"trader jon's rash ointment\",\"color\": \"#163772\"},{\"serieName\": \"trader jon's red wine\",\"color\": \"#71A1F4\"},{\"serieName\": \"trader jon's rubber gloves\",\"color\": \"#2359B6\"},{\"serieName\": \"trader jon's rye\",\"color\": \"#ABC7F9\"},{\"serieName\": \"trader jon's sausage\",\"color\": \"#2E75F0\"},{\"serieName\": \"trader jon's skim milk\",\"color\": \"#721F27\"},{\"serieName\": \"trader jon's splint\",\"color\": \"#F47E89\"},{\"serieName\": \"trader jon's sponges\",\"color\": \"#B6313E\"},{\"serieName\": \"trader jon's squash\",\"color\": \"#F9B3B9\"},{\"serieName\": \"trader jon's strawberry ice cream\",\"color\": \"#F04152\"},{\"serieName\": \"trader jon's swordfish\",\"color\": \"#2F3947\"},{\"serieName\": \"trader jon's white bread\",\"color\": \"#A2ACBA\"},{\"serieName\": \"trader jon's white wine\",\"color\": \"#47515F\"},{\"serieName\": \"valuemart air freshener\",\"color\": \"#BEC6D0\"},{\"serieName\": \"valuemart air purifier\",\"color\": \"#747E8C\"},{\"serieName\": \"valuemart american cheese\",\"color\": \"#7A3D1F\"},{\"serieName\": \"valuemart antibiotics\",\"color\": \"#FFA97E\"},{\"serieName\": \"valuemart asthma inhaler\",\"color\": \"#C26232\"},{\"serieName\": \"valuemart baby powder\",\"color\": \"#FFCCB3\"},{\"serieName\": \"valuemart bacon\",\"color\": \"#FF8142\"},{\"serieName\": \"valuemart bagels\",\"color\": \"#422E75\"},{\"serieName\": \"valuemart baked beans\",\"color\": \"#B094F8\"},{\"serieName\": \"valuemart birth control\",\"color\": \"#6A4ABA\"},{\"serieName\": \"valuemart box of candy\",\"color\": \"#D1C0FB\"},{\"serieName\": \"valuemart cables\",\"color\": \"#8C62F5\"},{\"serieName\": \"valuemart camera case\",\"color\": \"#025B3C\"},{\"serieName\": \"valuemart camera cleaner kit\",\"color\": \"#56D3A8\"},{\"serieName\": \"valuemart canned chili\",\"color\": \"#049160\"},{\"serieName\": \"valuemart canned peaches\",\"color\": \"#9BE5CB\"},{\"serieName\": \"valuemart canned tomatoes\",\"color\": \"#06BF7F\"},{\"serieName\": \"valuemart canned tuna\",\"color\": \"#785F1A\"},{\"serieName\": \"valuemart chicken nuggets\",\"color\": \"#FCD977\"},{\"serieName\": \"valuemart chicken wings\",\"color\": \"#BF982A\"},{\"serieName\": \"valuemart cod\",\"color\": \"#FDE9AF\"},{\"serieName\": \"valuemart coffee cake\",\"color\": \"#FCC838\"},{\"serieName\": \"valuemart corn muffins\",\"color\": \"#22636B\"},{\"serieName\": \"valuemart crab cakes\",\"color\": \"#82DFE9\"},{\"serieName\": \"valuemart crab legs\",\"color\": \"#369FAA\"},{\"serieName\": \"valuemart croissants\",\"color\": \"#B5ECF2\"},{\"serieName\": \"valuemart electric razor\",\"color\": \"#48D1E0\"},{\"serieName\": \"valuemart fabric softener\",\"color\": \"#163772\"},{\"serieName\": \"valuemart film\",\"color\": \"#71A1F4\"},{\"serieName\": \"valuemart first aid kit\",\"color\": \"#2359B6\"},{\"serieName\": \"valuemart fish sticks\",\"color\": \"#ABC7F9\"},{\"serieName\": \"valuemart fishing pole\",\"color\": \"#2E75F0\"},{\"serieName\": \"valuemart flounder\",\"color\": \"#721F27\"},{\"serieName\": \"valuemart french bread\",\"color\": \"#F47E89\"},{\"serieName\": \"valuemart fried fish patties\",\"color\": \"#B6313E\"},{\"serieName\": \"valuemart frozen bagels\",\"color\": \"#F9B3B9\"},{\"serieName\": \"valuemart frozen juice\",\"color\": \"#F04152\"},{\"serieName\": \"valuemart frozen pizza\",\"color\": \"#2F3947\"},{\"serieName\": \"valuemart frozen stuffed chicken\",\"color\": \"#A2ACBA\"},{\"serieName\": \"valuemart gin\",\"color\": \"#47515F\"},{\"serieName\": \"valuemart glass cleaner\",\"color\": \"#BEC6D0\"},{\"serieName\": \"valuemart golf clubs\",\"color\": \"#747E8C\"},{\"serieName\": \"valuemart grated parmesan cheese\",\"color\": \"#7A3D1F\"},{\"serieName\": \"valuemart green peppers\",\"color\": \"#FFA97E\"},{\"serieName\": \"valuemart ground beef\",\"color\": \"#C26232\"},{\"serieName\": \"valuemart haddock\",\"color\": \"#FFCCB3\"},{\"serieName\": \"valuemart hamburger buns\",\"color\": \"#FF8142\"},{\"serieName\": \"valuemart hard lemonade\",\"color\": \"#422E75\"},{\"serieName\": \"valuemart ice\",\"color\": \"#B094F8\"},{\"serieName\": \"valuemart ice cream sandwhiches\",\"color\": \"#6A4ABA\"},{\"serieName\": \"valuemart ipa\",\"color\": \"#D1C0FB\"},{\"serieName\": \"valuemart kidney beans\",\"color\": \"#8C62F5\"},{\"serieName\": \"valuemart lamb\",\"color\": \"#025B3C\"},{\"serieName\": \"valuemart lima beans\",\"color\": \"#56D3A8\"},{\"serieName\": \"valuemart lobster\",\"color\": \"#049160\"},{\"serieName\": \"valuemart low fat milk\",\"color\": \"#9BE5CB\"},{\"serieName\": \"valuemart mops\",\"color\": \"#06BF7F\"},{\"serieName\": \"valuemart mozzarella cheese\",\"color\": \"#785F1A\"},{\"serieName\": \"valuemart onions\",\"color\": \"#FCD977\"},{\"serieName\": \"valuemart oranges\",\"color\": \"#BF982A\"},{\"serieName\": \"valuemart orthopedic brace\",\"color\": \"#FDE9AF\"},{\"serieName\": \"valuemart pain killers\",\"color\": \"#FCC838\"},{\"serieName\": \"valuemart peanut butter cookies\",\"color\": \"#22636B\"},{\"serieName\": \"valuemart potatoes\",\"color\": \"#82DFE9\"},{\"serieName\": \"valuemart red peppers\",\"color\": \"#369FAA\"},{\"serieName\": \"valuemart ring\",\"color\": \"#B5ECF2\"},{\"serieName\": \"valuemart rum\",\"color\": \"#48D1E0\"},{\"serieName\": \"valuemart salmon\",\"color\": \"#163772\"},{\"serieName\": \"valuemart scotch\",\"color\": \"#71A1F4\"},{\"serieName\": \"valuemart sleeping pills\",\"color\": \"#2359B6\"},{\"serieName\": \"valuemart sling\",\"color\": \"#ABC7F9\"},{\"serieName\": \"valuemart splint\",\"color\": \"#2E75F0\"},{\"serieName\": \"valuemart strawberry ice cream\",\"color\": \"#721F27\"},{\"serieName\": \"valuemart tenderloin\",\"color\": \"#F47E89\"},{\"serieName\": \"valuemart tuna\",\"color\": \"#B6313E\"},{\"serieName\": \"valuemart vanilla ice cream\",\"color\": \"#F9B3B9\"},{\"serieName\": \"valuemart vodka\",\"color\": \"#F04152\"},{\"serieName\": \"valuemart watch\",\"color\": \"#2F3947\"},{\"serieName\": \"valuemart watermelon\",\"color\": \"#A2ACBA\"},{\"serieName\": \"valuemart wheat bread\",\"color\": \"#47515F\"},{\"serieName\": \"valuemart whipped cream\",\"color\": \"#BEC6D0\"},{\"serieName\": \"valuemart yogurt\",\"color\": \"#747E8C\"},{\"serieName\": \"vidasource air humidifier\",\"color\": \"#7A3D1F\"},{\"serieName\": \"vidasource analog camera\",\"color\": \"#FFA97E\"},{\"serieName\": \"vidasource bagels\",\"color\": \"#C26232\"},{\"serieName\": \"vidasource basketball\",\"color\": \"#FFCCB3\"},{\"serieName\": \"vidasource birth control\",\"color\": \"#FF8142\"},{\"serieName\": \"vidasource birthday cards\",\"color\": \"#422E75\"},{\"serieName\": \"vidasource blood pressure medicine\",\"color\": \"#B094F8\"},{\"serieName\": \"vidasource blueberry muffins\",\"color\": \"#6A4ABA\"},{\"serieName\": \"vidasource bourbon\",\"color\": \"#D1C0FB\"},{\"serieName\": \"vidasource bratwurst\",\"color\": \"#8C62F5\"},{\"serieName\": \"vidasource butter milk\",\"color\": \"#025B3C\"},{\"serieName\": \"vidasource camera case\",\"color\": \"#56D3A8\"},{\"serieName\": \"vidasource camera strap\",\"color\": \"#049160\"},{\"serieName\": \"vidasource canned chili\",\"color\": \"#9BE5CB\"},{\"serieName\": \"vidasource canned olives\",\"color\": \"#06BF7F\"},{\"serieName\": \"vidasource chicken patties\",\"color\": \"#785F1A\"},{\"serieName\": \"vidasource chicken wings\",\"color\": \"#FCD977\"},{\"serieName\": \"vidasource cholesterol reducer\",\"color\": \"#BF982A\"},{\"serieName\": \"vidasource cinnamon buns\",\"color\": \"#FDE9AF\"},{\"serieName\": \"vidasource clams\",\"color\": \"#FCC838\"},{\"serieName\": \"vidasource cod\",\"color\": \"#22636B\"},{\"serieName\": \"vidasource corn muffins\",\"color\": \"#82DFE9\"},{\"serieName\": \"vidasource cough syrup\",\"color\": \"#369FAA\"},{\"serieName\": \"vidasource croissants\",\"color\": \"#B5ECF2\"},{\"serieName\": \"vidasource dish soap\",\"color\": \"#48D1E0\"},{\"serieName\": \"vidasource film\",\"color\": \"#163772\"},{\"serieName\": \"vidasource first aid kit\",\"color\": \"#71A1F4\"},{\"serieName\": \"vidasource flowers\",\"color\": \"#2359B6\"},{\"serieName\": \"vidasource football\",\"color\": \"#ABC7F9\"},{\"serieName\": \"vidasource fried fish patties\",\"color\": \"#2E75F0\"},{\"serieName\": \"vidasource frozen bagels\",\"color\": \"#721F27\"},{\"serieName\": \"vidasource frozen pizza\",\"color\": \"#F47E89\"},{\"serieName\": \"vidasource frozen ravioli\",\"color\": \"#B6313E\"},{\"serieName\": \"vidasource greeting cards\",\"color\": \"#F9B3B9\"},{\"serieName\": \"vidasource hard lemonade\",\"color\": \"#F04152\"},{\"serieName\": \"vidasource hot dogs\",\"color\": \"#2F3947\"},{\"serieName\": \"vidasource hotdog buns\",\"color\": \"#A2ACBA\"},{\"serieName\": \"vidasource ipa\",\"color\": \"#47515F\"},{\"serieName\": \"vidasource kidney beans\",\"color\": \"#BEC6D0\"},{\"serieName\": \"vidasource lactose free milk\",\"color\": \"#747E8C\"},{\"serieName\": \"vidasource lens cap\",\"color\": \"#7A3D1F\"},{\"serieName\": \"vidasource lettuce\",\"color\": \"#FFA97E\"},{\"serieName\": \"vidasource low fat milk\",\"color\": \"#C26232\"},{\"serieName\": \"vidasource memory card\",\"color\": \"#FFCCB3\"},{\"serieName\": \"vidasource mops\",\"color\": \"#FF8142\"},{\"serieName\": \"vidasource nicotine gum\",\"color\": \"#422E75\"},{\"serieName\": \"vidasource oven cleaner\",\"color\": \"#B094F8\"},{\"serieName\": \"vidasource pain killers\",\"color\": \"#6A4ABA\"},{\"serieName\": \"vidasource paper towels\",\"color\": \"#D1C0FB\"},{\"serieName\": \"vidasource photography paper\",\"color\": \"#8C62F5\"},{\"serieName\": \"vidasource potatoes\",\"color\": \"#025B3C\"},{\"serieName\": \"vidasource rash ointment\",\"color\": \"#56D3A8\"},{\"serieName\": \"vidasource ring\",\"color\": \"#049160\"},{\"serieName\": \"vidasource rum\",\"color\": \"#9BE5CB\"},{\"serieName\": \"vidasource rye\",\"color\": \"#06BF7F\"},{\"serieName\": \"vidasource sardines\",\"color\": \"#785F1A\"},{\"serieName\": \"vidasource splint\",\"color\": \"#FCD977\"},{\"serieName\": \"vidasource steak\",\"color\": \"#BF982A\"},{\"serieName\": \"vidasource strawberry ice cream\",\"color\": \"#FDE9AF\"},{\"serieName\": \"vidasource tennis racket\",\"color\": \"#FCC838\"},{\"serieName\": \"vidasource tomatoes\",\"color\": \"#22636B\"},{\"serieName\": \"vidasource trash bags\",\"color\": \"#82DFE9\"},{\"serieName\": \"vidasource tv dinner\",\"color\": \"#369FAA\"},{\"serieName\": \"vidasource vanilla ice cream\",\"color\": \"#B5ECF2\"},{\"serieName\": \"vidasource vapor rub\",\"color\": \"#48D1E0\"},{\"serieName\": \"vidasource veal\",\"color\": \"#163772\"},{\"serieName\": \"vidasource vodka\",\"color\": \"#71A1F4\"},{\"serieName\": \"vidasource wheechair\",\"color\": \"#2359B6\"},{\"serieName\": \"vidasource white bread\",\"color\": \"#ABC7F9\"},{\"serieName\": \"vidasource whole milk\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: dc835069-043e-4302-8130-9469ebf8bdab
+  filters:
+  - column:
+    - Retail Sales - Classic::Store Region
+    - Vendor Reporting::Vendor Region
+    oper: in
+    values:
+    - east
+    - "{null}"
+    - Midwest
+    - South
+    - Southwest
+    - West
+    is_mandatory: true
+    is_single_value: false
+    display_name: ""
+  - column:
+    - Retail Sales - Classic::Department
+    oper: in
+    values:
+    - Bakery
+    - Canned Goods
+    - Cleaning Supplies
+    - Dairy
+    - Frozen Goods
+    - Gifts
+    - Liquor
+    - Meat
+    - Medical
+    - Pharmacy
+    - Photography
+    - Produce
+    - Seafood
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tabs:
+    - name: TAB 1
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 0
+        height: 5
+        width: 3
+      - visualization_id: Viz_2
+        x: 0
+        "y": 5
+        height: 4
+        width: 6
+      - visualization_id: Viz_3
+        x: 6
+        "y": 14
+        height: 8
+        width: 5
+      - visualization_id: Viz_4
+        x: 0
+        "y": 14
+        height: 8
+        width: 6
+      - visualization_id: Viz_5
+        x: 5
+        "y": 10
+        height: 4
+        width: 6
+      - visualization_id: Viz_6
+        x: 6
+        "y": 5
+        height: 5
+        width: 4
+      - visualization_id: Viz_7
+        x: 3
+        "y": 0
+        height: 5
+        width: 4
+      - visualization_id: Viz_8
+        x: 7
+        "y": 0
+        height: 5
+        width: 3
+      id: e1f14907-c3ed-4215-abdd-0a82bcf4f947
+    - name: TAB 2
+      description: ""
+      tiles:
+      - visualization_id: Viz_9
+        x: 0
+        "y": 0
+        height: 4
+        width: 3
+      - visualization_id: Viz_10
+      id: 7f531c1c-5875-46b5-a4ce-04100389f278
+  ordered_chips:
+  - name: Retail Sales - Classic::Store Region
+    type: FILTER
+  - name: Retail Sales - Classic::Department
+    type: FILTER
+  views:
+  - view_guid: cb077d0a-9d44-4d3d-b32f-17d79d4d11ed
+    name: EAST REGION VIEW
+    view_filters:
+    - column:
+      - Retail Sales - Classic::Store Region
+      oper: in
+      values:
+      - east
+    - column:
+      - Retail Sales - Classic::Department
+      oper: in
+      values:
+      - Bakery
+      - Canned Goods
+      - Cleaning Supplies
+      - Dairy
+      - Frozen Goods
+      - Gifts
+      - Liquor
+      - Meat
+      - Medical
+      - Pharmacy
+      - Photography
+      - Produce
+      - Seafood
+    is_public: true
+  - view_guid: 9266227e-ca10-4421-a6bb-2e3f13c226cd
+    name: WEST REGION VIEW
+    view_filters:
+    - column:
+      - Retail Sales - Classic::Store Region
+      oper: in
+      values:
+      - West
+    - column:
+      - Retail Sales - Classic::Department
+      oper: in
+      values:
+      - Bakery
+      - Canned Goods
+      - Cleaning Supplies
+      - Dairy
+      - Frozen Goods
+      - Gifts
+      - Liquor
+      - Meat
+      - Medical
+      - Pharmacy
+      - Photography
+      - Produce
+      - Seafood
+    is_public: true
+  style:
+    style_properties:
+    - name: lb_border_type
+      value: CURVED
+    - name: lb_brand_color
+      value: LBC_G
+    - name: hide_group_title
+      value: "false"
+    - name: hide_group_description
+      value: "true"
+    - name: hide_group_tile_description
+      value: "false"
+    - name: hide_tile_description
+      value: "true"
+    - name: kpi_hero_font_size
+      value: XL

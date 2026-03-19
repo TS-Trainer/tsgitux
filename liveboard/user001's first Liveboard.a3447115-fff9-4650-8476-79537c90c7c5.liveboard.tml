@@ -193,6 +193,10 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Tuna Sales Comparison - JDS
     viz_guid: 037d43c3-1f8a-4ac1-9932-3d48b1559244
+  - id: Viz_7
+    viz_guid: 291b307e-dbfe-45de-85bb-13181ed0efc7
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Note tile to show off Versioning</span></h2><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
   groups:
   - id: Group_1
     name: Maps
@@ -224,7 +228,7 @@ liveboard:
     tiles:
     - visualization_id: Viz_2
       x: 6
-      "y": 12
+      "y": 16
       height: 8
       width: 6
     - visualization_id: Viz_3
@@ -234,15 +238,24 @@ liveboard:
       width: 6
     - visualization_id: Group_1
       x: 0
-      "y": 4
+      "y": 8
       height: 8
       width: 12
     - visualization_id: Viz_5
       x: 0
-      "y": 0
+      "y": 4
       height: 4
       width: 3
     - visualization_id: Viz_6
+      x: 0
+      "y": 16
+      height: 8
+      width: 6
+    - visualization_id: Viz_7
+      x: 0
+      "y": 0
+      height: 4
+      width: 3
     group_layouts:
     - id: Group_1
       tiles:

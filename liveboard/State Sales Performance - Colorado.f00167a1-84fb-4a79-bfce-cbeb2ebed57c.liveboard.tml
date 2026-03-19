@@ -1,0 +1,1606 @@
+guid: f00167a1-84fb-4a79-bfce-cbeb2ebed57c
+liveboard:
+  name: State Sales Performance - Colorado
+  description: Recent store and regional performance
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "Top 10 Stores by Gross Margin, Last 60 Days"
+      description: Top 10 stores ranked by gross margin over the last 60 days
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "top 10 [Store Name] by [Gross Margin ($)] [Sale Date].'last 60 days'"
+      answer_columns:
+      - name: Store Name
+      - name: Total Gross Margin ($)
+      table:
+        table_columns:
+        - column_id: Store Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Gross Margin ($)
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Store Name
+        - Total Gross Margin ($)
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Store Name\",\"columnProperty\": {}},{\"columnId\": \"Total Gross Margin ($)\",\"columnProperty\": {}}]}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Store Name
+        - column_id: Total Gross Margin ($)
+        axis_configs:
+        - x:
+          - Store Name
+          "y":
+          - Total Gross Margin ($)
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Store Name\",\"columnProperty\": {}},{\"columnId\": \"Total Gross Margin ($)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"5c88df66-2cbe-4552-bd8a-68add5b4f626\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Gross Margin ($)\"],\"isOpposite\": false}},{\"id\": \"c22390ee-c15f-4005-8075-0905b729cfe9\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Gross Margin ($)\",\"color\": \"#FF5E45\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 5e5ab812-08cd-4f3f-a77e-148350473676
+  - id: Viz_2
+    answer:
+      name: "Sales by County, Last 60 Days"
+      description: Sales by store state over the last 60 days
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Sale Date].'last 60 days' [Store County]"
+      answer_columns:
+      - name: Store County
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Store County
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Sales
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Store County
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: PIE
+        chart_columns:
+        - column_id: Store County
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Store County
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {\"dataLabels\": false,\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Store County\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"19b60f43-46ad-4d7f-a541-9e10eee77c88\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"58f2bad1-bceb-4375-a1c6-86e86950ad82\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store County\"]}}],\"systemSeriesColors\": [{\"serieName\": \"ada county, idaho\",\"color\": \"#721F27\"},{\"serieName\": \"adams county, colorado\",\"color\": \"#F47E89\"},{\"serieName\": \"adams county, pennsylvania\",\"color\": \"#B6313E\"},{\"serieName\": \"alachua county, florida\",\"color\": \"#F9B3B9\"},{\"serieName\": \"alameda county, california\",\"color\": \"#F04152\"},{\"serieName\": \"albany county, new york\",\"color\": \"#2F3947\"},{\"serieName\": \"allegheny county, pennsylvania\",\"color\": \"#A2ACBA\"},{\"serieName\": \"allen county, indiana\",\"color\": \"#47515F\"},{\"serieName\": \"aransas county, texas\",\"color\": \"#BEC6D0\"},{\"serieName\": \"arapahoe county, colorado\",\"color\": \"#747E8C\"},{\"serieName\": \"baltimore city, maryland\",\"color\": \"#7A3D1F\"},{\"serieName\": \"bell county, texas\",\"color\": \"#FFA97E\"},{\"serieName\": \"benton county, arkansas\",\"color\": \"#C26232\"},{\"serieName\": \"benton county, washington\",\"color\": \"#FFCCB3\"},{\"serieName\": \"berkeley county, south carolina\",\"color\": \"#FF8142\"},{\"serieName\": \"bernalillo county, new mexico\",\"color\": \"#422E75\"},{\"serieName\": \"bexar county, texas\",\"color\": \"#B094F8\"},{\"serieName\": \"bibb county, georgia\",\"color\": \"#6A4ABA\"},{\"serieName\": \"bossier parish, louisiana\",\"color\": \"#D1C0FB\"},{\"serieName\": \"boulder county, colorado\",\"color\": \"#8C62F5\"},{\"serieName\": \"brazoria county, texas\",\"color\": \"#025B3C\"},{\"serieName\": \"brazos county, texas\",\"color\": \"#56D3A8\"},{\"serieName\": \"brevard county, florida\",\"color\": \"#049160\"},{\"serieName\": \"bristol county, massachusetts\",\"color\": \"#9BE5CB\"},{\"serieName\": \"broward county, florida\",\"color\": \"#06BF7F\"},{\"serieName\": \"brown county, wisconsin\",\"color\": \"#785F1A\"},{\"serieName\": \"buchanan county, missouri\",\"color\": \"#FCD977\"},{\"serieName\": \"buncombe county, north carolina\",\"color\": \"#BF982A\"},{\"serieName\": \"butte county, california\",\"color\": \"#FDE9AF\"},{\"serieName\": \"cabarrus county, north carolina\",\"color\": \"#FCC838\"},{\"serieName\": \"calcasieu parish, louisiana\",\"color\": \"#22636B\"},{\"serieName\": \"calumet county, wisconsin\",\"color\": \"#82DFE9\"},{\"serieName\": \"camden county, new jersey\",\"color\": \"#369FAA\"},{\"serieName\": \"cameron county, texas\",\"color\": \"#B5ECF2\"},{\"serieName\": \"canyon county, idaho\",\"color\": \"#48D1E0\"},{\"serieName\": \"cass county, missouri\",\"color\": \"#163772\"},{\"serieName\": \"chambers county, texas\",\"color\": \"#71A1F4\"},{\"serieName\": \"champaign county, illinois\",\"color\": \"#2359B6\"},{\"serieName\": \"charleston county, south carolina\",\"color\": \"#ABC7F9\"},{\"serieName\": \"christian county, missouri\",\"color\": \"#2E75F0\"},{\"serieName\": \"clark county, nevada\",\"color\": \"#721F27\"},{\"serieName\": \"clark county, washington\",\"color\": \"#F47E89\"},{\"serieName\": \"clarke county, georgia\",\"color\": \"#B6313E\"},{\"serieName\": \"clay county, missouri\",\"color\": \"#F9B3B9\"},{\"serieName\": \"cleveland county, oklahoma\",\"color\": \"#F04152\"},{\"serieName\": \"collin county, texas\",\"color\": \"#2F3947\"},{\"serieName\": \"contra costa county, california\",\"color\": \"#A2ACBA\"},{\"serieName\": \"cook county, illinois\",\"color\": \"#47515F\"},{\"serieName\": \"craighead county, arkansas\",\"color\": \"#BEC6D0\"},{\"serieName\": \"cumberland county, maine\",\"color\": \"#747E8C\"},{\"serieName\": \"cumberland county, north carolina\",\"color\": \"#7A3D1F\"},{\"serieName\": \"cuyahoga county, ohio\",\"color\": \"#FFA97E\"},{\"serieName\": \"dakota county, minnesota\",\"color\": \"#C26232\"},{\"serieName\": \"dallas county, texas\",\"color\": \"#FFCCB3\"},{\"serieName\": \"dane county, wisconsin\",\"color\": \"#FF8142\"},{\"serieName\": \"davidson county, north carolina\",\"color\": \"#422E75\"},{\"serieName\": \"dekalb county, georgia\",\"color\": \"#B094F8\"},{\"serieName\": \"delaware county, indiana\",\"color\": \"#6A4ABA\"},{\"serieName\": \"delaware county, ohio\",\"color\": \"#D1C0FB\"},{\"serieName\": \"denton county, texas\",\"color\": \"#8C62F5\"},{\"serieName\": \"denver county, colorado\",\"color\": \"#025B3C\"},{\"serieName\": \"deschutes county, oregon\",\"color\": \"#56D3A8\"},{\"serieName\": \"dougherty county, georgia\",\"color\": \"#049160\"},{\"serieName\": \"douglas county, kansas\",\"color\": \"#9BE5CB\"},{\"serieName\": \"douglas county, nebraska\",\"color\": \"#06BF7F\"},{\"serieName\": \"dupage county, illinois\",\"color\": \"#785F1A\"},{\"serieName\": \"durham county, north carolina\",\"color\": \"#FCD977\"},{\"serieName\": \"duval county, florida\",\"color\": \"#BF982A\"},{\"serieName\": \"east baton rouge parish, louisiana\",\"color\": \"#FDE9AF\"},{\"serieName\": \"eaton county, michigan\",\"color\": \"#FCC838\"},{\"serieName\": \"ector county, texas\",\"color\": \"#22636B\"},{\"serieName\": \"el paso county, colorado\",\"color\": \"#82DFE9\"},{\"serieName\": \"el paso county, texas\",\"color\": \"#369FAA\"},{\"serieName\": \"erie county, new york\",\"color\": \"#B5ECF2\"},{\"serieName\": \"erie county, pennsylvania\",\"color\": \"#48D1E0\"},{\"serieName\": \"essex county, massachusetts\",\"color\": \"#163772\"},{\"serieName\": \"essex county, new jersey\",\"color\": \"#71A1F4\"},{\"serieName\": \"fairfield county, connecticut\",\"color\": \"#2359B6\"},{\"serieName\": \"fayette county, kentucky\",\"color\": \"#ABC7F9\"},{\"serieName\": \"flagler county, florida\",\"color\": \"#2E75F0\"},{\"serieName\": \"forsyth county, north carolina\",\"color\": \"#721F27\"},{\"serieName\": \"fort bend county, texas\",\"color\": \"#F47E89\"},{\"serieName\": \"fresno county, california\",\"color\": \"#B6313E\"},{\"serieName\": \"fulton county, georgia\",\"color\": \"#F9B3B9\"},{\"serieName\": \"galveston county, texas\",\"color\": \"#F04152\"},{\"serieName\": \"gaston county, north carolina\",\"color\": \"#2F3947\"},{\"serieName\": \"genesee county, michigan\",\"color\": \"#A2ACBA\"},{\"serieName\": \"gregg county, texas\",\"color\": \"#47515F\"},{\"serieName\": \"guilford county, north carolina\",\"color\": \"#BEC6D0\"},{\"serieName\": \"hamilton county, indiana\",\"color\": \"#747E8C\"},{\"serieName\": \"hamilton county, ohio\",\"color\": \"#7A3D1F\"},{\"serieName\": \"hamilton county, tennessee\",\"color\": \"#FFA97E\"},{\"serieName\": \"hampden county, massachusetts\",\"color\": \"#C26232\"},{\"serieName\": \"harris county, texas\",\"color\": \"#FFCCB3\"},{\"serieName\": \"hartford county, connecticut\",\"color\": \"#FF8142\"},{\"serieName\": \"hennepin county, minnesota\",\"color\": \"#422E75\"},{\"serieName\": \"hidalgo county, texas\",\"color\": \"#B094F8\"},{\"serieName\": \"hillsborough county, florida\",\"color\": \"#6A4ABA\"},{\"serieName\": \"hillsborough county, new hampshire\",\"color\": \"#D1C0FB\"},{\"serieName\": \"hinds county, mississippi\",\"color\": \"#8C62F5\"},{\"serieName\": \"houston county, georgia\",\"color\": \"#025B3C\"},{\"serieName\": \"hudson county, new jersey\",\"color\": \"#56D3A8\"},{\"serieName\": \"jackson county, oregon\",\"color\": \"#049160\"},{\"serieName\": \"jefferson county, alabama\",\"color\": \"#9BE5CB\"},{\"serieName\": \"jefferson county, colorado\",\"color\": \"#06BF7F\"},{\"serieName\": \"jefferson county, kentucky\",\"color\": \"#785F1A\"},{\"serieName\": \"jefferson county, texas\",\"color\": \"#FCD977\"},{\"serieName\": \"johnson county, iowa\",\"color\": \"#BF982A\"},{\"serieName\": \"johnson county, kansas\",\"color\": \"#FDE9AF\"},{\"serieName\": \"jones county, texas\",\"color\": \"#FCC838\"},{\"serieName\": \"kalamazoo county, michigan\",\"color\": \"#22636B\"},{\"serieName\": \"kenosha county, wisconsin\",\"color\": \"#82DFE9\"},{\"serieName\": \"kent county, michigan\",\"color\": \"#369FAA\"},{\"serieName\": \"kent county, rhode island\",\"color\": \"#B5ECF2\"},{\"serieName\": \"king county, washington\",\"color\": \"#48D1E0\"},{\"serieName\": \"knox county, tennessee\",\"color\": \"#163772\"},{\"serieName\": \"lackawanna county, pennsylvania\",\"color\": \"#71A1F4\"},{\"serieName\": \"lafayette parish, louisiana\",\"color\": \"#2359B6\"},{\"serieName\": \"lake county, indiana\",\"color\": \"#ABC7F9\"},{\"serieName\": \"lancaster county, nebraska\",\"color\": \"#2E75F0\"},{\"serieName\": \"lane county, oregon\",\"color\": \"#721F27\"},{\"serieName\": \"larimer county, colorado\",\"color\": \"#F47E89\"},{\"serieName\": \"lehigh county, pennsylvania\",\"color\": \"#B6313E\"},{\"serieName\": \"lexington county, south carolina\",\"color\": \"#F9B3B9\"},{\"serieName\": \"limestone county, alabama\",\"color\": \"#F04152\"},{\"serieName\": \"lincoln county, south dakota\",\"color\": \"#2F3947\"},{\"serieName\": \"linn county, iowa\",\"color\": \"#A2ACBA\"},{\"serieName\": \"los angeles county, california\",\"color\": \"#47515F\"},{\"serieName\": \"lubbock county, texas\",\"color\": \"#BEC6D0\"},{\"serieName\": \"lucas county, ohio\",\"color\": \"#747E8C\"},{\"serieName\": \"lynchburg city, virginia\",\"color\": \"#7A3D1F\"},{\"serieName\": \"macomb county, michigan\",\"color\": \"#FFA97E\"},{\"serieName\": \"macon county, illinois\",\"color\": \"#C26232\"},{\"serieName\": \"madison county, tennessee\",\"color\": \"#FFCCB3\"},{\"serieName\": \"maricopa county, arizona\",\"color\": \"#FF8142\"},{\"serieName\": \"marion county, indiana\",\"color\": \"#422E75\"},{\"serieName\": \"marion county, oregon\",\"color\": \"#B094F8\"},{\"serieName\": \"mclean county, illinois\",\"color\": \"#6A4ABA\"},{\"serieName\": \"mclennan county, texas\",\"color\": \"#D1C0FB\"},{\"serieName\": \"mecklenburg county, north carolina\",\"color\": \"#8C62F5\"},{\"serieName\": \"merced county, california\",\"color\": \"#025B3C\"},{\"serieName\": \"mercer county, new jersey\",\"color\": \"#56D3A8\"},{\"serieName\": \"miami-dade county, florida\",\"color\": \"#049160\"},{\"serieName\": \"middlesex county, massachusetts\",\"color\": \"#9BE5CB\"},{\"serieName\": \"milwaukee county, wisconsin\",\"color\": \"#06BF7F\"},{\"serieName\": \"missoula county, montana\",\"color\": \"#785F1A\"},{\"serieName\": \"mobile county, alabama\",\"color\": \"#FCD977\"},{\"serieName\": \"monroe county, new york\",\"color\": \"#BF982A\"},{\"serieName\": \"monterey county, california\",\"color\": \"#FDE9AF\"},{\"serieName\": \"montgomery county, alabama\",\"color\": \"#FCC838\"},{\"serieName\": \"montgomery county, ohio\",\"color\": \"#22636B\"},{\"serieName\": \"montgomery county, tennessee\",\"color\": \"#82DFE9\"},{\"serieName\": \"multnomah county, oregon\",\"color\": \"#369FAA\"},{\"serieName\": \"muscogee county, georgia\",\"color\": \"#B5ECF2\"},{\"serieName\": \"napa county, california\",\"color\": \"#48D1E0\"},{\"serieName\": \"new castle county, delaware\",\"color\": \"#163772\"},{\"serieName\": \"new haven county, connecticut\",\"color\": \"#71A1F4\"},{\"serieName\": \"new york county, new york\",\"color\": \"#2359B6\"},{\"serieName\": \"newaygo county, michigan\",\"color\": \"#ABC7F9\"},{\"serieName\": \"newport news city, virginia\",\"color\": \"#2E75F0\"},{\"serieName\": \"norfolk city, virginia\",\"color\": \"#721F27\"},{\"serieName\": \"norfolk county, massachusetts\",\"color\": \"#F47E89\"},{\"serieName\": \"oakland county, michigan\",\"color\": \"#B6313E\"},{\"serieName\": \"oklahoma county, oklahoma\",\"color\": \"#F9B3B9\"},{\"serieName\": \"onondaga county, new york\",\"color\": \"#F04152\"},{\"serieName\": \"orange county, california\",\"color\": \"#2F3947\"},{\"serieName\": \"orange county, florida\",\"color\": \"#A2ACBA\"},{\"serieName\": \"orleans parish, louisiana\",\"color\": \"#47515F\"},{\"serieName\": \"osage county, oklahoma\",\"color\": \"#BEC6D0\"},{\"serieName\": \"palm beach county, florida\",\"color\": \"#747E8C\"},{\"serieName\": \"passaic county, new jersey\",\"color\": \"#7A3D1F\"},{\"serieName\": \"peoria county, illinois\",\"color\": \"#FFA97E\"},{\"serieName\": \"philadelphia county, pennsylvania\",\"color\": \"#C26232\"},{\"serieName\": \"pierce county, washington\",\"color\": \"#FFCCB3\"},{\"serieName\": \"pima county, arizona\",\"color\": \"#FF8142\"},{\"serieName\": \"pinellas county, florida\",\"color\": \"#422E75\"},{\"serieName\": \"pitt county, north carolina\",\"color\": \"#B094F8\"},{\"serieName\": \"placer county, california\",\"color\": \"#6A4ABA\"},{\"serieName\": \"plymouth county, massachusetts\",\"color\": \"#D1C0FB\"},{\"serieName\": \"polk county, florida\",\"color\": \"#8C62F5\"},{\"serieName\": \"potter county, texas\",\"color\": \"#025B3C\"},{\"serieName\": \"providence county, rhode island\",\"color\": \"#56D3A8\"},{\"serieName\": \"pueblo county, colorado\",\"color\": \"#049160\"},{\"serieName\": \"pulaski county, arkansas\",\"color\": \"#9BE5CB\"},{\"serieName\": \"racine county, wisconsin\",\"color\": \"#06BF7F\"},{\"serieName\": \"ramsey county, minnesota\",\"color\": \"#785F1A\"},{\"serieName\": \"richmond county, georgia\",\"color\": \"#FCD977\"},{\"serieName\": \"richmond city, virginia\",\"color\": \"#BF982A\"},{\"serieName\": \"riverside county, california\",\"color\": \"#FDE9AF\"},{\"serieName\": \"sacramento county, california\",\"color\": \"#FCC838\"},{\"serieName\": \"salt lake county, utah\",\"color\": \"#22636B\"},{\"serieName\": \"san bernardino county, california\",\"color\": \"#82DFE9\"},{\"serieName\": \"san diego county, california\",\"color\": \"#369FAA\"},{\"serieName\": \"san francisco county, california\",\"color\": \"#B5ECF2\"},{\"serieName\": \"san joaquin county, california\",\"color\": \"#48D1E0\"},{\"serieName\": \"san mateo county, california\",\"color\": \"#163772\"},{\"serieName\": \"sangamon county, illinois\",\"color\": \"#71A1F4\"},{\"serieName\": \"santa barbara county, california\",\"color\": \"#2359B6\"},{\"serieName\": \"santa clara county, california\",\"color\": \"#ABC7F9\"},{\"serieName\": \"santa fe county, new mexico\",\"color\": \"#2E75F0\"},{\"serieName\": \"sebastian county, arkansas\",\"color\": \"#721F27\"},{\"serieName\": \"sedgwick county, kansas\",\"color\": \"#F47E89\"},{\"serieName\": \"shasta county, california\",\"color\": \"#B6313E\"},{\"serieName\": \"shawnee county, kansas\",\"color\": \"#F9B3B9\"},{\"serieName\": \"smith county, texas\",\"color\": \"#F04152\"},{\"serieName\": \"snohomish county, washington\",\"color\": \"#2F3947\"},{\"serieName\": \"solano county, california\",\"color\": \"#A2ACBA\"},{\"serieName\": \"sonoma county, california\",\"color\": \"#47515F\"},{\"serieName\": \"spokane county, washington\",\"color\": \"#BEC6D0\"},{\"serieName\": \"st. joseph county, indiana\",\"color\": \"#747E8C\"},{\"serieName\": \"st. louis county, minnesota\",\"color\": \"#7A3D1F\"},{\"serieName\": \"st. louis county, missouri\",\"color\": \"#FFA97E\"},{\"serieName\": \"st. lucie county, florida\",\"color\": \"#C26232\"},{\"serieName\": \"stanislaus county, california\",\"color\": \"#FFCCB3\"},{\"serieName\": \"stark county, ohio\",\"color\": \"#FF8142\"},{\"serieName\": \"suffolk city, virginia\",\"color\": \"#422E75\"},{\"serieName\": \"suffolk county, massachusetts\",\"color\": \"#B094F8\"},{\"serieName\": \"summit county, ohio\",\"color\": \"#6A4ABA\"},{\"serieName\": \"tarrant county, texas\",\"color\": \"#D1C0FB\"},{\"serieName\": \"tippecanoe county, indiana\",\"color\": \"#8C62F5\"},{\"serieName\": \"tom green county, texas\",\"color\": \"#025B3C\"},{\"serieName\": \"travis county, texas\",\"color\": \"#56D3A8\"},{\"serieName\": \"tulare county, california\",\"color\": \"#049160\"},{\"serieName\": \"tulsa county, oklahoma\",\"color\": \"#9BE5CB\"},{\"serieName\": \"tuscaloosa county, alabama\",\"color\": \"#06BF7F\"},{\"serieName\": \"union county, new jersey\",\"color\": \"#785F1A\"},{\"serieName\": \"utah county, utah\",\"color\": \"#FCD977\"},{\"serieName\": \"vanderburgh county, indiana\",\"color\": \"#BF982A\"},{\"serieName\": \"ventura county, california\",\"color\": \"#FDE9AF\"},{\"serieName\": \"virginia beach city, virginia\",\"color\": \"#FCC838\"},{\"serieName\": \"washington county, oregon\",\"color\": \"#22636B\"},{\"serieName\": \"washington county, utah\",\"color\": \"#82DFE9\"},{\"serieName\": \"washoe county, nevada\",\"color\": \"#369FAA\"},{\"serieName\": \"washtenaw county, michigan\",\"color\": \"#B5ECF2\"},{\"serieName\": \"waukesha county, wisconsin\",\"color\": \"#48D1E0\"},{\"serieName\": \"wayne county, michigan\",\"color\": \"#163772\"},{\"serieName\": \"webb county, texas\",\"color\": \"#71A1F4\"},{\"serieName\": \"weber county, utah\",\"color\": \"#2359B6\"},{\"serieName\": \"weld county, colorado\",\"color\": \"#ABC7F9\"},{\"serieName\": \"westchester county, new york\",\"color\": \"#2E75F0\"},{\"serieName\": \"whatcom county, washington\",\"color\": \"#721F27\"},{\"serieName\": \"wichita county, texas\",\"color\": \"#F47E89\"},{\"serieName\": \"winnebago county, wisconsin\",\"color\": \"#B6313E\"},{\"serieName\": \"worcester county, massachusetts\",\"color\": \"#F9B3B9\"},{\"serieName\": \"wyandotte county, kansas\",\"color\": \"#F04152\"},{\"serieName\": \"yakima county, washington\",\"color\": \"#2F3947\"},{\"serieName\": \"yellowstone county, montana\",\"color\": \"#A2ACBA\"},{\"serieName\": \"yolo county, california\",\"color\": \"#47515F\"},{\"serieName\": \"yuma county, arizona\",\"color\": \"#BEC6D0\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: "Sales by County, Last 60 Days"
+    viz_guid: 53a8f1ae-3b12-4f94-8133-69c60a358678
+  - id: Viz_3
+    answer:
+      name: "Sales by Store Zip, Last 30 Days"
+      description: Growth of sales by U.S. region for the last 10 months
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Store Zip Code] [Sale Date].'last week' [Store Region]"
+      answer_columns:
+      - name: Store Region
+      - name: Store Zip Code
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Store Region
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Store Zip Code
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Sales
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Store Zip Code
+        - Store Region
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Store Zip Code\",\"columnProperty\": {}},{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: GEO_BUBBLE
+        chart_columns:
+        - column_id: Store Region
+        - column_id: Store Zip Code
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Store Zip Code
+          "y":
+          - Total Sales
+          color:
+          - Store Region
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Store Zip Code\",\"columnProperty\": {}},{\"columnId\": \"Store Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8310aa52-7f85-44e5-b4e9-94ec6dc896dd\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"b16014ea-0f3c-4729-b2e2-7bdfe4016175\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store Zip Code\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 1162e4ba-cba4-4de9-aae8-4e7146175f5f
+  - id: Viz_4
+    answer:
+      name: "Top 3 Stores by Daily Sales, Last Week"
+      description: Top 10 store cities by sales per square foot over the last 60 days
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "top 3 [Store Name] ranked by [Sales] for each [Sale Date] [Sale Date].'last week' [Sale Date].daily [Sale Date].'day of week'"
+      answer_columns:
+      - name: Day of Week(Sale Date)
+      - name: Day(Sale Date)
+      - name: Store Name
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Day of Week(Sale Date)
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Day(Sale Date)
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Store Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Sales
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Day(Sale Date)
+        - Store Name
+        - Day of Week(Sale Date)
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Day(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Store Name\",\"columnProperty\": {}},{\"columnId\": \"Day of Week(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Day of Week(Sale Date)
+        - column_id: Day(Sale Date)
+        - column_id: Store Name
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Day(Sale Date)
+          "y":
+          - Total Sales
+          color:
+          - Store Name
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {},\"showStackedLabels\": true},\"columnProperties\": [{\"columnId\": \"Store Name\",\"columnProperty\": {}},{\"columnId\": \"Day(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Day of Week(Sale Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2f9bbcb2-e4b4-41d3-beeb-9e0ec762f9ea\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"b3485516-d200-4a20-997e-cbb86218eac6\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(Sale Date)\"]}}],\"seriesColors\": [{\"serieName\": \"arlington store #662\",\"color\": \"rgb(148,80,230)\"},{\"serieName\": \"chino hills store #533\",\"color\": \"rgb(178,130,250)\"},{\"serieName\": \"dayton store #846\",\"color\": \"rgb(126,61,199)\"},{\"serieName\": \"durham store #512\",\"color\": \"rgb(201,174,255)\"},{\"serieName\": \"east orange store #982\",\"color\": \"rgb(97,45,161)\"},{\"serieName\": \"fall river store #146\",\"color\": \"rgb(57,81,204)\"},{\"serieName\": \"fayetteville store #479\",\"color\": \"rgb(97,120,232)\"},{\"serieName\": \"folsom store #6\",\"color\": \"rgb(42,64,173)\"},{\"serieName\": \"houston store #437\",\"color\": \"rgb(140,157,245)\"},{\"serieName\": \"lauderhill store #203\",\"color\": \"rgb(23,39,145)\"},{\"serieName\": \"livonia store #650\",\"color\": \"rgb(50,149,230)\"},{\"serieName\": \"lynchburg store #898\",\"color\": \"rgb(88,174,245)\"},{\"serieName\": \"new orleans store #293\",\"color\": \"rgb(23,117,194)\"},{\"serieName\": \"plymouth store #448\",\"color\": \"rgb(133,200,255)\"},{\"serieName\": \"sacramento store #909\",\"color\": \"rgb(9,94,163)\"},{\"serieName\": \"santa monica store #121\",\"color\": \"rgb(26,197,219)\"},{\"serieName\": \"sioux falls store #49\",\"color\": \"rgb(103,217,235)\"},{\"serieName\": \"south bend store #263\",\"color\": \"rgb(10,167,181)\"},{\"serieName\": \"vacaville store #462\",\"color\": \"rgb(152,231,245)\"},{\"serieName\": \"waukesha store #314\",\"color\": \"rgb(9,143,151)\"},{\"serieName\": \"west covina store #34\",\"color\": \"rgb(70,194,123)\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: cba4d5d1-27e4-43c4-b126-a6470b65b8ca
+  - id: Viz_5
+    answer:
+      name: "Product Sales vs % Gross Margin, Last 30 Days"
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[% Gross Margin] [Sales] [Store Name] [Sale Date].'last 30 days' [% Gross Margin] > 0 [% Gross Margin] < 100"
+      answer_columns:
+      - name: '% Gross Margin'
+      - name: Store Name
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: '% Gross Margin'
+          headline_aggregation: SUM
+        - column_id: Store Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Sales
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Store Name
+        - '% Gross Margin'
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Store Name\",\"columnProperty\": {}},{\"columnId\": \"% Gross Margin\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}]}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: '% Gross Margin'
+          conditional_formatting:
+            rule:
+            - range:
+                min: 75.0
+                max: 0.0
+              color: "rgba(53, 204, 0, 1)"
+              plotAsBand: false
+            - range:
+                min: 0.0
+                max: 25.0
+              color: "rgba(214, 0, 0, 1)"
+              plotAsBand: false
+        - column_id: Store Name
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Total Sales
+          "y":
+          - '% Gross Margin'
+          category:
+          - Store Name
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"% Gross Margin\",\"columnProperty\": {\"conditionalFormatting\": {\"rows\": [{\"operator\": \"IS_BETWEEN\",\"rangeValues\": {\"min\": 75.0,\"max\": 0.0},\"plotAsBand\": false,\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"rgba(53, 204, 0, 1)\"}},{\"operator\": \"IS_BETWEEN\",\"rangeValues\": {\"min\": 0.0,\"max\": 25.0},\"plotAsBand\": false,\"backgroundFormatType\": \"SOLID\",\"solidBackgroundAttrs\": {\"color\": \"rgba(214, 0, 0, 1)\"}}]}}}],\"axisProperties\": [{\"id\": \"0b4bb12d-f660-40fc-aaf0-b65d283be9b5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"% Gross Margin\"],\"isOpposite\": false}},{\"id\": \"a2c492b5-d183-41a1-9bb4-b9a2caf10b00\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Sales\"]}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 56009e10-1f2e-4235-a739-1eea96f96068
+  - id: Viz_6
+    viz_guid: 4fba741a-bc6e-4b0c-bb43-6b9436931542
+    note_tile:
+      html_parsed_string: |-
+        <h2 class="theme-module__editor-h2"><br></h2><span style="position: relative;
+            width: 100%;
+            padding-bottom: 56%;
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 8px;"><iframe data-src-link="https://fast.wistia.net/embed/iframe/5vi5t4c1du?seo=false&amp;videoFoam=true" src="https://fast.wistia.net/embed/iframe/5vi5t4c1du?seo=false&amp;videoFoam=true" frameborder="0" title="Embedded Page" allow="fullscreen" allowfullscreen="allowfullscreen" style="position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+             margin-bottom: 8px;"></iframe></span><h2 class="theme-module__editor-h2" dir="ltr"><span style="white-space: pre-wrap;">Watch the video above to learn about working with liveboards.</span></h2><h1 class="theme-module__editor-h1" dir="ltr"><br></h1><div class="pinboard-note-tile-module__noteTileBg editor-module__bgNode" style="background-color: revert-layer;"></div>
+  - id: Viz_7
+    answer:
+      name: "Monthly Sales, Last 6 months"
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Sale Date].monthly [Sale Date].'last 6 months'"
+      answer_columns:
+      - name: Month(Sale Date)
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Month(Sale Date)
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Month(Sale Date)
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Sale Date)
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Month(Sale Date)
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Month(Sale Date)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"1b2fa3c5-feb9-4979-ad30-b9359f9e8f49\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"2f97ea3b-0daa-4b0b-bab0-774b5f851df2\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: "Monthly Sales, Last 6 months"
+    viz_guid: b6b17fb7-5d34-4ab4-965b-462e1c51b3d2
+  - id: Viz_8
+    answer:
+      name: Weekly Sales
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Sale Date].weekly [Store State].colorado"
+      answer_columns:
+      - name: Total Sales
+      - name: Week(Sale Date)
+      table:
+        table_columns:
+        - column_id: Total Sales
+          show_headline: false
+        - column_id: Week(Sale Date)
+          show_headline: false
+        ordered_column_ids:
+        - Week(Sale Date)
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Sales
+        - column_id: Week(Sale Date)
+        axis_configs:
+        - x:
+          - Week(Sale Date)
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Week(Sale Date)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"5959d93c-1133-4fc6-bd73-61c8178d3e10\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"26d51090-924c-416b-8b3e-9538ea529e1e\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Week(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Weekly Sales
+    viz_guid: f4b0c1a8-7364-4dea-8056-5bf597b6a071
+  - id: Viz_9
+    answer:
+      name: Yearly Sales
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Sale Date].yearly"
+      answer_columns:
+      - name: Total Sales
+      - name: Year(Sale Date)
+      table:
+        table_columns:
+        - column_id: Total Sales
+          show_headline: false
+        - column_id: Year(Sale Date)
+          show_headline: false
+        ordered_column_ids:
+        - Year(Sale Date)
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Sales
+        - column_id: Year(Sale Date)
+        axis_configs:
+        - x:
+          - Year(Sale Date)
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Year(Sale Date)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"73b22a0d-a481-4c92-aac0-7ecef1ba46b9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"ebea73ac-bf67-4f78-af1c-a89ed6acbf2c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Year(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+      dynamic_name: Yearly Sales
+    viz_guid: 7fd53933-d5a6-467c-b19c-d94eb42c4648
+  - id: Viz_10
+    viz_guid: a1306515-5029-483d-807a-8238d96e86d8
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\"><br></h2><p class=\"theme-module__editor-paragraph\"><img id=\"c0adab50-75a3-47b0-bc38-5f95eba9d375\" alt=\"UPLOAD\" style=\"height: inherit; width: 100%; max-width: 100%;\"></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(225, 247, 250);\"></div>"
+  - id: Viz_11
+    viz_guid: 342b1379-cd0e-4436-ba9e-1f928b301a6e
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Utilize this Support tab to gain knowledge on how to interact with a liveboard.  Watch the </span><span style=\"color: rgb(140, 98, 245); white-space: pre-wrap;\">video</span><span style=\"white-space: pre-wrap;\"> below to grow your liveboard manipulation skills.  As you hover over the video you will see a pop up set of video controls over the bottom section.  Click on the timeline to jump to a particular section of the video or click on the full screen icon to make it full screen.</span><br><br><span style=\"white-space: pre-wrap;\">Click on the </span><span style=\"color: rgb(240, 65, 82); white-space: pre-wrap;\">KPIs tab</span><span style=\"white-space: pre-wrap;\"> to view a breakdown of the key performance indicators we track in our business.  Click on the </span><span style=\"color: rgb(240, 65, 82); white-space: pre-wrap;\">Product Sales</span><span style=\"white-space: pre-wrap;\"> tab to see how our products are selling.</span></h2><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
+  - id: Viz_12
+    answer:
+      name: Department Sales by Category (Trellis)
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Department] [Category]"
+      answer_columns:
+      - name: Category
+      - name: Department
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Category
+          show_headline: false
+        - column_id: Department
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Department
+        - Category
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: ADVANCED_COLUMN
+        chart_columns:
+        - column_id: Category
+        - column_id: Department
+        - column_id: Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e4b92e76-fd44-45fa-8c59-7c79df612263\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"89615fda-006c-4a5c-ac81-770fa765c5b0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\",\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#2E75F0\"},{\"serieName\": \"bakery\",\"color\": \"rgba(46,117,240,0.5)\"},{\"serieName\": \"canned goods\",\"color\": \"rgba(72,209,224,0.5)\"},{\"serieName\": \"dairy\",\"color\": \"rgba(252,200,56,0.5)\"},{\"serieName\": \"frozen goods\",\"color\": \"rgba(6,191,127,0.5)\"},{\"serieName\": \"meat\",\"color\": \"rgba(140,98,245,0.5)\"},{\"serieName\": \"produce\",\"color\": \"rgba(255,129,66,0.5)\"},{\"serieName\": \"seafood\",\"color\": \"rgba(171,199,249,0.5)\"},{\"serieName\": \"cleaning supplies\",\"color\": \"rgba(181,236,242,0.5)\"},{\"serieName\": \"liquor\",\"color\": \"rgba(253,233,175,0.5)\"},{\"serieName\": \"gifts\",\"color\": \"rgba(155,229,203,0.5)\"},{\"serieName\": \"photography\",\"color\": \"rgba(209,192,251,0.5)\"},{\"serieName\": \"medical\",\"color\": \"rgba(255,204,179,0.5)\"},{\"serieName\": \"pharmacy\",\"color\": \"rgba(35,89,182,0.5)\"}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Department
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Total Sales
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            axes:
+            - type: FLAT
+              column: Category
+            mode: AXIS_DRIVEN
+        custom_visual_props: "{\"clientState\":\"\",\"axisVisualProps\":{\"Department\":{\"name-color\":\"#5f5f5f\",\"label-color\":\"#858585\"},\"Total Sales\":{\"name-color\":\"#5f5f5f\",\"label-color\":\"#858585\"},\"45ac95c1-60d4-5dd1-b2d1-0e508c90618e\":{\"name-color\":\"#5f5f5f\",\"label-color\":\"#858585\"},\"4a8962c3-e2db-52de-bfc7-2bbe5ab2450d\":{\"axis-range\":{\"min\":0,\"max\":3000000},\"name-color\":\"#5f5f5f\",\"label-color\":\"#858585\"}},\"columnVisualProps\":{\"Department\":{\"column-sort\":{}},\"Measure names\":{},\"Measure values\":{},\"Category\":{},\"Total Sales\":{\"bar-size-auto\":true,\"bar-color\":\"#56D3A8\"}},\"displayVisualProps\":{\"display\":{\"fit-to-screen\":false},\"totals-summary\":{\"show-row-grand-totals\":false,\"show-column-grand-totals\":false,\"show-row-sub-totals\":false,\"show-column-sub-totals\":false,\"totals-position\":{}},\"trellis\":{\"trellis-shared-axis\":false,\"trellis-subplot-color\":false,\"trellis-title-show\":true,\"trellis-title-color\":\"#000000\",\"trellis-border-show\":false,\"trellis-border-color\":\"#000000\"}},\"dataLabelVisualProps\":{\"cartesian-data-labels\":{\"show-labels\":false},\"Total Sales\":{\"cartesian-data-labels\":{\"cartesian-data-labels-enable\":false,\"cartesian-data-labels-rotation\":\"Auto\"}}},\"legendVisualProps\":{\"legend\":{\"show-legend\":true,\"legend-position\":\"Top\"}},\"tooltipVisualProps\":{\"global-tooltip\":{\"tooltipBackground\":{\"backgroundColor\":\"#1d232f\",\"borderColor\":\"#1d232f\",\"backgroundOpacity\":\"100\"},\"tooltip-column-name\":{\"size\":\"12\",\"color\":\"#ffffff\",\"style\":[]},\"tooltip-column-value\":{\"size\":\"12\",\"color\":\"#ffffff\",\"style\":[]}}}}"
+      display_mode: CHART_MODE
+      dynamic_name: Department Sales by Category (Trellis)
+    viz_guid: 9dec815c-a1d8-4f6d-ac3e-24d99f393180
+  - id: Viz_13
+    answer:
+      name: "Department Sales (TY vs LY, Dual Axis)"
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Department] [Sale Date].'this year' vs [Sale Date].'last year'"
+      answer_columns:
+      - name: Department
+      - name: Sales(last year)
+      - name: Sales(this year)
+      - name: Sales(this year) as % of Sales(last year)
+      table:
+        table_columns:
+        - column_id: Department
+          show_headline: false
+        - column_id: Sales(last year)
+          show_headline: false
+        - column_id: Sales(this year)
+          show_headline: false
+        - column_id: Sales(this year) as % of Sales(last year)
+          show_headline: false
+        ordered_column_ids:
+        - Department
+        - Sales(last year)
+        - Sales(this year)
+        - Sales(this year) as % of Sales(last year)
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: ADVANCED_COLUMN
+        chart_columns:
+        - column_id: Department
+        - column_id: Sales(last year)
+        - column_id: Sales(this year)
+        - column_id: Sales(this year) as % of Sales(last year)
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Sales(last year)\",\"columnProperty\": {}},{\"columnId\": \"Sales(this year)\",\"columnProperty\": {}},{\"columnId\": \"Sales(this year) as % of Sales(last year)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"bf16e821-fb8e-4f5a-96f9-291e1cdf7786\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Sales(last year)\"],\"isOpposite\": false}},{\"id\": \"a99ea837-88a9-4423-a64c-8f10eeb15515\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Sales(this year)\"],\"isOpposite\": true}},{\"id\": \"bfc1657b-a58c-4893-9349-6fdf353d40ad\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"6345b7d9-94db-422b-ad79-8dd33927b334\",\"color\": \"#2E75F0\"},{\"serieName\": \"bakery\",\"color\": \"rgba(46,117,240,0.5)\"},{\"serieName\": \"canned goods\",\"color\": \"rgba(72,209,224,0.5)\"},{\"serieName\": \"dairy\",\"color\": \"rgba(252,200,56,0.5)\"},{\"serieName\": \"frozen goods\",\"color\": \"rgba(6,191,127,0.5)\"},{\"serieName\": \"meat\",\"color\": \"rgba(140,98,245,0.5)\"},{\"serieName\": \"produce\",\"color\": \"rgba(255,129,66,0.5)\"},{\"serieName\": \"seafood\",\"color\": \"rgba(171,199,249,0.5)\"},{\"serieName\": \"cleaning supplies\",\"color\": \"rgba(181,236,242,0.5)\"},{\"serieName\": \"liquor\",\"color\": \"rgba(253,233,175,0.5)\"},{\"serieName\": \"gifts\",\"color\": \"rgba(155,229,203,0.5)\"},{\"serieName\": \"photography\",\"color\": \"rgba(209,192,251,0.5)\"},{\"serieName\": \"medical\",\"color\": \"rgba(255,204,179,0.5)\"},{\"serieName\": \"pharmacy\",\"color\": \"rgba(35,89,182,0.5)\"}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Department
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: DUAL
+              primary:
+                type: MERGED
+                columns:
+                - Sales(last year)
+              secondary:
+                type: MERGED
+                columns:
+                - Sales(this year)
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+        custom_visual_props: "{\"clientState\":\"\",\"axisVisualProps\":{\"Department\":{\"name-color\":\"#5f5f5f\",\"label-color\":\"#858585\"},\"Sales(last year)\":{\"name-color\":\"#5f5f5f\",\"label-color\":\"#858585\"},\"Sales(this year)\":{\"axis-range\":{\"min\":0,\"max\":3000000},\"name-color\":\"#5f5f5f\",\"label-color\":\"#858585\"}},\"columnVisualProps\":{\"Department\":{\"column-sort\":{}},\"Measure names\":{},\"Measure values\":{},\"Sales(last year)\":{\"bar-size-auto\":true,\"bar-color\":\"#2E75F0\"},\"Sales(this year)\":{\"bar-size-auto\":true,\"bar-color\":\"#48D1E0\"},\"Sales(this year) as % of Sales(last year)\":{}},\"displayVisualProps\":{\"display\":{\"fit-to-screen\":false},\"totals-summary\":{\"show-row-grand-totals\":false,\"show-column-grand-totals\":false,\"show-row-sub-totals\":false,\"show-column-sub-totals\":false,\"totals-position\":{}},\"trellis\":{\"trellis-shared-axis\":false,\"trellis-title-show\":true,\"trellis-title-color\":\"#000000\",\"trellis-border-show\":false,\"trellis-border-color\":\"#000000\"}},\"dataLabelVisualProps\":{\"cartesian-data-labels\":{\"show-labels\":false},\"Sales(last year)\":{\"cartesian-data-labels\":{\"cartesian-data-labels-enable\":false}},\"Sales(this year)\":{\"cartesian-data-labels\":{\"cartesian-data-labels-enable\":false}}},\"legendVisualProps\":{\"legend\":{\"show-legend\":true,\"legend-position\":\"Top\"}},\"tooltipVisualProps\":{\"global-tooltip\":{\"tooltipBackground\":{\"backgroundColor\":\"#1d232f\",\"borderColor\":\"#1d232f\",\"backgroundOpacity\":\"100\"},\"tooltip-column-name\":{\"size\":\"12\",\"color\":\"#ffffff\",\"style\":[]},\"tooltip-column-value\":{\"size\":\"12\",\"color\":\"#ffffff\",\"style\":[]}}}}"
+      display_mode: CHART_MODE
+      dynamic_name: "Department Sales (TY vs LY, Dual Axis)"
+    viz_guid: 0a242a2f-9e19-4b98-9c7c-5d2ce7e53400
+  groups:
+  - id: Group_1
+    name: Sales KPIs
+    visualizations:
+    - Viz_1
+    - Viz_4
+    - Viz_3
+    - Viz_2
+    group_guid: 382a5509-3758-4078-a09b-3b904fa3c827
+  filters:
+  - column:
+    - Store State
+    oper: in
+    values:
+    - colorado
+    excluded_visualizations:
+    - Viz_5
+    - Viz_13
+    - Viz_12
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tabs:
+    - name: KPIs
+      description: ""
+      tiles:
+      - visualization_id: Group_1
+        x: 0
+        "y": 4
+        height: 13
+        width: 12
+      - visualization_id: Viz_7
+        x: 5
+        "y": 0
+        height: 4
+        width: 4
+      - visualization_id: Viz_8
+        x: 0
+        "y": 0
+        height: 4
+        width: 5
+      - visualization_id: Viz_9
+        x: 9
+        "y": 0
+        height: 4
+        width: 3
+      id: 8a351ee0-28c0-4c76-84bb-2c4b0c933262
+      group_layouts:
+      - id: Group_1
+        tiles:
+        - visualization_id: Viz_2
+          x: 0
+          "y": 4
+          height: 8
+          width: 6
+        - visualization_id: Viz_1
+          x: 6
+          "y": 0
+          height: 4
+          width: 6
+        - visualization_id: Viz_3
+          x: 6
+          "y": 4
+          height: 8
+          width: 6
+        - visualization_id: Viz_4
+          x: 0
+          "y": 0
+          height: 4
+          width: 6
+    - name: Product Sales
+      description: ""
+      tiles:
+      - visualization_id: Viz_5
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_12
+        x: 3
+        "y": 8
+        height: 4
+        width: 7
+      - visualization_id: Viz_13
+        x: 6
+        "y": 0
+        height: 8
+        width: 6
+      id: eb3b1f8b-2b72-4703-898e-e5dccf705ef9
+    - name: Support
+      description: ""
+      tiles:
+      - visualization_id: Viz_6
+        x: 5
+        "y": 2
+        height: 7
+        width: 6
+      - visualization_id: Viz_10
+        x: 0
+        "y": 0
+        height: 2
+        width: 3
+      - visualization_id: Viz_11
+        x: 3
+        "y": 0
+        height: 2
+        width: 9
+      id: 248d40c6-5210-4e13-ba6f-6fbf8e4477f8
+  ordered_chips:
+  - name: Store State
+    type: FILTER
+  views:
+  - view_guid: ff83855b-a667-43e7-978e-106e907e1912
+    name: California - LT
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: ff0a4d55-ca5b-4b75-9af6-29902750961b
+    name: Arizona only - Chris
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Arizona
+    is_public: false
+  - view_guid: fec10fad-0174-44bf-af9b-89ca6836de3e
+    name: State Sales Performance - California
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: fc82a927-8383-42db-b7f7-34be66c530ac
+    name: NewYork Performance - MRD
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - new york
+    is_public: false
+  - view_guid: fad2203d-abea-4f22-bc9d-aae2c70f5242
+    name: Arizona view
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Arizona
+    is_public: false
+  - view_guid: f85467e7-1363-4496-9787-922a5fae0f66
+    name: California View
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - colorado
+      - California
+    is_public: false
+  - view_guid: f5d39713-2187-40e5-b758-d4379c7c31ea
+    name: カルフォルニア View
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: f3a0afe0-d9cb-4719-b528-9f21d4c2fd60
+    name: California View - MB
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: f3412140-2d8d-42f3-bc12-071162de53de
+    name: California view - CT
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: f2748d54-e1e8-44b9-91cd-590859e9d801
+    name: CA view - PG
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: f19ff9d0-93bf-4e63-98ae-64ddf04ecfc4
+    name: California - FZ
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: ebaa12ff-29d1-4306-a0f4-29cf1217cef5
+    name: California View
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: ea960bbf-661b-4332-b783-010bf9efea84
+    name: save view
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Colorado
+    is_public: false
+  - view_guid: ea7d9368-4762-4f23-87b2-945b4c12af5b
+    name: California - YM
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: e80c7b8f-a47d-4f98-b613-323048cc1578
+    name: California view - BA
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: e32f087c-dce6-416b-944d-d80edca96474
+    name: California Data (SCJ)
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: de4210bb-6d82-40d4-91a6-78cf90b1d7e6
+    name: My　View
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - colorado
+      - Arizona
+    is_public: false
+  - view_guid: dc1a0211-c89d-4d46-98ff-8168c5599bc1
+    name: California data - DC
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - california
+    is_public: false
+  - view_guid: d85bd651-9ce3-452c-8b6b-a275c50b7525
+    name: california view - ac
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: d6f2bed6-7c26-49de-87d1-5218bb6e0de8
+    name: Booking CA View - ML
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: d6bcde15-42d2-472b-b0c6-3a45eec2d342
+    name: "eyyyy, lmao"
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: d5bbc8a9-b856-43d0-b803-687dbf5434d7
+    name: My View
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - colorado
+      - Arizona
+    is_public: false
+  - view_guid: d498cb08-f25a-4d6c-9825-e7b5df923f4e
+    name: "States: Florida & Arizona"
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - florida
+      - Arizona
+    is_public: false
+  - view_guid: d3fb41de-5c81-44f3-a409-8e2b99d65ab6
+    name: Harold view
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - colorado
+      - Indiana
+    is_public: false
+  - view_guid: d3dd76ef-0044-4101-9f31-ee6aa1b12880
+    name: California - VW
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: d04f39e4-8e05-489a-a2b9-63a4d0cbf472
+    name: California - SH
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: cfc82e41-a0cc-4adf-9c59-e548eb8124d3
+    name: California View
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: cee1e0c4-de98-43ea-b208-f324d1180ff5
+    name: California - ZSO
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: ce2a76be-7427-4866-b09b-d007b6f5b528
+    name: California data - LB
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: cad9a2ff-c6f0-48d3-b642-888d11489940
+    name: State Sales NY (TS)
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - New York
+    is_public: false
+  - view_guid: c97808db-ff5c-46e4-b601-03e6b26eee38
+    name: Ty's view
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - colorado
+      - Alabama
+    is_public: false
+  - view_guid: c8ad6ce1-be34-4880-8f0d-d5a26499e99e
+    name: mz view
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - colorado
+      - Alabama
+    is_public: false
+  - view_guid: c784a42a-d386-4e1d-b0a8-e35b29a037fd
+    name: California View - MGW
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: c754ee65-93dc-486c-bf79-fc96ca03dca0
+    name: California view - RTP
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: c47f65a1-a920-4e6b-811a-05fbc7e1bf9f
+    name: Texas - LG
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Texas
+    is_public: false
+  - view_guid: c32e09b5-f158-4d83-924c-db6510eb8600
+    name: California view
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: c227d56f-3629-4c35-9220-3da879d580aa
+    name: California view - clp
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: bd64e1b3-cc54-4cbe-b396-fc6340d22a59
+    name: My view
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - colorado
+      - Arizona
+    is_public: false
+  - view_guid: bd091380-de03-4f97-a59e-3c4915ad0fde
+    name: State = NY
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - New York
+    is_public: false
+  - view_guid: ba741a57-1e21-4822-b945-e40148897a66
+    name: State Sales Performance - New York - GN
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - New York
+    is_public: false
+  - view_guid: b2f0e0c3-e41a-4770-8c1f-cad25ee02e0f
+    name: 'NY '
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - new york
+    is_public: false
+  - view_guid: b1fe1103-068c-4fb0-8838-16ba88822033
+    name: "Booking California,Alabama HP"
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - alabama
+      - California
+    is_public: false
+  - view_guid: b1c6204b-a0b8-4798-8512-9a69166669ca
+    name: Booking CA View - JDS
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: ae79012f-4e29-4168-833e-32084ca897b7
+    name: CA - SN
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: ac5b66ba-51ac-4b80-9f82-fecee5f4e506
+    name: California Data - LRS
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: a85ddc0f-63bc-46bc-9631-76d6202d898c
+    name: State = NY
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - New York
+    is_public: false
+  - view_guid: a78dcc67-1511-478d-9259-8a0f0957ca7c
+    name: california view
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - colorado
+      - California
+    is_public: false
+  - view_guid: 9fc8ab4c-97c1-4241-bd33-a9bf176490f7
+    name: carifolnia view
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+    is_public: false
+  - view_guid: 9f5318ad-5a7f-4b3d-9228-95d6198d1dce
+    name: New York Performance - AYM
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - New York
+    is_public: false
+  - view_guid: 9c7e72da-8d77-4f41-be16-784266c25072
+    name: California - ES
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 9c4889bb-8f5e-476b-bbd9-42793788e90a
+    name: Vanessa's View
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - colorado
+      - California
+    is_public: false
+  - view_guid: 9c04fc7d-8a99-4c94-9556-e98f4dfa2532
+    name: booking-test
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - colorado
+    is_public: false
+  - view_guid: 97e69412-0eb4-4ccb-b671-0d1391f3c89d
+    name: ZJ
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Alabama
+    is_public: false
+  - view_guid: 964b8677-20a9-4a2b-bfa8-3b1c7b7a4e90
+    name: CA view (CH)
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 937da19d-a052-4645-981e-7e911d92ccfd
+    name: AG test
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 9358da6a-76fe-4f1b-a131-341fb16f9452
+    name: State = NY
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - New York
+    is_public: false
+  - view_guid: 90fffc48-4fa0-4ed9-8f78-c5a438ee93f9
+    name: BKNG CA View
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - california
+    is_public: false
+  - view_guid: 9089f110-f56e-4310-813d-e8490fefe21c
+    name: California - LG
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - california
+    is_public: false
+  - view_guid: 8e01005d-cd4d-47e1-9771-ab6d88c89895
+    name: aizona AR
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - colorado
+      - Arizona
+    is_public: false
+  - view_guid: 8c88e426-e70d-4d27-8492-b75104d04311
+    name: Alabama Store State
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Alabama
+    is_public: false
+  - view_guid: 8b035d46-d217-4aa8-8a0d-6c2dc808dd79
+    name: MyView
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - colorado
+      - Alabama
+    is_public: false
+  - view_guid: 87f42704-1cc3-4884-8993-902d8ae75fac
+    name: California View
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 85ff63df-86fc-49af-af7a-4cbf95f076c8
+    name: California RM View
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 7e6631ef-c4f5-42c5-826e-9f862a408665
+    name: View - Arizona
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Arizona
+    is_public: false
+  - view_guid: 7bf81ee2-5148-47d9-bb18-a332d2507f80
+    name: Alabama  - SH
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Alabama
+    is_public: false
+  - view_guid: 78fc2866-4f7b-4a2a-a872-ef3cc51ab047
+    name: California - NW
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 783e4496-f88d-42c8-88ff-9058527e8360
+    name: Carlifornia Liveboard - FJ
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Connecticut
+      - California
+    is_public: false
+  - view_guid: 775a7e11-dd5f-408a-907c-025e9d8098ef
+    name: Arizona View
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - colorado
+      - Arizona
+    is_public: false
+  - view_guid: 747d03bc-57be-41d9-938f-af47ceb7e183
+    name: Arkansas View - SLC
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Arkansas
+    is_public: false
+  - view_guid: 6f478a2a-9fb3-4d6a-9d22-ca944bfab523
+    name: Cali view LS
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 6e02d295-4321-4b59-a817-6cdeedc75009
+    name: kw
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Colorado
+    is_public: false
+  - view_guid: 6c5b4814-d36c-4480-87f4-a961d9dbc847
+    name: Alabama view
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Alabama
+    is_public: false
+  - view_guid: 684d5756-6282-493d-b33f-4a01abfb0912
+    name: California - LP
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 67aebe11-68a3-403d-95e7-ccb621e287ea
+    name: California - KP
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 64ef8a8b-7595-4096-a42a-ea978faac732
+    name: California - JDS
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 62b9f208-ca59-4d67-b122-23ecc1056ac2
+    name: No Alabama - Chris
+    view_filters:
+    - column:
+      - Store State
+      oper: not in
+      values:
+      - Alabama
+    is_public: false
+  - view_guid: 5d9ce6e9-b3c4-42b5-b99b-04434da07aad
+    name: CA-MD
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 588e839c-3224-4b68-b23a-d93a90b97924
+    name: California - AS
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 55a3ec44-ed18-4760-b546-30a2a87ed943
+    name: Booking CA View - CM
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 52ce3719-f805-457e-8489-73adfb3f9a95
+    name: California = AS
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 4fab4742-8161-4c79-b7f6-99bab9472f87
+    name: New York Performance - VKS
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - New York
+    is_public: false
+  - view_guid: 4d0bf32e-06ce-4cca-bc19-86f7d5b6a135
+    name: California View - JDS
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 46905e4a-b57d-4a56-b0b8-5a4a93fb7eba
+    name: Calfornia Data - CC
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 44a72a5c-62b2-45bb-8715-7ee424cb25f1
+    name: California - BT
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 41418c28-74e5-4076-828e-828592af407d
+    name: Texas View
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Texas
+    is_public: false
+  - view_guid: 409e2311-2e7f-4423-b393-bf7aa08bbf3b
+    name: California View - SB
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 403ef478-e283-4994-87dc-083d159cddce
+    name: California Data PD
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 3a50729d-b6a4-48dd-b137-90c99a68565f
+    name: colorado
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - colorado
+      - California
+    is_public: false
+  - view_guid: 39c045fa-c7b4-4067-8bb2-f88f82bf45c8
+    name: california view
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 359edfa9-7d6c-4fed-b997-55c0631f3e93
+    name: California - JDS
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 3387ca79-fbfc-4ce4-ac7e-026535a5e757
+    name: AG test 2
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Alabama
+      - Arizona
+      - Colorado
+      - Connecticut
+    is_public: false
+  - view_guid: 33277fa2-08a7-48d7-9976-f742ddda0935
+    name: California View - SMH
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 30a363e1-c1f0-435c-a448-8c90ce53692e
+    name: California
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 301a3c2a-b638-48df-9f7b-13ada5a41bc4
+    name: State Sales Performance - Arizona
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Arizona
+    is_public: false
+  - view_guid: 2d35c1df-ac4a-4510-a113-ab11b2993ffd
+    name: booking california -FS
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 2ae663ef-0aae-4a5f-b66c-f498838da42b
+    name: State = NY
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - New York
+    is_public: false
+  - view_guid: 294d8eca-df52-40b3-8990-34a51235cf32
+    name: save_view_test
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Arizona
+    is_public: false
+  - view_guid: 2925a778-3288-4e48-8ead-ee3ee2bacabc
+    name: California view - LC
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 2662cf0b-d843-4bdd-a81b-6f4acdfe48db
+    name: 'SK view California '
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 1f0db53c-f97e-4db9-bcc2-e90b542367dd
+    name: California - PI
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 1af51f3d-0394-428a-af76-a70b1c8318ae
+    name: View1 - Ajay
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - colorado
+    is_public: false
+  - view_guid: 188225c8-f461-4dc2-a870-5ec826571637
+    name: State Sales Performance - Colorado
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Colorado
+    is_public: false
+  - view_guid: 178b191b-810c-462d-b144-13be8a9dbb94
+    name: California View - tan
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 152882cc-2c1b-4f7b-ab5d-724060bc9028
+    name: Booking California  View - YN
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  - view_guid: 146a98e9-a0a5-4cb0-af9a-fd2821bd9e53
+    name: SK view Florida
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Florida
+    is_public: false
+  - view_guid: 1292386c-667b-4649-8249-a471bb3c791f
+    name: New York Performance - SP
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - New York
+    is_public: false
+  - view_guid: 06d96077-2172-4df0-94a5-3b5d3bc48bb5
+    name: Calfornia view
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - colorado
+      - California
+    is_public: false
+  - view_guid: 066a854c-6cb8-48b0-81e1-a4378245b5f0
+    name: California View - CWL
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
+  style:
+    style_properties:
+    - name: lb_border_type
+      value: CURVED
+    - name: lb_brand_color
+      value: LBC_D
+    - name: hide_group_title
+      value: "false"
+    - name: hide_group_description
+      value: "false"
+    - name: hide_group_tile_description
+      value: "false"
+    - name: hide_tile_description
+      value: "false"
+    - name: kpi_hero_font_size
+      value: M

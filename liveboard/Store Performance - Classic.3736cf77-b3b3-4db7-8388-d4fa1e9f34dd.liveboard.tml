@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 01285693-3db6-4f2d-89da-08b8f5aa077a
-    name: Food and South Age 50-64
+  - view_guid: 8d45e11b-9a0c-4ca8-a12a-74b3b093280d
+    name: Food East 50-64yo
     view_filters:
     - column:
       - Category
@@ -332,7 +332,7 @@ liveboard:
       - Store Region
       oper: in
       values:
-      - South
+      - East
     - column:
       - Age Group
       oper: in

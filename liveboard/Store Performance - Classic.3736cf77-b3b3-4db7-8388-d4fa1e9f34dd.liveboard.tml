@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: f898ec6d-4096-46e8-9142-71c7d259b799
-    name: South
+  - view_guid: edb89fbd-84f2-4b48-9e54-8735309510f4
+    name: Food 50-64yo
     view_filters:
     - column:
       - Category
@@ -339,8 +339,8 @@ liveboard:
       values:
       - c) 50-64
     is_public: false
-  - view_guid: 50405c01-eddf-46e2-883a-8e9c82a16134
-    name: Food East 50-64yo - JP
+  - view_guid: 4889b4e5-bf9b-4b7f-9ab6-61505438fdda
+    name: Food East 50-64yo
     view_filters:
     - column:
       - Category

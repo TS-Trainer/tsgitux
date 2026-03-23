@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 50405c01-eddf-46e2-883a-8e9c82a16134
-    name: Food East 50-64yo - JP
+  - view_guid: ac4032b8-387c-48c0-bf84-046f931c1fb7
+    name: Food for Kids
     view_filters:
     - column:
       - Category
@@ -332,12 +332,12 @@ liveboard:
       - Store Region
       oper: in
       values:
-      - East
+      - west
     - column:
       - Age Group
       oper: in
       values:
-      - c) 50-64
+      - a) 18-29
     is_public: false
   style:
     style_properties:

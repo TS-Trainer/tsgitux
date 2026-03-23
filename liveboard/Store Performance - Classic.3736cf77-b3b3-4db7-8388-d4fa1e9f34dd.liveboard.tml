@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: b3c5cf90-3dd2-486f-8a2e-d2d67ec479e1
-    name: Food East 50-64 Age Group
+  - view_guid: c0409437-433d-4f9b-94b2-5963c0cc75ae
+    name: TestVBiewSouthFood
     view_filters:
     - column:
       - Category
@@ -332,25 +332,7 @@ liveboard:
       - Store Region
       oper: in
       values:
-      - east
-    - column:
-      - Age Group
-      oper: in
-      values:
-      - c) 50-64
-    is_public: false
-  - view_guid: 6dddc639-c485-4441-b00a-4721d400b151
-    name: Food South 50 - 64 Age Group
-    view_filters:
-    - column:
-      - Category
-      oper: in
-      values:
-      - Food
-    - column:
-      - Store Region
-      oper: in
-      values:
+      - west
       - South
     - column:
       - Age Group

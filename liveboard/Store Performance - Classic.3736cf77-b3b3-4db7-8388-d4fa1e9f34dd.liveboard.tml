@@ -320,17 +320,19 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 8910038a-c6e0-4fd1-9410-9f811d930013
-    name: Karen Test View
+  - view_guid: 541f6788-7fce-48d4-9b34-eb3f1f543778
+    name: Food East 50-64 Age Group View
     view_filters:
     - column:
       - Category
-      oper: =
+      oper: in
+      values:
+      - Food
     - column:
       - Store Region
       oper: in
       values:
-      - East
+      - South
     - column:
       - Age Group
       oper: in

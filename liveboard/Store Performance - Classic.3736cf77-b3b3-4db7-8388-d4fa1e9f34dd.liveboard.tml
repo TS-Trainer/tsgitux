@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 60cc9185-4507-45cf-9ef7-174e3379caee
-    name: food east 18 to 29 ages view
+  - view_guid: 8910038a-c6e0-4fd1-9410-9f811d930013
+    name: Karen Test View
     view_filters:
     - column:
       - Category
@@ -335,7 +335,7 @@ liveboard:
       - Age Group
       oper: in
       values:
-      - a) 18-29
+      - c) 50-64
     is_public: false
   style:
     style_properties:

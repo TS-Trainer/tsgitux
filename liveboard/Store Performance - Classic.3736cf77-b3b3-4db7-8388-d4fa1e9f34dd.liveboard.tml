@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: ac4032b8-387c-48c0-bf84-046f931c1fb7
-    name: Food for Kids
+  - view_guid: f226f5da-b933-42a7-bbbe-cb5824215ce7
+    name: South
     view_filters:
     - column:
       - Category
@@ -332,13 +332,31 @@ liveboard:
       - Store Region
       oper: in
       values:
-      - west
+      - South
+    - column:
+      - Age Group
+      oper: in
+      values:
+      - c) 50-64
+    is_public: false
+  - view_guid: 8d45e11b-9a0c-4ca8-a12a-74b3b093280d
+    name: Food East 50-64yo
+    view_filters:
+    - column:
+      - Category
+      oper: in
+      values:
+      - Food
+    - column:
+      - Store Region
+      oper: in
+      values:
       - East
     - column:
       - Age Group
       oper: in
       values:
-      - a) 18-29
+      - c) 50-64
     is_public: false
   style:
     style_properties:

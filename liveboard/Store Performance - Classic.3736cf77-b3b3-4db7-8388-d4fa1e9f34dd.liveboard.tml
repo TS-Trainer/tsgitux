@@ -320,43 +320,30 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: edb89fbd-84f2-4b48-9e54-8735309510f4
-    name: Food 50-64yo
+  - view_guid: 15228522-a33a-4b8f-987a-bdc96ad3a5cd
+    name: My view 1
     view_filters:
     - column:
       - Category
       oper: in
       values:
       - Food
+      - Medical
+      - Misc
+      - Non-food
     - column:
       - Store Region
       oper: in
       values:
-      - South
+      - south
     - column:
       - Age Group
       oper: in
       values:
       - c) 50-64
-    is_public: false
-  - view_guid: 4889b4e5-bf9b-4b7f-9ab6-61505438fdda
-    name: Food East 50-64yo
-    view_filters:
-    - column:
-      - Category
-      oper: in
-      values:
-      - Food
-    - column:
-      - Store Region
-      oper: in
-      values:
-      - East
-    - column:
-      - Age Group
-      oper: in
-      values:
-      - c) 50-64
+      - a) 18-29
+      - b) 30-49
+      - d) 65+
     is_public: false
   style:
     style_properties:

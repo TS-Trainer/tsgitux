@@ -321,7 +321,7 @@ liveboard:
     type: FILTER
   views:
   - view_guid: 07275a1d-7b21-45fc-8214-860e3e3bf044
-    name: East regin food
+    name: East region food
     view_filters:
     - column:
       - Category

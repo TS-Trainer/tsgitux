@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 69f9e39e-eb6a-4373-b153-168948d8de15
-    name: East Region Food
+  - view_guid: f7be355d-add6-4058-83f3-3bc333585640
+    name: GLH East Region Food
     view_filters:
     - column:
       - Category

@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: dfafd11b-bbfa-4413-85cc-b6b2cb6522aa
-    name: East Region Food
+  - view_guid: 8299003c-64ac-4951-87ef-261691c4d50f
+    name: PHL East Region Food
     view_filters:
     - column:
       - Category

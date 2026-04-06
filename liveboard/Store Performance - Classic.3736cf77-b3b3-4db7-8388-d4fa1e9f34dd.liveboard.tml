@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: a171d85b-df56-4d1c-a6bc-145a3b70cef1
-    name: East Food
+  - view_guid: d673998f-2301-41c3-9e17-e83d0fe15cbc
+    name: JMB East Region Food
     view_filters:
     - column:
       - Category

@@ -1,0 +1,46 @@
+guid: 3294e9c2-c174-4f51-a775-436836a4ac46
+obj_id: CustomerNameset-3294e9c2
+cohort:
+  name: Customer Name set
+  answer:
+    tables:
+    - id: Retail Sales - Classic
+      name: Retail Sales - Classic
+      fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+    formulas:
+    - id: formula_MyTop50CustomersNP
+      name: MyTop50CustomersNP
+      expr: '''MyTop50CustomersNP'''
+      was_auto_generated: false
+    search_query: "[Sales] [Customer Name] [formula_MyTop50CustomersNP]"
+    answer_columns:
+    - name: Customer Name
+    - name: MyTop50CustomersNP
+    - name: Total Sales
+    table:
+      table_columns:
+      - column_id: Customer Name
+        show_headline: false
+      - column_id: MyTop50CustomersNP
+        show_headline: false
+      - column_id: Total Sales
+        show_headline: false
+      ordered_column_ids:
+      - Customer Name
+      - MyTop50CustomersNP
+      - Total Sales
+      client_state: ""
+    display_mode: TABLE_MODE
+  owner: user019
+  worksheet:
+    id: Retail Sales - Classic
+    name: Retail Sales - Classic
+    fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+  config:
+    cohort_type: ADVANCED
+    anchor_column_id: Customer Name
+    return_column_id: Total Sales
+    cohort_grouping_type: COLUMN_BASED
+    hide_excluded_query_values: false
+    pass_thru_filter:
+      accept_all: true

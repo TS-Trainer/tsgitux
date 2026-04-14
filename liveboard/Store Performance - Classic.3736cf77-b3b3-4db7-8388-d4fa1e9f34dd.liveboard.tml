@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 9a49b8c3-9690-4c41-82f3-e68f64eb65c9
-    name: East Region - Fodd
+  - view_guid: d5d7b322-b6c5-4c6c-a6e5-600c4fe237fc
+    name: East Region Food
     view_filters:
     - column:
       - Category

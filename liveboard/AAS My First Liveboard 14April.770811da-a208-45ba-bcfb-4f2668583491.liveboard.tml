@@ -354,42 +354,6 @@ liveboard:
     viz_guid: 260e2c1a-2b8e-4b87-bde3-36413c4d52b2
   - id: Viz_8
     answer:
-      name: Total Deal Size by Vendor State
-      tables:
-      - id: Vendor Reporting
-        name: Vendor Reporting
-        fqn: 13169500-db07-4d68-980b-1d81ec2c45bd
-      search_query: "[Deal Size] [Vendor State]"
-      answer_columns:
-      - name: Total Deal Size
-      - name: Vendor State
-      table:
-        table_columns:
-        - column_id: Total Deal Size
-          show_headline: false
-        - column_id: Vendor State
-          show_headline: false
-        ordered_column_ids:
-        - Vendor State
-        - Total Deal Size
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: GEO_AREA
-        chart_columns:
-        - column_id: Total Deal Size
-        - column_id: Vendor State
-        axis_configs:
-        - x:
-          - Vendor State
-          "y":
-          - Total Deal Size
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Vendor State\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Deal Size\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"bdf1f7ac-ab87-4e84-938e-118c08776eae\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"43e6445a-c1e5-49a1-8b48-3cee2bc390cc\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"colorMap\": [{\"serieName\": \"Vendor State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
-      display_mode: CHART_MODE
-    viz_guid: 051723c5-9828-4ed0-b436-b6efbd0bf14a
-  - id: Viz_9
-    answer:
       name: Total Sales by Store State
       tables:
       - id: Retail Sales - Classic
@@ -434,8 +398,7 @@ liveboard:
     group_guid: bcfc5a17-0594-42e9-bfa7-92fd9e475e37
   filters:
   - column:
-    - Retail Sales - Classic::Store Region
-    - Vendor Reporting::Vendor Region
+    - Store Region
     oper: in
     values:
     - east
@@ -443,7 +406,7 @@ liveboard:
     is_single_value: false
     display_name: ""
   - column:
-    - Retail Sales - Classic::Department
+    - Department
     oper: in
     values:
     - Bakery
@@ -466,12 +429,12 @@ liveboard:
     tiles:
     - visualization_id: Viz_2
       x: 0
-      "y": 8
+      "y": 4
       height: 4
       width: 6
     - visualization_id: Viz_3
       x: 0
-      "y": 12
+      "y": 8
       height: 6
       width: 6
     - visualization_id: Viz_6
@@ -490,11 +453,10 @@ liveboard:
       height: 4
       width: 12
     - visualization_id: Viz_8
-      x: 0
-      "y": 4
-      height: 4
+      x: 6
+      "y": 14
+      height: 8
       width: 6
-    - visualization_id: Viz_9
     group_layouts:
     - id: Group_1
       tiles:
@@ -514,21 +476,21 @@ liveboard:
         height: 4
         width: 3
   ordered_chips:
-  - name: Retail Sales - Classic::Store Region
+  - name: Store Region
     type: FILTER
-  - name: Retail Sales - Classic::Department
+  - name: Department
     type: FILTER
   views:
   - view_guid: ed219c55-8949-4a5a-953a-6cb7c5cfa89c
     name: WEST REGION VIEW
     view_filters:
     - column:
-      - Retail Sales - Classic::Store Region
+      - Store Region
       oper: in
       values:
       - West
     - column:
-      - Retail Sales - Classic::Department
+      - Department
       oper: in
       values:
       - Bakery
@@ -549,12 +511,12 @@ liveboard:
     name: EAST REGION VIEW
     view_filters:
     - column:
-      - Retail Sales - Classic::Store Region
+      - Store Region
       oper: in
       values:
       - East
     - column:
-      - Retail Sales - Classic::Department
+      - Department
       oper: in
       values:
       - Bakery

@@ -51,52 +51,6 @@ liveboard:
     viz_guid: ac1a20be-e341-42b4-94b0-4842271422a3
   - id: Viz_2
     answer:
-      name: Department Sales Column Chart AAS
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Department]"
-      answer_columns:
-      - name: Department
-      - name: Total Sales
-        format:
-          category: NUMBER
-          numberFormatConfig:
-            unit: THOUSANDS
-            decimals: 0.0
-            negativeValueFormat: PREFIX_DASH
-            toSeparateThousands: true
-            removeTrailingZeroes: false
-          isCategoryEditable: true
-      table:
-        table_columns:
-        - column_id: Department
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Department
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: COLUMN
-        chart_columns:
-        - column_id: Department
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Department
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": true,\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"stackedAsPercentFormat\": {\"category\": \"PERCENTAGE\",\"percentageFormatConfig\": {\"decimals\": 2.0,\"removeTrailingZeroes\": false},\"isCategoryEditable\": false},\"customProps\": \"{\\\"tileType\\\":null,\\\"advancedProperties\\\":{\\\"tooltip\\\":{\\\"enabled\\\":true,\\\"borderWidth\\\":\\\"1\\\",\\\"opacity\\\":\\\"\\\",\\\"label\\\":{},\\\"value\\\":{}},\\\"regression\\\":{\\\"lineWidth\\\":\\\"\\\"},\\\"gridlines\\\":{\\\"xAxis\\\":{},\\\"yAxis\\\":{}},\\\"answerLevelSettings\\\":{\\\"chart\\\":{\\\"backgroundStyle\\\":null},\\\"plotArea\\\":{\\\"backgroundStyle\\\":null},\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"\\\",\\\"connectingLines\\\":false},\\\"stackLabelStyles\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{}}},\\\"showLabel\\\":true,\\\"showComparison\\\":true,\\\"showSparkline\\\":true,\\\"showAnalyseChangeCta\\\":true,\\\"showAnomalies\\\":null,\\\"customCompare\\\":\\\"PREV_AVAILABLE\\\"}\",\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true,\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"#fee9af\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"dataLabels\": true,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"dataLabels\\\":{\\\"align\\\":\\\"center\\\",\\\"backgroundColor\\\":\\\"\\\",\\\"borderColor\\\":\\\"\\\",\\\"borderWidth\\\":\\\"1\\\",\\\"filter\\\":null,\\\"maxCharacters\\\":\\\"\\\",\\\"style\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null}},\\\"enableMarkers\\\":null,\\\"lineStyle\\\":null,\\\"markerStyle\\\":null}}\",\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"20706bcb-ac37-4961-bf81-9e7219b33ad6\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"name\": \"Total Sales Amount\",\"isOpposite\": false,\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":true,\\\"linkedTo\\\":{\\\"type\\\":\\\"AXIS\\\",\\\"id\\\":\\\"3913f5d6-9784-494b-9d5c-cf527977e01a\\\",\\\"key\\\":\\\"nameTextStyle\\\"},\\\"boldFontWeight\\\":true,\\\"color\\\":\\\"#F04152\\\",\\\"fontSize\\\":\\\"\\\",\\\"isAxisNameVisible\\\":true,\\\"italicFontStyle\\\":false,\\\"underlineTextDecoration\\\":false}},\\\"labels\\\":{\\\"isLinked\\\":true,\\\"linkedTo\\\":{\\\"type\\\":\\\"AXIS\\\",\\\"id\\\":\\\"3913f5d6-9784-494b-9d5c-cf527977e01a\\\",\\\"key\\\":\\\"labelTextStyle\\\"},\\\"boldFontWeight\\\":false,\\\"color\\\":\\\"#2E75F0\\\",\\\"enabled\\\":true,\\\"fontSize\\\":\\\"\\\",\\\"italicFontStyle\\\":false,\\\"maxCharacters\\\":\\\"\\\",\\\"underlineTextDecoration\\\":false,\\\"wrap\\\":false},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\",\"dynamicTitle\": \"Total Sales Amount\"}},{\"id\": \"3913f5d6-9784-494b-9d5c-cf527977e01a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"],\"name\": \"Department Name\",\"customProps\": \"{\\\"advancedProperties\\\":{\\\"axisSettings\\\":{\\\"visible\\\":true,\\\"axisName\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null,\\\"boldFontWeight\\\":true,\\\"color\\\":\\\"#F04152\\\",\\\"fontSize\\\":\\\"\\\",\\\"isAxisNameVisible\\\":true,\\\"italicFontStyle\\\":false,\\\"underlineTextDecoration\\\":false}},\\\"labels\\\":{\\\"isLinked\\\":false,\\\"linkedTo\\\":null,\\\"boldFontWeight\\\":false,\\\"color\\\":\\\"#2E75F0\\\",\\\"enabled\\\":true,\\\"fontSize\\\":\\\"\\\",\\\"italicFontStyle\\\":false,\\\"maxCharacters\\\":\\\"\\\",\\\"underlineTextDecoration\\\":false,\\\"wrap\\\":false},\\\"ticks\\\":{\\\"showTicks\\\":false,\\\"tickWidth\\\":\\\"1\\\",\\\"tickLength\\\":\\\"5\\\",\\\"tickColor\\\":\\\"#5E5E5E\\\"}}}\",\"dynamicTitle\": \"Department Name\"}}],\"seriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#FFA97E\"}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#06BF7F\"}]}"
-      display_mode: CHART_MODE
-      dynamic_name: Department Sales Column Chart AAS
-    viz_guid: 70035f05-e2fe-4470-a192-2aa019feb673
-  - id: Viz_3
-    answer:
       name: Pivot Table AAS
       tables:
       - id: Retail Sales - Classic
@@ -159,7 +113,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Pivot Table AAS
     viz_guid: ceb29d2b-5b3a-424d-ac59-b5c2d7b8e3b8
-  - id: Viz_4
+  - id: Viz_3
     answer:
       name: Stacked Column Chart AAS
       tables:
@@ -203,7 +157,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Stacked Column Chart AAS
     viz_guid: 828f3814-9182-41cb-8835-0d5c9e64008a
-  - id: Viz_5
+  - id: Viz_4
     answer:
       name: Donut Chart AAS
       tables:
@@ -246,7 +200,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Donut Chart AAS
     viz_guid: 687d6a8b-1a82-4143-8695-dcf7497abfe2
-  - id: Viz_6
+  - id: Viz_5
     answer:
       name: Multi-Colored Column Chart AAS
       tables:
@@ -299,7 +253,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Multi-Colored Column Chart AAS
     viz_guid: 0a600700-0ca9-4327-a222-90fd790435be
-  - id: Viz_7
+  - id: Viz_6
     answer:
       name: Multi-Colored Column Chart AAS
       tables:
@@ -352,7 +306,7 @@ liveboard:
       display_mode: TABLE_MODE
       dynamic_name: Multi-Colored Column Chart AAS
     viz_guid: 260e2c1a-2b8e-4b87-bde3-36413c4d52b2
-  - id: Viz_8
+  - id: Viz_7
     answer:
       name: Total Sales by Store State
       tables:
@@ -393,8 +347,8 @@ liveboard:
     name: Important trackers for the present year
     visualizations:
     - Viz_1
-    - Viz_5
     - Viz_4
+    - Viz_3
     group_guid: bcfc5a17-0594-42e9-bfa7-92fd9e475e37
   filters:
   - column:
@@ -430,19 +384,14 @@ liveboard:
     - visualization_id: Viz_2
       x: 0
       "y": 4
-      height: 4
-      width: 6
-    - visualization_id: Viz_3
-      x: 0
-      "y": 8
       height: 6
       width: 6
-    - visualization_id: Viz_6
+    - visualization_id: Viz_5
       x: 6
       "y": 4
       height: 4
       width: 6
-    - visualization_id: Viz_7
+    - visualization_id: Viz_6
       x: 6
       "y": 8
       height: 6
@@ -452,7 +401,7 @@ liveboard:
       "y": 0
       height: 4
       width: 12
-    - visualization_id: Viz_8
+    - visualization_id: Viz_7
       x: 6
       "y": 14
       height: 8
@@ -465,12 +414,12 @@ liveboard:
         "y": 0
         height: 4
         width: 3
-      - visualization_id: Viz_4
+      - visualization_id: Viz_3
         x: 6
         "y": 0
         height: 4
         width: 6
-      - visualization_id: Viz_5
+      - visualization_id: Viz_4
         x: 3
         "y": 0
         height: 4

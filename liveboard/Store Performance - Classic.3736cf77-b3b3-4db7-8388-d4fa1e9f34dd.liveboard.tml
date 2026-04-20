@@ -320,27 +320,27 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: ce293f64-eaba-41b3-a926-dcb2f0a0eeb0
-    name: East Region Food
+  - view_guid: f49a7d6a-a660-44ea-98d2-816427382f7f
+    name: Youth
     view_filters:
     - column:
       - Category
       oper: in
-      values:
-      - Food
     - column:
       - Store Region
       oper: in
       values:
-      - East
+      - east
+      - south
+      - "{null}"
+      - Midwest
+      - Southwest
+      - West
     - column:
       - Age Group
       oper: in
       values:
-      - c) 50-64
       - a) 18-29
-      - b) 30-49
-      - d) 65+
     is_public: false
   style:
     style_properties:

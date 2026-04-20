@@ -320,18 +320,17 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 53c53f4d-f7c9-49f5-9abf-7ca420469eaa
-    name: East Reagion Food
+  - view_guid: 80c8cd85-1d61-4a9c-9e24-2224a3843ad6
+    name: Test
     view_filters:
     - column:
       - Category
-      oper: in
-      values:
-      - Food
+      oper: =
     - column:
       - Store Region
       oper: in
       values:
+      - west
       - East
     - column:
       - Age Group

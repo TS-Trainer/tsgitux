@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 80c8cd85-1d61-4a9c-9e24-2224a3843ad6
-    name: Test
+  - view_guid: 39ccaaab-26ec-4b8f-9e3c-6b616279dc10
+    name: East View
     view_filters:
     - column:
       - Category
@@ -330,7 +330,6 @@ liveboard:
       - Store Region
       oper: in
       values:
-      - west
       - East
     - column:
       - Age Group

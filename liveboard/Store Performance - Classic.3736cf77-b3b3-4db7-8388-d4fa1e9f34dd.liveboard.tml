@@ -320,6 +320,25 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
+  - view_guid: df3e0b10-25e1-4242-a82a-f2fbaaead5da
+    name: NonFood East 50-64
+    view_filters:
+    - column:
+      - Category
+      oper: in
+      values:
+      - Non-food
+    - column:
+      - Store Region
+      oper: in
+      values:
+      - East
+    - column:
+      - Age Group
+      oper: in
+      values:
+      - c) 50-64
+    is_public: false
   - view_guid: b19ac7a9-2e5f-4d12-a500-b6844480092c
     name: Food East 50-64
     view_filters:

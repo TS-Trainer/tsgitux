@@ -41,50 +41,6 @@ liveboard:
     viz_guid: 4a033f0b-e3f7-4a4a-81c1-b2e29cf2a611
   - id: Viz_2
     answer:
-      name: Sales category column chart
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Category] sort by [Category]"
-      answer_columns:
-      - name: Category
-        sort_info:
-          category: CUSTOM
-          custom_order:
-          - Food
-          - Non-food
-          - Misc
-          - Medical
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Category
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Category
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: COLUMN
-        chart_columns:
-        - column_id: Category
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Category
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"554a6349-7024-4e0e-a392-de87ea49649c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"b6f3e299-920f-4ef7-8e94-c31b7b3ff90a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Sales\",\"color\": \"#48D1E0\"}]}"
-      display_mode: CHART_MODE
-      dynamic_name: Sales category column chart
-    viz_guid: 5b27ad9f-b1a4-406c-a909-b7b703482bea
-  - id: Viz_3
-    answer:
       name: Pivot Table AAS
       tables:
       - id: Retail Sales - Classic
@@ -149,7 +105,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Pivot Table AAS
     viz_guid: 9f707e56-50c7-4f07-98b4-c286a637059f
-  - id: Viz_4
+  - id: Viz_3
     answer:
       name: Department Sales column chart AAS
       tables:
@@ -197,7 +153,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Department Sales column chart AAS
     viz_guid: 9601bbd2-711c-42e9-8aa5-01f4850358e4
-  - id: Viz_5
+  - id: Viz_4
     answer:
       name: Total Sales by Department
       tables:
@@ -233,7 +189,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"10cbca19-8613-4d1e-8ae7-ec8b1b1be36a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"e2e84ed5-275d-441a-82d9-1fea61b87b1b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#48D1E0\"},{\"serieName\": \"bakery\",\"color\": \"#B094F8\"},{\"serieName\": \"canned goods\",\"color\": \"#8C62F5\"},{\"serieName\": \"dairy\",\"color\": \"#56D3A8\"},{\"serieName\": \"frozen goods\",\"color\": \"#06BF7F\"},{\"serieName\": \"meat\",\"color\": \"#BF982A\"},{\"serieName\": \"produce\",\"color\": \"#FCD977\"},{\"serieName\": \"seafood\",\"color\": \"#FCC838\"},{\"serieName\": \"cleaning supplies\",\"color\": \"#369FAA\"},{\"serieName\": \"liquor\",\"color\": \"#82DFE9\"},{\"serieName\": \"gifts\",\"color\": \"#48D1E0\"},{\"serieName\": \"photography\",\"color\": \"#2359B6\"},{\"serieName\": \"medical\",\"color\": \"#71A1F4\"},{\"serieName\": \"pharmacy\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: da1f16e7-8029-4e3f-8d76-78ee6b10f53a
-  - id: Viz_6
+  - id: Viz_5
     answer:
       name: "Source: Retail Sales Classic"
       tables:
@@ -270,7 +226,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: "Source: Retail Sales Classic"
     viz_guid: 91031885-650c-45ea-986f-396f53af1521
-  - id: Viz_7
+  - id: Viz_6
     answer:
       name: "Total Sales by Store State, Department, Product Name"
       tables:
@@ -331,7 +287,7 @@ liveboard:
         custom_visual_props: "{}"
       display_mode: TABLE_MODE
     viz_guid: 9fdb6fa1-4bac-487d-93d1-7712defd2d8b
-  - id: Viz_8
+  - id: Viz_7
     answer:
       name: Source Vendor Reporting Model
       tables:
@@ -373,8 +329,8 @@ liveboard:
     name: Quarterly Contributing Factors
     visualizations:
     - Viz_1
+    - Viz_4
     - Viz_5
-    - Viz_6
     group_guid: eef05cc2-0c24-4081-ba64-f0d7a1cf4ddd
   filters:
   - column:
@@ -416,21 +372,16 @@ liveboard:
       description: ""
       tiles:
       - visualization_id: Viz_2
-        x: 7
-        "y": 6
-        height: 4
-        width: 4
-      - visualization_id: Viz_3
         x: 0
         "y": 10
         height: 7
         width: 7
-      - visualization_id: Viz_4
+      - visualization_id: Viz_3
         x: 0
         "y": 6
         height: 4
         width: 7
-      - visualization_id: Viz_7
+      - visualization_id: Viz_6
         x: 7
         "y": 10
         height: 8
@@ -449,12 +400,12 @@ liveboard:
           "y": 0
           height: 3
           width: 3
-        - visualization_id: Viz_5
+        - visualization_id: Viz_4
           x: 3
           "y": 0
           height: 3
           width: 4
-        - visualization_id: Viz_6
+        - visualization_id: Viz_5
           x: 7
           "y": 0
           height: 3
@@ -462,7 +413,7 @@ liveboard:
     - name: 2. Vendor Reporting
       description: ""
       tiles:
-      - visualization_id: Viz_8
+      - visualization_id: Viz_7
         x: 0
         "y": 0
         height: 5

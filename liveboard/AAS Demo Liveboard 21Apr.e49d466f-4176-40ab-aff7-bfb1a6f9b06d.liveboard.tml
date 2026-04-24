@@ -368,10 +368,6 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Source Vendor Reporting Model
     viz_guid: 99d1f63b-1ca7-4c03-992c-0a99fefe9397
-  - id: Viz_9
-    viz_guid: 0bf09b0f-f21f-4be9-be98-fb2e7d59a85a
-    note_tile:
-      html_parsed_string: "<h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Welcome to TS Liveboard!</span></h1><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><a href=\"https://docs.thoughtspot.com/cloud/26.4.0.cl/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS Documentation. </span></p><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
   groups:
   - id: Group_1
     name: Quarterly Contributing Factors
@@ -444,11 +440,6 @@ liveboard:
         "y": 2
         height: 4
         width: 12
-      - visualization_id: Viz_9
-        x: 0
-        "y": 0
-        height: 2
-        width: 3
       id: 6d2f86ef-5760-452a-a1aa-d2fca07a79bf
       group_layouts:
       - id: Group_1
@@ -458,13 +449,13 @@ liveboard:
           "y": 0
           height: 3
           width: 3
-        - visualization_id: Viz_6
-          x: 7
+        - visualization_id: Viz_5
+          x: 3
           "y": 0
           height: 3
           width: 4
-        - visualization_id: Viz_5
-          x: 3
+        - visualization_id: Viz_6
+          x: 7
           "y": 0
           height: 3
           width: 4

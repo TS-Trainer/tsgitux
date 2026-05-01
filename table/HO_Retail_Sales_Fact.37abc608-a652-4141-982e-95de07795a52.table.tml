@@ -152,7 +152,7 @@ table:
       name: HO_Product_Dimension
       fqn: 4f9c18e8-3a07-4fa2-b830-33ccdf63f8c9
     "on": "([HO_Retail_Sales_Fact::Product_Key] = [HO_Product_Dimension::Product_Key])"
-    type: LEFT_OUTER
+    type: INNER
   - name: Store_Key - Store_Key
     destination:
       name: HO_Store_Dimension

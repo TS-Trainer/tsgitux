@@ -173,43 +173,6 @@ table:
       value_casing: UNKNOWN
     db_column_properties:
       data_type: INT64
-  joins_with:
-  - name: HO_Product_Dimension_to_Top 3 Departments
-    destination:
-      name: Top 3 Departments
-      fqn: 8d617420-535e-4438-8eb6-6a9e2e2d0c3c
-    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments::Department]"
-    type: INNER
-  - name: HO_Product_Dimension_to_Top 3 Departments by Sales View - JDS
-    destination:
-      name: Top 3 Departments by Sales View - JDS
-      fqn: f2a12d17-ebd1-43e9-817f-d465a39f3014
-    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Departments by Sales View - JDS::Department]"
-    type: INNER
-  - name: HO_Product_Dimension_to_Top 3 Depts
-    destination:
-      name: Top 3 Depts
-      fqn: 8753d35a-f438-4387-b374-405a175d03d8
-    "on": "[HO_Product_Dimension::Department_Description] = [Top 3 Depts::Department]"
-    type: INNER
-  - name: HO_Product_Dimension_to_Total 3 dept
-    destination:
-      name: Total 3 dept
-      fqn: e069521e-4b26-444c-81f7-e2194a25c3ab
-    "on": "[HO_Product_Dimension::Department_Description] = [Total 3 dept::Department]"
-    type: INNER
-  - name: "HO_Product_Dimension_to_Total Sales by Department, Product (top 3)"
-    destination:
-      name: "Total Sales by Department, Product (top 3)"
-      fqn: 71dd86fd-abf4-4eed-87da-80bc8fa7c362
-    "on": "[HO_Product_Dimension::Department_Description] = [Total Sales by Department, Product (top 3)::Department]"
-    type: INNER
-  - name: top_3_depts
-    destination:
-      name: top 3 sales view
-      fqn: fd59ea7f-2a1f-447d-88df-df302dba41c0
-    "on": "[HO_Product_Dimension::Department_Description] = [top 3 sales view::Department ]"
-    type: INNER
   properties:
     spotter_config:
       is_spotter_enabled: false

@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: c0b82d31-05ed-4e8b-8e14-db87d800439f
-    name: East RegionStore Performance - Classic
+  - view_guid: a32738ce-cc61-461b-afa8-468dee6d6837
+    name: East and West view
     view_filters:
     - column:
       - Category
@@ -330,15 +330,14 @@ liveboard:
       - Store Region
       oper: in
       values:
+      - west
       - East
     - column:
       - Age Group
       oper: in
       values:
-      - c) 50-64
-      - a) 18-29
       - b) 30-49
-      - d) 65+
+      - c) 50-64
     is_public: false
   style:
     style_properties:

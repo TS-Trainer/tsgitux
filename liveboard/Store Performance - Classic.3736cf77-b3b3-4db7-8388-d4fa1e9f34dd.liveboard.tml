@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: a32738ce-cc61-461b-afa8-468dee6d6837
-    name: East and West view
+  - view_guid: 9d1657eb-4387-4139-a9b3-c1a7a14fb5cc
+    name: East Coast
     view_filters:
     - column:
       - Category
@@ -330,14 +330,15 @@ liveboard:
       - Store Region
       oper: in
       values:
-      - west
       - East
     - column:
       - Age Group
       oper: in
       values:
-      - b) 30-49
       - c) 50-64
+      - a) 18-29
+      - b) 30-49
+      - d) 65+
     is_public: false
   style:
     style_properties:

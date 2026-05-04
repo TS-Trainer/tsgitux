@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 5f744df3-3d8c-4757-9d65-dba34462e886
-    name: East View - Medical
+  - view_guid: 1cb35d42-23c5-41ea-9fbc-070ef42f6424
+    name: Medical Category East Region View
     view_filters:
     - column:
       - Category

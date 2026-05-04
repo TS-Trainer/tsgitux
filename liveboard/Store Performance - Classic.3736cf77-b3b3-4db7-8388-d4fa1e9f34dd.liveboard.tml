@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: a461a208-f7a8-4255-9339-ce028ee418c6
-    name: KX East Region Food
+  - view_guid: fa460c94-e1ff-47cc-8647-014378a5612e
+    name: AK East Region Food
     view_filters:
     - column:
       - Category

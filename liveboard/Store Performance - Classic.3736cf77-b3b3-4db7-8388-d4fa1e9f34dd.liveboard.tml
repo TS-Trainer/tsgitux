@@ -320,25 +320,22 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 7c99c605-6e8e-4053-b96e-c594b8e8d26a
-    name: everything - midwest
+  - view_guid: c0b82d31-05ed-4e8b-8e14-db87d800439f
+    name: East RegionStore Performance - Classic
     view_filters:
     - column:
       - Category
-      oper: in
-      values:
-      - Medical
+      oper: =
     - column:
       - Store Region
       oper: in
       values:
-      - Midwest
+      - East
     - column:
       - Age Group
       oper: in
       values:
       - c) 50-64
-      - "{null}"
       - a) 18-29
       - b) 30-49
       - d) 65+

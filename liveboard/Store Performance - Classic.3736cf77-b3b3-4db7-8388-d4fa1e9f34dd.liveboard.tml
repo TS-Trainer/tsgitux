@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 1cb35d42-23c5-41ea-9fbc-070ef42f6424
-    name: Medical Category East Region View
+  - view_guid: 7c99c605-6e8e-4053-b96e-c594b8e8d26a
+    name: everything - midwest
     view_filters:
     - column:
       - Category
@@ -332,7 +332,7 @@ liveboard:
       - Store Region
       oper: in
       values:
-      - East
+      - Midwest
     - column:
       - Age Group
       oper: in

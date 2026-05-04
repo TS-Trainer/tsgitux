@@ -320,8 +320,31 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: fa274aff-e9e1-42bc-aa9d-2e4dcdd86fe8
-    name: South Region Medical Category
+  - view_guid: 7c99c605-6e8e-4053-b96e-c594b8e8d26a
+    name: everything - midwest
+    view_filters:
+    - column:
+      - Category
+      oper: in
+      values:
+      - Medical
+    - column:
+      - Store Region
+      oper: in
+      values:
+      - Midwest
+    - column:
+      - Age Group
+      oper: in
+      values:
+      - c) 50-64
+      - "{null}"
+      - a) 18-29
+      - b) 30-49
+      - d) 65+
+    is_public: false
+  - view_guid: 74c87d47-2e89-47d1-93d5-88e1a6ba345e
+    name: South Medical
     view_filters:
     - column:
       - Category
@@ -333,29 +356,6 @@ liveboard:
       oper: in
       values:
       - South
-    - column:
-      - Age Group
-      oper: in
-      values:
-      - c) 50-64
-      - "{null}"
-      - a) 18-29
-      - b) 30-49
-      - d) 65+
-    is_public: false
-  - view_guid: 1cb35d42-23c5-41ea-9fbc-070ef42f6424
-    name: Medical Category East Region View
-    view_filters:
-    - column:
-      - Category
-      oper: in
-      values:
-      - Medical
-    - column:
-      - Store Region
-      oper: in
-      values:
-      - East
     - column:
       - Age Group
       oper: in

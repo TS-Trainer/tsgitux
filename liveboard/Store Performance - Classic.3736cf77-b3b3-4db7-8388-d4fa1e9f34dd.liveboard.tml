@@ -320,15 +320,14 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 665e51fc-a269-4518-ad41-9692759c27f5
-    name: Eastern Region Food Sales
+  - view_guid: 87924394-23de-4b07-a1e7-1179482d049e
+    name: AW East Region food
     view_filters:
     - column:
       - Category
       oper: in
       values:
       - Food
-      - Medical
     - column:
       - Store Region
       oper: in

@@ -320,48 +320,24 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 7c99c605-6e8e-4053-b96e-c594b8e8d26a
-    name: Midwest Medical
+  - view_guid: ef2d0bac-1dba-4b19-b74b-8f241994b533
+    name: NU View - westregion
     view_filters:
     - column:
       - Category
       oper: in
       values:
-      - Medical
+      - Food
     - column:
       - Store Region
       oper: in
       values:
-      - Midwest
+      - East
     - column:
       - Age Group
       oper: in
       values:
       - c) 50-64
-      - "{null}"
-      - a) 18-29
-      - b) 30-49
-      - d) 65+
-    is_public: false
-  - view_guid: 74c87d47-2e89-47d1-93d5-88e1a6ba345e
-    name: South Medical
-    view_filters:
-    - column:
-      - Category
-      oper: in
-      values:
-      - Medical
-    - column:
-      - Store Region
-      oper: in
-      values:
-      - South
-    - column:
-      - Age Group
-      oper: in
-      values:
-      - c) 50-64
-      - "{null}"
       - a) 18-29
       - b) 30-49
       - d) 65+

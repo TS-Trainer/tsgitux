@@ -320,23 +320,26 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 205b9cda-8838-4a50-8459-d386468185ed
-    name: New Default
+  - view_guid: d60fce22-296d-44b1-9f6e-9489b49909ce
+    name: SP Eastern Region Food category
     view_filters:
     - column:
       - Category
-      oper: =
+      oper: in
+      values:
+      - Food
     - column:
       - Store Region
       oper: in
       values:
-      - west
+      - East
     - column:
       - Age Group
       oper: in
       values:
-      - b) 30-49
       - c) 50-64
+      - a) 18-29
+      - b) 30-49
       - d) 65+
     is_public: false
   style:

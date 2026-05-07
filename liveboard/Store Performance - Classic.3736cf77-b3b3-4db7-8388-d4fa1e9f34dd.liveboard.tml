@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: d60fce22-296d-44b1-9f6e-9489b49909ce
-    name: SP Eastern Region Food category
+  - view_guid: 3deb9408-9e62-49a2-9eb8-9e5e0e7157ed
+    name: Food_060
     view_filters:
     - column:
       - Category

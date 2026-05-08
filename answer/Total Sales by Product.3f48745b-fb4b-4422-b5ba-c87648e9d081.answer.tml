@@ -1,0 +1,36 @@
+guid: 3f48745b-fb4b-4422-b5ba-c87648e9d081
+answer:
+  name: Total Sales by Product
+  tables:
+  - id: Sales Model
+    name: Sales Model
+    fqn: d7d1a688-42ef-42b7-969d-592b94dec14c
+  search_query: "[Product] [Sales]"
+  answer_columns:
+  - name: Product
+  - name: Total Sales
+  table:
+    table_columns:
+    - column_id: Product
+      show_headline: false
+    - column_id: Total Sales
+      show_headline: false
+    ordered_column_ids:
+    - Product
+    - Total Sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Product
+    - column_id: Total Sales
+    axis_configs:
+    - x:
+      - Product
+      "y":
+      - Total Sales
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Product\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"841f8649-99df-4fe9-9ea8-82a212e1ec5f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"20b0b1b5-d5b6-4d0f-8ac6-0c94e78321c0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#FCC838\"}]}"
+  display_mode: CHART_MODE
+  dynamic_name: Total Sales by Product

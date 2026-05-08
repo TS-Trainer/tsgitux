@@ -173,6 +173,13 @@ table:
       value_casing: UNKNOWN
     db_column_properties:
       data_type: INT64
+  joins_with:
+  - name: View Based join AAS
+    destination:
+      name: Top 5 Dept View AAS
+      fqn: 358153f9-76c2-4beb-bfe0-a7bc4c02ba8e
+    "on": "[HO_Product_Dimension::Department_Description] = [Top 5 Dept View AAS::Department]"
+    type: INNER
   properties:
     spotter_config:
       is_spotter_enabled: false

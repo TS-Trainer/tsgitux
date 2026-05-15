@@ -319,10 +319,6 @@ liveboard:
       display_mode: CHART_MODE
     viz_guid: de25e041-e643-419e-a177-9b7ef1464a78
   - id: Viz_8
-    viz_guid: 0a1f08cd-b478-4dd2-9e33-d803d1f62444
-    note_tile:
-      html_parsed_string: "<h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Welcome to TS University!</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><a href=\"https://training.thoughtspot.com/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click Here</span></a><span style=\"white-space: pre-wrap;\"> to visit training portal.</span></h2><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
-  - id: Viz_9
     answer:
       name: Total Sales by Category
       tables:
@@ -358,7 +354,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\"}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"569f3580-ce76-496b-816b-a3cc63e0467a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"4ff6ed3c-2c41-41ed-9f97-492af2d55f81\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"food\",\"color\": \"#06BF7F\"},{\"serieName\": \"medical\",\"color\": \"#FCC838\"},{\"serieName\": \"misc\",\"color\": \"#48D1E0\"},{\"serieName\": \"non-food\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: 47c65306-b85a-4d32-bcfc-82118fe6e464
-  - id: Viz_10
+  - id: Viz_9
     answer:
       name: Copy of Total Sales by Store State
       tables:
@@ -464,12 +460,7 @@ liveboard:
         "y": 0
         height: 4
         width: 3
-      - visualization_id: Viz_8
-        x: 0
-        "y": 4
-        height: 4
-        width: 3
-      - visualization_id: Viz_10
+      - visualization_id: Viz_9
         x: 4
         "y": 15
         height: 8
@@ -483,7 +474,7 @@ liveboard:
         "y": 0
         height: 4
         width: 3
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 3
         "y": 0
         height: 8

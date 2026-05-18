@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: eb4dea49-fc34-4e31-bcc2-a20cf935b2c1
-    name: my filter
+  - view_guid: 5d462c9d-806d-400c-8686-74315b2f871f
+    name: my fillter
     view_filters:
     - column:
       - Category

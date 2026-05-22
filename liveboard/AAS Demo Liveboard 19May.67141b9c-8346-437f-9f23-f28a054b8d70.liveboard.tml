@@ -4,43 +4,6 @@ liveboard:
   visualizations:
   - id: Viz_1
     answer:
-      name: Quarterly Sales Performance
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Sale Date].quarterly"
-      answer_columns:
-      - name: Quarter(Sale Date)
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Quarter(Sale Date)
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Quarter(Sale Date)
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: KPI
-        chart_columns:
-        - column_id: Quarter(Sale Date)
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Quarter(Sale Date)
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Quarter(Sale Date)\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"f0a29b58-6c93-4cb8-9830-1f1013931098\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"982d578f-65e5-4408-a85e-166af20df75d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Sale Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#2E75F0\"}]}"
-      display_mode: CHART_MODE
-      dynamic_name: Quarterly Sales Performance
-    viz_guid: c62bf1c8-f9c1-4031-a853-c1bff97433dd
-  - id: Viz_2
-    answer:
       name: Sales by Departments
       tables:
       - id: Retail Sales - Classic
@@ -96,7 +59,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Sales by Departments
     viz_guid: 04941cae-f22d-4d09-a342-864d66ebf50a
-  - id: Viz_3
+  - id: Viz_2
     answer:
       name: AAS Department Sales Column chart
       tables:
@@ -146,7 +109,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: AAS Department Sales Column chart
     viz_guid: 121adcb2-477b-4f24-bd00-dc03c4ba7b6c
-  - id: Viz_4
+  - id: Viz_3
     answer:
       name: Donut Chart AAS
       tables:
@@ -189,7 +152,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Donut Chart AAS
     viz_guid: 08f39a55-7a11-4eb7-b774-59626aaeb5d0
-  - id: Viz_5
+  - id: Viz_4
     answer:
       name: Pivot Table AAS
       tables:
@@ -253,7 +216,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Pivot Table AAS
     viz_guid: abb63c45-19a6-4a12-b563-d6c903e351e9
-  - id: Viz_6
+  - id: Viz_5
     answer:
       name: Stacked column chart AAS
       tables:
@@ -297,7 +260,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Stacked column chart AAS
     viz_guid: ab44b25b-a881-4e3f-829b-f3b9f7e12f37
-  - id: Viz_7
+  - id: Viz_6
     answer:
       name: Total Sales by Store State
       tables:
@@ -333,7 +296,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"c498c5c5-0e77-4d50-9c70-e5e23e3d4f86\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"ec0df1ff-c6f8-4364-8e24-bcc92395be06\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: fa0e5e0e-17a1-4c1d-a21f-248235cb87a8
-  - id: Viz_8
+  - id: Viz_7
     answer:
       name: AAS Total Sales by Department
       tables:
@@ -390,7 +353,7 @@ liveboard:
       display_mode: TABLE_MODE
       dynamic_name: AAS Total Sales by Department
     viz_guid: c666a9f3-2f8a-4ae8-8b90-38c12499e9aa
-  - id: Viz_9
+  - id: Viz_8
     answer:
       name: Total Deal Size by Vendor State
       tables:
@@ -426,11 +389,11 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true}},\"columnProperties\": [{\"columnId\": \"Vendor State\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Deal Size\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"ba4f7053-733a-438a-9c7c-75996bfc4cf7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"1e033e58-1b30-46dd-9b1a-2b313f805c9b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"colorMap\": [{\"serieName\": \"Vendor State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: 9e119009-e93d-43ea-93e2-a0f14e8d34ac
-  - id: Viz_10
+  - id: Viz_9
     viz_guid: d3e64ab1-240e-44e1-8317-2a11ca796be8
     note_tile:
       html_parsed_string: "<h2 class=\"theme-module__editor-h2\"><span style=\"white-space: pre-wrap;\">TS Notice Board</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><h2 class=\"theme-module__editor-h2\"><a href=\"https://training.thoughtspot.com/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click Here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS University.</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
-  - id: Viz_11
+  - id: Viz_10
     answer:
       name: Total Sales by Category
       tables:
@@ -506,46 +469,41 @@ liveboard:
       description: ""
       tiles:
       - visualization_id: Viz_1
-        x: 0
-        "y": 0
-        height: 4
-        width: 3
-      - visualization_id: Viz_2
         x: 6
         "y": 4
         height: 4
         width: 4
-      - visualization_id: Viz_3
+      - visualization_id: Viz_2
         x: 0
         "y": 8
         height: 4
         width: 5
-      - visualization_id: Viz_4
+      - visualization_id: Viz_3
         x: 3
         "y": 0
         height: 4
         width: 3
-      - visualization_id: Viz_5
+      - visualization_id: Viz_4
         x: 0
         "y": 12
         height: 6
         width: 10
-      - visualization_id: Viz_6
+      - visualization_id: Viz_5
         x: 3
         "y": 4
         height: 4
         width: 3
-      - visualization_id: Viz_7
+      - visualization_id: Viz_6
         x: 6
         "y": 0
         height: 4
         width: 4
-      - visualization_id: Viz_8
+      - visualization_id: Viz_7
         x: 5
         "y": 8
         height: 4
         width: 5
-      - visualization_id: Viz_10
+      - visualization_id: Viz_9
         x: 0
         "y": 4
         height: 4
@@ -554,12 +512,16 @@ liveboard:
     - name: 2. Vendor Reporting
       description: ""
       tiles:
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 3
         "y": 0
         height: 4
         width: 3
-      - visualization_id: Viz_11
+      - visualization_id: Viz_10
+        x: 6
+        "y": 0
+        height: 8
+        width: 6
       id: d20ba487-5db0-48bb-abe9-bc8a4ba20255
   ordered_chips:
   - name: Retail Sales - Classic::Store Region

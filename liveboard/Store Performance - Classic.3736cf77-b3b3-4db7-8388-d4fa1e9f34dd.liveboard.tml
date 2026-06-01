@@ -320,15 +320,14 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 4cb97a47-629e-4961-a7c7-2075e8397b44
-    name: Anything You Want
+  - view_guid: 090ccd7f-613e-483a-b58b-c2ef936dafee
+    name: Est Region Food
     view_filters:
     - column:
       - Category
       oper: in
       values:
       - Food
-      - Medical
     - column:
       - Store Region
       oper: in

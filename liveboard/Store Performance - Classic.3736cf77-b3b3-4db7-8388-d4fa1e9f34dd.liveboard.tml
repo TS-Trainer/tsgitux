@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 55a6e4c6-e896-4f6a-8edf-c374be0d87b2
-    name: East Region Food Tanner
+  - view_guid: 644dfe38-7b92-469a-a774-545d83888172
+    name: East Region Food
     view_filters:
     - column:
       - Category

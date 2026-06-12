@@ -398,10 +398,6 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Sample Answer AAS
     viz_guid: a01ae34b-f529-44ed-8810-a3bf4b6b844f
-  - id: Viz_10
-    viz_guid: e259cb88-9d41-4bf3-9675-31c950cfef55
-    note_tile:
-      html_parsed_string: "<h1 class=\"theme-module__editor-h1\"><span style=\"white-space: pre-wrap;\">Liveboard University</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><ol class=\"theme-module__editor-ol\"><li value=\"1\" class=\"theme-module__editor-list-item\"><a href=\"https://training.thoughtspot.com/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS University Portal</span></li><li value=\"2\" class=\"theme-module__editor-list-item\"><span style=\"white-space: pre-wrap;\">Click here to visit TS Login page</span></li></ol><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
   filters:
   - column:
     - Retail Sales - Classic::Store Region
@@ -476,11 +472,6 @@ liveboard:
         "y": 0
         height: 4
         width: 3
-      - visualization_id: Viz_10
-        x: 0
-        "y": 0
-        height: 4
-        width: 4
       id: 5af54f76-0d92-464a-8aa1-ea787bf18bce
     - name: Vendor Reporting
       description: ""

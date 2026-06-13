@@ -78,12 +78,6 @@ liveboard:
     tabs:
     - name: Store State Sales
       description: ""
-      tiles:
-      - visualization_id: Viz_1
-        x: 0
-        "y": 0
-        height: 8
-        width: 6
       id: e24b0d3f-5bc1-45d2-9f05-cfecc466154b
     - name: Department Sales
       description: ""
@@ -93,4 +87,25 @@ liveboard:
         "y": 0
         height: 8
         width: 12
+      - visualization_id: Viz_1
+        x: 0
+        "y": 8
+        height: 8
+        width: 6
       id: cd92d7c5-6c8c-41b3-a132-aad50f6b79f9
+  style:
+    style_properties:
+    - name: lb_border_type
+      value: CURVED
+    - name: lb_brand_color
+      value: LBC_A
+    - name: hide_group_title
+      value: "false"
+    - name: hide_group_description
+      value: "true"
+    - name: hide_group_tile_description
+      value: "false"
+    - name: hide_tile_description
+      value: "false"
+    - name: kpi_hero_font_size
+      value: M

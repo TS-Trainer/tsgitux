@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 15aba59e-6b81-4bc1-b4e7-3763c4131b45
-    name: saved004
+  - view_guid: 9e126322-e1f3-4d21-a85a-bb44703230a9
+    name: food for east
     view_filters:
     - column:
       - Category

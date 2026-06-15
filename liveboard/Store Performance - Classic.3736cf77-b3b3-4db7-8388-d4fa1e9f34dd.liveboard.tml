@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: be19062c-68d8-44f1-92cb-c62cceb2c06d
-    name: RT East Region Food
+  - view_guid: a1f5d19e-81a9-4a9c-a321-a166b3bb83eb
+    name: Food Sales in the East
     view_filters:
     - column:
       - Category

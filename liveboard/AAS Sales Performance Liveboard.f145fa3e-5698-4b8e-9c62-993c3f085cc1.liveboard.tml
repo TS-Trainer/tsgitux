@@ -167,43 +167,6 @@ liveboard:
     viz_guid: 9b8632a6-d36b-4b3e-8d5c-be4148fb1f3e
   - id: Viz_5
     answer:
-      name: Total Sales by Department
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Department]"
-      answer_columns:
-      - name: Department
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Department
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Department
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: COLUMN
-        chart_columns:
-        - column_id: Department
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Department
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true}},\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"aa93415c-394b-4d29-9ca1-5a8851119457\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"4993ea35-bf4a-4389-bb1a-5f88add17fb6\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"}]}"
-      display_mode: CHART_MODE
-      dynamic_name: Total Sales by Department
-    viz_guid: d505b9d1-f513-4bdd-99cb-58df53081b61
-  - id: Viz_6
-    answer:
       name: Total Sales by Store State
       tables:
       - id: Retail Sales - Classic
@@ -238,7 +201,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"590a9eb6-31d9-47c7-a625-92558294bff8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"76b1716e-c539-4db9-8953-07cd9b8ab43a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: 6fe6578f-dce0-443d-9a4c-47db8eeb5e82
-  - id: Viz_7
+  - id: Viz_6
     answer:
       name: Total Deal Size by Vendor State
       tables:
@@ -280,7 +243,7 @@ liveboard:
     visualizations:
     - Viz_1
     - Viz_2
-    - Viz_6
+    - Viz_5
     group_guid: 9ef93cc1-be67-4a48-9480-80d4685da81a
   filters:
   - column:
@@ -320,27 +283,22 @@ liveboard:
     tiles:
     - visualization_id: Viz_3
       x: 6
-      "y": 10
+      "y": 4
       height: 5
       width: 3
     - visualization_id: Viz_4
       x: 0
-      "y": 10
+      "y": 4
       height: 5
       width: 6
-    - visualization_id: Viz_5
-      x: 5
-      "y": 4
-      height: 6
-      width: 4
     - visualization_id: Group_1
       x: 0
       "y": 0
       height: 4
       width: 9
-    - visualization_id: Viz_7
+    - visualization_id: Viz_6
       x: 0
-      "y": 15
+      "y": 9
       height: 5
       width: 4
     group_layouts:
@@ -356,7 +314,7 @@ liveboard:
         "y": 0
         height: 5
         width: 4
-      - visualization_id: Viz_6
+      - visualization_id: Viz_5
         x: 8
         "y": 0
         height: 5

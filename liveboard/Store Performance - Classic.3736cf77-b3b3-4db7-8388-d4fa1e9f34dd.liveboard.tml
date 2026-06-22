@@ -342,6 +342,28 @@ liveboard:
       - b) 30-49
       - d) 65+
     is_public: false
+  - view_guid: ca3100d7-569f-4e5f-8520-095dc299c1d2
+    name: East NonFood
+    view_filters:
+    - column:
+      - Category
+      oper: in
+      values:
+      - Non-food
+    - column:
+      - Store Region
+      oper: in
+      values:
+      - East
+    - column:
+      - Age Group
+      oper: in
+      values:
+      - c) 50-64
+      - a) 18-29
+      - b) 30-49
+      - d) 65+
+    is_public: false
   style:
     style_properties:
     - name: lb_border_type

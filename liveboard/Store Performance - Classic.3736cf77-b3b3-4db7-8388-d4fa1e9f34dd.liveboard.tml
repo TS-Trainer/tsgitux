@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: b0ce55e8-b151-4b98-bd34-9049d2f6aa9a
-    name: Food and West
+  - view_guid: d59b54a4-312b-43a4-bf95-68e121f397a2
+    name: AMA East Region Food View
     view_filters:
     - column:
       - Category
@@ -333,6 +333,7 @@ liveboard:
       oper: in
       values:
       - west
+      - East
     - column:
       - Age Group
       oper: in

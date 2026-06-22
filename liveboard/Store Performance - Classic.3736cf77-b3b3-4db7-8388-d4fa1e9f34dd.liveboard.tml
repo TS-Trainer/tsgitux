@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 59e157de-3456-4af7-89c9-b9fea7e2138c
-    name: East Region Food View
+  - view_guid: f3f3fd61-eeb3-489f-963f-3f3f7f6dffd4
+    name: CMC East Region Food
     view_filters:
     - column:
       - Category

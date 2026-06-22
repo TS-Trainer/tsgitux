@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: ee76bcc7-daa6-468b-bce3-a95fc69e29bf
-    name: East Region Food Rules
+  - view_guid: b0ce55e8-b151-4b98-bd34-9049d2f6aa9a
+    name: Food and West
     view_filters:
     - column:
       - Category
@@ -333,7 +333,6 @@ liveboard:
       oper: in
       values:
       - west
-      - East
     - column:
       - Age Group
       oper: in

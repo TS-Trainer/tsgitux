@@ -320,36 +320,14 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: e6e1710f-607e-4f6c-8477-1b24f9dbda2c
-    name: East Food
+  - view_guid: e7732af2-7d52-45f4-a4b3-482528b0e0f1
+    name: AC East Food Sales
     view_filters:
     - column:
       - Category
       oper: in
       values:
       - Food
-    - column:
-      - Store Region
-      oper: in
-      values:
-      - East
-    - column:
-      - Age Group
-      oper: in
-      values:
-      - c) 50-64
-      - a) 18-29
-      - b) 30-49
-      - d) 65+
-    is_public: false
-  - view_guid: ca3100d7-569f-4e5f-8520-095dc299c1d2
-    name: East NonFood
-    view_filters:
-    - column:
-      - Category
-      oper: in
-      values:
-      - Non-food
     - column:
       - Store Region
       oper: in

@@ -297,10 +297,6 @@ liveboard:
       display_mode: CHART_MODE
     viz_guid: 2fcf8815-c8c5-4870-afdc-98742271f91a
   - id: Viz_8
-    viz_guid: d56ad5fa-e483-4682-b311-c928688fc915
-    note_tile:
-      html_parsed_string: "<h1 class=\"theme-module__editor-h1\"><span style=\"white-space: pre-wrap;\">Liveboard Updates</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><h2 class=\"theme-module__editor-h2\"><a href=\"https://training.thoughtspot.com/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS University</span></h2><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
-  - id: Viz_9
     answer:
       name: Total Sales by Department
       tables:
@@ -405,11 +401,6 @@ liveboard:
         "y": 4
         height: 6
         width: 4
-      - visualization_id: Viz_8
-        x: 0
-        "y": 0
-        height: 4
-        width: 3
       id: 28b39ee4-3bce-443e-9d8b-c1746a990cb9
     - name: 2. Normal Updates
       description: ""
@@ -419,7 +410,11 @@ liveboard:
         "y": 0
         height: 4
         width: 3
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
+        x: 3
+        "y": 0
+        height: 8
+        width: 6
       id: 01f265ae-200b-447b-8d72-d0803cad6aa3
   ordered_chips:
   - name: Retail Sales - Classic::Store Region

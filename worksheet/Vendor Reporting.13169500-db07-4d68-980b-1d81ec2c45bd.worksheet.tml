@@ -45,4 +45,4 @@ model:
     is_bypass_rls: false
     join_progressive: true
     spotter_config:
-      is_spotter_enabled: false
+      is_spotter_enabled: true

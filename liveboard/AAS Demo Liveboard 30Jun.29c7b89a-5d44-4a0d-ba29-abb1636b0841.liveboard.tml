@@ -130,42 +130,6 @@ liveboard:
     viz_guid: 2b5a930a-19bd-4905-8cb4-64b4a56a108d
   - id: Viz_4
     answer:
-      name: Total Sales by Store State
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Store State]"
-      answer_columns:
-      - name: Store State
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Store State
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Store State
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: GEO_AREA
-        chart_columns:
-        - column_id: Store State
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Store State
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"07c953e1-68cc-48a7-8428-f5fd9c89c77b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"749046bd-87c0-45ea-9c60-2eb7d7805e95\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
-      display_mode: CHART_MODE
-    viz_guid: 879ce5b7-c3f5-41d2-9b3b-4dc139d390b4
-  - id: Viz_5
-    answer:
       name: Stacked Column Chart AAS
       tables:
       - id: Retail Sales - Classic
@@ -209,7 +173,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Stacked Column Chart AAS
     viz_guid: 71f13cd9-a955-4701-8b72-84477af5b012
-  - id: Viz_6
+  - id: Viz_5
     answer:
       name: Sales By Department Column chart AAS
       tables:
@@ -260,7 +224,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Sales By Department Column chart AAS
     viz_guid: 69bcf0f0-2ada-485e-8fb2-65f4710cd8b2
-  - id: Viz_7
+  - id: Viz_6
     answer:
       name: Total Deal Size by Vendor State
       tables:
@@ -296,7 +260,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true}},\"columnProperties\": [{\"columnId\": \"Vendor State\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Deal Size\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"e3b2c8d5-5951-49c0-a390-e331a8620302\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Deal Size\"],\"isOpposite\": false}},{\"id\": \"9116b1f7-3d46-48d7-bb55-0c50a594d3a8\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Vendor State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Deal Size\",\"colorMap\": [{\"serieName\": \"Vendor State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: 2fcf8815-c8c5-4870-afdc-98742271f91a
-  - id: Viz_8
+  - id: Viz_7
     answer:
       name: Total Sales by Department
       tables:
@@ -387,16 +351,11 @@ liveboard:
         height: 5
         width: 9
       - visualization_id: Viz_4
-        x: 6
-        "y": 0
-        height: 4
-        width: 3
-      - visualization_id: Viz_5
         x: 0
         "y": 12
         height: 6
         width: 5
-      - visualization_id: Viz_6
+      - visualization_id: Viz_5
         x: 3
         "y": 4
         height: 6
@@ -405,12 +364,12 @@ liveboard:
     - name: 2. Normal Updates
       description: ""
       tiles:
-      - visualization_id: Viz_7
+      - visualization_id: Viz_6
         x: 0
         "y": 0
         height: 4
         width: 3
-      - visualization_id: Viz_8
+      - visualization_id: Viz_7
         x: 3
         "y": 0
         height: 8

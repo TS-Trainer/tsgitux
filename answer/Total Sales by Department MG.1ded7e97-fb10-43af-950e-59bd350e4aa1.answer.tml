@@ -1,0 +1,36 @@
+guid: 1ded7e97-fb10-43af-950e-59bd350e4aa1
+answer:
+  name: Total Sales by Department MG
+  tables:
+  - id: Sales Model
+    name: Sales Model
+    fqn: 72c1c7e3-5863-4585-a9db-ceef1c4e3bc7
+  search_query: "[Department] [Sales]"
+  answer_columns:
+  - name: Department
+  - name: Total Sales
+  table:
+    table_columns:
+    - column_id: Department
+      show_headline: false
+    - column_id: Total Sales
+      show_headline: false
+    ordered_column_ids:
+    - Department
+    - Total Sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Department
+    - column_id: Total Sales
+    axis_configs:
+    - x:
+      - Department
+      "y":
+      - Total Sales
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true}},\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"d5b70141-4a28-426f-93a4-f7abf3494cdc\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"28c410eb-c521-43ce-ba8c-7387a00b8b81\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#8C62F5\"}]}"
+  display_mode: CHART_MODE
+  dynamic_name: Total Sales by Department MG

@@ -1,0 +1,139 @@
+guid: 72c1c7e3-5863-4585-a9db-ceef1c4e3bc7
+model:
+  name: Sales Model
+  model_tables:
+  - name: HO_Customer_Dimension
+    fqn: 67c03782-a7b6-4017-92a4-8de9e5243ce9
+  - name: HO_Date_Dimension
+    fqn: c098ae61-3ff9-4021-9fba-1b1e968f584a
+  - name: HO_Product_Dimension
+    fqn: 338db179-181f-4604-95e4-28a4ba47601a
+  - name: HO_Retail_Sales_Fact
+    fqn: 8059e23d-3ff6-4dcb-a90a-288acff51980
+    joins:
+    - with: HO_Customer_Dimension
+      referencing_join: HO_Retail_Sales_Fact_to_HO_Customer_Dimension
+    - with: HO_Date_Dimension
+      referencing_join: HO_Retail_Sales_Fact_to_HO_Date_Dimension
+    - with: HO_Product_Dimension
+      'on': '[HO_Retail_Sales_Fact::Product_Key] = [HO_Product_Dimension::Product_Key]'
+      type: INNER
+      cardinality: MANY_TO_ONE
+    - with: HO_Store_Dimension
+      referencing_join: HO_Retail_Sales_Fact_to_HO_Store_Dimension
+  - name: HO_Store_Dimension
+    fqn: 700497c2-c394-4a91-a10e-750cdc293a26
+  formulas:
+  - id: formula_Profit Margin
+    name: Profit Margin
+    expr: 'sum ( [HO_Retail_Sales_Fact::Gross_Profit_Dollar_Amount] ) / sum ( [HO_Retail_Sales_Fact::Sales_Dollar_Amount] ) '
+  - id: formula_What If Sales Tax
+    name: What If Sales Tax
+    expr: 'sum ( [HO_Retail_Sales_Fact::Sales_Dollar_Amount] ) * [Sales Tax] '
+  columns:
+  - name: Customers
+    description: This is the first name and last name of our clients.
+    column_id: HO_Customer_Dimension::Customer_Name
+    properties:
+      column_type: ATTRIBUTE
+  - name: Profit Margin
+    formula_id: formula_Profit Margin
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Pos Transaction Number
+    column_id: HO_Retail_Sales_Fact::POS_Transaction_Number
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Customer Region
+    column_id: HO_Customer_Dimension::Customer_Region
+    properties:
+      column_type: ATTRIBUTE
+  - name: Date
+    column_id: HO_Date_Dimension::Date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Category
+    column_id: HO_Product_Dimension::Category_Description
+    properties:
+      column_type: ATTRIBUTE
+      custom_order:
+      - Food
+      - Non-food
+      - Misc
+      - Medical
+  - name: Department
+    column_id: HO_Product_Dimension::Department_Description
+    properties:
+      column_type: ATTRIBUTE
+  - name: Product
+    description: This is my item name.
+    column_id: HO_Product_Dimension::Product_Description
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - item
+  - name: Store Name
+    column_id: HO_Store_Dimension::Store_Name
+    properties:
+      column_type: ATTRIBUTE
+  - name: Store State
+    column_id: HO_Store_Dimension::Store_State
+    properties:
+      column_type: ATTRIBUTE
+  - name: Cost
+    column_id: HO_Retail_Sales_Fact::Cost_Dollar_Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Profit
+    column_id: HO_Retail_Sales_Fact::Gross_Profit_Dollar_Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Sales
+    column_id: HO_Retail_Sales_Fact::Sales_Dollar_Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - revenue
+      currency_type:
+        iso_code: USD
+  - name: Sales Quantity
+    column_id: HO_Retail_Sales_Fact::Sales_Quantity
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: What If Sales Tax
+    formula_id: formula_What If Sales Tax
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
+    spotter_config:
+      is_spotter_enabled: true
+  parameters:
+  - id: 2b2c8996-3471-4c76-87f9-8e169fa24e43
+    name: Sales Tax
+    data_type: DOUBLE
+    default_value: '0.06'
+    list_config:
+      list_choice:
+      - value: '0.06'
+        display_name: VA
+      - value: '0.1'
+        display_name: CA
+      - value: '0.04'
+        display_name: PA
+    description: ''

@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 6ca8fb5e-67b1-4625-8180-07680e610ec9
-    name: Midwest Food
+  - view_guid: fabcad0d-3b9c-4a4e-a114-a943a3a40df7
+    name: east nd west
     view_filters:
     - column:
       - Category
@@ -333,7 +333,7 @@ liveboard:
       oper: in
       values:
       - west
-      - Midwest
+      - East
     - column:
       - Age Group
       oper: in

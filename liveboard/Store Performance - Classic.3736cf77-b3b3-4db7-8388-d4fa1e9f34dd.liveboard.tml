@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: e90f5cd5-8dd7-4332-b1ff-d13172db4ffe
-    name: CJH Food east
+  - view_guid: cd99e810-6708-4f93-9720-10f960333c83
+    name: East Region Food View
     view_filters:
     - column:
       - Category
@@ -332,6 +332,7 @@ liveboard:
       - Store Region
       oper: in
       values:
+      - west
       - East
     - column:
       - Age Group

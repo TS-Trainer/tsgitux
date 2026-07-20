@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: b79ae0ca-4236-4099-9229-db65082806d7
-    name: East Region Food
+  - view_guid: f2c9c0a5-9769-43e0-acd2-063b9c23d1fb
+    name: MGD Food Sales for East Region
     view_filters:
     - column:
       - Category
@@ -332,7 +332,6 @@ liveboard:
       - Store Region
       oper: in
       values:
-      - west
       - East
     - column:
       - Age Group

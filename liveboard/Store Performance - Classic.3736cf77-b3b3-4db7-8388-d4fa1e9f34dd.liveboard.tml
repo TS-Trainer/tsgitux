@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 072d5f3e-c8d9-4af0-bd51-5d8cab03f294
-    name: PSP - East Region Food
+  - view_guid: e90f5cd5-8dd7-4332-b1ff-d13172db4ffe
+    name: CJH Food east
     view_filters:
     - column:
       - Category

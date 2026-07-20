@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: a734dfe8-2bef-4406-9fa0-a25ddf9e9ebf
-    name: East Region Food
+  - view_guid: 072d5f3e-c8d9-4af0-bd51-5d8cab03f294
+    name: PSP - East Region Food
     view_filters:
     - column:
       - Category

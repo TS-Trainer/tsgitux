@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: c9f2b528-47a5-42f6-af7c-4f93175b15a7
-    name: KS East Region Food View
+  - view_guid: b323ccaa-eaf7-48d3-9bc5-a0b548784328
+    name: East Region Food
     view_filters:
     - column:
       - Category

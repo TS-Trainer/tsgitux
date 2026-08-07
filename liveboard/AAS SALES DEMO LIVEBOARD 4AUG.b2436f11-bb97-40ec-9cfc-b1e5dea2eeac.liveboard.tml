@@ -376,10 +376,6 @@ liveboard:
       dynamic_name: SOURCE 2
     viz_guid: b166428b-e934-4ddb-aae0-8dce28966190
   - id: Viz_8
-    viz_guid: 4e7ddd96-865f-4516-ac24-b92ebee3e396
-    note_tile:
-      html_parsed_string: "<h1 class=\"theme-module__editor-h1\"><span style=\"white-space: pre-wrap;\">Notice Board</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><h2 class=\"theme-module__editor-h2\"><a href=\"https://training.thoughtspot.com/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS University</span></h2><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
-  - id: Viz_9
     answer:
       name: Total Sales by Category
       tables:
@@ -472,11 +468,6 @@ liveboard:
         "y": 4
         height: 6
         width: 4
-      - visualization_id: Viz_8
-        x: 0
-        "y": 0
-        height: 4
-        width: 3
       id: c3621b51-5e3c-4f47-9b0b-27d21eb45282
     - name: Retail Sales Classic
       description: ""
@@ -501,7 +492,7 @@ liveboard:
         "y": 9
         height: 6
         width: 6
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 6
         "y": 9
         height: 8

@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 56d364f5-f6c0-458c-b842-e1d7966316d4
-    name: Save View - East Food
+  - view_guid: 5263167f-15e2-40ef-b6e8-4608d71c4903
+    name: East Food Sid
     view_filters:
     - column:
       - Category

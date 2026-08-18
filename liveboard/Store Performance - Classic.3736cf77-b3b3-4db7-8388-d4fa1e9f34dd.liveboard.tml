@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 5263167f-15e2-40ef-b6e8-4608d71c4903
-    name: East Food Sid
+  - view_guid: e91b0170-a488-4b5d-9ae9-5198118a5491
+    name: Test View
     view_filters:
     - column:
       - Category

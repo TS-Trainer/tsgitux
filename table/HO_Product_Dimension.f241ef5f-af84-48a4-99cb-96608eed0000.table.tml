@@ -1,0 +1,162 @@
+guid: f241ef5f-af84-48a4-99cb-96608eed0000
+table:
+  name: HO_Product_Dimension
+  db: HO_retail
+  schema: PUBLIC
+  db_table: HO_Product_Dimension
+  connection:
+    name: HO_Retail
+    fqn: 50508602-c47e-448d-a09c-f1ac8ba06e7a
+  columns:
+  - name: Product_Key
+    db_column_name: Product_Key
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: Product_Description
+    db_column_name: Product_Description
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: SKU_Number
+    db_column_name: SKU_Number
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Category_Description
+    db_column_name: Category_Description
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Department_Description
+    db_column_name: Department_Description
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Package_Type_Description
+    db_column_name: Package_Type_Description
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Package_Size
+    db_column_name: Package_Size
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Fat_Content
+    db_column_name: Fat_Content
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: Diet_Type
+    db_column_name: Diet_Type
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Weight
+    db_column_name: Weight
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: Weight_Units_Of_Measure
+    db_column_name: Weight_Units_Of_Measure
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: Shelf_Width
+    db_column_name: Shelf_Width
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: Shelf_Height
+    db_column_name: Shelf_Height
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: Shelf_Depth
+    db_column_name: Shelf_Depth
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: Product_Price
+    db_column_name: Product_Price
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: Product_Cost
+    db_column_name: Product_Cost
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: Lowest_Competitor_Price
+    db_column_name: Lowest_Competitor_Price
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: Highest_Competitor_Price
+    db_column_name: Highest_Competitor_Price
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: Average_Competitor_Price
+    db_column_name: Average_Competitor_Price
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: Discontinued_Flag
+    db_column_name: Discontinued_Flag
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  properties:
+    spotter_config:
+      is_spotter_enabled: false

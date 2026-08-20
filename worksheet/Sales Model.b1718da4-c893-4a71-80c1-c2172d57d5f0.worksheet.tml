@@ -1,0 +1,167 @@
+guid: b1718da4-c893-4a71-80c1-c2172d57d5f0
+model:
+  name: Sales Model
+  model_tables:
+  - name: HO_Customer_Dimension
+    fqn: 1c89e099-1cae-481f-8846-82bc5054a63e
+  - name: HO_Date_Dimension
+    fqn: 5f834d59-edea-4838-a28e-f915bbcb04a7
+  - name: HO_Product_Dimension
+    fqn: f241ef5f-af84-48a4-99cb-96608eed0000
+  - name: HO_Retail_Sales_Fact
+    fqn: 592eef44-dedc-4e7e-80a6-9e84d5e3b5f3
+    joins:
+    - with: HO_Customer_Dimension
+      referencing_join: HO_Retail_Sales_Fact_to_HO_Customer_Dimension
+    - with: HO_Date_Dimension
+      referencing_join: HO_Retail_Sales_Fact_to_HO_Date_Dimension
+    - with: HO_Product_Dimension
+      'on': '[HO_Retail_Sales_Fact::Product_Key] = [HO_Product_Dimension::Product_Key]'
+      type: RIGHT_OUTER
+      cardinality: MANY_TO_ONE
+    - with: HO_Store_Dimension
+      referencing_join: HO_Retail_Sales_Fact_to_HO_Store_Dimension
+  - name: HO_Store_Dimension
+    fqn: 35948b40-8a0a-459b-a0c0-b3bb2dad70b9
+  formulas:
+  - id: formula_Profit Margin
+    name: Profit Margin
+    expr: sum ( [HO_Retail_Sales_Fact::Gross_Profit_Dollar_Amount] ) / sum ( [HO_Retail_Sales_Fact::Sales_Dollar_Amount] )
+  - id: formula_What If Sales Tax
+    name: What If Sales Tax
+    expr: sum ( [HO_Retail_Sales_Fact::Sales_Dollar_Amount] ) * [Sales Tax Value]
+  columns:
+  - name: Customer Region
+    column_id: HO_Customer_Dimension::Customer_Region
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      ai_context: Broad geographic region associated with the customer's location, enabling high-level territorial segmentation and sales performance analysis by customer geography.
+  - name: Profit Margin
+    formula_id: formula_Profit Margin
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      ai_context: Ratio-based measure of profitability expressed as a decimal or percentage, indicating the proportion of revenue retained as profit after costs are deducted.
+  - name: Pos Transaction Number
+    column_id: HO_Retail_Sales_Fact::POS_Transaction_Number
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      ai_context: Unique numeric identifier for each Point-of-Sale transaction, serving as the primary key to distinguish individual sales records in the Sales Model.
+  - name: Customer State
+    column_id: HO_Customer_Dimension::Customer_State
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      ai_context: U.S. state associated with the customer's geographic location, enabling state-level segmentation and regional sales performance analysis by customer origin.
+  - name: Customer Name
+    description: This is the first name and last name of my customer.
+    column_id: HO_Customer_Dimension::Customer_Name
+    properties:
+      column_type: ATTRIBUTE
+      ai_context: Full name of the customer (first and last) involved in the transaction, used to identify and segment individual buyers across sales records.
+  - name: Date
+    column_id: HO_Date_Dimension::Date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      default_date_bucket: DAILY
+      ai_context: Calendar date on which a sales transaction occurred, enabling time-based trend analysis, period comparisons, and temporal filtering across the Sales Model.
+  - name: Category
+    column_id: HO_Product_Dimension::Category_Description
+    properties:
+      column_type: ATTRIBUTE
+      custom_order:
+      - Food
+      - Non-food
+      - Misc
+      - Medical
+      ai_context: Mid-level merchandise classification grouping related products together, sitting between the Product and Department levels in the product hierarchy.
+  - name: Department
+    column_id: HO_Product_Dimension::Department_Description
+    properties:
+      column_type: ATTRIBUTE
+      ai_context: Highest-level merchandise grouping in the product hierarchy, aggregating multiple categories for broad departmental sales and profitability analysis.
+  - name: Product
+    column_id: HO_Product_Dimension::Product_Description
+    properties:
+      column_type: ATTRIBUTE
+      synonyms:
+      - item
+      synonym_type: USER_DEFINED
+      ai_context: Specific item (also referred to as 'item') sold in a transaction, representing the most granular level of the merchandise hierarchy in the Sales Model.
+  - name: Store Name
+    column_id: HO_Store_Dimension::Store_Name
+    properties:
+      column_type: ATTRIBUTE
+      ai_context: Name identifying the specific retail store where a transaction took place, enabling store-level performance comparisons within the Sales Model.
+  - name: Store Region
+    column_id: HO_Store_Dimension::Store_Region
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      ai_context: Broad geographic region classifying the store's location, enabling high-level territorial sales comparisons across store-based regional groupings.
+  - name: Store State
+    column_id: HO_Store_Dimension::Store_State
+    properties:
+      column_type: ATTRIBUTE
+      ai_context: U.S. state in which the store is located, supporting geographic performance analysis at the state level from the store's perspective.
+  - name: Cost
+    column_id: HO_Retail_Sales_Fact::Cost_Dollar_Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      ai_context: Total expense associated with goods sold, representing the cost of merchandise and forming the basis for calculating profit within the Sales Model.
+  - name: Sales
+    description: Sum (Sales Dollar Amount)
+    column_id: HO_Retail_Sales_Fact::Sales_Dollar_Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      synonyms:
+      - revenue
+      currency_type:
+        iso_code: USD
+      synonym_type: USER_DEFINED
+      ai_context: Aggregated dollar amount of revenue (also referred to as 'revenue') generated from transactions, representing the total sales value for financial performance analysis.
+  - name: Sales Quantity
+    column_id: HO_Retail_Sales_Fact::Sales_Quantity
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      ai_context: Total number of units sold in transactions, providing a volume-based measure of sales activity to complement the dollar-based Sales metric.
+  - name: Profit
+    column_id: HO_Retail_Sales_Fact::Gross_Profit_Dollar_Amount
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      ai_context: Net earnings derived from sales after deducting costs, expressed as an absolute dollar amount reflecting the financial outcome of transactions.
+  - name: What If Sales Tax
+    formula_id: formula_What If Sales Tax
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+      ai_context: Scenario-based decimal measure modeling the hypothetical impact of sales tax on financial outcomes, supporting forward-looking and what-if profitability analysis.
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
+    spotter_config:
+      is_spotter_enabled: true
+  parameters:
+  - id: 7739403e-2309-4323-ad06-9c8dbd873ef2
+    name: Sales Tax Value
+    data_type: DOUBLE
+    default_value: '0.06'
+    range_config:
+      range_min: '0.02'
+      range_max: '0.25'
+      include_min: true
+      include_max: true
+    description: ''

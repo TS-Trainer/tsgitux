@@ -1,0 +1,58 @@
+guid: 5d1d697b-f031-41d1-a706-9f95f77a3888
+answer:
+  name: Sharing Demo MG
+  tables:
+  - id: Sales Model
+    name: Sales Model
+    fqn: b1718da4-c893-4a71-80c1-c2172d57d5f0
+  search_query: "[Department] [Sales] [Category]"
+  answer_columns:
+  - name: Category
+  - name: Department
+  - name: Total Sales
+  table:
+    table_columns:
+    - column_id: Category
+      show_headline: false
+    - column_id: Department
+      show_headline: false
+    - column_id: Total Sales
+      show_headline: false
+    ordered_column_ids:
+    - Department
+    - Category
+    - Total Sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: ADVANCED_STACKED_COLUMN
+    chart_columns:
+    - column_id: Category
+    - column_id: Department
+    - column_id: Total Sales
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Category\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"adc3dce8-1042-4a1a-8462-64be8524b936\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"59d9d6e8-8e9c-497e-9059-53085d308c76\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}]}"
+    custom_chart_config:
+    - key: basic
+      dimensions:
+      - key: x-axis
+        axes:
+        - type: FLAT
+          column: Department
+        mode: AXIS_DRIVEN
+      - key: y-axis
+        axes:
+        - type: FLAT
+          column: Total Sales
+        mode: AXIS_DRIVEN
+      - key: slice-with-color
+        axes:
+        - type: FLAT
+          column: Category
+        mode: AXIS_DRIVEN
+      - key: trellis-by
+        mode: AXIS_DRIVEN
+    custom_visual_props: "{}"
+    viz_style: "{}"
+  display_mode: CHART_MODE
+  dynamic_name: Sharing Demo MG

@@ -5,42 +5,27 @@ answer:
   - id: Retail Sales - Classic
     name: Retail Sales - Classic
     fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-  search_query: "[Category] [Sales]"
+  search_query: "[Category]"
   answer_columns:
   - name: Category
-  - name: Total Sales
   table:
     table_columns:
     - column_id: Category
       show_headline: false
-    - column_id: Total Sales
-      show_headline: false
     ordered_column_ids:
     - Category
-    - Total Sales
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: ADVANCED_DONUT
+    type: KPI
     chart_columns:
     - column_id: Category
-    - column_id: Total Sales
+    axis_configs:
+    - "y":
+      - Category
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true,\"showAnalyseChangeCta\": true}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"c7882289-998a-4c4a-a09f-5731ffdba3c9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"5acf73c8-566c-4a37-9f08-b22194880061\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}]}"
-    custom_chart_config:
-    - key: basic
-      dimensions:
-      - key: x-axis
-        axes:
-        - type: FLAT
-          column: Category
-        mode: AXIS_DRIVEN
-      - key: y-axis
-        axes:
-        - type: FLAT
-          column: Total Sales
-        mode: AXIS_DRIVEN
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"358e2f24-f8ca-4a70-82d4-65b752c72c74\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Category\"],\"isOpposite\": false}},{\"id\": \"304a0aa9-6a0e-4a03-992d-2e9b251ee468\",\"properties\": {\"axisType\": \"X\"}}]}"
     custom_visual_props: "{}"
     viz_style: "{}"
-  display_mode: CHART_MODE
+  display_mode: TABLE_MODE
   dynamic_name: Total Sales by Category test for versioning

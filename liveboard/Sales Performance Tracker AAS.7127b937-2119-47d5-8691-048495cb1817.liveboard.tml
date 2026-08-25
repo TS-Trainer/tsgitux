@@ -1,0 +1,654 @@
+guid: 7127b937-2119-47d5-8691-048495cb1817
+liveboard:
+  name: Sales Performance Tracker AAS
+  description: "Comprehensive sales performance tracking with KPIs, trends, and attribute-based breakdowns across stores, departments, categories, and customer segments."
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Sales Overview
+      description: Aggregate sales figures across all categories.
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales]"
+      answer_columns:
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Total Sales
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Sales
+        axis_configs:
+        - "y":
+          - Total Sales
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 6c42627b-5d42-472f-8f9d-65b3ffd30add
+  - id: Viz_2
+    answer:
+      name: Total Gross Margin Overview
+      description: Overall gross margin in dollars
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "sum [Gross Margin ($)]"
+      answer_columns:
+      - name: Total Gross Margin ($)
+      table:
+        table_columns:
+        - column_id: Total Gross Margin ($)
+          show_headline: false
+        ordered_column_ids:
+        - Total Gross Margin ($)
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Gross Margin ($)
+        axis_configs:
+        - "y":
+          - Total Gross Margin ($)
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 9cbf3ccd-aadc-402e-9eaa-78f3c50cba29
+  - id: Viz_3
+    answer:
+      name: Total Quantity Overview
+      description: Overall total quantity summary view
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "sum [Quantity]"
+      answer_columns:
+      - name: Total Quantity
+      table:
+        table_columns:
+        - column_id: Total Quantity
+          show_headline: false
+        ordered_column_ids:
+        - Total Quantity
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Quantity
+        axis_configs:
+        - "y":
+          - Total Quantity
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 5a2a4bde-adde-479e-afbb-e4af38f2f948
+  - id: Viz_4
+    answer:
+      name: Average Basket Size Overview
+      description: Average basket size metric analysis
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Average Basket Size]"
+      answer_columns:
+      - name: Average Basket Size
+      table:
+        table_columns:
+        - column_id: Average Basket Size
+          show_headline: false
+        ordered_column_ids:
+        - Average Basket Size
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Average Basket Size
+        axis_configs:
+        - "y":
+          - Average Basket Size
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 0b07a0a6-421b-4554-b84a-de84e22ca99c
+  - id: Viz_5
+    answer:
+      name: Monthly Sales Trend
+      description: Sales trends over months by date.
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "sum [Sales] [Sale Date].monthly"
+      answer_columns:
+      - name: Month(Sale Date)
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Month(Sale Date)
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Month(Sale Date)
+        - Total Sales
+        client_state: ""
+      chart:
+        type: ADVANCED_LINE
+        chart_columns:
+        - column_id: Month(Sale Date)
+        - column_id: Total Sales
+        client_state: ""
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Month(Sale Date)
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Total Sales
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: 1f4b11a4-2271-421f-9e86-7695354c516e
+  - id: Viz_6
+    answer:
+      name: Sales by Store Region
+      description: Bar chart of sales per region.
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Store Region]"
+      answer_columns:
+      - name: Store Region
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Store Region
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Store Region
+        - Total Sales
+        client_state: ""
+      chart:
+        type: ADVANCED_BAR
+        chart_columns:
+        - column_id: Store Region
+        - column_id: Total Sales
+        client_state: ""
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Total Sales
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Store Region
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: 1296486b-812a-4413-ae62-ddf409692617
+  - id: Viz_7
+    answer:
+      name: Sales by Department
+      description: Department-wise sales breakdown bar chart
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Department]"
+      answer_columns:
+      - name: Department
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Department
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Department
+        - Total Sales
+        client_state: ""
+      chart:
+        type: ADVANCED_BAR
+        chart_columns:
+        - column_id: Department
+        - column_id: Total Sales
+        client_state: ""
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Department
+            mode: AXIS_DRIVEN
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Total Sales
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: 06b09148-85db-4a7c-bcd8-eec0fa97c45d
+  - id: Viz_8
+    answer:
+      name: Sales Distribution by Category
+      description: Category-wise sales breakdown pie chart.
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Category]"
+      answer_columns:
+      - name: Category
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Category
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Category
+        - Total Sales
+        client_state: ""
+      chart:
+        type: ADVANCED_DONUT
+        chart_columns:
+        - column_id: Category
+        - column_id: Total Sales
+        client_state: ""
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Category
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Total Sales
+            mode: AXIS_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: 938fa420-dad7-457d-a9e8-ebbd9a1c2c57
+  - id: Viz_9
+    answer:
+      name: Gross Margin % by Department
+      description: Department-wise gross margin percentage breakdown
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[% Gross Margin] [Department]"
+      answer_columns:
+      - name: '% Gross Margin'
+      - name: Department
+      table:
+        table_columns:
+        - column_id: '% Gross Margin'
+          show_headline: false
+        - column_id: Department
+          show_headline: false
+        ordered_column_ids:
+        - Department
+        - '% Gross Margin'
+        client_state: ""
+      chart:
+        type: ADVANCED_BAR
+        chart_columns:
+        - column_id: '% Gross Margin'
+        - column_id: Department
+        client_state: ""
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Department
+            mode: AXIS_DRIVEN
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: '% Gross Margin'
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: e853afd7-6027-4d0f-bd68-78978382f3df
+  - id: Viz_10
+    answer:
+      name: Top 10 Stores by Sales
+      description: Sales performance across top ten stores.
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "top 10 [Store Name] [Sales] sort by [Sales]"
+      answer_columns:
+      - name: Store Name
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Store Name
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Store Name
+        - Total Sales
+        client_state: ""
+      chart:
+        type: ADVANCED_BAR
+        chart_columns:
+        - column_id: Store Name
+        - column_id: Total Sales
+        client_state: ""
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Total Sales
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Store Name
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: 8b2cfc53-3096-4b06-b7f7-223d51f4dd61
+  - id: Viz_11
+    answer:
+      name: Sales by Customer Region
+      description: Regional sales distribution bar chart overview.
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Customer Region]"
+      answer_columns:
+      - name: Customer Region
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Customer Region
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Customer Region
+        - Total Sales
+        client_state: ""
+      chart:
+        type: ADVANCED_BAR
+        chart_columns:
+        - column_id: Customer Region
+        - column_id: Total Sales
+        client_state: ""
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Total Sales
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Customer Region
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: 584b5294-ea2a-4c50-98d3-0cb55bc37bbc
+  - id: Viz_12
+    answer:
+      name: Sales by Age Group Gender
+      description: Stacked bar chart of sales demographics.
+      tables:
+      - id: Retail Sales - Classic
+        name: Retail Sales - Classic
+        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
+      search_query: "[Sales] [Gender] [Age Group]"
+      answer_columns:
+      - name: Age Group
+      - name: Gender
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Age Group
+          show_headline: false
+        - column_id: Gender
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - Gender
+        - Age Group
+        - Total Sales
+        client_state: ""
+      chart:
+        type: ADVANCED_STACKED_BAR
+        chart_columns:
+        - column_id: Age Group
+        - column_id: Gender
+        - column_id: Total Sales
+        client_state: ""
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Total Sales
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Gender
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: 5e95e9d2-21a0-4973-bcc9-191a1ef00e00
+  - id: Viz_13
+    viz_guid: 73036976-448f-4af0-84ca-915fbcbd0abf
+    ai_tile:
+      target_agent: insight_code_runner
+      analysis_code: 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
+      template_id: text_long_form
+  groups:
+  - id: Group_1
+    name: Key Metrics
+    description: Core sales KPIs at a glance
+    visualizations:
+    - Viz_1
+    - Viz_2
+    - Viz_3
+    - Viz_4
+    group_guid: 7de1bab8-0f33-4a56-b199-478ca6130128
+  - id: Group_2
+    name: Sales Trends & Breakdown
+    description: "Sales performance across time, regions, and departments"
+    visualizations:
+    - Viz_5
+    - Viz_6
+    - Viz_7
+    - Viz_8
+    group_guid: b9bb2c29-7bbc-4f6a-89fc-3fbfcec71f14
+  - id: Group_3
+    name: Margin & Store Analysis
+    description: Gross margin and top store performance
+    visualizations:
+    - Viz_9
+    - Viz_10
+    group_guid: b149f12c-b6c9-4df4-b2f3-a1c22ac13d58
+  - id: Group_4
+    name: Customer Segmentation
+    description: "Sales by customer region, age group, and gender"
+    visualizations:
+    - Viz_11
+    - Viz_12
+    group_guid: 4d0fc39b-08b6-4b1f-8b98-dfc48fee6662
+  layout:
+    tabs:
+    - name: Overview
+      description: ""
+      tiles:
+      - visualization_id: Viz_13
+        x: 0
+        "y": 0
+        height: 3
+        width: 4
+      - visualization_id: Group_1
+        x: 4
+        "y": 0
+        height: 3
+        width: 8
+      - visualization_id: Group_2
+        x: 0
+        "y": 3
+        height: 10
+        width: 12
+      id: d9875c6a-b4c5-4024-83c3-021455b1baf7
+      group_layouts:
+      - id: Group_1
+        tiles:
+        - visualization_id: Viz_1
+          x: 0
+          "y": 0
+          height: 3
+          width: 3
+        - visualization_id: Viz_2
+          x: 3
+          "y": 0
+          height: 3
+          width: 3
+        - visualization_id: Viz_3
+          x: 6
+          "y": 0
+          height: 3
+          width: 3
+        - visualization_id: Viz_4
+          x: 9
+          "y": 0
+          height: 3
+          width: 3
+      - id: Group_2
+        tiles:
+        - visualization_id: Viz_5
+          x: 0
+          "y": 0
+          height: 10
+          width: 6
+        - visualization_id: Viz_6
+          x: 6
+          "y": 0
+          height: 5
+          width: 6
+        - visualization_id: Viz_7
+          x: 6
+          "y": 5
+          height: 5
+          width: 3
+        - visualization_id: Viz_8
+          x: 9
+          "y": 5
+          height: 5
+          width: 3
+    - name: Deep Dive
+      description: Detailed attribute-based sales breakdowns
+      tiles:
+      - visualization_id: Group_3
+        x: 0
+        "y": 0
+        height: 8
+        width: 12
+      - visualization_id: Group_4
+        x: 0
+        "y": 8
+        height: 8
+        width: 12
+      id: eaacc7e9-aea5-47f2-8c91-1d8b90f487c1
+      group_layouts:
+      - id: Group_3
+        tiles:
+        - visualization_id: Viz_9
+          x: 0
+          "y": 0
+          height: 8
+          width: 6
+        - visualization_id: Viz_10
+          x: 6
+          "y": 0
+          height: 8
+          width: 6
+      - id: Group_4
+        tiles:
+        - visualization_id: Viz_11
+          x: 0
+          "y": 0
+          height: 8
+          width: 6
+        - visualization_id: Viz_12
+          x: 6
+          "y": 0
+          height: 8
+          width: 6
+  style:
+    style_properties:
+    - name: lb_border_type
+      value: CURVED
+    - name: lb_brand_color
+      value: LBC_A
+    - name: hide_group_title
+      value: "false"
+    - name: hide_group_description
+      value: "true"
+    - name: hide_group_tile_description
+      value: "false"
+    - name: hide_tile_description
+      value: "false"
+    - name: kpi_hero_font_size
+      value: M

@@ -1,6 +1,6 @@
 guid: 7127b937-2119-47d5-8691-048495cb1817
 liveboard:
-  name: Sales Performance Tracker AAS
+  name: AAS Sales Performance Tracker
   description: "Comprehensive sales performance tracking with KPIs, trends, and attribute-based breakdowns across stores, departments, categories, and customer segments."
   visualizations:
   - id: Viz_1

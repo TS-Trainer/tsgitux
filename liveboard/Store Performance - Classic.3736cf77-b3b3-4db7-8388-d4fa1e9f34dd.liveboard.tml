@@ -320,14 +320,12 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: cc08c260-5514-4e31-be99-581f6a1cbdfe
-    name: East and Food
+  - view_guid: d2340364-ddc4-4a5f-815b-793f59af54a7
+    name: East Region
     view_filters:
     - column:
       - Category
-      oper: in
-      values:
-      - Food
+      oper: =
     - column:
       - Store Region
       oper: in
@@ -342,12 +340,14 @@ liveboard:
       - b) 30-49
       - d) 65+
     is_public: false
-  - view_guid: 9205dd83-a873-4757-afcb-1db15cd175d4
-    name: East Sales
+  - view_guid: 315651bb-3d65-4880-98bd-90e933bb879f
+    name: East and Food
     view_filters:
     - column:
       - Category
-      oper: =
+      oper: in
+      values:
+      - Food
     - column:
       - Store Region
       oper: in

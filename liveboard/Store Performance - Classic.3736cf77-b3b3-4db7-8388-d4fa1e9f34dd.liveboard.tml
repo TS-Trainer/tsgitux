@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 9205dd83-a873-4757-afcb-1db15cd175d4
-    name: East Sales
+  - view_guid: d2340364-ddc4-4a5f-815b-793f59af54a7
+    name: East Region
     view_filters:
     - column:
       - Category

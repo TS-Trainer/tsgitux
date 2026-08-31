@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: d2340364-ddc4-4a5f-815b-793f59af54a7
-    name: East Region
+  - view_guid: 430548b5-c6a5-48ee-bd4d-353827df1b7d
+    name: East region - Gloria
     view_filters:
     - column:
       - Category

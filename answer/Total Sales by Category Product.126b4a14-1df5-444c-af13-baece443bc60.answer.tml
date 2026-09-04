@@ -54,5 +54,5 @@ answer:
         mode: AXIS_DRIVEN
     custom_visual_props: "{}"
     viz_style: "{}"
-  display_mode: CHART_MODE
+  display_mode: TABLE_MODE
   dynamic_name: Total Sales by Category Product

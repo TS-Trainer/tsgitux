@@ -476,10 +476,6 @@ liveboard:
       dynamic_name: Trellis By Chart AAS
     viz_guid: d5a3ab0e-2793-45ad-be00-4d4e05b6c82b
   - id: Viz_10
-    viz_guid: 67d19881-d3f5-48f0-8ef6-b3ec1d4cb0e2
-    note_tile:
-      html_parsed_string: "<h1 class=\"theme-module__editor-h1\"><span style=\"white-space: pre-wrap;\">TS University</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\"><br></p><h2 class=\"theme-module__editor-h2\"><a href=\"https://training.thoughtspot.com/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS University portal</span></h2><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
-  - id: Viz_11
     viz_guid: 4d388a60-c894-49d3-8cdb-c3fb743ff7c0
     ai_tile:
       target_agent: insight_code_runner
@@ -534,16 +530,11 @@ liveboard:
     - name: 1. Retail Sales
       description: ""
       tiles:
-      - visualization_id: Viz_11
+      - visualization_id: Viz_10
         x: 9
         "y": 0
         height: 8
         width: 3
-      - visualization_id: Viz_10
-        x: 0
-        "y": 0
-        height: 4
-        width: 2
       - visualization_id: Viz_1
         x: 4
         "y": 0

@@ -308,10 +308,6 @@ liveboard:
       display_mode: CHART_MODE
     viz_guid: be2aef52-432a-4e2f-bb41-e9681439dcfd
   - id: Viz_8
-    viz_guid: fc990743-cfa5-4fb2-b392-f29eee9f7b95
-    note_tile:
-      html_parsed_string: "<h2 class=\"theme-module__editor-h2\" dir=\"ltr\"><a href=\"https://www.training.thoughtspot.com\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS University!</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><h1 class=\"theme-module__editor-h1\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">Welcome to TS Training!</span></h1><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
-  - id: Viz_9
     answer:
       name: Sample Answer AAS
       tables:
@@ -418,11 +414,6 @@ liveboard:
         "y": 17
         height: 8
         width: 6
-      - visualization_id: Viz_8
-        x: 0
-        "y": 0
-        height: 4
-        width: 4
       id: 41440be9-65ce-4718-9895-5c14004740bd
     - name: TAB 2
       description: ""
@@ -432,7 +423,7 @@ liveboard:
         "y": 0
         height: 6
         width: 4
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 4
         "y": 0
         height: 8

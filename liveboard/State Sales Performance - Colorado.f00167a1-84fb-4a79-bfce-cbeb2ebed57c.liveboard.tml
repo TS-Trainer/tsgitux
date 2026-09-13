@@ -1,5 +1,4 @@
 guid: f00167a1-84fb-4a79-bfce-cbeb2ebed57c
-obj_id: StateSalesPerformance-Colorado-f00167a1
 liveboard:
   name: State Sales Performance - Colorado
   description: Recent store and regional performance
@@ -599,15 +598,14 @@ liveboard:
   - name: Store State
     type: FILTER
   views:
-  - view_guid: 31829f0f-a4ef-4478-a258-757cce8fb3e4
-    name: testmyview
+  - view_guid: f964dc66-e2c8-4482-9e9e-4691445c8c3d
+    name: California
     view_filters:
     - column:
       - Store State
       oper: in
       values:
-      - colorado
-      - Alabama
+      - California
     is_public: false
   style:
     style_properties:

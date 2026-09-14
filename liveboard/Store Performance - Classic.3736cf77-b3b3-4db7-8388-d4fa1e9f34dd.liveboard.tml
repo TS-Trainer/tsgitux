@@ -320,44 +320,19 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 35ecc632-b554-4142-8e44-285d59d73c76
-    name: east sales
+  - view_guid: 4f5983d9-3cb1-4209-989f-37f997556754
+    name: South Region Food Sales
     view_filters:
     - column:
       - Category
       oper: in
       values:
-      - food
-      - Medical
-      - Misc
-      - Non-food
+      - Food
     - column:
       - Store Region
       oper: in
       values:
-      - East
-    - column:
-      - Age Group
-      oper: in
-      values:
-      - c) 50-64
-      - a) 18-29
-      - b) 30-49
-      - d) 65+
-    is_public: false
-  - view_guid: 12463360-4918-42f3-a32e-bdc143a14717
-    name: east foods
-    view_filters:
-    - column:
-      - Category
-      oper: in
-      values:
-      - food
-    - column:
-      - Store Region
-      oper: in
-      values:
-      - East
+      - South
     - column:
       - Age Group
       oper: in

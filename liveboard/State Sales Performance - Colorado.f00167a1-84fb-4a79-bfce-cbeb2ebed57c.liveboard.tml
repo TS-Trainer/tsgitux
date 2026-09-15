@@ -598,8 +598,8 @@ liveboard:
   - name: Store State
     type: FILTER
   views:
-  - view_guid: 7c2c61db-43de-476b-b939-f4778c23b7c8
-    name: California JDS
+  - view_guid: 8d24f5a6-21c1-42ae-affb-10fe08851eb0
+    name: California - Chizube
     view_filters:
     - column:
       - Store State

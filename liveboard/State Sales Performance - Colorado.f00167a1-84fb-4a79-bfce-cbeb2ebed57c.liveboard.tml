@@ -598,8 +598,8 @@ liveboard:
   - name: Store State
     type: FILTER
   views:
-  - view_guid: b8d2e296-ec4a-4518-9520-2f9a7ff197b3
-    name: Cali FHB
+  - view_guid: 8c086e70-7d8c-472a-8c08-c432e08bcf6c
+    name: Cali LB
     view_filters:
     - column:
       - Store State

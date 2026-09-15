@@ -598,8 +598,8 @@ liveboard:
   - name: Store State
     type: FILTER
   views:
-  - view_guid: 8d24f5a6-21c1-42ae-affb-10fe08851eb0
-    name: California - Chizube
+  - view_guid: 0b37096a-960c-446c-9250-e68ad04426c6
+    name: Cali - MW
     view_filters:
     - column:
       - Store State

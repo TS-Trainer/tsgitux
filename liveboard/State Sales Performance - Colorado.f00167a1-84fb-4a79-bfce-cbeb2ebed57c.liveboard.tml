@@ -597,17 +597,6 @@ liveboard:
   ordered_chips:
   - name: Store State
     type: FILTER
-  views:
-  - view_guid: 93a1957b-94b7-4f40-8129-6350b1b0b25c
-    name: Tim's view
-    view_filters:
-    - column:
-      - Store State
-      oper: in
-      values:
-      - colorado
-      - Arizona
-    is_public: false
   style:
     style_properties:
     - name: lb_border_type

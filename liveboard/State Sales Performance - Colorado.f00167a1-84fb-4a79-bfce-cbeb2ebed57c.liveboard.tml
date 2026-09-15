@@ -598,8 +598,8 @@ liveboard:
   - name: Store State
     type: FILTER
   views:
-  - view_guid: 8c086e70-7d8c-472a-8c08-c432e08bcf6c
-    name: Cali LB
+  - view_guid: 7c2c61db-43de-476b-b939-f4778c23b7c8
+    name: California JDS
     view_filters:
     - column:
       - Store State

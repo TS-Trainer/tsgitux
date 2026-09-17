@@ -8,12 +8,26 @@ table:
     name: RetailClassic
     fqn: 17077c88-fe74-4a67-b7f5-c6340106c225
   columns:
+  - name: Date Key
+    db_column_name: DATE_KEY
+    properties:
+      column_type: ATTRIBUTE
+      is_hidden: true
+    db_column_properties:
+      data_type: INT64
   - name: Old Date
     db_column_name: DATE
     properties:
       column_type: ATTRIBUTE
     db_column_properties:
       data_type: DATE
+  - name: Full Date Description
+    db_column_name: FULL_DATE_DESCRIPTION
+    properties:
+      column_type: ATTRIBUTE
+      is_hidden: true
+    db_column_properties:
+      data_type: VARCHAR
   - name: Day of Week
     db_column_name: DAY_OF_WEEK
     properties:

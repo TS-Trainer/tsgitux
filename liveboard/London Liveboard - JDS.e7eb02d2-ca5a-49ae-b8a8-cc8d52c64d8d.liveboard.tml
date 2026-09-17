@@ -155,6 +155,10 @@ liveboard:
     viz_guid: bf251e52-3ca2-49a9-a44f-f881039c469a
     note_tile:
       html_parsed_string: "<h2 class=\"theme-module__editor-h2\"><span style=\"white-space: pre-wrap;\">LONDON LIVEBOARD</span></h2><p class=\"theme-module__editor-paragraph\"><span style=\"white-space: pre-wrap;\">Here is eveything you should know about the data on this liveboard.</span></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: rgb(249, 179, 185);\"></div>"
+  - id: Viz_6
+    viz_guid: 319fa643-9082-45fd-ac4a-fb9f48e78b55
+    note_tile:
+      html_parsed_string: "<h2 class=\"theme-module__editor-h2\"><span style=\"white-space: pre-wrap;\">Versioning Test</span></h2><p class=\"theme-module__editor-paragraph\"><span style=\"white-space: pre-wrap;\">Test 1</span></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
   groups:
   - id: Group_1
     name: Maps
@@ -178,21 +182,26 @@ liveboard:
     tiles:
     - visualization_id: Viz_2
       x: 6
-      "y": 4
+      "y": 8
       height: 8
       width: 6
     - visualization_id: Viz_3
       x: 0
-      "y": 0
+      "y": 4
       height: 4
       width: 8
     - visualization_id: Group_1
       x: 0
-      "y": 12
+      "y": 16
       height: 8
       width: 12
     - visualization_id: Viz_5
       x: 8
+      "y": 0
+      height: 4
+      width: 3
+    - visualization_id: Viz_6
+      x: 0
       "y": 0
       height: 4
       width: 3

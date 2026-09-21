@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: f4235a7f-5b6d-485c-b238-fed413ccbb6a
-    name: RKS East Region Food
+  - view_guid: 95c2670f-f7bb-43a7-a611-5439c953f77b
+    name: East Region Food
     view_filters:
     - column:
       - Category

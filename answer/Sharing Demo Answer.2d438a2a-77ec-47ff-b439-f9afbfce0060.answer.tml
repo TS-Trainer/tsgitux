@@ -5,40 +5,40 @@ answer:
   - id: SWH Retail Sales
     name: SWH Retail Sales
     fqn: fdc929c1-16fe-4e31-bf81-291ebfaf6a24
-  search_query: "[Sales Quantity] [Store Name]"
+  search_query: "[Department] [Sales Dollar Amount]"
   answer_columns:
-  - name: Store Name
-  - name: Total Sales Quantity
+  - name: Department
+  - name: Total Sales Dollar Amount
   table:
     table_columns:
-    - column_id: Store Name
+    - column_id: Department
       show_headline: false
-    - column_id: Total Sales Quantity
+    - column_id: Total Sales Dollar Amount
       show_headline: false
     ordered_column_ids:
-    - Store Name
-    - Total Sales Quantity
+    - Department
+    - Total Sales Dollar Amount
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: ADVANCED_AREA
+    type: ADVANCED_COLUMN
     chart_columns:
-    - column_id: Store Name
-    - column_id: Total Sales Quantity
+    - column_id: Department
+    - column_id: Total Sales Dollar Amount
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales Quantity\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Store Name\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"948528fa-0ec3-408d-856b-f15d1c639456\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Quantity\"],\"isOpposite\": false}},{\"id\": \"0fc36d1e-693a-4e36-b3ab-d36390ccc223\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store Name\"]}}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true,\"showAnalyseChangeCta\": true}},\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales Dollar Amount\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"0d6e3108-2997-4e34-aaf0-76dcdf637336\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"f48cfa5a-945f-4bc4-8460-87ec1930f41d\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"efa7106a-8aa0-4de7-872e-e46aceeb8edd\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Dollar Amount\"],\"isOpposite\": false}},{\"id\": \"b641b664-7125-46a6-a642-af9a6f68bac1\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}]}"
     custom_chart_config:
     - key: basic
       dimensions:
       - key: x-axis
         axes:
         - type: FLAT
-          column: Store Name
+          column: Department
         mode: AXIS_DRIVEN
       - key: y-axis
         axes:
         - type: FLAT
-          column: Total Sales Quantity
+          column: Total Sales Dollar Amount
         mode: AXIS_DRIVEN
       - key: slice-with-color
         mode: AXIS_DRIVEN

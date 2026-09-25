@@ -392,12 +392,6 @@ liveboard:
     viz_guid: 3f206b8e-ad74-4fe9-ae8e-07081319eab2
     note_tile:
       html_parsed_string: "<h2 class=\"theme-module__editor-h2\"><span style=\"white-space: pre-wrap;\">ThoughtSpot University Courses</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><ol class=\"theme-module__editor-ol\"><li value=\"1\" class=\"theme-module__editor-list-item\"><a href=\"https://training.thoughtspot.com/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS University</span></li></ol><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
-  - id: Viz_10
-    viz_guid: ed718fa0-40f4-4525-aaf3-ea4514532af7
-    ai_tile:
-      target_agent: insight_code_runner
-      analysis_code: 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
-      template_id: text_long_form
   groups:
   - id: Group_1
     name: Key Updates for Region level Sales
@@ -444,11 +438,6 @@ liveboard:
     - name: 1. Retail Sales
       description: ""
       tiles:
-      - visualization_id: Viz_10
-        x: 0
-        "y": 0
-        height: 4
-        width: 5
       - visualization_id: Viz_9
         x: 5
         "y": 0

@@ -5,35 +5,35 @@ answer:
   - id: SWH Retail Sales
     name: SWH Retail Sales
     fqn: fdc929c1-16fe-4e31-bf81-291ebfaf6a24
-  search_query: "[Department] [Sales Quantity]"
+  search_query: "[Sales Quantity] [Store Name]"
   answer_columns:
-  - name: Department
+  - name: Store Name
   - name: Total Sales Quantity
   table:
     table_columns:
-    - column_id: Department
+    - column_id: Store Name
       show_headline: false
     - column_id: Total Sales Quantity
       show_headline: false
     ordered_column_ids:
-    - Department
+    - Store Name
     - Total Sales Quantity
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: ADVANCED_COLUMN
+    type: ADVANCED_AREA
     chart_columns:
-    - column_id: Department
+    - column_id: Store Name
     - column_id: Total Sales Quantity
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Department\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2522fd54-07bf-4cf3-858d-aeb3c79269b3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Quantity\"],\"isOpposite\": false}},{\"id\": \"f8fb31b3-9734-4ea1-af35-4d747676448b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Department\"]}}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales Quantity\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Store Name\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"948528fa-0ec3-408d-856b-f15d1c639456\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales Quantity\"],\"isOpposite\": false}},{\"id\": \"0fc36d1e-693a-4e36-b3ab-d36390ccc223\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store Name\"]}}]}"
     custom_chart_config:
     - key: basic
       dimensions:
       - key: x-axis
         axes:
         - type: FLAT
-          column: Department
+          column: Store Name
         mode: AXIS_DRIVEN
       - key: y-axis
         axes:

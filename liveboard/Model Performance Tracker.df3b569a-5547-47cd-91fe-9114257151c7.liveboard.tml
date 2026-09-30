@@ -1,0 +1,848 @@
+guid: df3b569a-5547-47cd-91fe-9114257151c7
+liveboard:
+  name: Model Performance Tracker
+  description: "Track and analyze model performance including query volume, active users, errors, latency, and object usage patterns."
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Count Column Name by Column Name
+      tables:
+      - id: "TS: Indexing Stats WS"
+        name: "TS: Indexing Stats WS"
+        fqn: e7669ba4-cfe1-4f43-9eb4-0eb9737fa48e
+      search_query: "top 20 [Column Name] sort by count [Column Name] [Table Name].'Retail Sales - Classic'"
+      answer_columns:
+      - name: Column Name
+      - name: Number of Column Name
+      table:
+        table_columns:
+        - column_id: Column Name
+          show_headline: false
+        - column_id: Number of Column Name
+          show_headline: false
+        ordered_column_ids:
+        - Column Name
+        - Number of Column Name
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Column Name\",\"columnProperty\": {}},{\"columnId\": \"Number of Column Name\",\"columnProperty\": {}}]}"
+      chart:
+        type: ADVANCED_BAR
+        chart_columns:
+        - column_id: Column Name
+        - column_id: Number of Column Name
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Column Name\",\"columnProperty\": {}},{\"columnId\": \"Number of Column Name\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"5f0290e5-594a-4daa-9bf7-268fdfdbce55\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Number of Column Name\"],\"isOpposite\": false}},{\"id\": \"cba90223-ec3c-4c8f-9325-eb88df7abaaa\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Column Name\"]}}]}"
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Number of Column Name
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Column Name
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+        custom_visual_props: "{}"
+        viz_style: "{}"
+      display_mode: CHART_MODE
+    viz_guid: 8a089453-1666-43c9-92ec-1c4426025de3
+  - id: Viz_2
+    answer:
+      name: Total Queries KPI Overview
+      description: Overall count of total queries
+      tables:
+      - id: "TS: AI and BI Stats"
+        name: "TS: AI and BI Stats"
+        fqn: 8ca8f010-fb7b-4acb-8ed0-c9ba072578a7
+      search_query: "[Queries]"
+      answer_columns:
+      - name: Queries
+      table:
+        table_columns:
+        - column_id: Queries
+          show_headline: false
+        ordered_column_ids:
+        - Queries
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Queries
+        axis_configs:
+        - "y":
+          - Queries
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 7de82b86-32bc-4f07-abac-700b04b3ec77
+  - id: Viz_3
+    answer:
+      name: Active Users KPI Overview
+      description: Key metric tracking active user count.
+      tables:
+      - id: "TS: AI and BI Stats"
+        name: "TS: AI and BI Stats"
+        fqn: 8ca8f010-fb7b-4acb-8ed0-c9ba072578a7
+      search_query: "[Active Users]"
+      answer_columns:
+      - name: Active Users
+      table:
+        table_columns:
+        - column_id: Active Users
+          show_headline: false
+        ordered_column_ids:
+        - Active Users
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Active Users
+        axis_configs:
+        - "y":
+          - Active Users
+        client_state: ""
+      display_mode: CHART_MODE
+      dynamic_description: Key metric tracking active user count.
+    viz_guid: bfe4f0e2-d9e8-49e0-a190-c1e8971b4c33
+  - id: Viz_4
+    answer:
+      name: Total Query Errors KPI
+      description: Overall count of query errors.
+      tables:
+      - id: "TS: AI and BI Stats"
+        name: "TS: AI and BI Stats"
+        fqn: 8ca8f010-fb7b-4acb-8ed0-c9ba072578a7
+      search_query: "[Query Errors]"
+      answer_columns:
+      - name: Query Errors
+      table:
+        table_columns:
+        - column_id: Query Errors
+          show_headline: false
+        ordered_column_ids:
+        - Query Errors
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Query Errors
+        axis_configs:
+        - "y":
+          - Query Errors
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: e92750e8-9e5d-4369-ad16-a512cee83756
+  - id: Viz_5
+    answer:
+      name: Average System Latency KPI
+      description: Overall average system latency metric
+      tables:
+      - id: "TS: AI and BI Stats"
+        name: "TS: AI and BI Stats"
+        fqn: 8ca8f010-fb7b-4acb-8ed0-c9ba072578a7
+      search_query: "average [System Latency (Overall)]"
+      answer_columns:
+      - name: Average System Latency (Overall)
+      table:
+        table_columns:
+        - column_id: Average System Latency (Overall)
+          show_headline: false
+        ordered_column_ids:
+        - Average System Latency (Overall)
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Average System Latency (Overall)
+        axis_configs:
+        - "y":
+          - Average System Latency (Overall)
+        client_state: ""
+      display_mode: CHART_MODE
+      dynamic_description: Overall average system latency metric
+    viz_guid: 81b06953-c175-4530-952a-848fee1b9d90
+  - id: Viz_6
+    answer:
+      name: Top 10 Users by Queries
+      description: Users ranked by query count
+      tables:
+      - id: "TS: AI and BI Stats"
+        name: "TS: AI and BI Stats"
+        fqn: 8ca8f010-fb7b-4acb-8ed0-c9ba072578a7
+      search_query: "top 10 [User Display Name] sort by [Queries]"
+      answer_columns:
+      - name: Queries
+      - name: User Display Name
+      table:
+        table_columns:
+        - column_id: Queries
+          show_headline: false
+        - column_id: User Display Name
+          show_headline: false
+        ordered_column_ids:
+        - User Display Name
+        - Queries
+        client_state: ""
+      chart:
+        type: ADVANCED_BAR
+        chart_columns:
+        - column_id: Queries
+        - column_id: User Display Name
+        client_state: ""
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Queries
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: User Display Name
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: 42c44993-57dd-4752-afef-86b36dd895f0
+  - id: Viz_7
+    answer:
+      name: Top 10 Objects by Impressions
+      description: Highest impression counts by object name.
+      tables:
+      - id: "TS: AI and BI Stats"
+        name: "TS: AI and BI Stats"
+        fqn: 8ca8f010-fb7b-4acb-8ed0-c9ba072578a7
+      search_query: "top 10 [Object Name] sort by [Impressions]"
+      answer_columns:
+      - name: Impressions
+      - name: Object Name
+      table:
+        table_columns:
+        - column_id: Impressions
+          show_headline: false
+        - column_id: Object Name
+          show_headline: false
+        ordered_column_ids:
+        - Object Name
+        - Impressions
+        client_state: ""
+      chart:
+        type: ADVANCED_BAR
+        chart_columns:
+        - column_id: Impressions
+        - column_id: Object Name
+        client_state: ""
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Impressions
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Object Name
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: c8fb1e20-723e-4781-af71-cac7ee6e8e51
+  - id: Viz_8
+    answer:
+      name: Daily Queries by User Action
+      description: Query volume by user action daily.
+      tables:
+      - id: "TS: AI and BI Stats"
+        name: "TS: AI and BI Stats"
+        fqn: 8ca8f010-fb7b-4acb-8ed0-c9ba072578a7
+      search_query: "[Queries] [User Action Time].daily"
+      answer_columns:
+      - name: Day(User Action Time)
+      - name: Queries
+      table:
+        table_columns:
+        - column_id: Day(User Action Time)
+          show_headline: false
+        - column_id: Queries
+          show_headline: false
+        ordered_column_ids:
+        - Day(User Action Time)
+        - Queries
+        client_state: ""
+      chart:
+        type: ADVANCED_LINE
+        chart_columns:
+        - column_id: Day(User Action Time)
+        - column_id: Queries
+        client_state: ""
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Day(User Action Time)
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Queries
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: 8e37f5aa-faaf-4c62-b608-a4082bc72d8c
+  - id: Viz_9
+    answer:
+      name: Daily Avg System Latency Trend
+      description: Average system latency by daily action.
+      tables:
+      - id: "TS: AI and BI Stats"
+        name: "TS: AI and BI Stats"
+        fqn: 8ca8f010-fb7b-4acb-8ed0-c9ba072578a7
+      search_query: "average [System Latency (Overall)] [User Action Time].daily"
+      answer_columns:
+      - name: Average System Latency (Overall)
+      - name: Day(User Action Time)
+      table:
+        table_columns:
+        - column_id: Average System Latency (Overall)
+          show_headline: false
+        - column_id: Day(User Action Time)
+          show_headline: false
+        ordered_column_ids:
+        - Day(User Action Time)
+        - Average System Latency (Overall)
+        client_state: ""
+      chart:
+        type: ADVANCED_LINE
+        chart_columns:
+        - column_id: Average System Latency (Overall)
+        - column_id: Day(User Action Time)
+        client_state: ""
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Day(User Action Time)
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Average System Latency (Overall)
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: 920b6901-5fb3-4309-a16b-b62934de973c
+  - id: Viz_10
+    answer:
+      name: Bottom 10 Objects by Impressions
+      description: Lowest 10 objects ranked by impressions.
+      tables:
+      - id: "TS: AI and BI Stats"
+        name: "TS: AI and BI Stats"
+        fqn: 8ca8f010-fb7b-4acb-8ed0-c9ba072578a7
+      search_query: "bottom 10 [Object Name] sort by [Impressions]"
+      answer_columns:
+      - name: Impressions
+      - name: Object Name
+      table:
+        table_columns:
+        - column_id: Impressions
+          show_headline: false
+        - column_id: Object Name
+          show_headline: false
+        ordered_column_ids:
+        - Object Name
+        - Impressions
+        client_state: ""
+      chart:
+        type: ADVANCED_BAR
+        chart_columns:
+        - column_id: Impressions
+        - column_id: Object Name
+        client_state: ""
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Impressions
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Object Name
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: f2cbaa6f-dff5-42b1-8dcf-59e923239769
+  - id: Viz_11
+    answer:
+      name: Queries by User Action
+      description: Query distribution across user actions
+      tables:
+      - id: "TS: AI and BI Stats"
+        name: "TS: AI and BI Stats"
+        fqn: 8ca8f010-fb7b-4acb-8ed0-c9ba072578a7
+      search_query: "[Queries] [User Action]"
+      answer_columns:
+      - name: Queries
+      - name: User Action
+      table:
+        table_columns:
+        - column_id: Queries
+          show_headline: false
+        - column_id: User Action
+          show_headline: false
+        ordered_column_ids:
+        - User Action
+        - Queries
+        client_state: ""
+      chart:
+        type: ADVANCED_COLUMN
+        chart_columns:
+        - column_id: Queries
+        - column_id: User Action
+        client_state: ""
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: User Action
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Queries
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: 4ed321a3-30f3-4f07-a5bf-ee217ab05e92
+  - id: Viz_12
+    answer:
+      name: Top 10 Error Messages
+      description: Most frequent query errors by message
+      tables:
+      - id: "TS: AI and BI Stats"
+        name: "TS: AI and BI Stats"
+        fqn: 8ca8f010-fb7b-4acb-8ed0-c9ba072578a7
+      search_query: "top 10 [Error Message] sort by [Query Errors]"
+      answer_columns:
+      - name: Error Message
+      - name: Query Errors
+      table:
+        table_columns:
+        - column_id: Error Message
+          show_headline: false
+        - column_id: Query Errors
+          show_headline: false
+        ordered_column_ids:
+        - Error Message
+        - Query Errors
+        client_state: ""
+      chart:
+        type: ADVANCED_BAR
+        chart_columns:
+        - column_id: Error Message
+        - column_id: Query Errors
+        client_state: ""
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Query Errors
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Error Message
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: c88f3c24-d1d9-42d1-968a-76909260f0f2
+  - id: Viz_13
+    answer:
+      name: Top 10 Users by Query Errors
+      description: Users with most query errors ranked.
+      tables:
+      - id: "TS: AI and BI Stats"
+        name: "TS: AI and BI Stats"
+        fqn: 8ca8f010-fb7b-4acb-8ed0-c9ba072578a7
+      search_query: "top 10 [User Display Name] sort by [Query Errors]"
+      answer_columns:
+      - name: Query Errors
+      - name: User Display Name
+      table:
+        table_columns:
+        - column_id: Query Errors
+          show_headline: false
+        - column_id: User Display Name
+          show_headline: false
+        ordered_column_ids:
+        - User Display Name
+        - Query Errors
+        client_state: ""
+      chart:
+        type: ADVANCED_BAR
+        chart_columns:
+        - column_id: Query Errors
+        - column_id: User Display Name
+        client_state: ""
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Query Errors
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: User Display Name
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: c1a69e09-5e3a-4d33-88af-7e0815075c90
+  - id: Viz_14
+    answer:
+      name: Top 10 Models by Queries
+      description: Models ranked by query count.
+      tables:
+      - id: "TS: AI and BI Stats"
+        name: "TS: AI and BI Stats"
+        fqn: 8ca8f010-fb7b-4acb-8ed0-c9ba072578a7
+      search_query: "top 10 [Model] sort by [Queries]"
+      answer_columns:
+      - name: Model
+      - name: Queries
+      table:
+        table_columns:
+        - column_id: Model
+          show_headline: false
+        - column_id: Queries
+          show_headline: false
+        ordered_column_ids:
+        - Model
+        - Queries
+        client_state: ""
+      chart:
+        type: ADVANCED_BAR
+        chart_columns:
+        - column_id: Model
+        - column_id: Queries
+        client_state: ""
+        custom_chart_config:
+        - key: basic
+          dimensions:
+          - key: x-axis
+            axes:
+            - type: FLAT
+              column: Queries
+            mode: AXIS_DRIVEN
+          - key: y-axis
+            axes:
+            - type: FLAT
+              column: Model
+            mode: AXIS_DRIVEN
+          - key: slice-with-color
+            mode: AXIS_DRIVEN
+          - key: trellis-by
+            mode: AXIS_DRIVEN
+      display_mode: CHART_MODE
+    viz_guid: f291d72b-2242-4747-bcb1-1492b544c262
+  - id: Viz_15
+    viz_guid: 5e34bef8-649d-4ad2-af19-ce23c97992f8
+    ai_tile:
+      target_agent: insight_code_runner
+      analysis_code: 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
+      template_id: text_long_form
+  groups:
+  - id: Group_1
+    name: Key Metrics
+    visualizations:
+    - Viz_2
+    - Viz_3
+    - Viz_4
+    - Viz_5
+    group_guid: 48ea68c8-8885-45d7-bb77-8378d5d2d583
+  - id: Group_2
+    name: Usage Breakdown
+    visualizations:
+    - Viz_6
+    - Viz_7
+    group_guid: 4e0bc45a-a26c-4b9d-b22b-1fa399177581
+  - id: Group_3
+    name: Performance Trends
+    visualizations:
+    - Viz_8
+    - Viz_9
+    group_guid: a31d166d-4cee-43d7-b0dc-ad814d76b813
+  - id: Group_4
+    name: Object Usage
+    visualizations:
+    - Viz_1
+    - Viz_10
+    group_guid: 10379e68-dc59-45ab-82a2-78d082f37617
+  - id: Group_5
+    name: User Action Breakdown
+    visualizations:
+    - Viz_11
+    - Viz_14
+    group_guid: cfe03927-1040-4734-b733-511a1844f60d
+  - id: Group_6
+    name: Error Analysis
+    visualizations:
+    - Viz_12
+    - Viz_13
+    group_guid: 50a427c2-3192-4b66-bd9d-7ef8460b98b1
+  filters:
+  - column:
+    - "TS: AI and BI Stats::Model"
+    - "TS: Indexing Stats WS::Table Name"
+    oper: in
+    values:
+    - Retail Sales - Classic
+    is_mandatory: false
+    is_single_value: true
+    display_name: Model
+  - column:
+    - "TS: AI and BI Stats::User Action Time"
+    excluded_visualizations:
+    - Viz_1
+    is_mandatory: false
+    date_filter:
+      type: LAST_N_PERIOD
+      number: 30
+      oper: =
+      date_period: DAY
+    display_name: Date Range
+  layout:
+    tiles:
+    - visualization_id: Viz_15
+      x: 0
+      "y": 0
+      height: 5
+      width: 6
+    - visualization_id: Group_1
+      x: 6
+      "y": 0
+      height: 5
+      width: 6
+    - visualization_id: Group_2
+      x: 0
+      "y": 5
+      height: 8
+      width: 6
+    - visualization_id: Group_3
+      x: 0
+      "y": 13
+      height: 8
+      width: 12
+    - visualization_id: Group_4
+      x: 0
+      "y": 29
+      height: 8
+      width: 12
+    - visualization_id: Group_5
+      x: 6
+      "y": 5
+      height: 8
+      width: 6
+    - visualization_id: Group_6
+      x: 0
+      "y": 21
+      height: 8
+      width: 12
+    group_layouts:
+    - id: Group_1
+      tiles:
+      - visualization_id: Viz_3
+        x: 7
+        "y": 0
+        height: 4
+        width: 5
+      - visualization_id: Viz_5
+        x: 7
+        "y": 4
+        height: 4
+        width: 5
+      - visualization_id: Viz_4
+        x: 0
+        "y": 4
+        height: 4
+        width: 5
+      - visualization_id: Viz_2
+        x: 0
+        "y": 0
+        height: 4
+        width: 5
+    - id: Group_2
+      tiles:
+      - visualization_id: Viz_6
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_7
+        x: 6
+        "y": 0
+        height: 8
+        width: 6
+    - id: Group_3
+      tiles:
+      - visualization_id: Viz_9
+        x: 6
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_8
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+    - id: Group_4
+      tiles:
+      - visualization_id: Viz_10
+        x: 6
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_1
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+    - id: Group_5
+      tiles:
+      - visualization_id: Viz_11
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_14
+        x: 6
+        "y": 0
+        height: 8
+        width: 6
+    - id: Group_6
+      tiles:
+      - visualization_id: Viz_12
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_13
+        x: 6
+        "y": 0
+        height: 8
+        width: 6
+  ordered_chips:
+  - name: "TS: AI and BI Stats::Model"
+    type: FILTER
+  - name: "TS: AI and BI Stats::User Action Time"
+    type: FILTER
+  style:
+    style_properties:
+    - name: lb_border_type
+      value: CURVED
+    - name: lb_brand_color
+      value: LBC_C
+    - name: hide_group_title
+      value: "false"
+    - name: hide_group_description
+      value: "true"
+    - name: hide_group_tile_description
+      value: "false"
+    - name: hide_tile_description
+      value: "true"
+    - name: kpi_hero_font_size
+      value: L
+    overrides:
+    - object_id: Viz_4
+      style_properties:
+      - name: tile_brand_color
+        value: TBC_P
+      - name: tile_kpi_color
+        value: TKS_A
+      - name: is_highlighted
+        value: "true"
+    - object_id: Group_3
+      style_properties:
+      - name: group_brand_color
+        value: GBC_A
+    - object_id: Viz_2
+      style_properties:
+      - name: tile_brand_color
+        value: TBC_K
+      - name: tile_kpi_color
+        value: TKS_A
+      - name: is_highlighted
+        value: "true"
+    - object_id: Viz_5
+      style_properties:
+      - name: tile_brand_color
+        value: TBC_J
+      - name: tile_kpi_color
+        value: TKS_A
+      - name: is_highlighted
+        value: "true"
+    - object_id: Group_4
+      style_properties:
+      - name: group_brand_color
+        value: GBC_A
+    - object_id: Group_1
+      style_properties:
+      - name: group_brand_color
+        value: GBC_C
+    - object_id: Group_2
+      style_properties:
+      - name: group_brand_color
+        value: GBC_A
+    - object_id: Viz_3
+      style_properties:
+      - name: tile_brand_color
+        value: TBC_L
+      - name: tile_kpi_color
+        value: TKS_A
+      - name: is_highlighted
+        value: "true"

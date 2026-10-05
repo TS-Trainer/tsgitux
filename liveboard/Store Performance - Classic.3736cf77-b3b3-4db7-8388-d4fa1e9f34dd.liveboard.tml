@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 8044b1b0-dfc3-49b2-952e-f7b04c0a82d3
-    name: East Region Food - Training Day 1
+  - view_guid: 6b95e812-3e76-49ba-bf57-9bb23a62cc2a
+    name: East region food sales
     view_filters:
     - column:
       - Category

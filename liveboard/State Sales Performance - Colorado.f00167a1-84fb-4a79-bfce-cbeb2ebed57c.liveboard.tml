@@ -608,6 +608,16 @@ liveboard:
       - colorado
       - Montana
     is_public: false
+  - view_guid: 264b4f04-4710-43c3-ab08-0de9fc2ef6eb
+    name: "12"
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - colorado
+      - California
+    is_public: false
   style:
     style_properties:
     - name: lb_border_type

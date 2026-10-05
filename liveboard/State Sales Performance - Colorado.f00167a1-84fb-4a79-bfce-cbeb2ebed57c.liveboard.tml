@@ -597,6 +597,16 @@ liveboard:
   ordered_chips:
   - name: Store State
     type: FILTER
+  views:
+  - view_guid: 310d6160-1c92-48e7-97cc-67095e9e4a4e
+    name: Califormia
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - California
+    is_public: false
   style:
     style_properties:
     - name: lb_border_type

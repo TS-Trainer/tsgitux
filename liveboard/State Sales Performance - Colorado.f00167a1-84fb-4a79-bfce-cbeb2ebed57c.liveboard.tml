@@ -597,6 +597,16 @@ liveboard:
   ordered_chips:
   - name: Store State
     type: FILTER
+  views:
+  - view_guid: cbc8cfa9-0e34-4fc4-83db-a649bc5fda5b
+    name: Colorado View
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Alabama
+    is_public: false
   style:
     style_properties:
     - name: lb_border_type

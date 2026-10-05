@@ -598,14 +598,15 @@ liveboard:
   - name: Store State
     type: FILTER
   views:
-  - view_guid: f0fd9b28-3ae8-4bba-8706-bd3250bda9b9
-    name: California
+  - view_guid: 2da53a62-2def-4495-9e0c-f56e3fc37229
+    name: "11"
     view_filters:
     - column:
       - Store State
       oper: in
       values:
-      - California
+      - colorado
+      - Montana
     is_public: false
   style:
     style_properties:

@@ -598,7 +598,7 @@ liveboard:
   - name: Store State
     type: FILTER
   views:
-  - view_guid: 732f4227-1740-4fe1-9528-69cedf45ee5b
+  - view_guid: 340c4b79-78d1-4683-8645-dd0bdc0ad53a
     name: California
     view_filters:
     - column:

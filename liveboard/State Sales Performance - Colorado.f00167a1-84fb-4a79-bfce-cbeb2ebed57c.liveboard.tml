@@ -597,6 +597,16 @@ liveboard:
   ordered_chips:
   - name: Store State
     type: FILTER
+  views:
+  - view_guid: eef10a70-9747-4501-ac7f-fc9895749c61
+    name: Sweet Home Alabama
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Alabama
+    is_public: false
   style:
     style_properties:
     - name: lb_border_type

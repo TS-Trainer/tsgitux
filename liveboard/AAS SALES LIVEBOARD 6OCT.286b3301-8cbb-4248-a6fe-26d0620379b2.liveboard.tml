@@ -270,42 +270,6 @@ liveboard:
     viz_guid: 98e2cf80-8439-4d7a-9b82-5cd168103d38
   - id: Viz_6
     answer:
-      name: Total Sales by Store State
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Store State]"
-      answer_columns:
-      - name: Store State
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Store State
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Store State
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: GEO_AREA
-        chart_columns:
-        - column_id: Store State
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Store State
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true,\"showAnalyseChangeCta\": true}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"7d2e9f4e-6c1f-47cd-ae1f-eddbbce46279\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"fb459d9f-5b96-4f34-82e3-2c44c90417c0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
-      display_mode: CHART_MODE
-    viz_guid: a6449cae-626d-40a8-8a6e-01c42ea9a5de
-  - id: Viz_7
-    answer:
       name: Total Sales by Product Name and Department
       tables:
       - id: Retail Sales - Classic
@@ -359,7 +323,7 @@ liveboard:
             mode: AXIS_DRIVEN
       display_mode: CHART_MODE
     viz_guid: cf5d0c11-4c80-46ca-addc-d0884b30259b
-  - id: Viz_8
+  - id: Viz_7
     answer:
       name: "Source 2: Deal Size by Vendor State"
       tables:
@@ -394,7 +358,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: "Source 2: Deal Size by Vendor State"
     viz_guid: c2a49f9a-658f-4c89-816b-feb7ac608c94
-  - id: Viz_9
+  - id: Viz_8
     answer:
       name: Total Deal Size by Vendor Region
       tables:
@@ -436,7 +400,7 @@ liveboard:
             mode: AXIS_DRIVEN
       display_mode: CHART_MODE
     viz_guid: 573267e1-ad94-4f0c-90dc-8533bed49024
-  - id: Viz_10
+  - id: Viz_9
     viz_guid: c9b7bd76-62b0-4b6f-8ba9-1c5293133338
     note_tile:
       html_parsed_string: "<h1 class=\"theme-module__editor-h1\"><span style=\"white-space: pre-wrap;\">ThoughtSpot Notice Board</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><h2 class=\"theme-module__editor-h2\"><a href=\"https://training.thoughtspot.com/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS University</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><h2 class=\"theme-module__editor-h2\"><a href=\"https://training.thoughtspot.com/page/certification\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to register for Certifications</span></h2><p class=\"theme-module__editor-paragraph\"><br></p><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
@@ -495,11 +459,6 @@ liveboard:
         height: 6
         width: 4
       - visualization_id: Viz_6
-        x: 3
-        "y": 0
-        height: 4
-        width: 3
-      - visualization_id: Viz_7
         x: 4
         "y": 10
         height: 6
@@ -509,7 +468,7 @@ liveboard:
         "y": 4
         height: 6
         width: 9
-      - visualization_id: Viz_10
+      - visualization_id: Viz_9
         x: 0
         "y": 16
         height: 4
@@ -518,25 +477,25 @@ liveboard:
       group_layouts:
       - id: Group_1
         tiles:
-        - visualization_id: Viz_5
-          x: 7
-          "y": 0
-          height: 7
-          width: 5
         - visualization_id: Viz_3
           x: 0
           "y": 0
           height: 7
           width: 7
+        - visualization_id: Viz_5
+          x: 7
+          "y": 0
+          height: 7
+          width: 5
     - name: 2. Vendor Reporting
       description: ""
       tiles:
-      - visualization_id: Viz_8
+      - visualization_id: Viz_7
         x: 0
         "y": 0
         height: 4
         width: 9
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 0
         "y": 4
         height: 8

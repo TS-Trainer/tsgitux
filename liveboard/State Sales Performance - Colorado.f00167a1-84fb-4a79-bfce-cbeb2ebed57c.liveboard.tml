@@ -597,16 +597,6 @@ liveboard:
   ordered_chips:
   - name: Store State
     type: FILTER
-  views:
-  - view_guid: 236906f8-d3a2-4d67-8622-2b4f1121c113
-    name: California
-    view_filters:
-    - column:
-      - Store State
-      oper: in
-      values:
-      - California
-    is_public: false
   style:
     style_properties:
     - name: lb_border_type

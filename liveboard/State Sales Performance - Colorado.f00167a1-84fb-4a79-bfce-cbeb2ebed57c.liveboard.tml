@@ -598,14 +598,23 @@ liveboard:
   - name: Store State
     type: FILTER
   views:
-  - view_guid: ce496edc-1642-4943-b0f7-a0dcf0312126
-    name: California
+  - view_guid: f8ff8369-1530-4b4d-8e8e-e7b015ba4105
+    name: Arizona
     view_filters:
     - column:
       - Store State
       oper: in
       values:
-      - California
+      - Arizona
+    is_public: false
+  - view_guid: eef10a70-9747-4501-ac7f-fc9895749c61
+    name: Sweet Home Alabama
+    view_filters:
+    - column:
+      - Store State
+      oper: in
+      values:
+      - Alabama
     is_public: false
   style:
     style_properties:

@@ -598,14 +598,14 @@ liveboard:
   - name: Store State
     type: FILTER
   views:
-  - view_guid: 236906f8-d3a2-4d67-8622-2b4f1121c113
+  - view_guid: ce496edc-1642-4943-b0f7-a0dcf0312126
     name: California
     view_filters:
     - column:
       - Store State
       oper: in
       values:
-      - Florida
+      - California
     is_public: false
   style:
     style_properties:

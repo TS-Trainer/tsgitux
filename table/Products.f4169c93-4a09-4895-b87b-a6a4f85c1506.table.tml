@@ -8,24 +8,10 @@ table:
     name: RetailClassic
     fqn: 17077c88-fe74-4a67-b7f5-c6340106c225
   columns:
-  - name: Product Key
-    db_column_name: PRODUCT_KEY
-    properties:
-      column_type: ATTRIBUTE
-      is_hidden: true
-    db_column_properties:
-      data_type: INT64
   - name: Product Description
     db_column_name: PRODUCT_DESCRIPTION
     properties:
       column_type: ATTRIBUTE
-    db_column_properties:
-      data_type: VARCHAR
-  - name: SKU Number
-    db_column_name: SKU_NUMBER
-    properties:
-      column_type: ATTRIBUTE
-      is_hidden: true
     db_column_properties:
       data_type: VARCHAR
   - name: Category Description

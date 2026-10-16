@@ -453,10 +453,6 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: "Source 2: Vendor Reporting"
     viz_guid: abfee021-d526-4075-afee-0175918dbd25
-  - id: Viz_10
-    viz_guid: 70734382-bd59-47c5-b42f-3280519f9d26
-    note_tile:
-      html_parsed_string: "<h1 class=\"theme-module__editor-h1\"><span style=\"white-space: pre-wrap;\">ThoughtSpot Notice Board</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\"><br></p><h2 class=\"theme-module__editor-h2\"><a href=\"https://training.thoughtspot.com/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS University Portal</span></h2><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
   groups:
   - id: Group_1
     name: "G1: Important Metrics"
@@ -534,22 +530,17 @@ liveboard:
         "y": 4
         height: 4
         width: 4
-      - visualization_id: Viz_10
-        x: 0
-        "y": 0
-        height: 4
-        width: 10
       id: 26f902fd-c142-478d-9850-dafe0e777040
       group_layouts:
       - id: Group_1
         tiles:
-        - visualization_id: Viz_5
-          x: 6
+        - visualization_id: Viz_2
+          x: 0
           "y": 0
           height: 5
           width: 6
-        - visualization_id: Viz_2
-          x: 0
+        - visualization_id: Viz_5
+          x: 6
           "y": 0
           height: 5
           width: 6

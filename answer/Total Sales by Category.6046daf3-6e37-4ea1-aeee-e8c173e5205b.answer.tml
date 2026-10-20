@@ -5,40 +5,44 @@ answer:
   - id: Sales Model
     name: Sales Model
     fqn: c5fc1a2d-2098-4908-86bd-b9c3a1071989
-  search_query: "[Sales] [Category]"
+  search_query: "[Sales] [Product]"
   answer_columns:
-  - name: Category
+  - name: Product
   - name: Total Sales
   table:
     table_columns:
-    - column_id: Category
+    - column_id: Product
       show_headline: false
     - column_id: Total Sales
       show_headline: false
     ordered_column_ids:
-    - Category
+    - Product
     - Total Sales
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: ADVANCED_DONUT
+    type: ADVANCED_COLUMN
     chart_columns:
-    - column_id: Category
+    - column_id: Product
     - column_id: Total Sales
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true,\"showAnalyseChangeCta\": true}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"3ac55c68-29a3-4b1f-90c1-d99a7329dc46\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"fe702808-ebb1-4d9b-9653-f19962cac203\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Product\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a724ccda-a2b1-4ba8-beb1-d67bec1b624f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"e9a2a8f9-4956-4f29-afc6-8a22f3ac97ef\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product\"]}}]}"
     custom_chart_config:
     - key: basic
       dimensions:
       - key: x-axis
         axes:
         - type: FLAT
-          column: Category
+          column: Product
         mode: AXIS_DRIVEN
       - key: y-axis
         axes:
         - type: FLAT
           column: Total Sales
+        mode: AXIS_DRIVEN
+      - key: slice-with-color
+        mode: AXIS_DRIVEN
+      - key: trellis-by
         mode: AXIS_DRIVEN
     custom_visual_props: "{}"
     viz_style: "{}"

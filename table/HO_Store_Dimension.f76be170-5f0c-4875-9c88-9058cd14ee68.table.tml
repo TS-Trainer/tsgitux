@@ -139,6 +139,18 @@ table:
       index_type: DONT_INDEX
     db_column_properties:
       data_type: INT64
+  rls_rules:
+    tables:
+    - name: HO_Store_Dimension
+      fqn: f76be170-5f0c-4875-9c88-9058cd14ee68
+    table_paths:
+    - id: HO_Store_Dimension_1
+      table: HO_Store_Dimension
+      column:
+      - Store_Region
+    rules:
+    - name: Row Level Security Demo
+      expr: "[HO_Store_Dimension_1::Store_Region] = ts_groups "
   properties:
     spotter_config:
       is_spotter_enabled: false

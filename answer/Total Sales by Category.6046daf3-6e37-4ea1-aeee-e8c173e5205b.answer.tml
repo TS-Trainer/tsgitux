@@ -1,0 +1,46 @@
+guid: 6046daf3-6e37-4ea1-aeee-e8c173e5205b
+answer:
+  name: Total Sales by Category
+  tables:
+  - id: Sales Model
+    name: Sales Model
+    fqn: c5fc1a2d-2098-4908-86bd-b9c3a1071989
+  search_query: "[Sales] [Category]"
+  answer_columns:
+  - name: Category
+  - name: Total Sales
+  table:
+    table_columns:
+    - column_id: Category
+      show_headline: false
+    - column_id: Total Sales
+      show_headline: false
+    ordered_column_ids:
+    - Category
+    - Total Sales
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: ADVANCED_DONUT
+    chart_columns:
+    - column_id: Category
+    - column_id: Total Sales
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true,\"showAnalyseChangeCta\": true}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"3ac55c68-29a3-4b1f-90c1-d99a7329dc46\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"fe702808-ebb1-4d9b-9653-f19962cac203\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}]}"
+    custom_chart_config:
+    - key: basic
+      dimensions:
+      - key: x-axis
+        axes:
+        - type: FLAT
+          column: Category
+        mode: AXIS_DRIVEN
+      - key: y-axis
+        axes:
+        - type: FLAT
+          column: Total Sales
+        mode: AXIS_DRIVEN
+    custom_visual_props: "{}"
+    viz_style: "{}"
+  display_mode: CHART_MODE
+  dynamic_name: Total Sales by Category

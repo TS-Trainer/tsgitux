@@ -69,7 +69,6 @@ table:
     db_column_name: Customer_State
     properties:
       column_type: ATTRIBUTE
-      index_type: DONT_INDEX
     db_column_properties:
       data_type: VARCHAR
   - name: Customer_Region

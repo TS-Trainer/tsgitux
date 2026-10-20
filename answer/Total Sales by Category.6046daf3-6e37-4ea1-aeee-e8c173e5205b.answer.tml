@@ -5,42 +5,37 @@ answer:
   - id: Sales Model
     name: Sales Model
     fqn: c5fc1a2d-2098-4908-86bd-b9c3a1071989
-  search_query: "[Sales] [Product] [Department]"
+  search_query: "[Sales] [Product]"
   answer_columns:
-  - name: Department
   - name: Product
   - name: Total Sales
   table:
     table_columns:
-    - column_id: Department
-      show_headline: false
     - column_id: Product
       show_headline: false
     - column_id: Total Sales
       show_headline: false
     ordered_column_ids:
     - Product
-    - Department
     - Total Sales
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: ADVANCED_BAR
+    type: ADVANCED_COLUMN
     chart_columns:
-    - column_id: Department
     - column_id: Product
     - column_id: Total Sales
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true,\"showAnalyseChangeCta\": true}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Product\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"a724ccda-a2b1-4ba8-beb1-d67bec1b624f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"e9a2a8f9-4956-4f29-afc6-8a22f3ac97ef\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product\"]}}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"f1ac112e-3942-436b-ade9-292a62212c44\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"b03beecf-7482-4124-89aa-33e2fd17e3b8\",\"columnProperty\": {\"kpiColumnProperties\": {\"showAbbreviatedPreviousDate\": false,\"abbreviatedPreviousDate\": \"\",\"handleNullData\": \"ZERO\",\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Product\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a724ccda-a2b1-4ba8-beb1-d67bec1b624f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"e9a2a8f9-4956-4f29-afc6-8a22f3ac97ef\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product\"]}}]}"
     custom_chart_config:
     - key: basic
       dimensions:
-      - key: y-axis
+      - key: x-axis
         axes:
         - type: FLAT
           column: Product
         mode: AXIS_DRIVEN
-      - key: x-axis
+      - key: y-axis
         axes:
         - type: FLAT
           column: Total Sales

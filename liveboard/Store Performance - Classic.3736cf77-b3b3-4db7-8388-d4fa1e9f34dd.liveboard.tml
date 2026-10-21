@@ -320,19 +320,17 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 3ac00fcf-f8d8-4d9d-8385-0c09d4fe8d43
-    name: user156
+  - view_guid: 167eb318-993d-4eab-a700-e72a06d6bd26
+    name: Allentown
     view_filters:
     - column:
       - Category
-      oper: in
-      values:
-      - Medical
+      oper: =
     - column:
       - Store Region
       oper: in
       values:
-      - east
+      - East
     - column:
       - Age Group
       oper: in

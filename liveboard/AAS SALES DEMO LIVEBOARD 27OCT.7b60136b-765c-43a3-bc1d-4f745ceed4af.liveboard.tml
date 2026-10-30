@@ -245,43 +245,6 @@ liveboard:
     viz_guid: aba5b3e6-7057-4ceb-9ad4-1ed0b9993ef0
   - id: Viz_5
     answer:
-      name: SOURCE 1
-      tables:
-      - id: Retail Sales - Classic
-        name: Retail Sales - Classic
-        fqn: 3bbeac16-a723-4886-9eba-c4779d07fd83
-      search_query: "[Sales] [Store State]"
-      answer_columns:
-      - name: Store State
-      - name: Total Sales
-      table:
-        table_columns:
-        - column_id: Store State
-          show_headline: false
-        - column_id: Total Sales
-          show_headline: false
-        ordered_column_ids:
-        - Store State
-        - Total Sales
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: GEO_AREA
-        chart_columns:
-        - column_id: Store State
-        - column_id: Total Sales
-        axis_configs:
-        - x:
-          - Store State
-          "y":
-          - Total Sales
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}},\"kpiDisplayProperties\": {\"showChange\": true,\"showChangeAs\": \"PERCENT\",\"changeInterpretation\": \"UPWARD_IS_GOOD\",\"linkChangeColorsWithAnomaly\": true,\"showAnalyseChangeCta\": true}},\"columnProperties\": [{\"columnId\": \"Store State\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure names\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}},{\"columnId\": \"Measure values\",\"columnProperty\": {\"kpiColumnProperties\": {\"showSparkline\": true,\"showComparisonDate\": true,\"showCurrentDateLabel\": true,\"showPreviousDateLabel\": true,\"showPreviousValue\": true}}}],\"axisProperties\": [{\"id\": \"49ea32c3-ffd4-49be-a0d7-c409c045dd09\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"699caa04-dcaa-4a60-9c0d-e911c3f45504\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Store State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"Store State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
-      display_mode: CHART_MODE
-      dynamic_name: SOURCE 1
-    viz_guid: c9144089-18d9-48d2-9477-bcbd0eb91537
-  - id: Viz_6
-    answer:
       name: Total Sales by Store State
       tables:
       - id: Retail Sales - Classic
@@ -326,7 +289,7 @@ liveboard:
         viz_style: "{}"
       display_mode: CHART_MODE
     viz_guid: 5441d713-70ba-4c23-81ee-38937c58db46
-  - id: Viz_7
+  - id: Viz_6
     answer:
       name: SOURCE 2
       tables:
@@ -363,11 +326,11 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: SOURCE 2
     viz_guid: efb73f0c-e8cb-4e79-a8a0-58c97fe0d183
-  - id: Viz_8
+  - id: Viz_7
     viz_guid: 0752b3f1-31b4-4d10-93fb-1cc49e01faff
     note_tile:
       html_parsed_string: "<h1 class=\"theme-module__editor-h1\"><span style=\"white-space: pre-wrap;\">TS Liveboard Notice:</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><h2 class=\"theme-module__editor-h2\"><a href=\"https://training.thoughtspot.cloud/#/pinboard/0981f818-629c-43cc-af66-f7949a09e8c5\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS University portal</span></h2><h2 class=\"theme-module__editor-h2\"><br></h2><h2 class=\"theme-module__editor-h2\"><a href=\"https://training.thoughtspot.cloud/#/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit TS training portal</span></h2><h2 class=\"theme-module__editor-h2\"><br></h2><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
-  - id: Viz_9
+  - id: Viz_8
     answer:
       name: Total Sales by Category
       tables:
@@ -466,11 +429,6 @@ liveboard:
         height: 5
         width: 6
       - visualization_id: Viz_5
-        x: 3
-        "y": 0
-        height: 4
-        width: 4
-      - visualization_id: Viz_6
         x: 7
         "y": 0
         height: 4
@@ -512,17 +470,17 @@ liveboard:
     - name: 2. Reporting
       description: ""
       tiles:
-      - visualization_id: Viz_7
+      - visualization_id: Viz_6
         x: 7
         "y": 0
         height: 4
         width: 3
-      - visualization_id: Viz_8
+      - visualization_id: Viz_7
         x: 0
         "y": 0
         height: 4
         width: 7
-      - visualization_id: Viz_9
+      - visualization_id: Viz_8
         x: 0
         "y": 4
         height: 8

@@ -8,13 +8,6 @@ table:
     name: RetailClassic
     fqn: 17077c88-fe74-4a67-b7f5-c6340106c225
   columns:
-  - name: Customer Key
-    db_column_name: CUSTOMER_KEY
-    properties:
-      column_type: ATTRIBUTE
-      is_hidden: true
-    db_column_properties:
-      data_type: INT64
   - name: Customer Type
     db_column_name: CUSTOMER_TYPE
     properties:
@@ -117,13 +110,6 @@ table:
       column_type: ATTRIBUTE
     db_column_properties:
       data_type: INT64
-  - name: Customer Since
-    db_column_name: CUSTOMER_SINCE
-    properties:
-      column_type: ATTRIBUTE
-      is_hidden: true
-    db_column_properties:
-      data_type: DATE
   - name: Deal Stage
     db_column_name: DEAL_STAGE
     properties:
@@ -137,13 +123,6 @@ table:
       aggregation: SUM
     db_column_properties:
       data_type: INT64
-  - name: Last Deal Update
-    db_column_name: LAST_DEAL_UPDATE
-    properties:
-      column_type: ATTRIBUTE
-      is_hidden: true
-    db_column_properties:
-      data_type: DATE
   - name: Customer Zip Code
     db_column_name: CUSTOMER_ZIP_CODE
     properties:

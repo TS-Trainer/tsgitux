@@ -241,6 +241,17 @@ liveboard:
     group_guid: bcb6ebae-31df-4adc-b11d-1f21e2c241b0
   filters:
   - column:
+    - Age Group
+    oper: in
+    values:
+    - c) 50-64
+    - a) 18-29
+    - b) 30-49
+    - d) 65+
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
     - Category
     is_mandatory: false
     is_single_value: false
@@ -250,17 +261,6 @@ liveboard:
     oper: in
     values:
     - west
-    is_mandatory: false
-    is_single_value: false
-    display_name: ""
-  - column:
-    - Age Group
-    oper: in
-    values:
-    - c) 50-64
-    - a) 18-29
-    - b) 30-49
-    - d) 65+
     is_mandatory: false
     is_single_value: false
     display_name: ""
@@ -320,17 +320,9 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 167eb318-993d-4eab-a700-e72a06d6bd26
-    name: Allentown
+  - view_guid: 88a728c8-31e2-46f1-aeb5-18e79f2280d7
+    name: east reg food view
     view_filters:
-    - column:
-      - Category
-      oper: =
-    - column:
-      - Store Region
-      oper: in
-      values:
-      - East
     - column:
       - Age Group
       oper: in
@@ -339,6 +331,22 @@ liveboard:
       - a) 18-29
       - b) 30-49
       - d) 65+
+      applicability:
+        level: LIVEBOARD
+    - column:
+      - Category
+      oper: in
+      values:
+      - Food
+      applicability:
+        level: LIVEBOARD
+    - column:
+      - Store Region
+      oper: in
+      values:
+      - East
+      applicability:
+        level: LIVEBOARD
     is_public: false
   style:
     style_properties:

@@ -341,10 +341,6 @@ liveboard:
       dynamic_name: Category Sales Donut Chart AAS
     viz_guid: c6b546b9-225a-40e9-991e-3d9e903ca5b5
   - id: Viz_10
-    viz_guid: 69ee5228-e6df-47d0-8705-7cf72a40da8c
-    note_tile:
-      html_parsed_string: "<h1 class=\"theme-module__editor-h1\"><span style=\"white-space: pre-wrap;\">ThoughtSpot Information Board</span></h1><p class=\"theme-module__editor-paragraph\"><br></p><p class=\"theme-module__editor-paragraph\"><br></p><h2 class=\"theme-module__editor-h2\"><a href=\"https://training.thoughtspot.com/\" target=\"_blank\" rel=\"noreferrer\" class=\"theme-module__editor-link\"><span style=\"white-space: pre-wrap;\">Click here</span></a><span style=\"white-space: pre-wrap;\"> to visit ThoughtSpot Training Portal</span></h2><div class=\"pinboard-note-tile-module__noteTileBg editor-module__bgNode\" style=\"background-color: revert-layer;\"></div>"
-  - id: Viz_11
     answer:
       name: Department Sales
       tables:
@@ -408,7 +404,7 @@ liveboard:
       display_mode: CHART_MODE
       dynamic_name: Department Sales
     viz_guid: aab56f49-6966-48a0-926f-596f1b3509d6
-  - id: Viz_12
+  - id: Viz_11
     viz_guid: 8c097bbe-91a2-435a-a8e1-311509006d27
     ai_tile:
       target_agent: insight_code_runner
@@ -972,11 +968,6 @@ liveboard:
     - name: 1. Retail Sales
       description: ""
       tiles:
-      - visualization_id: Viz_10
-        x: 0
-        "y": 0
-        height: 4
-        width: 9
       - visualization_id: Group_1
         x: 0
         "y": 4
@@ -992,7 +983,7 @@ liveboard:
         "y": 9
         height: 4
         width: 4
-      - visualization_id: Viz_11
+      - visualization_id: Viz_10
         x: 0
         "y": 13
         height: 4
@@ -1039,7 +1030,7 @@ liveboard:
         "y": 0
         height: 4
         width: 6
-      - visualization_id: Viz_12
+      - visualization_id: Viz_11
         x: 6
         "y": 0
         height: 4

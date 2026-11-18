@@ -320,8 +320,8 @@ liveboard:
   - name: Age Group
     type: FILTER
   views:
-  - view_guid: 234562b9-350c-4041-906c-c55cf2490407
-    name: EAST REGION FOOD
+  - view_guid: cbb7e4cb-6509-4679-82f7-bfe5d6bcb86f
+    name: East Region Food
     view_filters:
     - column:
       - Age Group
@@ -345,6 +345,34 @@ liveboard:
       oper: in
       values:
       - East
+      applicability:
+        level: LIVEBOARD
+    is_public: false
+  - view_guid: 14bbb7f7-4946-423d-a0e6-798532975d04
+    name: Midwest Medical
+    view_filters:
+    - column:
+      - Age Group
+      oper: in
+      values:
+      - c) 50-64
+      - a) 18-29
+      - b) 30-49
+      - d) 65+
+      applicability:
+        level: LIVEBOARD
+    - column:
+      - Category
+      oper: in
+      values:
+      - Medical
+      applicability:
+        level: LIVEBOARD
+    - column:
+      - Store Region
+      oper: in
+      values:
+      - Midwest
       applicability:
         level: LIVEBOARD
     is_public: false
